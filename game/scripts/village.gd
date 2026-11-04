@@ -249,7 +249,7 @@ func _draw_sidebar() -> void:
 	_draw_bar(940, 481, 205, chosen["warmth"], Color("#e77c58"))
 	var inventory: Dictionary = chosen["inventory"]
 	_draw_text("Umiejętność: %s  •  poziom %d" % [chosen["skill"], chosen["skill_level"]], 885, 522, 12, Color.WHITE)
-	_draw_text("Ekwipunek: %s, jedzenie %d" % [", ".join(inventory["equipment"]), inventory["food"]], 885, 544, 12, Color.WHITE)
+	_draw_text("Ekwipunek: %s, jedzenie %d" % [str(inventory["equipment"]), inventory["food"]], 885, 544, 12, Color.WHITE)
 	_draw_text("Prywatna rzecz: %s" % inventory["keepsake"], 885, 566, 12, Color.WHITE)
 
 	_draw_text("OSTATNIE ZDARZENIA", 885, 603, 14, Color("#f4d99b"))
