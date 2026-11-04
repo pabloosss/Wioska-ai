@@ -1,0 +1,1305 @@
+{
+  "pixellab_id": "4f15c0c3-aa43-4d67-9d1a-451ee35723e2",
+  "source_canvas": [
+    52,
+    101
+  ],
+  "floor_visible_rect": [
+    10,
+    64,
+    32,
+    28
+  ],
+  "floor_screen_step": [
+    32,
+    28
+  ],
+  "atlas_cell": [
+    64,
+    112
+  ],
+  "atlas_columns": 8,
+  "pieces": [
+    {
+      "index": 0,
+      "file": "art/building/piece-00.png",
+      "atlas_rect": [
+        0,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        64,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 1,
+      "file": "art/building/piece-01.png",
+      "atlas_rect": [
+        64,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 2,
+      "file": "art/building/piece-02.png",
+      "atlas_rect": [
+        128,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        30,
+        8,
+        42,
+        36
+      ]
+    },
+    {
+      "index": 3,
+      "file": "art/building/piece-03.png",
+      "atlas_rect": [
+        192,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        26,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 4,
+      "file": "art/building/piece-04.png",
+      "atlas_rect": [
+        256,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        22,
+        36
+      ]
+    },
+    {
+      "index": 5,
+      "file": "art/building/piece-05.png",
+      "atlas_rect": [
+        320,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        30,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 6,
+      "file": "art/building/piece-06.png",
+      "atlas_rect": [
+        384,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        30,
+        26,
+        42,
+        36
+      ]
+    },
+    {
+      "index": 7,
+      "file": "art/building/piece-07.png",
+      "atlas_rect": [
+        448,
+        0,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        26,
+        22,
+        36
+      ]
+    },
+    {
+      "index": 8,
+      "file": "art/building/piece-08.png",
+      "atlas_rect": [
+        0,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        22,
+        75
+      ]
+    },
+    {
+      "index": 9,
+      "file": "art/building/piece-09.png",
+      "atlas_rect": [
+        64,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 10,
+      "file": "art/building/piece-10.png",
+      "atlas_rect": [
+        128,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 11,
+      "file": "art/building/piece-11.png",
+      "atlas_rect": [
+        192,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 12,
+      "file": "art/building/piece-12.png",
+      "atlas_rect": [
+        256,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 13,
+      "file": "art/building/piece-13.png",
+      "atlas_rect": [
+        320,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        17,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 14,
+      "file": "art/building/piece-14.png",
+      "atlas_rect": [
+        384,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 15,
+      "file": "art/building/piece-15.png",
+      "atlas_rect": [
+        448,
+        112,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        17,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 16,
+      "file": "art/building/piece-16.png",
+      "atlas_rect": [
+        0,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        17,
+        32,
+        36
+      ]
+    },
+    {
+      "index": 17,
+      "file": "art/building/piece-17.png",
+      "atlas_rect": [
+        64,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 18,
+      "file": "art/building/piece-18.png",
+      "atlas_rect": [
+        128,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 19,
+      "file": "art/building/piece-19.png",
+      "atlas_rect": [
+        192,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 20,
+      "file": "art/building/piece-20.png",
+      "atlas_rect": [
+        256,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 21,
+      "file": "art/building/piece-21.png",
+      "atlas_rect": [
+        320,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 22,
+      "file": "art/building/piece-22.png",
+      "atlas_rect": [
+        384,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 23,
+      "file": "art/building/piece-23.png",
+      "atlas_rect": [
+        448,
+        224,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 24,
+      "file": "art/building/piece-24.png",
+      "atlas_rect": [
+        0,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        17,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 25,
+      "file": "art/building/piece-25.png",
+      "atlas_rect": [
+        64,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 26,
+      "file": "art/building/piece-26.png",
+      "atlas_rect": [
+        128,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 27,
+      "file": "art/building/piece-27.png",
+      "atlas_rect": [
+        192,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 28,
+      "file": "art/building/piece-28.png",
+      "atlas_rect": [
+        256,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 29,
+      "file": "art/building/piece-29.png",
+      "atlas_rect": [
+        320,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 30,
+      "file": "art/building/piece-30.png",
+      "atlas_rect": [
+        384,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 31,
+      "file": "art/building/piece-31.png",
+      "atlas_rect": [
+        448,
+        336,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        17,
+        32,
+        84
+      ]
+    },
+    {
+      "index": 32,
+      "file": "art/building/piece-32.png",
+      "atlas_rect": [
+        0,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 33,
+      "file": "art/building/piece-33.png",
+      "atlas_rect": [
+        64,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 34,
+      "file": "art/building/piece-34.png",
+      "atlas_rect": [
+        128,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        30,
+        8,
+        42,
+        72
+      ]
+    },
+    {
+      "index": 35,
+      "file": "art/building/piece-35.png",
+      "atlas_rect": [
+        192,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        30,
+        8,
+        42,
+        36
+      ]
+    },
+    {
+      "index": 36,
+      "file": "art/building/piece-36.png",
+      "atlas_rect": [
+        256,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        26,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 37,
+      "file": "art/building/piece-37.png",
+      "atlas_rect": [
+        320,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        26,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 38,
+      "file": "art/building/piece-38.png",
+      "atlas_rect": [
+        384,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        22,
+        72
+      ]
+    },
+    {
+      "index": 39,
+      "file": "art/building/piece-39.png",
+      "atlas_rect": [
+        448,
+        448,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        22,
+        36
+      ]
+    },
+    {
+      "index": 40,
+      "file": "art/building/piece-40.png",
+      "atlas_rect": [
+        0,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        50,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 41,
+      "file": "art/building/piece-41.png",
+      "atlas_rect": [
+        64,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        36,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 42,
+      "file": "art/building/piece-42.png",
+      "atlas_rect": [
+        128,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        50,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 43,
+      "file": "art/building/piece-43.png",
+      "atlas_rect": [
+        192,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        36,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 44,
+      "file": "art/building/piece-44.png",
+      "atlas_rect": [
+        256,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        64,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 45,
+      "file": "art/building/piece-45.png",
+      "atlas_rect": [
+        320,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        32,
+        72
+      ]
+    },
+    {
+      "index": 46,
+      "file": "art/building/piece-46.png",
+      "atlas_rect": [
+        384,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        20,
+        8,
+        32,
+        36
+      ]
+    },
+    {
+      "index": 47,
+      "file": "art/building/piece-47.png",
+      "atlas_rect": [
+        448,
+        560,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 48,
+      "file": "art/building/piece-48.png",
+      "atlas_rect": [
+        0,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        17,
+        42,
+        84
+      ]
+    },
+    {
+      "index": 49,
+      "file": "art/building/piece-49.png",
+      "atlas_rect": [
+        64,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 50,
+      "file": "art/building/piece-50.png",
+      "atlas_rect": [
+        128,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        75
+      ]
+    },
+    {
+      "index": 51,
+      "file": "art/building/piece-51.png",
+      "atlas_rect": [
+        192,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 52,
+      "file": "art/building/piece-52.png",
+      "atlas_rect": [
+        256,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 53,
+      "file": "art/building/piece-53.png",
+      "atlas_rect": [
+        320,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 54,
+      "file": "art/building/piece-54.png",
+      "atlas_rect": [
+        384,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 55,
+      "file": "art/building/piece-55.png",
+      "atlas_rect": [
+        448,
+        672,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        8,
+        42,
+        36
+      ]
+    },
+    {
+      "index": 56,
+      "file": "art/building/piece-56.png",
+      "atlas_rect": [
+        0,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        50,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 57,
+      "file": "art/building/piece-57.png",
+      "atlas_rect": [
+        64,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        36,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 58,
+      "file": "art/building/piece-58.png",
+      "atlas_rect": [
+        128,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        50,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 59,
+      "file": "art/building/piece-59.png",
+      "atlas_rect": [
+        192,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        36,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 60,
+      "file": "art/building/piece-60.png",
+      "atlas_rect": [
+        256,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        49,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 61,
+      "file": "art/building/piece-61.png",
+      "atlas_rect": [
+        320,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        42,
+        101
+      ]
+    },
+    {
+      "index": 62,
+      "file": "art/building/piece-62.png",
+      "atlas_rect": [
+        384,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        92
+      ]
+    },
+    {
+      "index": 63,
+      "file": "art/building/piece-63.png",
+      "atlas_rect": [
+        448,
+        784,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        28,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 64,
+      "file": "art/building/piece-64.png",
+      "atlas_rect": [
+        0,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        49,
+        42,
+        101
+      ]
+    },
+    {
+      "index": 65,
+      "file": "art/building/piece-65.png",
+      "atlas_rect": [
+        64,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 66,
+      "file": "art/building/piece-66.png",
+      "atlas_rect": [
+        128,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        28,
+        52,
+        92
+      ]
+    },
+    {
+      "index": 67,
+      "file": "art/building/piece-67.png",
+      "atlas_rect": [
+        192,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        49,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 68,
+      "file": "art/building/piece-68.png",
+      "atlas_rect": [
+        256,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 69,
+      "file": "art/building/piece-69.png",
+      "atlas_rect": [
+        320,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 70,
+      "file": "art/building/piece-70.png",
+      "atlas_rect": [
+        384,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 71,
+      "file": "art/building/piece-71.png",
+      "atlas_rect": [
+        448,
+        896,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        101
+      ]
+    },
+    {
+      "index": 72,
+      "file": "art/building/piece-72.png",
+      "atlas_rect": [
+        0,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        49,
+        52,
+        92
+      ]
+    },
+    {
+      "index": 73,
+      "file": "art/building/piece-73.png",
+      "atlas_rect": [
+        64,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        28,
+        42,
+        101
+      ]
+    },
+    {
+      "index": 74,
+      "file": "art/building/piece-74.png",
+      "atlas_rect": [
+        128,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        49,
+        52,
+        92
+      ]
+    },
+    {
+      "index": 75,
+      "file": "art/building/piece-75.png",
+      "atlas_rect": [
+        192,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        49,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 76,
+      "file": "art/building/piece-76.png",
+      "atlas_rect": [
+        256,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        28,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 77,
+      "file": "art/building/piece-77.png",
+      "atlas_rect": [
+        320,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        49,
+        42,
+        101
+      ]
+    },
+    {
+      "index": 78,
+      "file": "art/building/piece-78.png",
+      "atlas_rect": [
+        384,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        10,
+        49,
+        42,
+        92
+      ]
+    },
+    {
+      "index": 79,
+      "file": "art/building/piece-79.png",
+      "atlas_rect": [
+        448,
+        1008,
+        52,
+        101
+      ],
+      "visible_bounds": [
+        0,
+        28,
+        52,
+        101
+      ]
+    }
+  ],
+  "note": "Building pieces share padded source canvases. They are individually stamped; do not treat the 80 images as a Wang terrain set. See placement-rules.txt."
+}

@@ -1,0 +1,914 @@
+{
+  "name": "Rogue — Idle & Walk",
+  "version": "0.1.0",
+  "character_id": "a94ff7bb-7506-4d41-8b9a-9a4d3667d009",
+  "design_model": "PixelLab Pro",
+  "directions": [
+    "south",
+    "east",
+    "north",
+    "west"
+  ],
+  "clips": {
+    "idle_south": {
+      "action": "idle",
+      "direction": "south",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "idle.png",
+      "frames": [
+        {
+          "file": "idle/south/000.png",
+          "rect": [
+            0,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/south/001.png",
+          "rect": [
+            80,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/south/002.png",
+          "rect": [
+            160,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/south/003.png",
+          "rect": [
+            240,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        540,
+        540,
+        540,
+        540
+      ],
+      "cycle_ms": 2160
+    },
+    "idle_east": {
+      "action": "idle",
+      "direction": "east",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "idle.png",
+      "frames": [
+        {
+          "file": "idle/east/000.png",
+          "rect": [
+            0,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/east/001.png",
+          "rect": [
+            80,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/east/002.png",
+          "rect": [
+            160,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/east/003.png",
+          "rect": [
+            240,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        540,
+        540,
+        540,
+        540
+      ],
+      "cycle_ms": 2160
+    },
+    "idle_north": {
+      "action": "idle",
+      "direction": "north",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "idle.png",
+      "frames": [
+        {
+          "file": "idle/north/000.png",
+          "rect": [
+            0,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "idle/north/001.png",
+          "rect": [
+            80,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "idle/north/002.png",
+          "rect": [
+            160,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "idle/north/003.png",
+          "rect": [
+            240,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            80,
+            80
+          ]
+        }
+      ],
+      "durations_ms": [
+        540,
+        540,
+        540,
+        540
+      ],
+      "cycle_ms": 2160
+    },
+    "idle_west": {
+      "action": "idle",
+      "direction": "west",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "idle.png",
+      "frames": [
+        {
+          "file": "idle/west/000.png",
+          "rect": [
+            0,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/west/001.png",
+          "rect": [
+            80,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/west/002.png",
+          "rect": [
+            160,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "idle/west/003.png",
+          "rect": [
+            240,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 540,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        540,
+        540,
+        540,
+        540
+      ],
+      "cycle_ms": 2160
+    },
+    "walk_south": {
+      "action": "walk",
+      "direction": "south",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "walk.png",
+      "frames": [
+        {
+          "file": "walk/south/000.png",
+          "rect": [
+            0,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/001.png",
+          "rect": [
+            80,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/002.png",
+          "rect": [
+            160,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/003.png",
+          "rect": [
+            240,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/004.png",
+          "rect": [
+            320,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/005.png",
+          "rect": [
+            400,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/006.png",
+          "rect": [
+            480,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/south/007.png",
+          "rect": [
+            560,
+            0,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "cycle_ms": 800
+    },
+    "walk_east": {
+      "action": "walk",
+      "direction": "east",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "walk.png",
+      "frames": [
+        {
+          "file": "walk/east/000.png",
+          "rect": [
+            0,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/001.png",
+          "rect": [
+            80,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/002.png",
+          "rect": [
+            160,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/003.png",
+          "rect": [
+            240,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/004.png",
+          "rect": [
+            320,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/005.png",
+          "rect": [
+            400,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/006.png",
+          "rect": [
+            480,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/east/007.png",
+          "rect": [
+            560,
+            80,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "cycle_ms": 800
+    },
+    "walk_north": {
+      "action": "walk",
+      "direction": "north",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "walk.png",
+      "frames": [
+        {
+          "file": "walk/north/000.png",
+          "rect": [
+            0,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/001.png",
+          "rect": [
+            80,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/002.png",
+          "rect": [
+            160,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/003.png",
+          "rect": [
+            240,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/004.png",
+          "rect": [
+            320,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/005.png",
+          "rect": [
+            400,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/006.png",
+          "rect": [
+            480,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        },
+        {
+          "file": "walk/north/007.png",
+          "rect": [
+            560,
+            160,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            80,
+            80
+          ]
+        }
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "cycle_ms": 800
+    },
+    "walk_west": {
+      "action": "walk",
+      "direction": "west",
+      "model": "PixelLab skeleton-guided V3",
+      "cell": [
+        80,
+        80
+      ],
+      "pivot": [
+        40,
+        70
+      ],
+      "loop": true,
+      "sheet": "walk.png",
+      "frames": [
+        {
+          "file": "walk/west/000.png",
+          "rect": [
+            0,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/001.png",
+          "rect": [
+            80,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/002.png",
+          "rect": [
+            160,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/003.png",
+          "rect": [
+            240,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/004.png",
+          "rect": [
+            320,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/005.png",
+          "rect": [
+            400,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/006.png",
+          "rect": [
+            480,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        },
+        {
+          "file": "walk/west/007.png",
+          "rect": [
+            560,
+            240,
+            80,
+            80
+          ],
+          "duration_ms": 100,
+          "source_canvas": [
+            64,
+            64
+          ]
+        }
+      ],
+      "durations_ms": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "cycle_ms": 800
+    }
+  },
+  "frame_count": 48,
+  "cell": [
+    80,
+    80
+  ],
+  "pivot": [
+    40,
+    70
+  ],
+  "root_motion": false,
+  "transitions": {
+    "walk_entry_frame": {
+      "south": 0,
+      "east": 0,
+      "north": 0,
+      "west": 0
+    },
+    "settle_ms": 120
+  },
+  "method": "PixelLab Pro character; skeleton-guided V3 breathing idle and walk. Whole-pixel registration, then reviewed exact PixelLab pixelart_workbench edits."
+}

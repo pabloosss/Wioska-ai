@@ -1,0 +1,1168 @@
+{
+  "name": "Fantasy Village & Adventurers",
+  "version": "0.8.0",
+  "stage": "All six characters have four-direction idle/walk animations and a moving village showcase.",
+  "characters": [
+    {
+      "slug": "knight",
+      "name": "Knight",
+      "pixellab_character_id": "48614a78-f353-41f2-b5c0-c9b9d48010b1",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/knight/turnaround.png",
+      "metadata": "art/characters/knight/turnaround.json",
+      "animation_metadata": "art/characters/knight/animations/animation.json"
+    },
+    {
+      "slug": "mage",
+      "name": "Mage",
+      "pixellab_character_id": "e1251e39-7a80-4b7b-894a-228e131b361d",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/mage/turnaround.png",
+      "metadata": "art/characters/mage/turnaround.json",
+      "animation_metadata": "art/characters/mage/animations/animation.json"
+    },
+    {
+      "slug": "ranger",
+      "name": "Ranger",
+      "pixellab_character_id": "286759bb-2efc-4e7d-8fba-8fbd6305727b",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/ranger/turnaround.png",
+      "metadata": "art/characters/ranger/turnaround.json",
+      "animation_metadata": "art/characters/ranger/animations/animation.json"
+    },
+    {
+      "slug": "rogue",
+      "name": "Rogue",
+      "pixellab_character_id": "a94ff7bb-7506-4d41-8b9a-9a4d3667d009",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/rogue/turnaround.png",
+      "metadata": "art/characters/rogue/turnaround.json",
+      "animation_metadata": "art/characters/rogue/animations/animation.json"
+    },
+    {
+      "slug": "cleric",
+      "name": "Cleric",
+      "pixellab_character_id": "82959a9f-fe67-4075-879a-4a4595505646",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/cleric/turnaround.png",
+      "metadata": "art/characters/cleric/turnaround.json",
+      "animation_metadata": "art/characters/cleric/animations/animation.json"
+    },
+    {
+      "slug": "blacksmith",
+      "name": "Blacksmith",
+      "pixellab_character_id": "657f7f58-e321-4058-8739-06bc449a1704",
+      "model": "PixelLab Pro",
+      "standing_directions": 8,
+      "atlas": "art/characters/blacksmith/turnaround.png",
+      "metadata": "art/characters/blacksmith/turnaround.json",
+      "animation_metadata": "art/characters/blacksmith/animations/animation.json"
+    }
+  ],
+  "props": [
+    {
+      "name": "tavern-table",
+      "description": "Rectangular oak tavern dining table with stout legs, empty tabletop",
+      "file": "art/props/tavern-table.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        2,
+        10,
+        62,
+        54
+      ],
+      "pivot": [
+        32,
+        54
+      ],
+      "pixellab_object_id": "b2fe320f-be4f-4f51-89a1-a480d1a57428",
+      "sha256": "09c6bfbcd3b8123c1dfc421d12b9107c81ce9dd763078ed3fb46443ebda653fa"
+    },
+    {
+      "name": "wooden-chair",
+      "description": "Simple oak dining chair with a straight back and a burgundy seat cushion",
+      "file": "art/props/wooden-chair.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        8,
+        2,
+        24,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "bf59c8de-1ffe-43b3-82f4-16215d93397b",
+      "sha256": "7feb40cb13a68fbce85910e6390b345faf74e51a118c9084735f84bd87b59be7"
+    },
+    {
+      "name": "tavern-counter",
+      "description": "Short oak tavern service counter with paneled front, empty top",
+      "file": "art/props/tavern-counter.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        1,
+        10,
+        63,
+        54
+      ],
+      "pivot": [
+        32,
+        54
+      ],
+      "pixellab_object_id": "9180a96b-cd93-430b-9724-c50ca1e715c4",
+      "sha256": "0c27b8e225a561193e6e1870ec051c27d6cc56b06ff95ce1899989cea54e5994"
+    },
+    {
+      "name": "barrel",
+      "description": "Upright oak barrel with two dark iron hoops and a round wooden lid",
+      "file": "art/props/barrel.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        5,
+        2,
+        27,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "bc7b32d6-bfbe-452d-a0a4-fe66da670a7e",
+      "sha256": "5e3d908f5f3ec644435daee23b59076f10fcf345604d49ca7f64061e0ce671ed"
+    },
+    {
+      "name": "crate",
+      "description": "Square wooden supply crate with corner braces and a diagonal cross plank",
+      "file": "art/props/crate.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        5,
+        2,
+        27,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "79040aec-fe5f-4fdb-bb6c-d575de05de12",
+      "sha256": "e516dc56936750a398c710f7f3fae375e3bb21f5ba62c273b4ba5bb5a8181f2c"
+    },
+    {
+      "name": "treasure-chest",
+      "description": "Closed sturdy oak treasure chest with brass straps and a central latch",
+      "file": "art/props/treasure-chest.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        320,
+        0,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        2,
+        5,
+        30,
+        28
+      ],
+      "pivot": [
+        16,
+        28
+      ],
+      "pixellab_object_id": "54ce498e-ae89-481a-ab5a-5706bf31041f",
+      "sha256": "3878ec9f12419a2875aba4c0df6e3e4d02a3c258607da4b6f83e7b7be7ef256d"
+    },
+    {
+      "name": "bookshelf",
+      "description": "Tall compact oak bookcase with three shelves of muted red blue green books",
+      "file": "art/props/bookshelf.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        384,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        8,
+        2,
+        56,
+        62
+      ],
+      "pivot": [
+        32,
+        62
+      ],
+      "pixellab_object_id": "54de1484-d42f-4fa3-8a2e-6a915bddf31f",
+      "sha256": "6e79c0809619154694388dae5cb676e0e14fa2a2769acd5e3cdaf2645599ebe3"
+    },
+    {
+      "name": "quest-board",
+      "description": "Wooden noticeboard on two posts, three small blank parchment notices pinned on it, no readable text",
+      "file": "art/props/quest-board.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        448,
+        0,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        4,
+        2,
+        60,
+        60
+      ],
+      "pivot": [
+        32,
+        60
+      ],
+      "pixellab_object_id": "801215bd-beb9-404f-8e5d-7af40e4a8e82",
+      "sha256": "4db45d42169f2c35d86ba8bd62fbb9ec81ceee20d7d14cc6ba1ba6cc355c8ee0"
+    },
+    {
+      "name": "potion-rack",
+      "description": "Low oak rack holding three clearly separated corked red blue green potion bottles",
+      "file": "art/props/potion-rack.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        0,
+        64,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        1,
+        6,
+        31,
+        28
+      ],
+      "pivot": [
+        16,
+        28
+      ],
+      "pixellab_object_id": "e5ae68d7-6c21-465d-af91-eb4e1d335fd4",
+      "sha256": "07617bc47b3b5d98e9d68a8977030a7d2bfd267738d5c1e5083c5da500e8a990"
+    },
+    {
+      "name": "anvil",
+      "description": "Small dark steel blacksmith anvil on a stout square wooden stump",
+      "file": "art/props/anvil.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        64,
+        64,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        4,
+        5,
+        28,
+        30
+      ],
+      "pivot": [
+        16,
+        30
+      ],
+      "pixellab_object_id": "2d3a54f0-af27-4c6d-aa69-0e80fc8b93bd",
+      "sha256": "6288baca5732fc6756480420d0eee36099d9dfc2fac01a88a8ab8cbcc0101294"
+    },
+    {
+      "name": "forge",
+      "description": "Compact stone forge hearth with subtle amber hot coals and a squat chimney",
+      "file": "art/props/forge.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        128,
+        64,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        9,
+        3,
+        55,
+        56
+      ],
+      "pivot": [
+        32,
+        56
+      ],
+      "pixellab_object_id": "41a4f883-f4f8-4f68-a408-23d5e49e0c07",
+      "sha256": "51d1b6caed0fd89f69f2a969e788f894e4283d02427089181478463f17a3272b"
+    },
+    {
+      "name": "weapon-rack",
+      "description": "Compact wooden rack holding one straight sword, one short axe and one spear upright",
+      "file": "art/props/weapon-rack.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        192,
+        64,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        4,
+        2,
+        60,
+        58
+      ],
+      "pivot": [
+        32,
+        58
+      ],
+      "pixellab_object_id": "a28e28eb-0397-4268-8571-f450d0aa1ba5",
+      "sha256": "5fafd59b89db62686b0db46b58854fc162dcfa61952dfe820593e268ba706842"
+    },
+    {
+      "name": "round-well",
+      "description": "Low circular pale stone village well with two wooden posts, small roof and bucket",
+      "file": "art/props/round-well.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        256,
+        64,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        10,
+        2,
+        57,
+        61
+      ],
+      "pivot": [
+        33,
+        61
+      ],
+      "pixellab_object_id": "2165d1cb-d48a-4b69-be95-514c547f6bde",
+      "sha256": "4f9684e085e9c73ce3bae1b144ac638f1ce4d636ce3ffd499651f5f811f8d5ea"
+    },
+    {
+      "name": "market-stall",
+      "description": "Compact village market stall, muted russet canvas canopy, oak counter, small baskets of produce",
+      "file": "art/props/market-stall.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        320,
+        64,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        2,
+        2,
+        63,
+        62
+      ],
+      "pivot": [
+        32,
+        62
+      ],
+      "pixellab_object_id": "6659932d-53b6-4203-a8ae-532eb7ccd0a1",
+      "sha256": "988f7023f05cefe81e33e23c10d4b5f081475af0180e113cdb1b1c77e7e959d5"
+    },
+    {
+      "name": "village-lantern",
+      "description": "Simple short iron lantern post with one warm amber enclosed lantern",
+      "file": "art/props/village-lantern.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        384,
+        64,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        4,
+        1,
+        28,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "7cf30918-c214-4af8-9638-1e4508a7805d",
+      "sha256": "3189174f3d8ad2c306eedc09a774fcfd4fe821d5f4899f480ef88e53cef23d5c"
+    },
+    {
+      "name": "bed",
+      "description": "Single oak bed, cream pillow and forest-green wool blanket, visible headboard and footboard",
+      "file": "art/props/bed.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        448,
+        64,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        1,
+        3,
+        63,
+        61
+      ],
+      "pivot": [
+        32,
+        61
+      ],
+      "pixellab_object_id": "0d2907ba-2932-432b-ae9b-b8c06391614e",
+      "sha256": "a72883058e9ddcb611c98a6658163290a1d19f6fab1bb178eb6dc675e6ea9f76"
+    },
+    {
+      "name": "campfire",
+      "description": "Small campfire with a stone ring, two crossed logs and restrained amber flames, no glow aura",
+      "file": "art/props/campfire.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        0,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        4,
+        2,
+        28,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "03915e17-0553-4be9-a1f2-bf42142a4ed3",
+      "sha256": "595b7fca9b0ca715151950124ec68211693207babd15306abd6d282dc52bb49d"
+    },
+    {
+      "name": "bedroll",
+      "description": "Rolled-out forest-green wool bedroll with cream pillow and leather strap at one end",
+      "file": "art/props/bedroll.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        64,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        1,
+        3,
+        31,
+        30
+      ],
+      "pivot": [
+        16,
+        30
+      ],
+      "pixellab_object_id": "b7c2707a-f840-47ae-adf0-fe2cf38b4d87",
+      "sha256": "67dd5a235451d9e4582f4397e6c994ea75389b0b6e41be5309c50d382897e331"
+    },
+    {
+      "name": "small-tent",
+      "description": "Small two-person muted blue canvas wedge tent with a simple triangular entrance and short wooden stakes",
+      "file": "art/props/small-tent.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        128,
+        128,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        1,
+        4,
+        62,
+        58
+      ],
+      "pivot": [
+        31,
+        58
+      ],
+      "pixellab_object_id": "f274d6af-3644-4984-a9f2-d55c5e2b6553",
+      "sha256": "9ce682a6120c10238b3b0aba2ef1baa37b3e8ca29f6e4b82030e1ea2c49df453"
+    },
+    {
+      "name": "direction-sign",
+      "description": "Wooden road signpost with two blank arrow boards, no readable text",
+      "file": "art/props/direction-sign.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        192,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        4,
+        1,
+        28,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "90011748-dd12-437d-86e9-08311f2e1532",
+      "sha256": "3412d882576b3057ea4aee9f74c4b6493c8fb073696245f9a4a92dfb2eefdb59"
+    },
+    {
+      "name": "leafy-shrub",
+      "description": "Low rounded leafy green shrub with broad clean leaf clusters, no flowers",
+      "file": "art/props/leafy-shrub.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        256,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        2,
+        5,
+        30,
+        29
+      ],
+      "pivot": [
+        16,
+        29
+      ],
+      "pixellab_object_id": "b61eb397-d746-4d1b-a8ee-b03eee306231",
+      "sha256": "c578228d1c4f9c128ee071ab2295d57bdafc3468375479a14733dc7383033d78"
+    },
+    {
+      "name": "young-tree",
+      "description": "Young compact deciduous tree with a readable warm brown trunk and rounded moss-green crown, entire tree visible",
+      "file": "art/props/young-tree.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        320,
+        128,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        8,
+        2,
+        56,
+        60
+      ],
+      "pivot": [
+        32,
+        60
+      ],
+      "pixellab_object_id": "c0ac55cd-0e00-4315-b74e-48c1cbdb8174",
+      "sha256": "a483b021d5eb76cd51d65fc4f2ff25cf3f6d39eff651c22f1db338e96807531a"
+    },
+    {
+      "name": "stone-pile",
+      "description": "Small cluster of three smooth pale gray rocks of different sizes",
+      "file": "art/props/stone-pile.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        384,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        2,
+        5,
+        30,
+        27
+      ],
+      "pivot": [
+        16,
+        27
+      ],
+      "pixellab_object_id": "7f7eac58-93f8-48b3-bcd0-ce89ff106582",
+      "sha256": "c4259d796724789653e84aba5c7f32adbf45cf8756e45f9a2f0427f654b571df"
+    },
+    {
+      "name": "log-pile",
+      "description": "Short neat stack of cut oak firewood with visible circular ends",
+      "file": "art/props/log-pile.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        448,
+        128,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        2,
+        3,
+        30,
+        30
+      ],
+      "pivot": [
+        16,
+        30
+      ],
+      "pixellab_object_id": "5eac3126-591c-446a-8f7f-8b3a12258196",
+      "sha256": "95aa9fbafe149f5de1012d30ae98d3cd81cf40946ffed1b363d5c5292b31f4c1"
+    },
+    {
+      "name": "grain-sacks",
+      "description": "Two tied tan linen grain sacks beside a small loose folded sack",
+      "file": "art/props/grain-sacks.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        0,
+        192,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        1,
+        3,
+        30,
+        31
+      ],
+      "pivot": [
+        15,
+        31
+      ],
+      "pixellab_object_id": "8af498d8-e1ab-4691-8654-e74036bed033",
+      "sha256": "b9cd1cbe75faa55180547053087e3df2608892fa2f8b6b49092aab2d3b94b1d1"
+    },
+    {
+      "name": "wooden-bench",
+      "description": "Simple long oak bench with two sturdy legs, no backrest",
+      "file": "art/props/wooden-bench.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        64,
+        192,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        2,
+        12,
+        62,
+        55
+      ],
+      "pivot": [
+        32,
+        55
+      ],
+      "pixellab_object_id": "1ef752da-5eab-4fb0-ad74-a0874d698a7c",
+      "sha256": "ae5d4ab2ce24a3c3343edbfe730f900d0dc20195d8819807dca34b11cb1ca147"
+    },
+    {
+      "name": "fireplace",
+      "description": "Compact pale stone indoor fireplace with dark firebox and small amber fire, no glow aura",
+      "file": "art/props/fireplace.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        128,
+        192,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        6,
+        9,
+        58,
+        56
+      ],
+      "pivot": [
+        32,
+        56
+      ],
+      "pixellab_object_id": "821393cf-2ea0-4d40-90f5-5adbedaf859b",
+      "sha256": "5c6bd0316fe8adb52b8d4e1281227de2c7a80b788ef9f8798236281ba2e26982"
+    },
+    {
+      "name": "woven-rug",
+      "description": "Flat rectangular muted russet and cream woven tavern rug with a simple geometric border",
+      "file": "art/props/woven-rug.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        192,
+        192,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        1,
+        15,
+        63,
+        50
+      ],
+      "pivot": [
+        32,
+        50
+      ],
+      "pixellab_object_id": "99bc6bcd-2c35-403c-8013-745ac18666a5",
+      "sha256": "4d7c21bb7bdce6cdcf4389f73b59f40fbd98b481f67796fde84dce2dcdca3438"
+    },
+    {
+      "name": "armor-stand",
+      "description": "Compact wooden armor stand displaying a steel-blue breastplate and small shoulder plates, no character head",
+      "file": "art/props/armor-stand.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        256,
+        192,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        6,
+        2,
+        26,
+        31
+      ],
+      "pivot": [
+        16,
+        31
+      ],
+      "pixellab_object_id": "ea950d72-51db-4d90-938f-5124cd8c6bff",
+      "sha256": "57c890456fcb6fdda59113033da380a5bb6d438cd849ebf3a2a82b7e1ca184dc"
+    },
+    {
+      "name": "herb-planter",
+      "description": "Low rectangular oak planter with three small green herb plants",
+      "file": "art/props/herb-planter.png",
+      "canvas": [
+        32,
+        32
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        320,
+        192,
+        32,
+        32
+      ],
+      "visible_bounds": [
+        2,
+        6,
+        30,
+        27
+      ],
+      "pivot": [
+        16,
+        27
+      ],
+      "pixellab_object_id": "c1d8a9ab-382d-478f-ac9d-f908467d573f",
+      "sha256": "dae2f67937a08f62fbb23b729028197e35e6aef478b32f50a5df6aaca6118500"
+    },
+    {
+      "name": "hanging-banner",
+      "description": "Short blue cloth wall banner with gold trim and one simple gold sun emblem, no writing",
+      "file": "art/props/hanging-banner.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        384,
+        192,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        13,
+        10,
+        51,
+        57
+      ],
+      "pivot": [
+        32,
+        57
+      ],
+      "pixellab_object_id": "2562ad1e-ef4d-4eb6-9e3a-c886cfc87170",
+      "sha256": "154c4318d4e0abcbd2f89b508fbae0b47c67552637346cffeed8c388123eef2b"
+    },
+    {
+      "name": "map-desk",
+      "description": "Small oak writing desk with one folded blank parchment map and an ink pot, no readable text",
+      "file": "art/props/map-desk.png",
+      "canvas": [
+        64,
+        64
+      ],
+      "atlas_cell": [
+        64,
+        64
+      ],
+      "atlas_rect": [
+        448,
+        192,
+        64,
+        64
+      ],
+      "visible_bounds": [
+        2,
+        3,
+        62,
+        58
+      ],
+      "pivot": [
+        32,
+        58
+      ],
+      "pixellab_object_id": "20b6198e-9072-498f-823b-77a72b62fd60",
+      "sha256": "577a58b626d05539a6861c7e23aa3ba91b6fb0b23d1e3e0ee03d67e223ab11ae"
+    }
+  ],
+  "terrain_tiles": 16,
+  "building_pieces": 80,
+  "terrain_metadata": "art/terrain/tiles.json",
+  "building_metadata": "art/building/pieces.json",
+  "scenes": [
+    {
+      "slug": "village-square",
+      "name": "Village Square",
+      "file": "art/scenes/village-square.png"
+    },
+    {
+      "slug": "tavern",
+      "name": "Tavern",
+      "file": "art/scenes/tavern.png"
+    },
+    {
+      "slug": "forge-workshop",
+      "name": "Forge Workshop",
+      "file": "art/scenes/forge-workshop.png"
+    }
+  ],
+  "animation_clips": 48,
+  "provenance": "Standing characters, props, terrain and building artwork: PixelLab Pro. All six characters use PixelLab skeleton-guided V3 idle and walk motion with reviewed exact PixelLab cleanup. Original standing and environment PNGs retained; animation frames registered without resampling.",
+  "animations": [
+    {
+      "character": "knight",
+      "file": "art/characters/knight/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    },
+    {
+      "character": "mage",
+      "file": "art/characters/mage/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    },
+    {
+      "character": "ranger",
+      "file": "art/characters/ranger/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    },
+    {
+      "character": "rogue",
+      "file": "art/characters/rogue/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    },
+    {
+      "character": "cleric",
+      "file": "art/characters/cleric/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    },
+    {
+      "character": "blacksmith",
+      "file": "art/characters/blacksmith/animations/animation.json",
+      "clips": 8,
+      "frames": 48,
+      "directions": [
+        "south",
+        "east",
+        "north",
+        "west"
+      ]
+    }
+  ],
+  "animation_frames": 288,
+  "examples": [
+    {
+      "name": "Moving Village Showcase",
+      "file": "examples/village/index.html",
+      "characters": 6,
+      "duration_ms": 10400,
+      "kind": "Self-contained HTML Canvas visual demo"
+    }
+  ]
+}

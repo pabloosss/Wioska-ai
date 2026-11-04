@@ -1,0 +1,250 @@
+{
+  "name": "Mage",
+  "pixel_lab_id": "e1251e39-7a80-4b7b-894a-228e131b361d",
+  "model": "PixelLab Pro",
+  "cell": [
+    64,
+    64
+  ],
+  "pivot": [
+    32,
+    56
+  ],
+  "directions": [
+    "south",
+    "south-east",
+    "east",
+    "north-east",
+    "north",
+    "north-west",
+    "west",
+    "south-west"
+  ],
+  "frames": {
+    "south": {
+      "file": "south.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        12,
+        2,
+        36,
+        46
+      ],
+      "pivot": [
+        24,
+        46
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "449054825a96718bf3517f4ccfc1a1e872c48cd932e7e20ddfba02064078fd97"
+    },
+    "south-east": {
+      "file": "south-east.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        12,
+        2,
+        34,
+        46
+      ],
+      "pivot": [
+        23,
+        46
+      ],
+      "atlas_rect": [
+        64,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "de86380c09c9c09452b7b03ebb4c0ea8ce1f9bc7316b09ba20107caf0829b2bb"
+    },
+    "east": {
+      "file": "east.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        15,
+        2,
+        30,
+        45
+      ],
+      "pivot": [
+        22,
+        45
+      ],
+      "atlas_rect": [
+        128,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "5d1d9710b9de2cd719bdb97bc912c64cea9a1e445cf8671a4823a87c5da0546b"
+    },
+    "north-east": {
+      "file": "north-east.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        12,
+        1,
+        34,
+        45
+      ],
+      "pivot": [
+        23,
+        45
+      ],
+      "atlas_rect": [
+        192,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "248bcecf109be87a38473bd024053008468524d8674c0ad86ea05d31c0d26fdc"
+    },
+    "north": {
+      "file": "north.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        12,
+        1,
+        36,
+        45
+      ],
+      "pivot": [
+        24,
+        45
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "23b3098726573a9f0a003a391f0e0dde33beacb98dfa38e36962a016e66e7b2b"
+    },
+    "north-west": {
+      "file": "north-west.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        14,
+        1,
+        36,
+        45
+      ],
+      "pivot": [
+        25,
+        45
+      ],
+      "atlas_rect": [
+        320,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "f5601729ae90522a08bce54e33156210b972d7f74a072151d242cdc6eca4d4c7"
+    },
+    "west": {
+      "file": "west.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        19,
+        2,
+        34,
+        45
+      ],
+      "pivot": [
+        26,
+        45
+      ],
+      "atlas_rect": [
+        384,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "f9fb2358f68ffd4dd1984df075438fd11deb33f4f6f54a05408d3c0f186e3749"
+    },
+    "south-west": {
+      "file": "south-west.png",
+      "canvas": [
+        48,
+        48
+      ],
+      "visible_bounds": [
+        14,
+        2,
+        36,
+        46
+      ],
+      "pivot": [
+        25,
+        46
+      ],
+      "atlas_rect": [
+        448,
+        0,
+        64,
+        64
+      ],
+      "atlas_pivot": [
+        32,
+        56
+      ],
+      "sha256": "eeaedbca92e006f62e878e863f89a592f0afc9068cc0074fa59263028316bb18"
+    }
+  },
+  "animations": []
+}

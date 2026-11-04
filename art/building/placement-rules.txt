@@ -1,0 +1,41 @@
+status: completed
+id: 4f15c0c3-aa43-4d67-9d1a-451ee35723e2
+name: warm pale limestone block wall with restrained dar
+description: warm pale limestone block wall with restrained dark oak timber posts, fantasy village tavern, clean broad clusters, gently shaded readable edges with warm medium-brown oak plank floor in a fantasy village tavern, soft low contrast grain, crisp pixel clusters, no bright bevels, no objects
+type: square_topdown
+size: 32x32px
+kind: building
+variations: 80
+view: low top-down (tile_view_angle=60)
+download: https://api.pixellab.ai/mcp/tiles-pro/4f15c0c3-aa43-4d67-9d1a-451ee35723e2/download
+seed: 281026
+charged: 10 generations
+
+placement_rules:
+  rule_type: composed (arity 8)
+  connectivity: same
+  terrains: wall, empty
+  tiles: none mask-placeable — stamp pieces individually
+  parts (role -> tile index; stamp each piece):
+    roof: ends={'E': 74, 'N': 76, 'S': 77, 'W': 75} hips={'NE': 64, 'NW': 67, 'SE': 65, 'SW': 66} eaves={'E': 61, 'N': 60, 'S': 62, 'W': 63} ridges={'EW': 72, 'NS': 73} peak_px=28 profile=gable pyramid=78 valleys={'NE': 68, 'NW': 71, 'SE': 69, 'SW': 70} interior=79 pitch_reach_px=16
+    doors: Ea=34 Eb=35 Na=32 Nb=33 Sa=36 Sb=37 Wa=38 Wb=39
+    floor: 0
+    sides: E=2 N=1 S=3 W=4
+    pillar: 31
+    slopes: 56, 57
+    stairs: 40, 41
+    corners: NE=5 NW=8 SE=6 SW=7
+    partition: E=15 N=14 S=16 W=17 hub=13
+    floor_roof: 44
+    outer_multi: EW=55 NS=54 ESW=52 NES=49 NEW=50 NSW=51 NESW=53
+    slopes_east: 58, 59
+    stairs_east: 42, 43
+    outer_corners: NE=9 NW=12 SE=10 SW=11
+    partition_wall: E=19 N=18 S=20 W=21
+    partition_doors: Ha=47 Hb=48 Va=45 Vb=46
+    partition_multi: ES=24 NE=22 NW=23 SW=25 ESW=29 NES=26 NEW=28 NSW=27 NESW=30
+  materials (role -> description, not an index): wall=warm pale limestone block wall with restrained dark oak timber posts, fantasy village tavern, clean broad clusters, gently shaded readable edges floor=warm medium-brown oak plank floor in a fantasy village tavern, soft low contrast grain, crisp pixel clusters, no bright bevels, no objects floor2=muted weathered terracotta roof tiles, clean low contrast pixel clusters
+  painted (tile indices that were generated): 0, 1, 4, 8, 14, 17, 31, 32, 33, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48
+  roof: floor_roof (tile 44) is the flat roof / upper floor; the roof pieces slope up (gable) 16px in from each eave to peak_px and are flat inside (interior), so only a one-tile-wide roof peaks. The roof shape is set by create_building_kit(roof_profile=...), not by the description
+
+

@@ -1,0 +1,57 @@
+FANTASY VILLAGE & ADVENTURERS — ASSET LIST
+
+CHARACTERS
+- Knight
+- Mage
+- Ranger
+- Rogue
+- Cleric
+- Blacksmith
+
+Each has eight standing directions and four-direction idle and walk animations. Total: 48 animation clips and 288 timed frames across all six characters.
+
+FURNITURE & PROPS
+- Tavern Table
+- Wooden Chair
+- Tavern Counter
+- Barrel
+- Crate
+- Treasure Chest
+- Bookshelf
+- Quest Board
+- Potion Rack
+- Anvil
+- Forge
+- Weapon Rack
+- Round Well
+- Market Stall
+- Village Lantern
+- Bed
+- Campfire
+- Bedroll
+- Small Tent
+- Direction Sign
+- Leafy Shrub
+- Young Tree
+- Stone Pile
+- Log Pile
+- Grain Sacks
+- Wooden Bench
+- Fireplace
+- Woven Rug
+- Armor Stand
+- Herb Planter
+- Hanging Banner
+- Map Desk
+
+ENVIRONMENT
+- 16 grass/earth-path corner tiles with all corner combinations
+- 80 building pieces: floors, wall segments, corners, partitions, doorways, pillars, stairs, slopes and roofs
+- 3 furnished examples: Village Square, Tavern, Forge Workshop
+- 3 environment Aseprite documents: Props, Terrain, Building
+
+See manifest.json for file names and pivots. Building placement rules and padded-canvas dimensions are in art/building/.
+
+MOVING VILLAGE SHOWCASE
+- examples/village/index.html: all six animated characters, four directions, 10.4-second loop.
+- Self-contained HTML demo with pause, speed, timeline and optional name labels.

@@ -1,0 +1,272 @@
+{
+  "grid": [
+    32,
+    32
+  ],
+  "mask_bits": {
+    "NW": 3,
+    "NE": 2,
+    "SW": 1,
+    "SE": 0
+  },
+  "set_bit": "grass",
+  "clear_bit": "earth path",
+  "tiles": [
+    {
+      "mask": 0,
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-00.png",
+      "source_rect": [
+        64,
+        32,
+        96,
+        64
+      ]
+    },
+    {
+      "mask": 1,
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-01.png",
+      "source_rect": [
+        96,
+        32,
+        128,
+        64
+      ]
+    },
+    {
+      "mask": 2,
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-02.png",
+      "source_rect": [
+        64,
+        64,
+        96,
+        96
+      ]
+    },
+    {
+      "mask": 3,
+      "corners": {
+        "NE": "lower",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-03.png",
+      "source_rect": [
+        32,
+        64,
+        64,
+        96
+      ]
+    },
+    {
+      "mask": 4,
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-04.png",
+      "source_rect": [
+        64,
+        0,
+        96,
+        32
+      ]
+    },
+    {
+      "mask": 5,
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-05.png",
+      "source_rect": [
+        96,
+        64,
+        128,
+        96
+      ]
+    },
+    {
+      "mask": 6,
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-06.png",
+      "source_rect": [
+        0,
+        32,
+        32,
+        64
+      ]
+    },
+    {
+      "mask": 7,
+      "corners": {
+        "NE": "upper",
+        "NW": "lower",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-07.png",
+      "source_rect": [
+        96,
+        96,
+        128,
+        128
+      ]
+    },
+    {
+      "mask": 8,
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-08.png",
+      "source_rect": [
+        32,
+        32,
+        64,
+        64
+      ]
+    },
+    {
+      "mask": 9,
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-09.png",
+      "source_rect": [
+        64,
+        96,
+        96,
+        128
+      ]
+    },
+    {
+      "mask": 10,
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-10.png",
+      "source_rect": [
+        32,
+        0,
+        64,
+        32
+      ]
+    },
+    {
+      "mask": 11,
+      "corners": {
+        "NE": "lower",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-11.png",
+      "source_rect": [
+        0,
+        64,
+        32,
+        96
+      ]
+    },
+    {
+      "mask": 12,
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-12.png",
+      "source_rect": [
+        96,
+        0,
+        128,
+        32
+      ]
+    },
+    {
+      "mask": 13,
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "lower"
+      },
+      "file": "art/terrain/grass-path-13.png",
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ]
+    },
+    {
+      "mask": 14,
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "lower",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-14.png",
+      "source_rect": [
+        32,
+        96,
+        64,
+        128
+      ]
+    },
+    {
+      "mask": 15,
+      "corners": {
+        "NE": "upper",
+        "NW": "upper",
+        "SE": "upper",
+        "SW": "upper"
+      },
+      "file": "art/terrain/grass-path-15.png",
+      "source_rect": [
+        0,
+        96,
+        32,
+        128
+      ]
+    }
+  ]
+}
