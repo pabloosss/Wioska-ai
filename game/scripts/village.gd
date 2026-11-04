@@ -1,5 +1,8 @@
 extends Node2D
 
+const OllamaBridge = preload("res://scripts/ollama_bridge.gd")
+const SAVE_PATH := "user://wioska_ai_save.json"
+
 const SIDEBAR_X := 850.0
 const HOME := Vector2(500, 390)
 const STORAGE_SPOT := Vector2(590, 440)
@@ -16,11 +19,19 @@ var day_minute := 8 * 60
 var build_progress := 0
 var houses := 1
 var clock: Timer
+var ollama_bridge: Node
+var ai_status := "AI: sprawdzam Ollamę…"
+var ai_minute_counter := 120
 
 
 func _ready() -> void:
 	_create_residents()
+	_load_game()
 	_add_log("Wioska zaczyna dzień. Pięciu mieszkańców rusza do pracy.")
+	ollama_bridge = OllamaBridge.new()
+	ollama_bridge.connect("status_changed", Callable(self, "_on_ai_status_changed"))
+	ollama_bridge.connect("decisions_received", Callable(self, "_on_ai_decisions"))
+	add_child(ollama_bridge)
 	clock = Timer.new()
 	clock.wait_time = 1.0
 	clock.timeout.connect(_on_tick)
@@ -61,6 +72,10 @@ func _make_person(person_name: String, job: String, start: Vector2, tint: Color,
 		"rest": 88.0,
 		"warmth": 76.0,
 		"work_ticks": 0,
+		"skill_xp": 0,
+		"ai_action": "work",
+		"ai_reason": "",
+		"memory": [],
 		"cargo_food": 0,
 		"cargo_wood": 0,
 		"inventory": {"food": 1, "keepsake": keepsake, "equipment": equipment}
@@ -77,6 +92,11 @@ func _on_tick() -> void:
 		person["warmth"] = maxf(0.0, person["warmth"] - (0.8 if _is_night() else 0.12))
 		_choose_task(person)
 		_do_task(person)
+	ai_minute_counter += 10
+	if ai_minute_counter >= 120 and ollama_bridge != null and bool(ollama_bridge.get("is_ready")) and not bool(ollama_bridge.get("is_busy")):
+		ai_minute_counter = 0
+		_request_ai_decisions()
+	_save_game()
 	queue_redraw()
 
 
@@ -84,9 +104,30 @@ func _choose_task(person: Dictionary) -> void:
 	var position: Vector2 = person["position"]
 	var cargo_food: int = person["cargo_food"]
 	var cargo_wood: int = person["cargo_wood"]
+	var ai_action: String = person.get("ai_action", "work")
+	var inventory: Dictionary = person["inventory"]
+	var has_food: bool = inventory["food"] > 0 or stock["food"] > 0
 	if cargo_food >= 4 or cargo_wood >= 4:
 		person["task"] = "Niesie ładunek do magazynu"
 		person["target"] = STORAGE_SPOT
+	elif person["hunger"] < 15.0:
+		person["task"] = "Je"
+		person["target"] = position
+	elif person["rest"] < 8.0:
+		person["task"] = "Odpoczywa"
+		person["target"] = HOME
+	elif person["warmth"] < 12.0:
+		person["task"] = "Grzeje się"
+		person["target"] = FIRE_SPOT
+	elif ai_action == "eat" and person["hunger"] < 70.0 and has_food:
+		person["task"] = "Je"
+		person["target"] = position
+	elif ai_action == "rest" and person["rest"] < 65.0:
+		person["task"] = "Odpoczywa"
+		person["target"] = HOME
+	elif ai_action == "warm" and person["warmth"] < 55.0:
+		person["task"] = "Grzeje się"
+		person["target"] = FIRE_SPOT
 	elif person["hunger"] < 28.0:
 		person["task"] = "Je"
 		person["target"] = position
@@ -114,10 +155,12 @@ func _do_task(person: Dictionary) -> void:
 			inventory["food"] -= 1
 			person["hunger"] = minf(100.0, person["hunger"] + 42.0)
 			_add_log("%s zjada swoje jedzenie." % person["name"])
+			_remember(person, "Zjadł własne jedzenie.")
 		elif stock["food"] > 0:
 			stock["food"] -= 1
 			person["hunger"] = minf(100.0, person["hunger"] + 42.0)
 			_add_log("%s bierze jedzenie ze wspólnego magazynu." % person["name"])
+			_remember(person, "Wziął jedzenie ze wspólnego magazynu.")
 		else:
 			_add_log("%s jest głodny — w magazynie nie ma jedzenia." % person["name"])
 		return
@@ -135,6 +178,7 @@ func _do_task(person: Dictionary) -> void:
 		person["cargo_food"] = 0
 		person["cargo_wood"] = 0
 		_add_log("%s zanosi do magazynu: jedzenie %d, drewno %d." % [person["name"], delivered_food, delivered_wood])
+		_remember(person, "Zaniósł do magazynu: jedzenie %d, drewno %d." % [delivered_food, delivered_wood])
 		return
 
 	if task == "Odpoczywa":
@@ -152,21 +196,151 @@ func _do_task(person: Dictionary) -> void:
 	if task == "Zbiera jedzenie":
 		person["cargo_food"] += 2
 		_add_log("%s zbiera jedzenie (%d/4)." % [person["name"], person["cargo_food"]])
+		_remember(person, "Zebrał jedzenie; ma teraz %d jednostki ładunku." % person["cargo_food"])
+		_gain_skill(person)
 	elif task == "Ścina drewno":
 		person["cargo_wood"] += 2
 		_add_log("%s zbiera drewno (%d/4)." % [person["name"], person["cargo_wood"]])
+		_remember(person, "Zebrał drewno; ma teraz %d jednostki ładunku." % person["cargo_wood"])
+		_gain_skill(person)
 	elif task == "Buduje dom":
 		if stock["wood"] < 4:
 			return
 		stock["wood"] -= 4
 		build_progress += 1
+		_gain_skill(person)
 		if build_progress >= 5:
 			build_progress = 0
 			houses += 1
 			_add_log("%s kończy nowy dom. Wioska ma %d domy." % [person["name"], houses])
+			_remember(person, "Pomógł ukończyć nowy dom. W wiosce jest ich %d." % houses)
 		else:
 			_add_log("%s pracuje przy domu (%d/5)." % [person["name"], build_progress])
 
+
+func _on_ai_status_changed(message: String) -> void:
+	ai_status = message
+	queue_redraw()
+
+func _request_ai_decisions() -> void:
+	var people_data: Array = []
+	for person in residents:
+		var memories: Array = person["memory"]
+		var recent_memories: Array = memories.slice(maxi(0, memories.size() - 4))
+		var inventory: Dictionary = person["inventory"]
+		people_data.append({
+			"name": person["name"],
+			"job": person["job"],
+			"personality": person["trait"],
+			"skill": person["skill"],
+			"skill_level": person["skill_level"],
+			"needs": {"hunger": roundi(person["hunger"]), "rest": roundi(person["rest"]), "warmth": roundi(person["warmth"])},
+			"inventory": {"private_food": inventory["food"], "cargo_food": person["cargo_food"], "cargo_wood": person["cargo_wood"]},
+			"recent_memories": recent_memories
+		})
+	var world_state := {
+		"time": "%02d:%02d" % [int(day_minute / 60), day_minute % 60],
+		"shared_food": stock["food"],
+		"shared_wood": stock["wood"],
+		"houses": houses,
+		"build_progress": build_progress
+	}
+	ollama_bridge.call("request_decisions", world_state, people_data)
+
+func _on_ai_decisions(decisions: Array) -> void:
+	for decision in decisions:
+		if typeof(decision) != TYPE_DICTIONARY:
+			continue
+		var person_name: String = str(decision.get("name", ""))
+		var action: String = str(decision.get("action", "work"))
+		if not ["work", "eat", "rest", "warm"].has(action):
+			continue
+		for person in residents:
+			if person["name"] != person_name:
+				continue
+			person["ai_action"] = action
+			var reason: String = str(decision.get("reason", ""))
+			if reason.length() > 100:
+				reason = reason.substr(0, 100)
+			person["ai_reason"] = reason
+			_remember(person, "AI wybrało %s: %s" % [action, reason])
+			_add_log("%s: AI wybiera %s — %s" % [person_name, action, reason])
+			break
+	_save_game()
+	queue_redraw()
+
+func _remember(person: Dictionary, note: String) -> void:
+	var memories: Array = person["memory"]
+	memories.append("%02d:%02d %s" % [int(day_minute / 60), day_minute % 60, note])
+	while memories.size() > 8:
+		memories.pop_front()
+	person["memory"] = memories
+
+func _gain_skill(person: Dictionary) -> void:
+	person["skill_xp"] += 1
+	if person["skill_xp"] >= 5:
+		person["skill_xp"] = 0
+		person["skill_level"] += 1
+		var note := "Rozwinął umiejętność %s do poziomu %d." % [person["skill"], person["skill_level"]]
+		_add_log("%s %s" % [person["name"], note])
+		_remember(person, note)
+
+func _save_game() -> void:
+	var saved_people: Array = []
+	for person in residents:
+		saved_people.append({
+			"name": person["name"],
+			"position": [person["position"].x, person["position"].y],
+			"hunger": person["hunger"],
+			"rest": person["rest"],
+			"warmth": person["warmth"],
+			"skill_level": person["skill_level"],
+			"skill_xp": person["skill_xp"],
+			"inventory": person["inventory"],
+			"cargo_food": person["cargo_food"],
+			"cargo_wood": person["cargo_wood"],
+			"memory": person["memory"]
+		})
+	var save_data := {
+		"day_minute": day_minute,
+		"stock": stock,
+		"houses": houses,
+		"build_progress": build_progress,
+		"residents": saved_people
+	}
+	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
+	if file != null:
+		file.store_string(JSON.stringify(save_data))
+
+func _load_game() -> void:
+	if not FileAccess.file_exists(SAVE_PATH):
+		return
+	var file := FileAccess.open(SAVE_PATH, FileAccess.READ)
+	if file == null:
+		return
+	var save_data: Variant = JSON.parse_string(file.get_as_text())
+	if typeof(save_data) != TYPE_DICTIONARY:
+		return
+	day_minute = int(save_data.get("day_minute", day_minute))
+	var saved_stock: Dictionary = save_data.get("stock", stock)
+	stock["food"] = int(saved_stock.get("food", stock["food"]))
+	stock["wood"] = int(saved_stock.get("wood", stock["wood"]))
+	houses = int(save_data.get("houses", houses))
+	build_progress = int(save_data.get("build_progress", build_progress))
+	for saved_person in save_data.get("residents", []):
+		if typeof(saved_person) != TYPE_DICTIONARY:
+			continue
+		for person in residents:
+			if person["name"] != saved_person.get("name", ""):
+				continue
+			for key in ["hunger", "rest", "warmth", "skill_level", "skill_xp", "inventory", "cargo_food", "cargo_wood", "memory"]:
+				if saved_person.has(key):
+					person[key] = saved_person[key]
+			var saved_position: Array = saved_person.get("position", [])
+			if saved_position.size() == 2:
+				person["position"] = Vector2(float(saved_position[0]), float(saved_position[1]))
+				person["target"] = person["position"]
+			break
 
 func _is_night() -> bool:
 	var hour := int(day_minute / 60)
@@ -185,6 +359,8 @@ func _input(event: InputEvent) -> void:
 			paused = not paused
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_5:
 			selected = event.keycode - KEY_1
+		elif event.keycode == KEY_R and ollama_bridge != null:
+			ollama_bridge.call("connect_to_ollama")
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var mouse_position: Vector2 = event.position
 		for index in range(residents.size()):
@@ -247,6 +423,7 @@ func _draw_world() -> void:
 func _draw_sidebar() -> void:
 	_draw_text("WIOSKA AI", 885, 42, 24, Color("#f4d99b"))
 	_draw_text("Dzień 1   •   %s" % ("noc" if _is_night() else "dzień"), 885, 70, 15, Color("#d5dfd5"))
+	_draw_text(ai_status, 885, 91, 11, Color("#91d3a4") if ai_status.begins_with("AI: aktywna") else Color("#e6c17d"))
 	_draw_text("MAGAZYN WSPÓLNY", 885, 112, 15, Color("#f4d99b"))
 	_draw_text("Jedzenie: %d     Drewno: %d" % [stock["food"], stock["wood"]], 885, 138, 16, Color.WHITE)
 	_draw_text("Domy: %d     Budowa: %d/5" % [houses, build_progress], 885, 162, 14, Color("#d5dfd5"))
