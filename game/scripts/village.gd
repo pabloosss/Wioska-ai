@@ -346,7 +346,7 @@ func _process(delta: float) -> void:
 		for person in residents:
 			var position: Vector2 = person["position"]
 			var target: Vector2 = person["target"]
-			person["position"] = position.move_toward(target, 48.0 * delta)
+			person["position"] = position.move_toward(target + Vector2((residents.find(person) % 3 - 1) * 10, (residents.find(person) / 3) * 10), 70.0 * delta)
 	queue_redraw()
 
 
@@ -375,7 +375,7 @@ func _make_person(person_name: String, job: String, start: Vector2, tint: Color,
 		"warmth": 76.0,
 		"work_ticks": 0,
 		"skill_xp": 0,
-		"ai_action": "work",
+		"ai_action": "wait",
 		"ai_reason": "",
 		"memory": [],
 		"cargo_food": 0,
@@ -404,50 +404,50 @@ func _on_tick() -> void:
 
 func _choose_task(person: Dictionary) -> void:
 	var position: Vector2 = person["position"]
-	var cargo_food: int = person["cargo_food"]
-	var cargo_wood: int = person["cargo_wood"]
-	var ai_action: String = str(person.get("ai_action", "work")) if ai_enabled else "work"
-	var inventory: Dictionary = person["inventory"]
-	var has_food: bool = inventory["food"] > 0 or stock["food"] > 0
-	if cargo_food >= 4 or cargo_wood >= 4:
+	var action: String = str(person.get("ai_action", "wait")) if ai_enabled else "wait"
+	person["target"] = position
+	person["task"] = "Czeka na decyzję AI"
+	if action == "work":
+		action = {"Zbieracz": "gather_food", "Drwal": "gather_wood", "Budowniczy": "build"}.get(person["job"], "wait")
+	if action in ["gather_food", "gather_wood"]:
+		if int(person["cargo_food"]) + int(person["cargo_wood"]) >= 4:
+			person["task"] = "Niesie ładunek do magazynu"
+			person["target"] = STORAGE_SPOT
+		else:
+			person["task"] = "Zbiera jedzenie" if action == "gather_food" else "Ścina drewno"
+			person["target"] = FOOD_SPOT if action == "gather_food" else WOOD_SPOT
+	elif action == "deliver":
 		person["task"] = "Niesie ładunek do magazynu"
 		person["target"] = STORAGE_SPOT
-	elif person["hunger"] < 15.0 and has_food:
-		person["task"] = "Je"
-		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
-	elif person["rest"] < 8.0:
+	elif action == "eat":
+		var inventory: Dictionary = person["inventory"]
+		if inventory["food"] > 0 or person["cargo_food"] > 0 or stock["food"] > 0:
+			person["task"] = "Je"
+			person["target"] = position if inventory["food"] > 0 or person["cargo_food"] > 0 else STORAGE_SPOT
+		else:
+			person["task"] = "Brak jedzenia — potrzebna nowa decyzja AI"
+			person["ai_action"] = "wait"
+			ai_minute_counter = ai_interval_minutes
+	elif action == "rest":
 		person["task"] = "Odpoczywa"
 		person["target"] = HOME
-	elif person["warmth"] < 12.0:
+	elif action == "warm":
 		person["task"] = "Grzeje się"
 		person["target"] = FIRE_SPOT
-	elif ai_action == "eat" and person["hunger"] < 70.0 and has_food:
-		person["task"] = "Je"
-		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
-	elif ai_action == "rest" and person["rest"] < 65.0:
-		person["task"] = "Odpoczywa"
-		person["target"] = HOME
-	elif ai_action == "warm" and person["warmth"] < 55.0:
-		person["task"] = "Grzeje się"
-		person["target"] = FIRE_SPOT
-	elif person["hunger"] < 28.0 and has_food:
-		person["task"] = "Je"
-		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
-	elif person["rest"] < 18.0:
-		person["task"] = "Odpoczywa"
-		person["target"] = HOME
-	elif person["warmth"] < 24.0:
-		person["task"] = "Grzeje się"
-		person["target"] = FIRE_SPOT
-	elif person["job"] == "Zbieracz" or (not has_food and person["hunger"] < 40.0):
-		person["task"] = "Zbiera jedzenie"
-		person["target"] = FOOD_SPOT
-	elif person["job"] == "Drwal" or (person["job"] == "Budowniczy" and stock["wood"] < 4):
-		person["task"] = "Ścina drewno"
-		person["target"] = WOOD_SPOT
-	else:
-		person["task"] = "Buduje dom"
-		person["target"] = HOME
+	elif action == "build":
+		if stock["wood"] >= 4:
+			person["task"] = "Buduje dom"
+			person["target"] = HOME
+		else:
+			person["task"] = "Brak drewna — potrzebna nowa decyzja AI"
+			person["ai_action"] = "wait"
+			ai_minute_counter = ai_interval_minutes
+
+func _finish_ai_task(person: Dictionary) -> void:
+	person["ai_action"] = "wait"
+	person["work_ticks"] = 0
+	ai_minute_counter = ai_interval_minutes
+
 
 func _do_task(person: Dictionary) -> void:
 	var task: String = person.get("task", "")
@@ -462,6 +462,10 @@ func _do_task(person: Dictionary) -> void:
 			person["hunger"] = minf(100.0, person["hunger"] + 42.0)
 			_add_log("%s zjada swoje jedzenie." % person["name"])
 			_remember(person, "Zjadł własne jedzenie.")
+		elif person["cargo_food"] > 0:
+			person["cargo_food"] -= 1
+			person["hunger"] = minf(100.0, person["hunger"] + 42.0)
+			_add_log("%s zjada zebrane jedzenie." % person["name"])
 		elif stock["food"] > 0:
 			stock["food"] -= 1
 			person["hunger"] = minf(100.0, person["hunger"] + 42.0)
@@ -469,6 +473,7 @@ func _do_task(person: Dictionary) -> void:
 			_remember(person, "Wziął jedzenie ze wspólnego magazynu.")
 		else:
 			_add_log("%s jest głodny — w magazynie nie ma jedzenia." % person["name"])
+		_finish_ai_task(person)
 		return
 
 	var position: Vector2 = person["position"]
@@ -489,9 +494,13 @@ func _do_task(person: Dictionary) -> void:
 
 	if task == "Odpoczywa":
 		person["rest"] = minf(100.0, person["rest"] + 7.0)
+		if person["rest"] >= 90.0:
+			_finish_ai_task(person)
 		return
 	if task == "Grzeje się":
 		person["warmth"] = minf(100.0, person["warmth"] + 8.0)
+		if person["warmth"] >= 90.0:
+			_finish_ai_task(person)
 		return
 
 	person["work_ticks"] += 1
@@ -544,6 +553,8 @@ func _request_ai_decisions() -> void:
 			"skill_level": person["skill_level"],
 			"needs": {"hunger": roundi(person["hunger"]), "rest": roundi(person["rest"]), "warmth": roundi(person["warmth"])},
 			"inventory": {"private_food": inventory["food"], "cargo_food": person["cargo_food"], "cargo_wood": person["cargo_wood"]},
+			"current_task": person.get("task", ""),
+			"current_action": person.get("ai_action", "wait"),
 			"recent_memories": recent_memories
 		})
 	var world_state := {
@@ -569,7 +580,7 @@ func _on_ai_decisions(decisions: Array) -> void:
 			continue
 		var person_name: String = str(decision.get("name", ""))
 		var action: String = str(decision.get("action", "work"))
-		if not ["work", "eat", "rest", "warm"].has(action):
+		if not ["work", "gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"].has(action):
 			continue
 		for person in residents:
 			if str(person["name"]).to_lower() != person_name.strip_edges().to_lower():
@@ -654,7 +665,7 @@ func _load_game() -> void:
 					person[key] = saved_person[key]
 			var saved_position: Array = saved_person.get("position", [])
 			if saved_position.size() == 2:
-				person["position"] = Vector2(float(saved_position[0]), float(saved_position[1]))
+				person["position"] = Vector2(clampf(float(saved_position[0]), 90.0, 770.0), clampf(float(saved_position[1]), 110.0, 580.0))
 				person["target"] = person["position"]
 			break
 
@@ -744,6 +755,8 @@ func _draw_world() -> void:
 		if person["cargo_food"] > 0 or person["cargo_wood"] > 0:
 			draw_rect(Rect2(position + Vector2(10, -4), Vector2(10, 10)), Color("#b88b52"))
 		_draw_text(person["name"], position.x - 22, position.y + 34, 12, Color.WHITE)
+		if index == selected:
+			_draw_text(str(person.get("task", "Czeka na AI")), position.x - 80, position.y + 52, 12, Color("#fff1a8"))
 
 	_draw_text("WIOSKA AI  •  %02d:%02d" % [int(day_minute / 60), day_minute % 60], 82, 65, 20, Color.WHITE)
 	_draw_text("SPACJA — pauza  |  kliknij mieszkańca albo użyj 1–5", 82, 610, 14, Color.WHITE)
