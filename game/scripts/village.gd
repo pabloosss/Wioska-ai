@@ -81,9 +81,9 @@ func _build_settings_ui() -> void:
 	settings_panel = PanelContainer.new()
 	settings_panel.set_anchors_preset(Control.PRESET_CENTER)
 	settings_panel.offset_left = -330
-	settings_panel.offset_top = -285
+	settings_panel.offset_top = -305
 	settings_panel.offset_right = 330
-	settings_panel.offset_bottom = 285
+	settings_panel.offset_bottom = 305
 	settings_panel.visible = false
 	var panel_style := StyleBoxFlat.new()
 	panel_style.bg_color = Color("#1d2928")
@@ -256,6 +256,16 @@ func _on_models_received(models: Array) -> void:
 		settings_status_label.text = "Znalezione modele: %d" % models.size()
 
 
+func _select_model_name_in_picker(target_model: String) -> void:
+	for index in range(model_picker.item_count):
+		var item_text := model_picker.get_item_text(index).trim_suffix(" (wybrany)")
+		if item_text == target_model:
+			model_picker.select(index)
+			return
+	model_picker.add_item(target_model + " (wybrany)")
+	model_picker.select(model_picker.item_count - 1)
+
+
 func _select_option_by_id(option: OptionButton, option_id: int) -> void:
 	for index in range(option.item_count):
 		if option.get_item_id(index) == option_id:
@@ -269,9 +279,9 @@ func _on_temperature_changed(value: float) -> void:
 
 
 func _save_ai_settings() -> void:
-	var old_model := ai_model_name
+	var old_model := str(ollama_bridge.get("model_name")) if ollama_bridge != null else ai_model_name
 	ai_enabled = ai_enabled_toggle.button_pressed
-	ai_model_name = model_picker.get_item_text(model_picker.selected).trim_suffix(" (wybrany)") if model_picker.item_count > 0 else ai_model_name
+	ai_model_name = model_picker.get_item_text(model_picker.get_selected()).trim_suffix(" (wybrany)") if model_picker.item_count > 0 else ai_model_name
 	ai_interval_minutes = interval_picker.get_selected_id()
 	ai_temperature = temperature_slider.value
 	ai_priority = priority_picker.get_selected_id()
@@ -304,7 +314,7 @@ func _restore_default_ai_settings() -> void:
 	ai_temperature = 0.2
 	ai_priority = 0
 	ai_guidance = ""
-	model_picker.select(0) if model_picker.item_count > 0 else null
+	_select_model_name_in_picker(ai_model_name)
 	ai_enabled_toggle.button_pressed = true
 	temperature_slider.value = ai_temperature
 	_select_option_by_id(interval_picker, ai_interval_minutes)
@@ -512,6 +522,8 @@ func _do_task(person: Dictionary) -> void:
 
 func _on_ai_status_changed(message: String) -> void:
 	ai_status = message
+	if settings_status_label != null:
+		settings_status_label.text = message
 	queue_redraw()
 
 func _request_ai_decisions() -> void:
@@ -655,12 +667,25 @@ func _add_log(message: String) -> void:
 
 func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
+		if event.keycode == KEY_ESCAPE and settings_open:
+			_hide_ai_settings()
+			return
+		if event.keycode == KEY_F2:
+			if settings_open:
+				_hide_ai_settings()
+			else:
+				_show_ai_settings()
+			return
+		if settings_open:
+			return
 		if event.keycode == KEY_SPACE:
 			paused = not paused
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_5:
 			selected = event.keycode - KEY_1
 		elif event.keycode == KEY_R and ollama_bridge != null:
 			ollama_bridge.call("connect_to_ollama")
+	if settings_open and event is InputEventMouseButton:
+		return
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
 		var mouse_position: Vector2 = event.position
 		for index in range(residents.size()):
