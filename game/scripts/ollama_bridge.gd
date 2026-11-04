@@ -33,7 +33,6 @@ func _ready() -> void:
 	download_http = HTTPRequest.new()
 	download_http.timeout = 0.0
 	download_http.use_threads = true
-	download_http.keep_partial_download = false
 	download_http.request_completed.connect(_on_runtime_download_completed)
 	add_child(download_http)
 	probe_timer = Timer.new()
