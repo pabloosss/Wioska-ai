@@ -1,0 +1,275 @@
+{
+ "id": "SM_Crop_Strawberry_Mature",
+ "title": "Strawberry - mature",
+ "kind": "prop",
+ "category": "crop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c0831c8543f9bc39b520b25042bb662e6296872b61a20a2b49d5e5a9eac6870f",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d257fe48ef12e03bd55d08f441ce99c4ae7d93f36888b4ceee5ffe0c5c694b12",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "076c8652ab1eaa1531f0e12900df3364d50a35eeb3625f0db67a6e9bdc496887",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "468b121c18cdfeb86023184a6794e250f7af56da9ebd696c95d6f1aaacdfe70e",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ed64272b86da0f16c8cfeaeae46339d6c0ba8b7aca90a46ccba00e359f8d7832",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "91cef1fdf1eb67910edfafe4d45e0f7dc9c8fe3f281147a2dd03820c161abc84",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7728b103a51bb5a79baa4abb0c16518fe767da68a7167aefaddfe3452e618a9a",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ecfbada1e22ef25a299facbac3b522d9e3547c37105b43134ffbd5f800f78639",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c0831c8543f9bc39b520b25042bb662e6296872b61a20a2b49d5e5a9eac6870f",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 34,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d257fe48ef12e03bd55d08f441ce99c4ae7d93f36888b4ceee5ffe0c5c694b12",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 68,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "076c8652ab1eaa1531f0e12900df3364d50a35eeb3625f0db67a6e9bdc496887",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 34,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "468b121c18cdfeb86023184a6794e250f7af56da9ebd696c95d6f1aaacdfe70e",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 68,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ed64272b86da0f16c8cfeaeae46339d6c0ba8b7aca90a46ccba00e359f8d7832",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 34,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "91cef1fdf1eb67910edfafe4d45e0f7dc9c8fe3f281147a2dd03820c161abc84",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 68,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 34,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7728b103a51bb5a79baa4abb0c16518fe767da68a7167aefaddfe3452e618a9a",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 34,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 68,
+   "pivot": [
+    32.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ecfbada1e22ef25a299facbac3b522d9e3547c37105b43134ffbd5f800f78639",
+   "path": "Sprites/SM_Crop_Strawberry_Mature/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 68,
+   "fps": 1
+  }
+ ],
+ "contactShadows": []
+}

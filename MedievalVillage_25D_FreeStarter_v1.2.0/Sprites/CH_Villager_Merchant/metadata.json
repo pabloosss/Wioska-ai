@@ -1,0 +1,2628 @@
+{
+ "id": "CH_Villager_Merchant",
+ "title": "Merchant",
+ "kind": "character",
+ "category": "character",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "76d7e5d38c59ec8b41d14a66a95cba0d5e996a8a8df9fbc42dcec15153f7c186",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "0d1f566b15a64b3446292931a381e6fb9a6349130669d74e9121d0e0e15a9be4",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "e3d68559caff9723b952a3c979b4428e6fe1a757a54b73f4588c754ebd300596",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "3978813374dc45b8db434147002731dc5237083fb7e838b037fc4509a331e276",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "6cfafbf887e1f942f70a05c262aa6d6d779c85ad5559a4b2de5adbb2b32f8770",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "2c33a8ef2016781d3b31c9bd41d0c8a919d7e8d2978d67f0535f132a31df4806",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "c10a5ce8fca1d287f75b8c96f81bae984640da5dc6a80f735614f48e918f14c9",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "1298f8899a82ebe1ff8f1426fa6f4bc0284d4402f5de4b4b90aebef1674bf381",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "e85068289279e6573bd76300c1a961bac81d382b7628ec912edf4bfcd93d1fbd",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "787fefbe98416fec3ef8b9a46cb4896e11afebf8a12c2883f4da79421dea5792",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "909b381d5abe9edcb0f74106a3f8285e0efc19fb673e2a28bbf9a13be4e1f20e",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "fdb54da373b5433e40b4b01d2a8574dd0c09fb7876a8d9e482d3fba89e9ab853",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "496da30b69da818b519a4fc2cf5cfd7dec024cfee60b0d29cb17a984b6c81faf",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "face4c9294695761243683886b4513383249b49e74a7640994c78189fe1fed09",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "1facbb743724b3158988b55885549c00e9ab5a7ad28e8a9c4475d9a32be1d736",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_down_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "cab77994bca1f099befd1ad9a66961558f0136b82d77b3d5e953e23290a38833",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_down_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "a307e31194f074c0c4a487d58b2c653c9f061a3d9884c53c70f80fd88dc12552",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "6110cf8febe4587368ff734248435aa660168745bd2c6cc9853ecb0d6b774d9f",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "4cef9ccb531af96ce8e677730c0f864b63ead9a8b19cb2f6deec42bca601a687",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "5d77ee8008ab5d132ff47520d22fbc109429dfacd652ee5d96a5adee5668dddc",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "c2a49b245e7d82c5941bc82bb8a61449299487f94f796ebf45663e95067b0c79",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "0d3613608cd729a7e3e66a653064605662024f98ea271c2a63859a9e20a30371",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "a4caefd326a51b78f8224e1184de9b8165d59292c58bac5a3e1459f0803665ae",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "560cb81d96558c458600e4f0dbfe024fbf1661f1169c586f7c23b1a02f93ead5",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "a307e31194f074c0c4a487d58b2c653c9f061a3d9884c53c70f80fd88dc12552",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "6110cf8febe4587368ff734248435aa660168745bd2c6cc9853ecb0d6b774d9f",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "8f4e0fae58f4d5f83e1ffcbd13741d027e0ea1bf95f8122a70743c40cf125aed",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "d600d5ed4503c5fcc6e867bed0cebb6b3fb6470191a0f633c8a487c1b171fe65",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "355701b2eb3eb3d65d1268c4119c6a4412f0a51ada8ae6d39e5b82573c866ffc",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "d4326f13b92512d738f343263d83f986365f8f8cc812c64a6589522b5c8372be",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "8f4e0fae58f4d5f83e1ffcbd13741d027e0ea1bf95f8122a70743c40cf125aed",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_right_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "d600d5ed4503c5fcc6e867bed0cebb6b3fb6470191a0f633c8a487c1b171fe65",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_right_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "1ec0e276cedb33525bceb3d17f89f2f8c489df2860800ec9a72fc5abf57c481f",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "b15025172664708e1b5f81bc96399607078f0bbe2cab05a7560e912dc8dca1ed",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "4bdd5e64e3df887fbeaf42a163eeeddeb1e6c14aae77389f975a035ecd8ca5f3",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "67a284395110a1a6bf2c574a36d245fc9d9542c9315f53b8da659fdfc11cb697",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "7a07e81f8fdbb8c2c45e8be0a59302bfc89332631f8c9794723b9697b81ae70c",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "fe4958b0141b3d9f2d16e2afb42bc027fc489bf5eb798e28b55378b83571e9c4",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "2d358c36a2d11f2df049db6111110eb244f03cf66bea3d67d80b9abf34bf1d75",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "329e68f0ead61b20167d81d31bfee83150570086df55150f26add0f1bbc34fd6",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "11ce35aeb1b5b4639c58b8c3e7d62567433a2fc7d3ff896d9eef7ba1efc543da",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "e2cc6e2ee39c1aa7716453b8b97013614f8e23f0e7d686fecef8f45dd7192a52",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "b403d2348016e567e0943d912e4040035a5f5d2ea5c19acfc7c2a06ee47bad98",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "e6d49eca63da2eb51b7d6e436032690617b9692b2db90da780ded350f36bed80",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "650ae4c0e1ab8189b8d687304ebba81bed2c89688d1814085f3fabeed4e96321",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "18c7b3cce8383a78fb7d064c8fe7849c21b76c2b62e3257e2b8f5338c20ef149",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "e6c4b3e07e635b2389268d233483710429912430dbbfa4e54557c77f18946c1f",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_up_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "1bbed32b0db1ed579ee141e8b7221368b88bb88e67072410c5eb82050913c636",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_up_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "c87df4f5f95124148f1bd785f171c8621651908e2945e5b219d1aa90ac61600d",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "32209728706204927c967cdc0b6336a801a1970c820041e3dbd8308042d3f5a4",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "d58c4d8b398cb5e7b925a64fabf752d4e1b579920d4eb95f920168b8825c5c85",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "de7bd52f9175ff4938f85b95fe56cb729ad638c0bdf7a89d2686ac311b417f23",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "399203f0bfbe7dc229253cbb0758ad135d4dc29cc6ac135582d68570e53c83bb",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "0ccea910488b68b528ef94dae7d1825cc10283d7b9afbe0755e1d38d9d590ce7",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "dd6b0b13994b865ab216062366f54509465befb8bc9ff9eb986ab5610ea904dc",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "fa6f703ea716da7079a99336a8b056e322a02177ba221758bf2d3def1372c44f",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "e0028197d8d4376f836b5264b5f2236ac6b89d0b5d85c802c60b75b3f2abee95",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "6189a744f90a40ec8dbec677364c86c4b9e34519c62571bac6a3071e99796592",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "8cbdfb295b756d1730e03c4df48d35fb45531cd8dd51112c8345e0596efbcb35",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "ce0e33468346e820f5ab3e5d061bfc12273df44be9516ce150e41926e5b4eda4",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "56940a12c7c86d347dfe663541d5befa06f82d8bdbda4fc50dda89cfd6e4f19f",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "360feee471838a1587cca9dda23f5d0629fb6eb6dd8e7211cbbf1925206a8abc",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "9452b5ff0d72aedfd67a4f25f48bf68c9fd398cb3ddd3c51c434eba77f5adda6",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/idle_left_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "0fbdfac745bf8a46455482a9592e53a5faa89586f992dc1a6e2bc05dabd46429",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/idle_left_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "ddc8b239efbbc5485c7f225fb12b30d300051548fc760ebea56726098917b7a6",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "1bc58c33730a08b65a359d0a3d6eaf03eaff496fe83dc95c87e2962de9080031",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "ec6a094d9d440324dd1754d668bfdf0a2fb54e0a20c7274ff0bb0922a52b8ff8",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "4bd08e653430587ed0307744665014e24611d09f55f8d7d1aac9565c9fa1ee25",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "f51922ca545781f387f6946298df75acaf2ae656da65901a13e219f3f0f9473e",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "f9ac554dc85333303b986dff29dd9bdb002e50938b1e63d8ac9fb61012439adf",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "43e0fd9c3f421fc025a0ccdd9d05d658b6bdb7fc5380388ce1012b158ff26e41",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "d6ab28763acb474238df34d51402bc1bed895d446a3915f5d4a372ba67b6fe80",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "c64b41320d6f8321ea35054f7e58412c199cbfe0c5cadcbbf6d2dd2410c11485",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "112e6d00b29b79bf5c520c667434884fa85df8db63087d89493f293f12bca889",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "eb970617716c35e092d0b3395852ce4ce1240f36413f3279e22da9028992ab93",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "263541fb323bda14eb9152a620d3abf87e3060bcd1b91b0abf2765b149e104ba",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "d4e14aef2b77a51c0c9228a5b2c75e1eea6e1d9760d89159ff4972c8dc1ba79b",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "b6161ca77fcced5b3cfaa2a215f1d5c5fc5db16b0ba6bfbac80c4a5a77441f72",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "19f46c2cf720992faac57ac6ab5a905c6bf12dc498b881a1aba7b295c73179d8",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "18c01cb6963492afc726dcbfc9e39118a2ef59a88589f9035e96aa58cd9b899e",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "f7d9c793ad23f8bddd9dce348580f8aea0491b6764cfb6bc6234a8c543863a90",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_08.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "35186a88fe6fa3c8e1629656899151331264bddeccca3e342152fe1c410adc42",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_08.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "3f9447f92fd5bb0d784d93f8364371793b4a441915051953ef683f038f664f1b",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_09.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "b73d3894283b7caac0bc0dc335bab44546d4fbcd15aaa8dc9201870d37a28dd4",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_09.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "6aa0a38f4a535b49fb07fb462c59dce712c0f17e2b2e96e02d3adc2950afc2dc",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_10.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "72eb2929a71006fa5d05cbadf2582a67bd54925a4bd82c3e5fcbe71533685b44",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_10.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "39e4ca056567e4651bab4668ca6946ca66963b83096b064bf9ccf3ced38bded7",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_down_11.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "2a97546caada591bdb9b5a63aea54877d913d7592b69a36fd134cdf8d13ca145",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_down_11.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "d15cb8de51d5dc3fdf4d4324e8e8d5d2793ec31dfb61ba4edc4c4b7ad6537a40",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "6922bb6a019d4ba026263a684dee8a194c7d7395a24b75e708388d3bf059e483",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "d4eac6fe18bfbc94f509907584a0730bf9c61d03800425b2de7abe269a239775",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "6c17f621559e725273c9a17366abf4ae409f817b50a1c199c52b875583e5967a",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "aa5ca2f2735adba80bcccddb0b4b3fe0e0cfb2a618090ecee96c22cb5302470d",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "1610c936f76af7052a7afd86e30cf88aaa2a53a8e883d785c3c3dfc7a14dc224",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "1b00abf9d0a09925f4b0c232fe77e585a24d172c4d0f41b5fd0dc8fd78b00f41",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "3d19a63f510a2b5d4e4c3b9085d13cb2b0703c742e66b13c4c4c3e13c19eb3ff",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "67b89bb553142960622f7293d8cc559b23bf177d2060ba0fa327e43e53aefce6",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "b97f5b2c14204ccd2b11a85aafc55132dc52dba73a0c1ecdcab58e01c47ad817",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "efa52ef95d72cadabf8b2c2590fe85ba464d62bc644ded98706ba86e44c3f8ce",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "49acda088aea87de75305bd8ba2598bf3a3e45a09fc4adfc2ebff8470a08110e",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "bff5379ccabef34b840e2fd5974267a21a0621e2eb6cc6c75eea6c76c6c53558",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "5883d235ddbaf9c68cb3afa1bdd76948623d5008419e3c426bb0dedc9871e13c",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "f991a2f0342831c4acb69962a5f521b8124c007a200e90e96a48920b5eab3c2a",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "e91643d768f8dfb93de4984604bf84b8c0cc23f52b58ed6b720eaf65573cfba0",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "e9f9441a032e7fd7fa61d3b2df0d5e8c696cd4c547434c4b011436768fca2f50",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_08.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "28282af04db9d2f4085ef475dbb938b963e52ebe0eaea1209ad5213c8403b962",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_08.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "b59feb502506326b3dfba7b5b5f7e4c7c89a9d0017cdfdd798104011e9f4ffbb",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_09.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "37df390a0f59e0e5ada637715c82bea74aa22c4b0b4352c7f64e80472ca4688d",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_09.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "0dbf2c0b80966eb72292cb5b5b9ff85bb91c98935f3f4192186733ad6a21ecde",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_10.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "27f4173f30108b2ef83eacf3311780ad39b3c31c5f82da7776e3f1bbd97df1e0",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_10.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "7c758d97d996c8dd9919bc98d098a00d480e051bb167ffd674948f045884f6e8",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_right_11.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "7dbe9542f06649a29ce5e723b54114f3f9ccdc255729c7559ff28b76d41e8434",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_right_11.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "a5fd84477205e43b2c0949bee9a998b6bee12354242ac04c0b5f04500b579061",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "8f606ebc9cc3d185c6cc474b2cb77683598fe159bbb2d67f98c442c4da68e778",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "308080ac00220f9468c160f76fc35930cc23e8333c17bec8aad89d1d4b2acfda",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "87168d7ec0a692578aea17516c232085dead89b0994a0140352692175e81fe24",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "23d7018e2806d35fa1016f18bd63c1f89507321387146e6d021fcd1a70fbe87a",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "1574ca6101695179d418c5eaef3c3d3ad53a0e9de8f61125499767c7b3119204",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "6545d382fff3270731f9adab24a38a21643958d08f291405cc403cff719e40c5",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "fe2cc712930cd93512bfa2fa17a01115a52971b04d869bafedbaaef4090f77a6",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "4861e3d8860149be7a7cbbfd8f2130e1bcbc73d7ea5d5c0a1f651f1796ce84e7",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "8618d692f4e138e1d1cfed52eb0c00743dccb275761525b6ae37721277c729fd",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "c3015b34a7977597c668b930c38ab7bdffacfee3d284967fecf7ad32cb82c63b",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "841ea71544b518547eed3c98a071a4af1357199aefa46270307b4f4a95cf978d",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "c6ce6c9a469b9735bdf0a9f21e228b64593737f241c6f78a4f9e722cde897002",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "a32c48f629732525fa16a0df38d50e8b2bead369eb2c37c84b517737d5dc4eb7",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "2f7368ff9f6191aeeb283c80079ecf7502608751bc9796c8bfe4137c74225138",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "d0cbc6a19517f7324e951d76d2e144705a67da3d246a60b07cacdcd29512d620",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "914a6bbc53a0fa3ffb5cb526729785d64084e9ad9143d1ce9a4523de8bf9f1e5",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_08.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "aaf2592ce83391c9ae3abf275b58cbbaf37be49a776e8f14f270123086340a41",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_08.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "c975dfd18b292164869bad668afa814aff13e86b5c37b55eb7558602b16b0e62",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_09.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "ae6dc6b19409804f12e7309119d50d8136fbb4a515f1f0887c6aef26ed85a410",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_09.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "616ee0ddd6dfff7400500e5bf811608af0e261c4854cf5a2c7ee36c862fb2b7f",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_10.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "b1fc1496a02ac515cf88f7d1e3458b9dad989c83f61c2ef92787d6d6424833b6",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_10.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "ae23cfcdb6874937e2e93589f4a27492e45bd902a24d2a69d07169bbda217a43",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_up_11.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "8644d27f3232ba694a84d1b61b4ea1938f978bd1d383b71b55a2dfccb9f64380",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_up_11.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "83e0bfd5f5462efb649782fdf9990cb2b8bdca757097ffcdad3abd400fa3bb88",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_00.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "13e3928ababdc741909593e24f690922e71db954902210d0efe27b5543b4f131",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_00.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "69e4d1836da30e1cc614b65022fd9901dd4b9eba058e67fcc0601639b56eec25",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_01.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "c31052ce76371adb4ff045660759f45ddc0899ca73fceac8d6a758ecc519d9ce",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_01.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "4ac4271d920a16049043d98f9e645f3f7e544cb8e11ab323dc8413e322f159f5",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_02.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "7950979510ae353c77883fed2f2abfabff8374c5354d7be1b0bb11820daf9834",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_02.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "9177497277a391c6771121ae9d687483d0fcdfd24cf5bea72f0bce3ee37d80b9",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_03.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "5ed06ae02962b06c9074fe8996cf4d9aaec8eb3a9883ecaf8dfdfd6c40d8e028",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_03.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "968a5c9d891be342dec4a597b78fbbc450b4dd1c5b942a4b737a662f7f1bab3a",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_04.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "7292e61b3e37160d14969183b74ffa05718c9aa8939658f35818c42095bd30df",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_04.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "0c9754a9b4000ede54b5844796d0591f95605a7549f9a684a4919de4ab219b62",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_05.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "4a39817237bfcf990a14cb9bcfec53097b2461571380732de753c7b4b7d01ca1",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_05.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "cfc9c3fdfa7c561effa9bb36cf4a8559ed36351285ed4725a437aacf7dffc1b9",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_06.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "bcd16c8f47d2ea8c060f3e2314e2dd474fe2bc4bb48f476fe4f7b10579a5ff65",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_06.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "493530835a719efdd2618007d899bc3085901380e8f6dd42abfacb39238611f2",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_07.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "4433b0f1c383d852b35b85598f6087118956b4b60d5ad4fd9e51ce20df2e5cba",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_07.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "ad07b046870cd1f5712fb8f0a1c8f6b51baf99f14c38b90d6d8bdb7728f4a8b0",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_08.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "b808cc10092b06ebeff85194df8f72289ee9cf68dd1e7d0aeca570adfeb3c466",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_08.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "c6ce5abae02a295ba085d2dfc676dd8d721e4e4abcf7d2d0272829a76765fd93",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_09.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "78593f92ce993ce450f9ef72f16b629c8d0c8bae0777323edd761b79cbb41e02",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_09.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "338b2714f74c853112dd687caeabe620c726a0b6a056a38d1f735e414870d7be",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_10.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "a5323949672703be2579e0f7558f01fccd739f75edb3976122fa647c03433959",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_10.png"
+  },
+  {
+   "width": 34,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "0f04cc10bbf047573d870e615709360a5be55506a10080fcc53be918237679cd",
+   "path": "Sprites/CH_Villager_Merchant/1x/frames/walk_left_11.png"
+  },
+  {
+   "width": 68,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "cbc317eaf0ebdfa436889407b1ed5de75859c8b5569b557c1a7bcbdf523fe169",
+   "path": "Sprites/CH_Villager_Merchant/2x/frames/walk_left_11.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 272,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 4,
+   "sha256": "caa6cdfc769410447d7b3584c0e1a325389eb87d17cdccc8be54b76496b09254",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/idle_down.png"
+  },
+  {
+   "width": 272,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 4,
+   "sha256": "91f7acb491184a4d65505b5168553af9f4ae1b6fc042a18f0b11c8859077a844",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/idle_right.png"
+  },
+  {
+   "width": 272,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 4,
+   "sha256": "e129e406d0c3e629a68aadad9a31146df6f4f2bade0ed5b9c3810807e2c322ac",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/idle_up.png"
+  },
+  {
+   "width": 272,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 4,
+   "sha256": "4a84476f3b1312ab118149078d246c3c655bdab5227400568b03edeb7ebc22ce",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/idle_left.png"
+  },
+  {
+   "width": 408,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 15,
+   "sha256": "7ec843210bbd8496e05260e7aa767566b7943748aadddac485959d41caa5d597",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/walk_down.png"
+  },
+  {
+   "width": 408,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 15,
+   "sha256": "f4c757298ed97dae258435bdc90e966321d27a28074f8e75eabfb2345090c5d5",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/walk_right.png"
+  },
+  {
+   "width": 408,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 15,
+   "sha256": "4f28208134149d569a7d9e79fa5c287d8ac7248de0ef81bff178b71ce89b8ead",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/walk_up.png"
+  },
+  {
+   "width": 408,
+   "height": 81,
+   "pivot": [
+    17.0,
+    67.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 34,
+   "frame_height": 81,
+   "fps": 15,
+   "sha256": "1102d0cf4258a0b1fd2a1d8264141dcdfae4b0e3d8171ee50c1c68b6b2ec0f9b",
+   "path": "Sprites/CH_Villager_Merchant/1x/sheets/walk_left.png"
+  },
+  {
+   "width": 544,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 4,
+   "sha256": "ed481c7218723301f5daff960fb5c20036d40a1ec1bfe7def08a67f4df52a283",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/idle_down.png"
+  },
+  {
+   "width": 544,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 4,
+   "sha256": "cde7734f21e3f247bbffceba53395d844d12d8269097e7eea56908170c2f2623",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/idle_right.png"
+  },
+  {
+   "width": 544,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 4,
+   "sha256": "ce814e6656cf7f737d3dc8c13f1c9c01b818e60877a7a59b0063feaaeeb728fc",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/idle_up.png"
+  },
+  {
+   "width": 544,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 4,
+   "sha256": "7bb9e1aa21d98d92417f54dcb5c4ff95c6d0e1562472c6829b6dde8442aa6f51",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/idle_left.png"
+  },
+  {
+   "width": 816,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 15,
+   "sha256": "6f640c2382af36ef256e8e22a6d3d1f3cadeb29f1b7d29e23b257bd7190a22a4",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/walk_down.png"
+  },
+  {
+   "width": 816,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 15,
+   "sha256": "a8024f43e8cebc1d5b3b87c9b9abca826a5ab87269ccb8baf66736c0b96f242d",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/walk_right.png"
+  },
+  {
+   "width": 816,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 15,
+   "sha256": "c5ac65d00fe2a1b430f8a49e4eea4cb4ef41cea49ad813512ce2eda2301eac6a",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/walk_up.png"
+  },
+  {
+   "width": 816,
+   "height": 162,
+   "pivot": [
+    34.0,
+    134.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 68,
+   "frame_height": 162,
+   "fps": 15,
+   "sha256": "b597fcd99150469746475b0946353feb0429c592e499978df327d8213e3b7ebe",
+   "path": "Sprites/CH_Villager_Merchant/2x/sheets/walk_left.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 18,
+   "height": 14,
+   "pivot": [
+    9.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "9e113e0248a8ee128007246095f43adb34c7ad128638088e0ebb0d419ad82b43",
+   "path": "Shadows/CH_Villager_Merchant/1x/down.png"
+  },
+  {
+   "width": 36,
+   "height": 28,
+   "pivot": [
+    18.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "d72a8b49fa9c15196f7ee6ddd2bc8003400234738b5315a834e4c33640f3e5a5",
+   "path": "Shadows/CH_Villager_Merchant/2x/down.png"
+  },
+  {
+   "width": 14,
+   "height": 18,
+   "pivot": [
+    7.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "c1ebe8d1efea021ff08f3eeca74b21633d1c8590628d5c2b15f430647db99a4a",
+   "path": "Shadows/CH_Villager_Merchant/1x/right.png"
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "f3ee90d3ceb1a3fd9cde12352e60856fe4472f56afce033d753cba22ecfe1c2a",
+   "path": "Shadows/CH_Villager_Merchant/2x/right.png"
+  },
+  {
+   "width": 18,
+   "height": 14,
+   "pivot": [
+    9.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "9e113e0248a8ee128007246095f43adb34c7ad128638088e0ebb0d419ad82b43",
+   "path": "Shadows/CH_Villager_Merchant/1x/up.png"
+  },
+  {
+   "width": 36,
+   "height": 28,
+   "pivot": [
+    18.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "d72a8b49fa9c15196f7ee6ddd2bc8003400234738b5315a834e4c33640f3e5a5",
+   "path": "Shadows/CH_Villager_Merchant/2x/up.png"
+  },
+  {
+   "width": 14,
+   "height": 18,
+   "pivot": [
+    7.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "c1ebe8d1efea021ff08f3eeca74b21633d1c8590628d5c2b15f430647db99a4a",
+   "path": "Shadows/CH_Villager_Merchant/1x/left.png"
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "f3ee90d3ceb1a3fd9cde12352e60856fe4472f56afce033d753cba22ecfe1c2a",
+   "path": "Shadows/CH_Villager_Merchant/2x/left.png"
+  }
+ ]
+}

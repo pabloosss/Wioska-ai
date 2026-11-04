@@ -1,0 +1,198 @@
+{
+ "schema": 1,
+ "note": "Inventory icons, one view, transparent PNG",
+ "files": [
+  {
+   "id": "UI_Item_Seeds",
+   "width": 30,
+   "height": 31,
+   "resolution": "1x",
+   "sha256": "db46b68f390844283e5146a2ffeb24da378fb92ad07c1e94decc804805d8c498",
+   "path": "Icons/UI_Item_Seeds/1x.png"
+  },
+  {
+   "id": "UI_Item_Seeds",
+   "width": 60,
+   "height": 62,
+   "resolution": "2x",
+   "sha256": "9fa1d4e313d32eceab1e00a367c7171e8c5482cad84b5f9833ec35279df05f99",
+   "path": "Icons/UI_Item_Seeds/2x.png"
+  },
+  {
+   "id": "UI_Item_Wheat",
+   "width": 20,
+   "height": 29,
+   "resolution": "1x",
+   "sha256": "057f7640c2b04b447c8a02cabd7615f7c2e0f837de808e2605f9207f74ae27ac",
+   "path": "Icons/UI_Item_Wheat/1x.png"
+  },
+  {
+   "id": "UI_Item_Wheat",
+   "width": 40,
+   "height": 58,
+   "resolution": "2x",
+   "sha256": "1d6742b2b811deb36765d90fa082fd7ed6c43946ff50fe2467dce8317ef60f5b",
+   "path": "Icons/UI_Item_Wheat/2x.png"
+  },
+  {
+   "id": "UI_Item_Carrot",
+   "width": 28,
+   "height": 19,
+   "resolution": "1x",
+   "sha256": "a2c7e3136049e28601c7ed7e06f4e526b82ab4ec6e1e9c69960aacc8cb049cf9",
+   "path": "Icons/UI_Item_Carrot/1x.png"
+  },
+  {
+   "id": "UI_Item_Carrot",
+   "width": 56,
+   "height": 38,
+   "resolution": "2x",
+   "sha256": "f328546db0e4d76626d8d4c344ece86646b59254dd962f7425e5affb1d793136",
+   "path": "Icons/UI_Item_Carrot/2x.png"
+  },
+  {
+   "id": "UI_Item_Strawberry",
+   "width": 19,
+   "height": 25,
+   "resolution": "1x",
+   "sha256": "8b6663ec43e06723f9040e0887283cefe6d73e1cc70338953003b8c6bab55554",
+   "path": "Icons/UI_Item_Strawberry/1x.png"
+  },
+  {
+   "id": "UI_Item_Strawberry",
+   "width": 38,
+   "height": 50,
+   "resolution": "2x",
+   "sha256": "cbeed9b244b67dc577fc27d3c708a8f87705d104685d07f31b1e0174f18333ba",
+   "path": "Icons/UI_Item_Strawberry/2x.png"
+  },
+  {
+   "id": "UI_Item_Apple",
+   "width": 22,
+   "height": 28,
+   "resolution": "1x",
+   "sha256": "f333a835f530da91f519bc997d2ac589b8d620ab3f2df26355149277f5c4131a",
+   "path": "Icons/UI_Item_Apple/1x.png"
+  },
+  {
+   "id": "UI_Item_Apple",
+   "width": 44,
+   "height": 56,
+   "resolution": "2x",
+   "sha256": "b59048b761d05f8a998f09b2b0141478d2de4a77338629bdaf3c479dec1653e4",
+   "path": "Icons/UI_Item_Apple/2x.png"
+  },
+  {
+   "id": "UI_Item_Egg",
+   "width": 22,
+   "height": 28,
+   "resolution": "1x",
+   "sha256": "c17f0a702649fad0d33a62a0b39ddb17ca9e7e79bb2323e9f96434f5e6428065",
+   "path": "Icons/UI_Item_Egg/1x.png"
+  },
+  {
+   "id": "UI_Item_Egg",
+   "width": 44,
+   "height": 56,
+   "resolution": "2x",
+   "sha256": "087e162ffc43fbb8898898179df712dde94b924dd7959b5235b0f5cb454b5f64",
+   "path": "Icons/UI_Item_Egg/2x.png"
+  },
+  {
+   "id": "UI_Item_Milk",
+   "width": 25,
+   "height": 31,
+   "resolution": "1x",
+   "sha256": "37567b7b428f9c976c3f5aacc5a326479da86acb890272be09969e545bb6e0bd",
+   "path": "Icons/UI_Item_Milk/1x.png"
+  },
+  {
+   "id": "UI_Item_Milk",
+   "width": 50,
+   "height": 62,
+   "resolution": "2x",
+   "sha256": "69a2fd293c54ec6981861967181b1a4cd4ee29fbad9137541567bc40732b1830",
+   "path": "Icons/UI_Item_Milk/2x.png"
+  },
+  {
+   "id": "UI_Item_Wool",
+   "width": 28,
+   "height": 31,
+   "resolution": "1x",
+   "sha256": "185d9c95a022d4fab97a14537bc3ea99a451e9bfe7a15681ef9da5f413c2408b",
+   "path": "Icons/UI_Item_Wool/1x.png"
+  },
+  {
+   "id": "UI_Item_Wool",
+   "width": 56,
+   "height": 62,
+   "resolution": "2x",
+   "sha256": "02dbc1bf1087a15078c60eb7f134b1277730cb7b79b82444edd3aa79e3170125",
+   "path": "Icons/UI_Item_Wool/2x.png"
+  },
+  {
+   "id": "UI_Item_Coin",
+   "width": 35,
+   "height": 34,
+   "resolution": "1x",
+   "sha256": "4ad63e2c99659d3290ffefa15835b4f52dd8a8324ffd4c480749af118e3cc354",
+   "path": "Icons/UI_Item_Coin/1x.png"
+  },
+  {
+   "id": "UI_Item_Coin",
+   "width": 70,
+   "height": 68,
+   "resolution": "2x",
+   "sha256": "497bdb410f5659e34f690d503a952b4669ea55ad3d7e9a7c8658a6d42a90c2b2",
+   "path": "Icons/UI_Item_Coin/2x.png"
+  },
+  {
+   "id": "UI_Item_Hoe",
+   "width": 34,
+   "height": 31,
+   "resolution": "1x",
+   "sha256": "d8d243f2760e3bc22a12166b2c6919a57194cc0a9516359bb41ce00ae802f018",
+   "path": "Icons/UI_Item_Hoe/1x.png"
+  },
+  {
+   "id": "UI_Item_Hoe",
+   "width": 68,
+   "height": 62,
+   "resolution": "2x",
+   "sha256": "6300ce34b441ad65f2999f876baae04e3159ed22329566cce2370208b730dda3",
+   "path": "Icons/UI_Item_Hoe/2x.png"
+  },
+  {
+   "id": "UI_Item_WateringCan",
+   "width": 32,
+   "height": 30,
+   "resolution": "1x",
+   "sha256": "3a4950848e8dc2857f2b3da102fc3284dcd65d22779639e25dc22d524a96271b",
+   "path": "Icons/UI_Item_WateringCan/1x.png"
+  },
+  {
+   "id": "UI_Item_WateringCan",
+   "width": 64,
+   "height": 60,
+   "resolution": "2x",
+   "sha256": "58cbfb795f75e01d615e8b8c89d5b1575bf30191c9624390e1ddc3f0d840ab6f",
+   "path": "Icons/UI_Item_WateringCan/2x.png"
+  },
+  {
+   "id": "UI_Item_Sickle",
+   "width": 28,
+   "height": 33,
+   "resolution": "1x",
+   "sha256": "3cc9fd1d27ee44328485814f3f8a56e2de8a84bc31f0b78b496a91e581dab8e3",
+   "path": "Icons/UI_Item_Sickle/1x.png"
+  },
+  {
+   "id": "UI_Item_Sickle",
+   "width": 56,
+   "height": 66,
+   "resolution": "2x",
+   "sha256": "a884651c034dadce136bcfc371a6ca336d1a469aa4e4cb0e02546bb62f2e7b1e",
+   "path": "Icons/UI_Item_Sickle/2x.png"
+  }
+ ]
+}

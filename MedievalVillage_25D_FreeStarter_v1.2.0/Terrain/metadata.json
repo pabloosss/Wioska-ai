@@ -1,0 +1,2528 @@
+{
+ "schema": 2,
+ "tileMetres": 2,
+ "pixelsPerMetre": {
+  "1x": 32,
+  "2x": 64
+ },
+ "maskBits": {
+  "north": 1,
+  "east": 2,
+  "south": 4,
+  "west": 8
+ },
+ "files": [
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "48403b3dbd3c8ec6258a8b4ee295d1e8217b79acecd4e605b6513281526dbe32",
+   "path": "Terrain/dirt/1x/base_00.png",
+   "family": "dirt",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e802bdb79b41c847bf5d12f5208770026fe065fab2bca204a9e581d9d2d8ae65",
+   "path": "Terrain/dirt/1x/base_01.png",
+   "family": "dirt",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "77dae09e5a30aabe61b108ef666b6c133f07ede4699f515e46fd041748d99b42",
+   "path": "Terrain/dirt/1x/base_02.png",
+   "family": "dirt",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "6bb190bd0137387f88769164433d5bf3c72ed916ca4438325e1058366a199393",
+   "path": "Terrain/dirt/1x/base_03.png",
+   "family": "dirt",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e376f53b4844271a619a48ee351ec00a4f03e3c31f260c6e7cc047f432bb2e08",
+   "path": "Terrain/cobble/1x/base_00.png",
+   "family": "cobble",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "91401502f8ac5096bd8d4901d7331782140e3fdb98c29fe6353624b7e3a75ac0",
+   "path": "Terrain/cobble/1x/base_01.png",
+   "family": "cobble",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "41e35d8bcb6eea596864cf098150d191668a081854993092cc91b3fb1cb3cda1",
+   "path": "Terrain/cobble/1x/base_02.png",
+   "family": "cobble",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "713ea3e2764296e7c54b3eccd0a2ab6f053247e5e1cc73f34719055f3fba5d96",
+   "path": "Terrain/cobble/1x/base_03.png",
+   "family": "cobble",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4bb46abe0c1e78de2c6bae40f7ac21d57faafad183f5dface7f35635fd90e9e0",
+   "path": "Terrain/dirt/1x/path_00.png",
+   "family": "dirt",
+   "variant": "path_00",
+   "mask_NESW": 0,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "112bef25251b2648613890013852c3bdd945de6299923be685f3283e06077c39",
+    "path": "Terrain/dirt/1x/coverage/path_00.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "3665c60f61a2e5cecb648a97eac0a34a203b9f2ef942f80d3b28cae47f7724f3",
+   "path": "Terrain/dirt/1x/path_01.png",
+   "family": "dirt",
+   "variant": "path_01",
+   "mask_NESW": 1,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d95c0c0184bfebff0a74b6a40b68b53eebccd684fec807bbd7e244c6663f962f",
+    "path": "Terrain/dirt/1x/coverage/path_01.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "2204da6c7c7713405a4dbc8a51daebff65be5c81225459b7c079cbf1a1b22794",
+   "path": "Terrain/dirt/1x/path_02.png",
+   "family": "dirt",
+   "variant": "path_02",
+   "mask_NESW": 2,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "abb8516272cc65bbab09c27f120711d04862d2baf7de4de48708fcab7ec733c3",
+    "path": "Terrain/dirt/1x/coverage/path_02.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "fefb784164af296203aa5b7f11ec3ab74a6bcfd2303cb37a00723662c8d73bb2",
+   "path": "Terrain/dirt/1x/path_03.png",
+   "family": "dirt",
+   "variant": "path_03",
+   "mask_NESW": 3,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "e2ea291a382935fe53c167013baf07b856224ec0aabc175c176415209b6120fa",
+    "path": "Terrain/dirt/1x/coverage/path_03.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "dea8da4d8805f1e6926cdef8d664960288e94afd0e44cc3af22baa15aaccc0b9",
+   "path": "Terrain/dirt/1x/path_04.png",
+   "family": "dirt",
+   "variant": "path_04",
+   "mask_NESW": 4,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "f2e9cefb3ed8f0de55cad7a0dd5638348dbbb31c077abdf600c42e7677fca0bf",
+    "path": "Terrain/dirt/1x/coverage/path_04.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "fff5cce0ec85526d92c9395d982cacab21d101826337638350738e85087ac0a9",
+   "path": "Terrain/dirt/1x/path_05.png",
+   "family": "dirt",
+   "variant": "path_05",
+   "mask_NESW": 5,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "afcab963e56c64ff6766ae314ba28963de1764362360d32ba3593e792214a778",
+    "path": "Terrain/dirt/1x/coverage/path_05.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e4dca7c3bd0e287c52f28d5c4e5d1f69604ffe085aae1cf8bf1bd73a3194127b",
+   "path": "Terrain/dirt/1x/path_06.png",
+   "family": "dirt",
+   "variant": "path_06",
+   "mask_NESW": 6,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "64863938beb73468c8b33660cf1f5a89083e710e9e7631fa6beb978138d3f179",
+    "path": "Terrain/dirt/1x/coverage/path_06.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "458ea16c5d4f16943b52b95a252d4dde1e16ec1c4e2edb8011bd69b3622ec8d1",
+   "path": "Terrain/dirt/1x/path_07.png",
+   "family": "dirt",
+   "variant": "path_07",
+   "mask_NESW": 7,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "a10bf841e0c9e0c38f526fe57feb1007b6f979454e5f0e2569a2d4a952793846",
+    "path": "Terrain/dirt/1x/coverage/path_07.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "beb59f8835a60d6864237829432a615312db9a9d0ad2c420ec2d203652d395e1",
+   "path": "Terrain/dirt/1x/path_08.png",
+   "family": "dirt",
+   "variant": "path_08",
+   "mask_NESW": 8,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "5053ae299084d26de4e946cf3f9bc23d071443cf4481bcb3a24a2ff54979fa30",
+    "path": "Terrain/dirt/1x/coverage/path_08.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4ed75c46b6b2405d9e60a524197cfb88fc023bc08287d266e2c7e2175b08e9c3",
+   "path": "Terrain/dirt/1x/path_09.png",
+   "family": "dirt",
+   "variant": "path_09",
+   "mask_NESW": 9,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d7f5cd822b2a7da34df44ab3389a03c6c2b2518c683503cbd988bf217088acc5",
+    "path": "Terrain/dirt/1x/coverage/path_09.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "6990c5ffa1ee8d4278dfc2278ec0ae14a9e7567dbdb36246487082da905bed69",
+   "path": "Terrain/dirt/1x/path_0a.png",
+   "family": "dirt",
+   "variant": "path_0a",
+   "mask_NESW": 10,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "86c41ec369ba4640ff5246abfba34cd3583381c983a0b4ee56df507f7bde546b",
+    "path": "Terrain/dirt/1x/coverage/path_0a.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "1bcbd96bf4ea29579d43b95ead5e1436a111928b984f88976597b0d021d5d5e8",
+   "path": "Terrain/dirt/1x/path_0b.png",
+   "family": "dirt",
+   "variant": "path_0b",
+   "mask_NESW": 11,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "ddf20877046a758cc7db2ad382f3dc2b9fb139cadc5bde4e6f0ad9d59329578e",
+    "path": "Terrain/dirt/1x/coverage/path_0b.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "61f48416a67d69d5c975d792492b26a87ef54773363a1fe2489eadd876f0cea5",
+   "path": "Terrain/dirt/1x/path_0c.png",
+   "family": "dirt",
+   "variant": "path_0c",
+   "mask_NESW": 12,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "fc34e58f1f6ba43c0326d5b9ea4e85ba69cd30d72a82772efbedf07c1ed6f792",
+    "path": "Terrain/dirt/1x/coverage/path_0c.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e81f6db24414e258c36f8c0095883da2e0969829e4b9aea94af43788971e2b4c",
+   "path": "Terrain/dirt/1x/path_0d.png",
+   "family": "dirt",
+   "variant": "path_0d",
+   "mask_NESW": 13,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d8603128c1237a23a6715ef0e05d162172acd4da3f7f33e26edd9c262758531d",
+    "path": "Terrain/dirt/1x/coverage/path_0d.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "1ba561dddd92c58719e5582b7b38bd3a1b1b97af3df278f69f61850040eb4adf",
+   "path": "Terrain/dirt/1x/path_0e.png",
+   "family": "dirt",
+   "variant": "path_0e",
+   "mask_NESW": 14,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "c5227411c99d93f8e430508874418c0671bd8a45f6866f3598e4516231bee977",
+    "path": "Terrain/dirt/1x/coverage/path_0e.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "731e85115088453c6c725acec54795af183a75e40e1d614a3dd12d8bebc8db8d",
+   "path": "Terrain/dirt/1x/path_0f.png",
+   "family": "dirt",
+   "variant": "path_0f",
+   "mask_NESW": 15,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "421ebca561fb7abf237f9e91befcbd1bd464e8675c5505cbcf519eed79d6ef47",
+    "path": "Terrain/dirt/1x/coverage/path_0f.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "22c3d11692ecca8c26ee5b0f224ef6ed1d28e4fb462e1ef6900bd50266586718",
+   "path": "Terrain/cobble/1x/path_00.png",
+   "family": "cobble",
+   "variant": "path_00",
+   "mask_NESW": 0,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "112bef25251b2648613890013852c3bdd945de6299923be685f3283e06077c39",
+    "path": "Terrain/cobble/1x/coverage/path_00.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "2fb5e25d62fcc31595ac866ddb4a125abff4918fbf9e1673d1b8ffd9342c3433",
+   "path": "Terrain/cobble/1x/path_01.png",
+   "family": "cobble",
+   "variant": "path_01",
+   "mask_NESW": 1,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d95c0c0184bfebff0a74b6a40b68b53eebccd684fec807bbd7e244c6663f962f",
+    "path": "Terrain/cobble/1x/coverage/path_01.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4fcb389548ad1951015a53453da8a179e45f1f88543b5dd64bf939dc9c97b650",
+   "path": "Terrain/cobble/1x/path_02.png",
+   "family": "cobble",
+   "variant": "path_02",
+   "mask_NESW": 2,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "abb8516272cc65bbab09c27f120711d04862d2baf7de4de48708fcab7ec733c3",
+    "path": "Terrain/cobble/1x/coverage/path_02.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "d93e3ab1af8ab4fbf37080d91b3436e8bf584bc052f9399f76f10c800c7ed6fe",
+   "path": "Terrain/cobble/1x/path_03.png",
+   "family": "cobble",
+   "variant": "path_03",
+   "mask_NESW": 3,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "e2ea291a382935fe53c167013baf07b856224ec0aabc175c176415209b6120fa",
+    "path": "Terrain/cobble/1x/coverage/path_03.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e326626c11edc2652c368db394a2ecd417e3562bdc6e3bf49dfb79ef2938aa04",
+   "path": "Terrain/cobble/1x/path_04.png",
+   "family": "cobble",
+   "variant": "path_04",
+   "mask_NESW": 4,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "f2e9cefb3ed8f0de55cad7a0dd5638348dbbb31c077abdf600c42e7677fca0bf",
+    "path": "Terrain/cobble/1x/coverage/path_04.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "5e1b169c2e8d3fb457c6771394a5b9914a7f8d020721e64d197b7764de2b8a6c",
+   "path": "Terrain/cobble/1x/path_05.png",
+   "family": "cobble",
+   "variant": "path_05",
+   "mask_NESW": 5,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "afcab963e56c64ff6766ae314ba28963de1764362360d32ba3593e792214a778",
+    "path": "Terrain/cobble/1x/coverage/path_05.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "dbf93c8379ec6f4a00fb83f054f135120a6addf1e87fc50c385e7c164b3fdfb8",
+   "path": "Terrain/cobble/1x/path_06.png",
+   "family": "cobble",
+   "variant": "path_06",
+   "mask_NESW": 6,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "64863938beb73468c8b33660cf1f5a89083e710e9e7631fa6beb978138d3f179",
+    "path": "Terrain/cobble/1x/coverage/path_06.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "2be9b8eea67cb8f1b11b3bbd3f592ebdea64747c12092cfdbcbc0d46604d60c7",
+   "path": "Terrain/cobble/1x/path_07.png",
+   "family": "cobble",
+   "variant": "path_07",
+   "mask_NESW": 7,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "a10bf841e0c9e0c38f526fe57feb1007b6f979454e5f0e2569a2d4a952793846",
+    "path": "Terrain/cobble/1x/coverage/path_07.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4acc6968052d7bc085a4488203e1181fd43c81c61f4128d86520bbbfa77e78f2",
+   "path": "Terrain/cobble/1x/path_08.png",
+   "family": "cobble",
+   "variant": "path_08",
+   "mask_NESW": 8,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "5053ae299084d26de4e946cf3f9bc23d071443cf4481bcb3a24a2ff54979fa30",
+    "path": "Terrain/cobble/1x/coverage/path_08.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "12c0043b624adbd82b00ddc8bc5a997c493791df480c0b67cdebbc9117ad52d1",
+   "path": "Terrain/cobble/1x/path_09.png",
+   "family": "cobble",
+   "variant": "path_09",
+   "mask_NESW": 9,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d7f5cd822b2a7da34df44ab3389a03c6c2b2518c683503cbd988bf217088acc5",
+    "path": "Terrain/cobble/1x/coverage/path_09.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "a90fbd54d62929515cc7f65189e3366a9cf46c21208a35bb4863d13d14ab0dc9",
+   "path": "Terrain/cobble/1x/path_0a.png",
+   "family": "cobble",
+   "variant": "path_0a",
+   "mask_NESW": 10,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "86c41ec369ba4640ff5246abfba34cd3583381c983a0b4ee56df507f7bde546b",
+    "path": "Terrain/cobble/1x/coverage/path_0a.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "1e592a77f62f49571ed0c1fbf691155969a3ebf22493f514783e23dab4df3cf0",
+   "path": "Terrain/cobble/1x/path_0b.png",
+   "family": "cobble",
+   "variant": "path_0b",
+   "mask_NESW": 11,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "ddf20877046a758cc7db2ad382f3dc2b9fb139cadc5bde4e6f0ad9d59329578e",
+    "path": "Terrain/cobble/1x/coverage/path_0b.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "ecdae6d440f6b8f45007e2461ca82024d8d470548d7ca104cf37da5c706f0ff0",
+   "path": "Terrain/cobble/1x/path_0c.png",
+   "family": "cobble",
+   "variant": "path_0c",
+   "mask_NESW": 12,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "fc34e58f1f6ba43c0326d5b9ea4e85ba69cd30d72a82772efbedf07c1ed6f792",
+    "path": "Terrain/cobble/1x/coverage/path_0c.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "e2f77169536a3f7a1833e953b008501f85808734e3e67422bf3a42580715e7e2",
+   "path": "Terrain/cobble/1x/path_0d.png",
+   "family": "cobble",
+   "variant": "path_0d",
+   "mask_NESW": 13,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "d8603128c1237a23a6715ef0e05d162172acd4da3f7f33e26edd9c262758531d",
+    "path": "Terrain/cobble/1x/coverage/path_0d.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "58c50e49f7d44e85e49bb2d22411b52e9bbb64c6857587f512556f37f25e7606",
+   "path": "Terrain/cobble/1x/path_0e.png",
+   "family": "cobble",
+   "variant": "path_0e",
+   "mask_NESW": 14,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "c5227411c99d93f8e430508874418c0671bd8a45f6866f3598e4516231bee977",
+    "path": "Terrain/cobble/1x/coverage/path_0e.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "550002d479e53f7ae62f47a2cdfca6dcc0fe10ebaa7c05976c3ff261572bd5a5",
+   "path": "Terrain/cobble/1x/path_0f.png",
+   "family": "cobble",
+   "variant": "path_0f",
+   "mask_NESW": 15,
+   "coverage": {
+    "width": 64,
+    "height": 64,
+    "sha256": "421ebca561fb7abf237f9e91befcbd1bd464e8675c5505cbcf519eed79d6ef47",
+    "path": "Terrain/cobble/1x/coverage/path_0f.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "b1a1498d31401739898cedd8bbd6c954fd4a08efde4fd0b975af4a4824c06329",
+   "path": "Terrain/dirt/2x/base_00.png",
+   "family": "dirt",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ce540dcfdbade6f016c05ebec0a5aaa43266358dd869c2be9c24f21c636c7e7e",
+   "path": "Terrain/dirt/2x/base_01.png",
+   "family": "dirt",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "8600ae1a5e8570997d6a931dccd231d55c96787c2d0e6555443422cc988523cc",
+   "path": "Terrain/dirt/2x/base_02.png",
+   "family": "dirt",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "a37ed360101c980a0727a13232e173e39a4038c5329a60ced7d891740018858b",
+   "path": "Terrain/dirt/2x/base_03.png",
+   "family": "dirt",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "b5218515cb5d56c711d62f7fb359a48408ed41166e297ab27ec29845c6c5b5eb",
+   "path": "Terrain/cobble/2x/base_00.png",
+   "family": "cobble",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "18ab1bb8a91e5b352fad0612b32d84ebb3762d24e589e1e608d3b21a9724354d",
+   "path": "Terrain/cobble/2x/base_01.png",
+   "family": "cobble",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "be0682fee3741c2f8b3834dfd440a7102c16dbae93d9ff2a014cc0facfe25545",
+   "path": "Terrain/cobble/2x/base_02.png",
+   "family": "cobble",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "905b7873674301802f5992de495033619c979d1b4689ece16340cf243e00a73a",
+   "path": "Terrain/cobble/2x/base_03.png",
+   "family": "cobble",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "f9228e2262d81e12819138354ff04cacc3f31181e8d945ad50ac7c09ce3ab9a1",
+   "path": "Terrain/dirt/2x/path_00.png",
+   "family": "dirt",
+   "variant": "path_00",
+   "mask_NESW": 0,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "81ba79c3560c29263884fa846611232a7406c9e938f98bd27ace20ec7428e046",
+    "path": "Terrain/dirt/2x/coverage/path_00.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "84a70c58f5551ccfa64c61368fb7bc35536bb1e20873d8c60ef4804eb7b150e3",
+   "path": "Terrain/dirt/2x/path_01.png",
+   "family": "dirt",
+   "variant": "path_01",
+   "mask_NESW": 1,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "3bdcfd754b46215c3a1826c8066dd283d219255d0975c02d6b7ca365050663a5",
+    "path": "Terrain/dirt/2x/coverage/path_01.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "5d145acd6ce6da4ec518a8abda405c33b22331c2f100cd415f0835d00f7fc953",
+   "path": "Terrain/dirt/2x/path_02.png",
+   "family": "dirt",
+   "variant": "path_02",
+   "mask_NESW": 2,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "2c8ca990bcad31ced9c3d7e3388528177015b081ebbd5e0ed2f2dc19efa2b4b6",
+    "path": "Terrain/dirt/2x/coverage/path_02.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "98c1b460ddc4ef406e3582d9d05f7844dda4b10a9d4b5eeeaf86fe08056fb51e",
+   "path": "Terrain/dirt/2x/path_03.png",
+   "family": "dirt",
+   "variant": "path_03",
+   "mask_NESW": 3,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "1ebcd2e1be7ba5d03685d09b464cf4d1763b38ebe898cd103bead86f74033b26",
+    "path": "Terrain/dirt/2x/coverage/path_03.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "bb95147e067fa981a3196779b40a7d9edc97acf7fc63775c9776609de4ab2335",
+   "path": "Terrain/dirt/2x/path_04.png",
+   "family": "dirt",
+   "variant": "path_04",
+   "mask_NESW": 4,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "e7b65533dc9a4e27ffb4c6fcc4de12a5e9bf6eec0ea99d5b36c078e87592dc95",
+    "path": "Terrain/dirt/2x/coverage/path_04.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "a038bd58c58c8e7697662848e893798342c1bb9e5f9acd371faa14e073397a8f",
+   "path": "Terrain/dirt/2x/path_05.png",
+   "family": "dirt",
+   "variant": "path_05",
+   "mask_NESW": 5,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "a18cdb7fa2c99b36a8a797fcd81d74ef6a802055950fe048f2c382b7d1bf4078",
+    "path": "Terrain/dirt/2x/coverage/path_05.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "440c866bdfea3b009fd8fdbcfe76c4c9f160a054cec3b734f26433c925880984",
+   "path": "Terrain/dirt/2x/path_06.png",
+   "family": "dirt",
+   "variant": "path_06",
+   "mask_NESW": 6,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "51c402652f4331a2bab6b58fd353bb885cda521cde515a9620a79d0dffa94bf8",
+    "path": "Terrain/dirt/2x/coverage/path_06.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "0d8b35acb971b757968db6b0b5f1756aca2929c0ab973aeea149ed6df5d285d2",
+   "path": "Terrain/dirt/2x/path_07.png",
+   "family": "dirt",
+   "variant": "path_07",
+   "mask_NESW": 7,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "b42540a90e4f24e975ee7ef380de982f64a280e2e1faa188be3c05a2ce6165ae",
+    "path": "Terrain/dirt/2x/coverage/path_07.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "cd5ce15f91ce3f801c81eb0bc795550cd4feff5c5edf69b23362dffc65870755",
+   "path": "Terrain/dirt/2x/path_08.png",
+   "family": "dirt",
+   "variant": "path_08",
+   "mask_NESW": 8,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "ee5369d1808b060f5250217ea856c21b6354b9c03abaf55c752dbfab4e8fdb7f",
+    "path": "Terrain/dirt/2x/coverage/path_08.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9cda57e20da7bf004bb2f0ca1c57c1f2f7ef1fc432e0546c713c88be2ef021f5",
+   "path": "Terrain/dirt/2x/path_09.png",
+   "family": "dirt",
+   "variant": "path_09",
+   "mask_NESW": 9,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "89fa4382531f2a8c6189d89a32bec56abfb642a242ec7552e8e600b58bfd6549",
+    "path": "Terrain/dirt/2x/coverage/path_09.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ab6d4185f708be554bfc409adf3d120e89dbf846d1f1fe9598fcad426070ec6d",
+   "path": "Terrain/dirt/2x/path_0a.png",
+   "family": "dirt",
+   "variant": "path_0a",
+   "mask_NESW": 10,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "875d9f8608d0ba44c5ab16ef3af77e4c2ba3d8cc72bf0f2139a49a8c26ae60d7",
+    "path": "Terrain/dirt/2x/coverage/path_0a.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "1fbf5bc9f936b6efca57576e39cbc59e1282e3c8f8693610b7f3a6f682256c48",
+   "path": "Terrain/dirt/2x/path_0b.png",
+   "family": "dirt",
+   "variant": "path_0b",
+   "mask_NESW": 11,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "397287d0e524f7e16c5d0d0ce276e6766284939c84dc68b0c673d2218bfb841c",
+    "path": "Terrain/dirt/2x/coverage/path_0b.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "10ef39b87487a4ef965bc25d8e2dbfac4234c9b863e5e008fd4fb56c8688be92",
+   "path": "Terrain/dirt/2x/path_0c.png",
+   "family": "dirt",
+   "variant": "path_0c",
+   "mask_NESW": 12,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "d25ac690e9ad97c25bdc3eaa0471d1a5381a36cfd80e3ea29912175f3fb17358",
+    "path": "Terrain/dirt/2x/coverage/path_0c.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "6ee24a5c0508c80c71f28150d0962c63b38a0e1b5b704e2414fa62c5b931bbab",
+   "path": "Terrain/dirt/2x/path_0d.png",
+   "family": "dirt",
+   "variant": "path_0d",
+   "mask_NESW": 13,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "06f52f16cb447daf96da34ff0f9b36b375c7b5cd15e2cf957aff26f6f0f3671c",
+    "path": "Terrain/dirt/2x/coverage/path_0d.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "0a2e3355fb78b68990f0f474b26425e2af3dc3b2255e6370644f602c52cde3ec",
+   "path": "Terrain/dirt/2x/path_0e.png",
+   "family": "dirt",
+   "variant": "path_0e",
+   "mask_NESW": 14,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "efbccd66e11850fa9a00db1196c5dd8feca2e9d3653d82962ff6966c439e7b75",
+    "path": "Terrain/dirt/2x/coverage/path_0e.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "a1c25cac64a69b4280bb5e586c11ef6566e3898e87e6f76b1bf6936bbe505423",
+   "path": "Terrain/dirt/2x/path_0f.png",
+   "family": "dirt",
+   "variant": "path_0f",
+   "mask_NESW": 15,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "e883e7bcf46df5ea0978f8c6c46644690cb7b13623904f0eefc060f6240cdb13",
+    "path": "Terrain/dirt/2x/coverage/path_0f.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "31a44f15ea1714571ea991721640de4d59cd9cc63e062ea67cec9f0d9adf0643",
+   "path": "Terrain/cobble/2x/path_00.png",
+   "family": "cobble",
+   "variant": "path_00",
+   "mask_NESW": 0,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "81ba79c3560c29263884fa846611232a7406c9e938f98bd27ace20ec7428e046",
+    "path": "Terrain/cobble/2x/coverage/path_00.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "1859ecd05c284d30f81ddde6659e1f3e730be8ed3c417afd318e473accafb94e",
+   "path": "Terrain/cobble/2x/path_01.png",
+   "family": "cobble",
+   "variant": "path_01",
+   "mask_NESW": 1,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "3bdcfd754b46215c3a1826c8066dd283d219255d0975c02d6b7ca365050663a5",
+    "path": "Terrain/cobble/2x/coverage/path_01.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "d3cce5a6951eeb810b03fa87a25f3e3efe20747f4a382ff3133074a73e918dfb",
+   "path": "Terrain/cobble/2x/path_02.png",
+   "family": "cobble",
+   "variant": "path_02",
+   "mask_NESW": 2,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "2c8ca990bcad31ced9c3d7e3388528177015b081ebbd5e0ed2f2dc19efa2b4b6",
+    "path": "Terrain/cobble/2x/coverage/path_02.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ccf0e2e30cd1e63793a53461f83265f5acd1eda647ae61bc81f622aded0a03aa",
+   "path": "Terrain/cobble/2x/path_03.png",
+   "family": "cobble",
+   "variant": "path_03",
+   "mask_NESW": 3,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "1ebcd2e1be7ba5d03685d09b464cf4d1763b38ebe898cd103bead86f74033b26",
+    "path": "Terrain/cobble/2x/coverage/path_03.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "291af4e086fc5272fe2fa495f0be415d0ad242b9697b6fe75b8fc6e19559216e",
+   "path": "Terrain/cobble/2x/path_04.png",
+   "family": "cobble",
+   "variant": "path_04",
+   "mask_NESW": 4,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "e7b65533dc9a4e27ffb4c6fcc4de12a5e9bf6eec0ea99d5b36c078e87592dc95",
+    "path": "Terrain/cobble/2x/coverage/path_04.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "c353b16fa8c402bd5f722105f71fec69db6c8b783bd6c0f382322090f26d7be5",
+   "path": "Terrain/cobble/2x/path_05.png",
+   "family": "cobble",
+   "variant": "path_05",
+   "mask_NESW": 5,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "a18cdb7fa2c99b36a8a797fcd81d74ef6a802055950fe048f2c382b7d1bf4078",
+    "path": "Terrain/cobble/2x/coverage/path_05.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "b9e0e37f57191dd2fba53f091fe105f96211e803bcd37ec0badbf7a7fdd4f949",
+   "path": "Terrain/cobble/2x/path_06.png",
+   "family": "cobble",
+   "variant": "path_06",
+   "mask_NESW": 6,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "51c402652f4331a2bab6b58fd353bb885cda521cde515a9620a79d0dffa94bf8",
+    "path": "Terrain/cobble/2x/coverage/path_06.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9ca188373a999bb91bb2bbe5bc9a3ec04c27d8d948221433774f7e67eda0e360",
+   "path": "Terrain/cobble/2x/path_07.png",
+   "family": "cobble",
+   "variant": "path_07",
+   "mask_NESW": 7,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "b42540a90e4f24e975ee7ef380de982f64a280e2e1faa188be3c05a2ce6165ae",
+    "path": "Terrain/cobble/2x/coverage/path_07.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "d57ba687937169fa47a8ea49573de4016ee3cd1a426c7c65e18a62e81c3a7e09",
+   "path": "Terrain/cobble/2x/path_08.png",
+   "family": "cobble",
+   "variant": "path_08",
+   "mask_NESW": 8,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "ee5369d1808b060f5250217ea856c21b6354b9c03abaf55c752dbfab4e8fdb7f",
+    "path": "Terrain/cobble/2x/coverage/path_08.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "114ae79bedf802d35e66f8c6c26e989cb05f899fdad014488152d3d2b33f6fc0",
+   "path": "Terrain/cobble/2x/path_09.png",
+   "family": "cobble",
+   "variant": "path_09",
+   "mask_NESW": 9,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "89fa4382531f2a8c6189d89a32bec56abfb642a242ec7552e8e600b58bfd6549",
+    "path": "Terrain/cobble/2x/coverage/path_09.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "11bbba1f1c3a9826b9acaf8b23487c0a5381137ce1dca87716cb3ffdac111040",
+   "path": "Terrain/cobble/2x/path_0a.png",
+   "family": "cobble",
+   "variant": "path_0a",
+   "mask_NESW": 10,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "875d9f8608d0ba44c5ab16ef3af77e4c2ba3d8cc72bf0f2139a49a8c26ae60d7",
+    "path": "Terrain/cobble/2x/coverage/path_0a.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "64857554dc43583c2c1b96657addd5915635f12d932b30b7a9034ab09e7dc2f9",
+   "path": "Terrain/cobble/2x/path_0b.png",
+   "family": "cobble",
+   "variant": "path_0b",
+   "mask_NESW": 11,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "397287d0e524f7e16c5d0d0ce276e6766284939c84dc68b0c673d2218bfb841c",
+    "path": "Terrain/cobble/2x/coverage/path_0b.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ed82bcf9ada4f9e31505b521e5ba9f0c8ae92dc2ae1c2058be9a8eec8f6be813",
+   "path": "Terrain/cobble/2x/path_0c.png",
+   "family": "cobble",
+   "variant": "path_0c",
+   "mask_NESW": 12,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "d25ac690e9ad97c25bdc3eaa0471d1a5381a36cfd80e3ea29912175f3fb17358",
+    "path": "Terrain/cobble/2x/coverage/path_0c.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ace2bfdf82e5280aaa678827bef3a0f5fb86e78cb20bf5e9f6f4bdc6eba2499b",
+   "path": "Terrain/cobble/2x/path_0d.png",
+   "family": "cobble",
+   "variant": "path_0d",
+   "mask_NESW": 13,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "06f52f16cb447daf96da34ff0f9b36b375c7b5cd15e2cf957aff26f6f0f3671c",
+    "path": "Terrain/cobble/2x/coverage/path_0d.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "dc1b9a3adfca7abfb4a2a7dc8f8ceacd5833cc118021befcb9c79a64bdbad8a4",
+   "path": "Terrain/cobble/2x/path_0e.png",
+   "family": "cobble",
+   "variant": "path_0e",
+   "mask_NESW": 14,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "efbccd66e11850fa9a00db1196c5dd8feca2e9d3653d82962ff6966c439e7b75",
+    "path": "Terrain/cobble/2x/coverage/path_0e.png"
+   }
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "627b16577b2d898a1b4e6e371c4ea7c6fac91cc32606871efdee276d485ea0ec",
+   "path": "Terrain/cobble/2x/path_0f.png",
+   "family": "cobble",
+   "variant": "path_0f",
+   "mask_NESW": 15,
+   "coverage": {
+    "width": 128,
+    "height": 128,
+    "sha256": "e883e7bcf46df5ea0978f8c6c46644690cb7b13623904f0eefc060f6240cdb13",
+    "path": "Terrain/cobble/2x/coverage/path_0f.png"
+   }
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "c9ae6d1f3dff4e04ba18d2e4273b615d9d3560e409753e45870ab55d1303db44",
+   "path": "Terrain/grass/1x/base_00.png",
+   "family": "grass",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "ee320049141c26a3236c05c389ac07b6b9810d210c549f51924ed94a5e2b9255",
+   "path": "Terrain/grass/1x/base_01.png",
+   "family": "grass",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "0ba738c7b76e8516b64ce73259519dfb8d1e1cd28d29b02d58685f831ae4eb48",
+   "path": "Terrain/grass/1x/base_02.png",
+   "family": "grass",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "f0c2439f4b272db6375cee56ae6269a088996d2d807f5a960d2b38a0402839df",
+   "path": "Terrain/grass/1x/base_03.png",
+   "family": "grass",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "e730b0b31137fa3e3be83cb3c63b9e495cc40aa5b9231ae26d59fb439a8f8897",
+   "path": "Terrain/grass/2x/base_00.png",
+   "family": "grass",
+   "variant": "base_00",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "4871f033f120b03640ee5e76a9810f6b521244c3ded18edda90cf7a28fabf67b",
+   "path": "Terrain/grass/2x/base_01.png",
+   "family": "grass",
+   "variant": "base_01",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "1c9ad22359efa939caaa6223cc16655c10273c62eca8b74825d4c9b928b8a4ed",
+   "path": "Terrain/grass/2x/base_02.png",
+   "family": "grass",
+   "variant": "base_02",
+   "mask_NESW": null
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "3e45dc6322950f31c52332e794204167bab4f21134858ae90ab60e6d5b88209c",
+   "path": "Terrain/grass/2x/base_03.png",
+   "family": "grass",
+   "variant": "base_03",
+   "mask_NESW": null
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "114af9a434aebbac942644dd3c245d72e86fdf7eebd14bd295d2315fc008fc96",
+   "path": "Terrain/tilled/1x/field_00.png",
+   "family": "tilled",
+   "variant": "field_00",
+   "mask_NESW": 0
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "2895921769a55831d767e13ad11919264401a229f634f0ee953e102ca0bc6282",
+   "path": "Terrain/tilled/1x/field_01.png",
+   "family": "tilled",
+   "variant": "field_01",
+   "mask_NESW": 1
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "010cc6ac32ad53a1e56bd8881f39a3f4cde3d22267a300df275d30212b8a46dc",
+   "path": "Terrain/tilled/1x/field_02.png",
+   "family": "tilled",
+   "variant": "field_02",
+   "mask_NESW": 2
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "67accf58593f5b648fc0764e27cc71f0bb8f7ae0a496529d5b6610302a2e9092",
+   "path": "Terrain/tilled/1x/field_03.png",
+   "family": "tilled",
+   "variant": "field_03",
+   "mask_NESW": 3
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "a517b529f6607e1c2bad7f5e0ae46864a67e224c00013ce9680012f51b64ffba",
+   "path": "Terrain/tilled/1x/field_04.png",
+   "family": "tilled",
+   "variant": "field_04",
+   "mask_NESW": 4
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "39b916c07d9df30751d38c854514a39fb3d323f331da2a2ccfc33c8e193a1e59",
+   "path": "Terrain/tilled/1x/field_05.png",
+   "family": "tilled",
+   "variant": "field_05",
+   "mask_NESW": 5
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "b8150c1a322fc229a6bafb5401d01355d5e24cfecc101931c3267c1b5f6a3d0a",
+   "path": "Terrain/tilled/1x/field_06.png",
+   "family": "tilled",
+   "variant": "field_06",
+   "mask_NESW": 6
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "29318d35330c401a91e4375fa869c7fb2e4ee5f0ee506f51a727108a45fcacea",
+   "path": "Terrain/tilled/1x/field_07.png",
+   "family": "tilled",
+   "variant": "field_07",
+   "mask_NESW": 7
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "9d0f0a38e9b4ac305ccf758326d0ae289f77118611963e16c57301e88c727a42",
+   "path": "Terrain/tilled/1x/field_08.png",
+   "family": "tilled",
+   "variant": "field_08",
+   "mask_NESW": 8
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "8c0db2f7442fa8998092d7dc2c6e9b8c13912b4bff9fdd84a4d52a71ac5e2f7b",
+   "path": "Terrain/tilled/1x/field_09.png",
+   "family": "tilled",
+   "variant": "field_09",
+   "mask_NESW": 9
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "f1ef7e11f5c943ba5c59b17003675e7a3cb44b19bf9beea71ddb20216869ab8f",
+   "path": "Terrain/tilled/1x/field_0a.png",
+   "family": "tilled",
+   "variant": "field_0a",
+   "mask_NESW": 10
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "b7c7a34b9d3efc82c82bf0e5dc9c3e85a103c7e1b7d536f52756d96e87e8662a",
+   "path": "Terrain/tilled/1x/field_0b.png",
+   "family": "tilled",
+   "variant": "field_0b",
+   "mask_NESW": 11
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "a86aa26cfda0e4a193dfdf74dc610b9d0a28e90d7bc89175754ea1812fff3e65",
+   "path": "Terrain/tilled/1x/field_0c.png",
+   "family": "tilled",
+   "variant": "field_0c",
+   "mask_NESW": 12
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "d9c7796849b01b880375e2fc4d70e698c2b5e368cd46b496849a449c5a4e518b",
+   "path": "Terrain/tilled/1x/field_0d.png",
+   "family": "tilled",
+   "variant": "field_0d",
+   "mask_NESW": 13
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "cab7e77a76bc9d0644c2776f6e25bab3c3b1cc8b91628c138ff81130d3a296ea",
+   "path": "Terrain/tilled/1x/field_0e.png",
+   "family": "tilled",
+   "variant": "field_0e",
+   "mask_NESW": 14
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "45e6c459313e380d752cf6b2f298c982fd1dc460cc60ff1bb59f015c1c26cc0c",
+   "path": "Terrain/tilled/1x/field_0f.png",
+   "family": "tilled",
+   "variant": "field_0f",
+   "mask_NESW": 15
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "bca7212a0b99060f6a198e2b958309f141007120ef66d58dfe6215d032095592",
+   "path": "Terrain/tilled_wet/1x/field_00.png",
+   "family": "tilled_wet",
+   "variant": "field_00",
+   "mask_NESW": 0
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "3eab88b96a9cea27c88d9649539e0040fe88f2d435efe227ae2f68d06b739fa5",
+   "path": "Terrain/tilled_wet/1x/field_01.png",
+   "family": "tilled_wet",
+   "variant": "field_01",
+   "mask_NESW": 1
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "cca2c58eeefc1c0b4f69452ea69f378a1a5704dfef8ec81311dedf12062efb6e",
+   "path": "Terrain/tilled_wet/1x/field_02.png",
+   "family": "tilled_wet",
+   "variant": "field_02",
+   "mask_NESW": 2
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "834e6f4cb10c18f4b969ff1b426412ef22a3da9b57fe57233d0b9383dfcd7122",
+   "path": "Terrain/tilled_wet/1x/field_03.png",
+   "family": "tilled_wet",
+   "variant": "field_03",
+   "mask_NESW": 3
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4ed08db3b4a435cace7e78023aeb276eb830710f7d56f57a211dc368cce837b6",
+   "path": "Terrain/tilled_wet/1x/field_04.png",
+   "family": "tilled_wet",
+   "variant": "field_04",
+   "mask_NESW": 4
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "013d8743258f070e8b89eae43368a7a3f0f29d1638f1315ea9edc50842e272b8",
+   "path": "Terrain/tilled_wet/1x/field_05.png",
+   "family": "tilled_wet",
+   "variant": "field_05",
+   "mask_NESW": 5
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "53b6ea717a8341ddc6dfbbd85760a878b4b4456bdaf01bfc02ef05ec26d63665",
+   "path": "Terrain/tilled_wet/1x/field_06.png",
+   "family": "tilled_wet",
+   "variant": "field_06",
+   "mask_NESW": 6
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "21464036a57700d317676a23d508cef9547188433917477ff31d3dab7dc35b85",
+   "path": "Terrain/tilled_wet/1x/field_07.png",
+   "family": "tilled_wet",
+   "variant": "field_07",
+   "mask_NESW": 7
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "4a3a69fe6b4fb46a9efa4ce050547909c2b9bd47122d55e633c96edf7d50e02a",
+   "path": "Terrain/tilled_wet/1x/field_08.png",
+   "family": "tilled_wet",
+   "variant": "field_08",
+   "mask_NESW": 8
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "adb6f4cda89176db39bf8e8fe9c9161aaec642abf0b9acae44144cacdf63fe2b",
+   "path": "Terrain/tilled_wet/1x/field_09.png",
+   "family": "tilled_wet",
+   "variant": "field_09",
+   "mask_NESW": 9
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "7141c2a76a684e95e25043cd559bbcac732c15619f027ec58f270b31ffe74eba",
+   "path": "Terrain/tilled_wet/1x/field_0a.png",
+   "family": "tilled_wet",
+   "variant": "field_0a",
+   "mask_NESW": 10
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "5719ffee7b31df2e5eb6f81d37357c365346ad69e7891f0748a82c41f13cc602",
+   "path": "Terrain/tilled_wet/1x/field_0b.png",
+   "family": "tilled_wet",
+   "variant": "field_0b",
+   "mask_NESW": 11
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "fdf02ebf62b324f232cef011d91162d9c3e51b1137900f6b5814d6ce0c517923",
+   "path": "Terrain/tilled_wet/1x/field_0c.png",
+   "family": "tilled_wet",
+   "variant": "field_0c",
+   "mask_NESW": 12
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "a9f0f88f6fbd4a94827b9bbcfb38c4ae7e84b912f5e1da55787289b21aec0ba3",
+   "path": "Terrain/tilled_wet/1x/field_0d.png",
+   "family": "tilled_wet",
+   "variant": "field_0d",
+   "mask_NESW": 13
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "f927ed760514c95cc76602ed6658433086001addc5887aa35960e3d9cf319b3f",
+   "path": "Terrain/tilled_wet/1x/field_0e.png",
+   "family": "tilled_wet",
+   "variant": "field_0e",
+   "mask_NESW": 14
+  },
+  {
+   "width": 64,
+   "height": 64,
+   "pivot": [
+    0,
+    64
+   ],
+   "resolution": "1x",
+   "sha256": "ae1a25cf70a8fced0773ba85dfb4e931eca835f583cfbbabd9e6434ee42266f3",
+   "path": "Terrain/tilled_wet/1x/field_0f.png",
+   "family": "tilled_wet",
+   "variant": "field_0f",
+   "mask_NESW": 15
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "da74339dcce0ce77012006b7c805189d5b5a48ed27cd3fcef0e9673b8c0dac3a",
+   "path": "Terrain/tilled/2x/field_00.png",
+   "family": "tilled",
+   "variant": "field_00",
+   "mask_NESW": 0
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "887db86afd02fe7a0507415bc8c4ea49da7a2fb399bf1a7860a564a7a7ec1958",
+   "path": "Terrain/tilled/2x/field_01.png",
+   "family": "tilled",
+   "variant": "field_01",
+   "mask_NESW": 1
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "2b5ba83750075fdd61a7bd5084c5db7460cb49d5cc70f3278bdca7eecd33de67",
+   "path": "Terrain/tilled/2x/field_02.png",
+   "family": "tilled",
+   "variant": "field_02",
+   "mask_NESW": 2
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9db130ac88ca417eef1deec3d5a5558e97f76092b5dae475a0a51a27ae648c76",
+   "path": "Terrain/tilled/2x/field_03.png",
+   "family": "tilled",
+   "variant": "field_03",
+   "mask_NESW": 3
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "2b8095f70022a25a5779c6f5453f760bd51dcab4bca7442e127b4c9a59292e2a",
+   "path": "Terrain/tilled/2x/field_04.png",
+   "family": "tilled",
+   "variant": "field_04",
+   "mask_NESW": 4
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "059328425214cc9adc07b396e02883ec6855f5f25fed5eb956cc4012de84d537",
+   "path": "Terrain/tilled/2x/field_05.png",
+   "family": "tilled",
+   "variant": "field_05",
+   "mask_NESW": 5
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "f0638c1d6a3aa0a8b0681524d984c6ce8b95f86cdde1797abd8e6d9fda5834fc",
+   "path": "Terrain/tilled/2x/field_06.png",
+   "family": "tilled",
+   "variant": "field_06",
+   "mask_NESW": 6
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "53980217184a996fd5cc7b487b2eef379692a55a7a0cf88cfed7831789d03834",
+   "path": "Terrain/tilled/2x/field_07.png",
+   "family": "tilled",
+   "variant": "field_07",
+   "mask_NESW": 7
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "87ed983cc0a1ebfb1d3309912a0431add890df291073d3cbbf2edd05bbf7d848",
+   "path": "Terrain/tilled/2x/field_08.png",
+   "family": "tilled",
+   "variant": "field_08",
+   "mask_NESW": 8
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "b733c3a6895a4a892c3e3975bbc633c78df19039530864beb6d1b3b173be3b3c",
+   "path": "Terrain/tilled/2x/field_09.png",
+   "family": "tilled",
+   "variant": "field_09",
+   "mask_NESW": 9
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "8d3f7fab216dbe1d4396bdede6bea1341731226a9f9ddb4dba3b698df78b45b2",
+   "path": "Terrain/tilled/2x/field_0a.png",
+   "family": "tilled",
+   "variant": "field_0a",
+   "mask_NESW": 10
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "404ce02b6da395415f9b917a8ee70cfe924474af3ec5a1fe842d2dd54b91f5d8",
+   "path": "Terrain/tilled/2x/field_0b.png",
+   "family": "tilled",
+   "variant": "field_0b",
+   "mask_NESW": 11
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "015da8baf9907ef789989d14ca47d4e6f8a72fa97741dfd6995791ba4a5e85f1",
+   "path": "Terrain/tilled/2x/field_0c.png",
+   "family": "tilled",
+   "variant": "field_0c",
+   "mask_NESW": 12
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "da9f6d4a8644c98b98d82eb2557417ccbeb9a399601343e474b3ef2391eca037",
+   "path": "Terrain/tilled/2x/field_0d.png",
+   "family": "tilled",
+   "variant": "field_0d",
+   "mask_NESW": 13
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "0e3143781ae66047bbebbde8c61d78ca086da4c074fb4c7c646d943434dc5a63",
+   "path": "Terrain/tilled/2x/field_0e.png",
+   "family": "tilled",
+   "variant": "field_0e",
+   "mask_NESW": 14
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "233383a8a85099ab4e3d9ce7ac64a7c029e65d73944c1ff9ba03d815a285a4bd",
+   "path": "Terrain/tilled/2x/field_0f.png",
+   "family": "tilled",
+   "variant": "field_0f",
+   "mask_NESW": 15
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "d1c3e4027b87e0307d0f842818e47e057512d2332b8b2f23e60a2fb14d2c7826",
+   "path": "Terrain/tilled_wet/2x/field_00.png",
+   "family": "tilled_wet",
+   "variant": "field_00",
+   "mask_NESW": 0
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "b632e3e3f36ad0453a10bf86b066e6c2873a56a392ffeae0a86f162bf3c2ccc7",
+   "path": "Terrain/tilled_wet/2x/field_01.png",
+   "family": "tilled_wet",
+   "variant": "field_01",
+   "mask_NESW": 1
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "7a2898a1f2f047c975a7e47ba55f09ccef51c716b71052d13760698da5e075e6",
+   "path": "Terrain/tilled_wet/2x/field_02.png",
+   "family": "tilled_wet",
+   "variant": "field_02",
+   "mask_NESW": 2
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "6096b5d0f17737a27a6fec7e0d958f357cb42eabd9dcb527dea5941f4e73a095",
+   "path": "Terrain/tilled_wet/2x/field_03.png",
+   "family": "tilled_wet",
+   "variant": "field_03",
+   "mask_NESW": 3
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "f29013a15dab317c6036631a7fb9e14e533d058d4442c6eaa7badc445b1ffe63",
+   "path": "Terrain/tilled_wet/2x/field_04.png",
+   "family": "tilled_wet",
+   "variant": "field_04",
+   "mask_NESW": 4
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "46dcccc30f731b6d1135545ffa1196ebced3978d24e68169be160a200d293fdc",
+   "path": "Terrain/tilled_wet/2x/field_05.png",
+   "family": "tilled_wet",
+   "variant": "field_05",
+   "mask_NESW": 5
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9343e405a4711962c60f5a54f85591c1610572a5759001731dc29049fdb9c2e9",
+   "path": "Terrain/tilled_wet/2x/field_06.png",
+   "family": "tilled_wet",
+   "variant": "field_06",
+   "mask_NESW": 6
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9da0214caed86a61f9c954fd4038d1b27c4881613c6fc1abb7412d2ae160b0a3",
+   "path": "Terrain/tilled_wet/2x/field_07.png",
+   "family": "tilled_wet",
+   "variant": "field_07",
+   "mask_NESW": 7
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "218a5c8f38d5b6e28ab7260db38cefeb36e5c3cb5943a373b1e13ab7570406e7",
+   "path": "Terrain/tilled_wet/2x/field_08.png",
+   "family": "tilled_wet",
+   "variant": "field_08",
+   "mask_NESW": 8
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "7fc0e6295b4fb5ed4f06a0c3b9c667dfcdf3bc5b088f26bbb02d264561605b6f",
+   "path": "Terrain/tilled_wet/2x/field_09.png",
+   "family": "tilled_wet",
+   "variant": "field_09",
+   "mask_NESW": 9
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "d3136f7558ef6ec62f6ab438353350687d3ef1d5739196a893d644d8b516cfdb",
+   "path": "Terrain/tilled_wet/2x/field_0a.png",
+   "family": "tilled_wet",
+   "variant": "field_0a",
+   "mask_NESW": 10
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "9f71282698b931c9f0169376ae620c88588fcdea4d0eee42dffff0ecd8abd317",
+   "path": "Terrain/tilled_wet/2x/field_0b.png",
+   "family": "tilled_wet",
+   "variant": "field_0b",
+   "mask_NESW": 11
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "ea2fe45f8ec64cba08323c6bdb467ea9aa7cfd9ef321723c32c140e7b17ba973",
+   "path": "Terrain/tilled_wet/2x/field_0c.png",
+   "family": "tilled_wet",
+   "variant": "field_0c",
+   "mask_NESW": 12
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "34291ca278cf08c04520e75baebe648ae634dc268e1d8fbca61b1757f8d04b25",
+   "path": "Terrain/tilled_wet/2x/field_0d.png",
+   "family": "tilled_wet",
+   "variant": "field_0d",
+   "mask_NESW": 13
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "e8342440cf60276a0ca3bfbb6f391c52547cb49744e33633a22d40204ab9e000",
+   "path": "Terrain/tilled_wet/2x/field_0e.png",
+   "family": "tilled_wet",
+   "variant": "field_0e",
+   "mask_NESW": 14
+  },
+  {
+   "width": 128,
+   "height": 128,
+   "pivot": [
+    0,
+    128
+   ],
+   "resolution": "2x",
+   "sha256": "fdb55b6ac6719da4dd1382d8aedb7a58958d2e76ff7a32551f83eb7870a42ef9",
+   "path": "Terrain/tilled_wet/2x/field_0f.png",
+   "family": "tilled_wet",
+   "variant": "field_0f",
+   "mask_NESW": 15
+  }
+ ]
+}

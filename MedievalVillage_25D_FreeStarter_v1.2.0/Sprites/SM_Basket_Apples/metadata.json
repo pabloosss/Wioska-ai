@@ -1,0 +1,372 @@
+{
+ "id": "SM_Basket_Apples",
+ "title": "Basket of apples",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "166d524ca01ba0809cf53f502f7ac2c0c4fa51057a6dc367750ae0c013589981",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c62cbf59d1e20dda53da90987cca96ac95b6a98a8968d810012b5fdb85edde0b",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "37394e8b0bcf07a98bcb68b0a29aa05637827b79c26c39d12d4e2aa3dfe59a8c",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9aba08b33599ab988a890d19eab94668330199f7df58e85352dd86c2545e3e3e",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f6cc4cbabbf74fa8cf4e011aac42c5501f59a8a3b5fa22aa980c1e283af4a807",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d97bc8245ced20149937ebabb1168f6d8b1971031c5634db56ba3df433347749",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "39405c01bb322de4af813326a5fa023b24c1b50fa5d2593b5c1ccb6501af70bf",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1f1ee8a0d411b79386262bdd30cf7cfc62617fd08aa6e17de5643ae7bcc7cebd",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "166d524ca01ba0809cf53f502f7ac2c0c4fa51057a6dc367750ae0c013589981",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 36,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c62cbf59d1e20dda53da90987cca96ac95b6a98a8968d810012b5fdb85edde0b",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 72,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "37394e8b0bcf07a98bcb68b0a29aa05637827b79c26c39d12d4e2aa3dfe59a8c",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 36,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9aba08b33599ab988a890d19eab94668330199f7df58e85352dd86c2545e3e3e",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 72,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f6cc4cbabbf74fa8cf4e011aac42c5501f59a8a3b5fa22aa980c1e283af4a807",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 36,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d97bc8245ced20149937ebabb1168f6d8b1971031c5634db56ba3df433347749",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 72,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 36,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "39405c01bb322de4af813326a5fa023b24c1b50fa5d2593b5c1ccb6501af70bf",
+   "path": "Sprites/SM_Basket_Apples/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 36,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 72,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1f1ee8a0d411b79386262bdd30cf7cfc62617fd08aa6e17de5643ae7bcc7cebd",
+   "path": "Sprites/SM_Basket_Apples/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 72,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 24,
+   "height": 24,
+   "pivot": [
+    12.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "d7e021d7f909f76898abee22162e3010f9e380cf8bf9b53266d5bfa33055d00f",
+   "path": "Shadows/SM_Basket_Apples/1x/down.png"
+  },
+  {
+   "width": 48,
+   "height": 48,
+   "pivot": [
+    24.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "164dfe348688865dcb6a5bb952b4aedbe60c2fc3145e429413b14ee3bab9db31",
+   "path": "Shadows/SM_Basket_Apples/2x/down.png"
+  },
+  {
+   "width": 24,
+   "height": 24,
+   "pivot": [
+    12.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "d7e021d7f909f76898abee22162e3010f9e380cf8bf9b53266d5bfa33055d00f",
+   "path": "Shadows/SM_Basket_Apples/1x/right.png"
+  },
+  {
+   "width": 48,
+   "height": 48,
+   "pivot": [
+    24.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "164dfe348688865dcb6a5bb952b4aedbe60c2fc3145e429413b14ee3bab9db31",
+   "path": "Shadows/SM_Basket_Apples/2x/right.png"
+  },
+  {
+   "width": 24,
+   "height": 24,
+   "pivot": [
+    12.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "d7e021d7f909f76898abee22162e3010f9e380cf8bf9b53266d5bfa33055d00f",
+   "path": "Shadows/SM_Basket_Apples/1x/up.png"
+  },
+  {
+   "width": 48,
+   "height": 48,
+   "pivot": [
+    24.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "164dfe348688865dcb6a5bb952b4aedbe60c2fc3145e429413b14ee3bab9db31",
+   "path": "Shadows/SM_Basket_Apples/2x/up.png"
+  },
+  {
+   "width": 24,
+   "height": 24,
+   "pivot": [
+    12.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "d7e021d7f909f76898abee22162e3010f9e380cf8bf9b53266d5bfa33055d00f",
+   "path": "Shadows/SM_Basket_Apples/1x/left.png"
+  },
+  {
+   "width": 48,
+   "height": 48,
+   "pivot": [
+    24.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "164dfe348688865dcb6a5bb952b4aedbe60c2fc3145e429413b14ee3bab9db31",
+   "path": "Shadows/SM_Basket_Apples/2x/left.png"
+  }
+ ]
+}

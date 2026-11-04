@@ -1,0 +1,468 @@
+{
+ "id": "SM_Fence_Gate",
+ "title": "Fence gate",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 78,
+   "height": 114,
+   "pivot": [
+    7.0,
+    107.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    67,
+    75,
+    110
+   ],
+   "sha256": "8dd48563c9b2885bf061eb29b4a54d9dc1ca04c1a4f5c2e0e74e6a3a39de4f47",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 156,
+   "height": 228,
+   "pivot": [
+    14.0,
+    214.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    135,
+    150,
+    221
+   ],
+   "sha256": "5c3aea318d11db84c018f9a627bc854d8477d4e1febe3fa0d31978180b52de1e",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 78,
+   "height": 114,
+   "pivot": [
+    7.0,
+    107.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    3,
+    11,
+    110
+   ],
+   "sha256": "d4dee0d40fa205a5c717fa2f82e3bde6f9b16c461cfb5385604d871fbbdac5cb",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 156,
+   "height": 228,
+   "pivot": [
+    14.0,
+    214.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    7,
+    22,
+    221
+   ],
+   "sha256": "0b828d900e183f8cdc1d57078bf6154814b6ea015f28c0b4875dde98c929205f",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 78,
+   "height": 113,
+   "pivot": [
+    71.0,
+    43.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    3,
+    75,
+    46
+   ],
+   "sha256": "b1f727d5f882a69f39d9f5d0e2c28f13202fd705eff2422c2274512b4f14d136",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 156,
+   "height": 226,
+   "pivot": [
+    142.0,
+    86.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    7,
+    150,
+    93
+   ],
+   "sha256": "a82a54095072850003e0d4839ea25802c8610fd0dda3fc23d164ae748e378c60",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 78,
+   "height": 113,
+   "pivot": [
+    71.0,
+    43.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    67,
+    3,
+    75,
+    110
+   ],
+   "sha256": "a14da9161d884e7dd2a6fcf9d554abfe54ec44afacd5b8e74d00a92f5d693718",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 156,
+   "height": 226,
+   "pivot": [
+    142.0,
+    86.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    134,
+    7,
+    150,
+    220
+   ],
+   "sha256": "aa03034acc586682e3b8d342485f7205a5d0aec95fd6d63142a9ca46a315371e",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 78,
+   "height": 114,
+   "pivot": [
+    7.0,
+    107.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 78,
+   "frame_height": 114,
+   "fps": 1,
+   "bbox": [
+    3,
+    67,
+    75,
+    110
+   ],
+   "sha256": "8dd48563c9b2885bf061eb29b4a54d9dc1ca04c1a4f5c2e0e74e6a3a39de4f47",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 156,
+   "height": 228,
+   "pivot": [
+    14.0,
+    214.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 156,
+   "frame_height": 228,
+   "fps": 1,
+   "bbox": [
+    6,
+    135,
+    150,
+    221
+   ],
+   "sha256": "5c3aea318d11db84c018f9a627bc854d8477d4e1febe3fa0d31978180b52de1e",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 78,
+   "height": 114,
+   "pivot": [
+    7.0,
+    107.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 78,
+   "frame_height": 114,
+   "fps": 1,
+   "bbox": [
+    3,
+    3,
+    11,
+    110
+   ],
+   "sha256": "d4dee0d40fa205a5c717fa2f82e3bde6f9b16c461cfb5385604d871fbbdac5cb",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 156,
+   "height": 228,
+   "pivot": [
+    14.0,
+    214.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 156,
+   "frame_height": 228,
+   "fps": 1,
+   "bbox": [
+    6,
+    7,
+    22,
+    221
+   ],
+   "sha256": "0b828d900e183f8cdc1d57078bf6154814b6ea015f28c0b4875dde98c929205f",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 78,
+   "height": 113,
+   "pivot": [
+    71.0,
+    43.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 78,
+   "frame_height": 113,
+   "fps": 1,
+   "bbox": [
+    3,
+    3,
+    75,
+    46
+   ],
+   "sha256": "b1f727d5f882a69f39d9f5d0e2c28f13202fd705eff2422c2274512b4f14d136",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 156,
+   "height": 226,
+   "pivot": [
+    142.0,
+    86.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 156,
+   "frame_height": 226,
+   "fps": 1,
+   "bbox": [
+    6,
+    7,
+    150,
+    93
+   ],
+   "sha256": "a82a54095072850003e0d4839ea25802c8610fd0dda3fc23d164ae748e378c60",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 78,
+   "height": 113,
+   "pivot": [
+    71.0,
+    43.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 78,
+   "frame_height": 113,
+   "fps": 1,
+   "bbox": [
+    67,
+    3,
+    75,
+    110
+   ],
+   "sha256": "a14da9161d884e7dd2a6fcf9d554abfe54ec44afacd5b8e74d00a92f5d693718",
+   "path": "Sprites/SM_Fence_Gate/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 156,
+   "height": 226,
+   "pivot": [
+    142.0,
+    86.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 156,
+   "frame_height": 226,
+   "fps": 1,
+   "bbox": [
+    134,
+    7,
+    150,
+    220
+   ],
+   "sha256": "aa03034acc586682e3b8d342485f7205a5d0aec95fd6d63142a9ca46a315371e",
+   "path": "Sprites/SM_Fence_Gate/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 76,
+   "height": 12,
+   "pivot": [
+    6,
+    6
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "306756e0374adce2e8524a4f745c5ff2281d584122b185f26c105c6725e885ba",
+   "path": "Shadows/SM_Fence_Gate/1x/down.png"
+  },
+  {
+   "width": 152,
+   "height": 24,
+   "pivot": [
+    12,
+    12
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "eaff305e29fdcc22f915442d6287b332a5f6a9f27c682324a03448a817989ab7",
+   "path": "Shadows/SM_Fence_Gate/2x/down.png"
+  },
+  {
+   "width": 12,
+   "height": 76,
+   "pivot": [
+    6,
+    70
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "ce26860614d66c1ebdd9d1521af90339a0cc352ea62d0e3517fb2399655aaa6c",
+   "path": "Shadows/SM_Fence_Gate/1x/right.png"
+  },
+  {
+   "width": 24,
+   "height": 152,
+   "pivot": [
+    12,
+    140
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "5b7d273089e9f34358afc5014bc039b204885654edfd9643139983fb6da1407c",
+   "path": "Shadows/SM_Fence_Gate/2x/right.png"
+  },
+  {
+   "width": 76,
+   "height": 12,
+   "pivot": [
+    70,
+    6
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "d7219126fceeee6a084856964df35bb20d38782219da12b112aa7747bb5cc6f1",
+   "path": "Shadows/SM_Fence_Gate/1x/up.png"
+  },
+  {
+   "width": 152,
+   "height": 24,
+   "pivot": [
+    140,
+    12
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "9b9d24960db5075e238d52f2c63b3cf2bc57c0bea7f03d99e323dad1e9e3dded",
+   "path": "Shadows/SM_Fence_Gate/2x/up.png"
+  },
+  {
+   "width": 12,
+   "height": 76,
+   "pivot": [
+    6,
+    6
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "65f3e74aad8eb425fe5ec781caa419f097121e6522d77f21222be0d1869050c7",
+   "path": "Shadows/SM_Fence_Gate/1x/left.png"
+  },
+  {
+   "width": 24,
+   "height": 152,
+   "pivot": [
+    12,
+    12
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "794e42173b482fef44947b152a8937906353ee849282679ea09c916e4bd51843",
+   "path": "Shadows/SM_Fence_Gate/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

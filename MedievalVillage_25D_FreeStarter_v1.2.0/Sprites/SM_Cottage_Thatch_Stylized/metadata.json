@@ -1,0 +1,372 @@
+{
+ "id": "SM_Cottage_Thatch_Stylized",
+ "title": "Cottage - thatch",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "99be188ff2282de34bb51082b4b8ae363ec598ddb4b9a21b45909cee1b4dd515",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6912cb16e0b925368cfd06923c35743d5cad9f901efa1295cae04684acf6b9a1",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5c2b341ab262f1831f2ad363ea8680a0a923ba49d3fced6ea58dc3db883ddf1f",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "008ab568b91254446544926b4d54e08c008d62b3c747b8df5c7b70b51c8fb4cc",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6b895b972f0f480d1440ac1523cf7b5005f4b4bf609212b3d07f17e6ffefd531",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "132e090b2076807f8188c3281647342aad6cf89363935427a5be6031f8ef174c",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "837b0b810892f6c972123569a79771a91fe6c1529e179297cfb699ecd7872bf3",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f220342fcf51c4d4011ec32f0dbe7d54cad184feda3cc4a9e32b227d7bfd8c3b",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "99be188ff2282de34bb51082b4b8ae363ec598ddb4b9a21b45909cee1b4dd515",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 246,
+   "frame_height": 397,
+   "fps": 1
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6912cb16e0b925368cfd06923c35743d5cad9f901efa1295cae04684acf6b9a1",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 492,
+   "frame_height": 794,
+   "fps": 1
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5c2b341ab262f1831f2ad363ea8680a0a923ba49d3fced6ea58dc3db883ddf1f",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 246,
+   "frame_height": 397,
+   "fps": 1
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "008ab568b91254446544926b4d54e08c008d62b3c747b8df5c7b70b51c8fb4cc",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 492,
+   "frame_height": 794,
+   "fps": 1
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6b895b972f0f480d1440ac1523cf7b5005f4b4bf609212b3d07f17e6ffefd531",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 246,
+   "frame_height": 397,
+   "fps": 1
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "132e090b2076807f8188c3281647342aad6cf89363935427a5be6031f8ef174c",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 492,
+   "frame_height": 794,
+   "fps": 1
+  },
+  {
+   "width": 246,
+   "height": 397,
+   "pivot": [
+    123.0,
+    276.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "837b0b810892f6c972123569a79771a91fe6c1529e179297cfb699ecd7872bf3",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 246,
+   "frame_height": 397,
+   "fps": 1
+  },
+  {
+   "width": 492,
+   "height": 794,
+   "pivot": [
+    246.0,
+    552.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f220342fcf51c4d4011ec32f0dbe7d54cad184feda3cc4a9e32b227d7bfd8c3b",
+   "path": "Sprites/SM_Cottage_Thatch_Stylized/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 492,
+   "frame_height": 794,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 202,
+   "height": 96,
+   "pivot": [
+    101.0,
+    48.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "4a7ffbca87a45607cdeb7ce54fb420a2b7128e969b17e87111cf278983f19bce",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/1x/down.png"
+  },
+  {
+   "width": 404,
+   "height": 192,
+   "pivot": [
+    202.0,
+    96.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "38b8affa48f33b933dacdc4f093b4d2029be9eaeb99db70a66d29c22c303ef70",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/2x/down.png"
+  },
+  {
+   "width": 96,
+   "height": 202,
+   "pivot": [
+    48.0,
+    101.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "d3324b8d9768ce4743f960a12242ea557fcceb2d90e8eb65c286355657710c2f",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/1x/right.png"
+  },
+  {
+   "width": 192,
+   "height": 404,
+   "pivot": [
+    96.0,
+    202.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "394112e7495b7d90b3d624cc0861b5b0f492d9cd40706608de00b0282fd0f30f",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/2x/right.png"
+  },
+  {
+   "width": 202,
+   "height": 96,
+   "pivot": [
+    101.0,
+    48.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "4a7ffbca87a45607cdeb7ce54fb420a2b7128e969b17e87111cf278983f19bce",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/1x/up.png"
+  },
+  {
+   "width": 404,
+   "height": 192,
+   "pivot": [
+    202.0,
+    96.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "38b8affa48f33b933dacdc4f093b4d2029be9eaeb99db70a66d29c22c303ef70",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/2x/up.png"
+  },
+  {
+   "width": 96,
+   "height": 202,
+   "pivot": [
+    48.0,
+    101.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "d3324b8d9768ce4743f960a12242ea557fcceb2d90e8eb65c286355657710c2f",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/1x/left.png"
+  },
+  {
+   "width": 192,
+   "height": 404,
+   "pivot": [
+    96.0,
+    202.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "394112e7495b7d90b3d624cc0861b5b0f492d9cd40706608de00b0282fd0f30f",
+   "path": "Shadows/SM_Cottage_Thatch_Stylized/2x/left.png"
+  }
+ ]
+}

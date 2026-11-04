@@ -1,0 +1,215 @@
+{
+ "id": "FX_Soil_Burst",
+ "title": "Soil burst (hoe impact)",
+ "kind": "effect",
+ "projection": "topdown",
+ "directionIndependent": true,
+ "loop": false,
+ "trigger": "Play once from the impact frame (frame 3 of 8) of the matching farmer clip; pivot = impact point",
+ "frames": [
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "1476f318be773f8cb30d9587c4f4ad21af4519653494305062f0bb3c74580daa",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_00.png"
+  },
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "2bab1099dbf7af9de25ef48816252c7c6cbb046bdae8b32071358172d87005fe",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_01.png"
+  },
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "2a0ebb3abec082cf3041a83b6485447eb34cd6989e3b1b6235d86dbcc9576bee",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_02.png"
+  },
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "84379ec627d457e5433c8b764409cc62e67672a706995e3aa0aa3d1c78d71d5e",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_03.png"
+  },
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "0f9ff1a6e28ac2d784f4b7f7ec8c61fd54b667facf6eef2d6ac87e73ca28ad93",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_04.png"
+  },
+  {
+   "width": 48,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "3ea5ca115bd0b9bd17b195c0a1f16d559ca76f55c908f7c27e1493a4a6d4404f",
+   "path": "Effects/FX_Soil_Burst/1x/frames/play_05.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "6555240f617a0b3d8cae488b943c5798d746c057fa6e828c95cb7917aee5951c",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_00.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "a27f7a4d2f6fde3b431199f19724d4839461ea5b47ae0eeb9c0f30486d9a330b",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_01.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "06df102cce5e3f6f3234368ca5756bb12d0bc6bedd0bbe9a65c99304db3b85e2",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_02.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "4a31927f7abf63f22329eb0befb0f5aeded5a680aefd034f58b72f77c66c617c",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_03.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "ebd95564442591d5314c0eaea48a2a9309e1612ca3e065c88d8787ed9d4f81e7",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_04.png"
+  },
+  {
+   "width": 96,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "2a7f4fbd53d009f531d5fc2c4079a047b6463942c1e3e1007ce75b805b56cb3e",
+   "path": "Effects/FX_Soil_Burst/2x/frames/play_05.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 288,
+   "height": 49,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 48,
+   "frame_height": 49,
+   "fps": 12,
+   "sha256": "1c6a92701dbd41ad3b982505da0c5c386b9d6e8ff8e3d724052bf479861fdf68",
+   "path": "Effects/FX_Soil_Burst/1x/sheets/play.png"
+  },
+  {
+   "width": 576,
+   "height": 98,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 96,
+   "frame_height": 98,
+   "fps": 12,
+   "sha256": "b757310590e2c9f31244ebb47e26a9dcfdeb5957b09500edb7cbfcc227603b83",
+   "path": "Effects/FX_Soil_Burst/2x/sheets/play.png"
+  }
+ ]
+}

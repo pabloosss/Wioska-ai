@@ -1,0 +1,468 @@
+{
+ "id": "SM_Grass_Clump",
+ "title": "Grass clump",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 19,
+   "height": 25,
+   "pivot": [
+    10.0,
+    17.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    5,
+    14,
+    21
+   ],
+   "sha256": "0baf0736a7175980f0596bf0eb4a083108fe3b41e2901a9b44ad304a07b559f6",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 38,
+   "height": 50,
+   "pivot": [
+    20.0,
+    34.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    10,
+    9,
+    28,
+    43
+   ],
+   "sha256": "d33693bfb08ad486716ff7a31ac1e4a84fc5c0ead4149d8e5a71e1db246189af",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    5,
+    7,
+    13,
+    24
+   ],
+   "sha256": "6ce8ce260a0835daeefca3b1460360ac0ad72bd8311d36a7ae2b89e34fbe9364",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    11,
+    13,
+    26,
+    48
+   ],
+   "sha256": "01305dd97dc4ff0274e3edf1fa0d2b92e7aff48c25ed55b7806fc81d9bf6e892",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    7,
+    14,
+    24
+   ],
+   "sha256": "9c915c003d358cd63aeb66bfdfb3584fbe25f8cf0d3611b02523e19de45d641d",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    8,
+    13,
+    29,
+    48
+   ],
+   "sha256": "6ff2625ce3871a951067f35923eefa6749d3be18ab2f147003a400f38d062c68",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    5,
+    5,
+    13,
+    24
+   ],
+   "sha256": "ec46f526b98ecaa5c4d1db741d86846c019ff7d1fc9fcc2c085f8ba939222e62",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    9,
+    10,
+    26,
+    48
+   ],
+   "sha256": "1724f99d524b3dc0223c3b9d637833c4cf463761bccc921d86873a07e5fd35a5",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 19,
+   "height": 25,
+   "pivot": [
+    10.0,
+    17.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 19,
+   "frame_height": 25,
+   "fps": 1,
+   "bbox": [
+    6,
+    5,
+    14,
+    21
+   ],
+   "sha256": "0baf0736a7175980f0596bf0eb4a083108fe3b41e2901a9b44ad304a07b559f6",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 38,
+   "height": 50,
+   "pivot": [
+    20.0,
+    34.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 38,
+   "frame_height": 50,
+   "fps": 1,
+   "bbox": [
+    10,
+    9,
+    28,
+    43
+   ],
+   "sha256": "d33693bfb08ad486716ff7a31ac1e4a84fc5c0ead4149d8e5a71e1db246189af",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 19,
+   "frame_height": 28,
+   "fps": 1,
+   "bbox": [
+    5,
+    7,
+    13,
+    24
+   ],
+   "sha256": "6ce8ce260a0835daeefca3b1460360ac0ad72bd8311d36a7ae2b89e34fbe9364",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 38,
+   "frame_height": 56,
+   "fps": 1,
+   "bbox": [
+    11,
+    13,
+    26,
+    48
+   ],
+   "sha256": "01305dd97dc4ff0274e3edf1fa0d2b92e7aff48c25ed55b7806fc81d9bf6e892",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 19,
+   "frame_height": 28,
+   "fps": 1,
+   "bbox": [
+    4,
+    7,
+    14,
+    24
+   ],
+   "sha256": "9c915c003d358cd63aeb66bfdfb3584fbe25f8cf0d3611b02523e19de45d641d",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 38,
+   "frame_height": 56,
+   "fps": 1,
+   "bbox": [
+    8,
+    13,
+    29,
+    48
+   ],
+   "sha256": "6ff2625ce3871a951067f35923eefa6749d3be18ab2f147003a400f38d062c68",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 19,
+   "height": 28,
+   "pivot": [
+    9.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 19,
+   "frame_height": 28,
+   "fps": 1,
+   "bbox": [
+    5,
+    5,
+    13,
+    24
+   ],
+   "sha256": "ec46f526b98ecaa5c4d1db741d86846c019ff7d1fc9fcc2c085f8ba939222e62",
+   "path": "Sprites/SM_Grass_Clump/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 38,
+   "height": 56,
+   "pivot": [
+    18.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 38,
+   "frame_height": 56,
+   "fps": 1,
+   "bbox": [
+    9,
+    10,
+    26,
+    48
+   ],
+   "sha256": "1724f99d524b3dc0223c3b9d637833c4cf463761bccc921d86873a07e5fd35a5",
+   "path": "Sprites/SM_Grass_Clump/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 14,
+   "height": 12,
+   "pivot": [
+    7.0,
+    6.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "d76ee1fad8845069ea0447cd56d46de44f68952ab9668d1dfd64c19b9e1d96f7",
+   "path": "Shadows/SM_Grass_Clump/1x/down.png"
+  },
+  {
+   "width": 28,
+   "height": 24,
+   "pivot": [
+    14.0,
+    12.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "67eca692e1b2a3bb84c40a801ef09a770e998449e970eaab63f45cb5adc61b15",
+   "path": "Shadows/SM_Grass_Clump/2x/down.png"
+  },
+  {
+   "width": 12,
+   "height": 14,
+   "pivot": [
+    6.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "233b623f2a6dab1c6098fb87ad894bcc909ac0bcfbb435bf7058ff25ddd4f2b6",
+   "path": "Shadows/SM_Grass_Clump/1x/right.png"
+  },
+  {
+   "width": 24,
+   "height": 28,
+   "pivot": [
+    12.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "cde900f96eef845be42d042033b6e474d04fa3277cd717d23d178dc44fb6b25c",
+   "path": "Shadows/SM_Grass_Clump/2x/right.png"
+  },
+  {
+   "width": 14,
+   "height": 12,
+   "pivot": [
+    7.0,
+    6.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "d76ee1fad8845069ea0447cd56d46de44f68952ab9668d1dfd64c19b9e1d96f7",
+   "path": "Shadows/SM_Grass_Clump/1x/up.png"
+  },
+  {
+   "width": 28,
+   "height": 24,
+   "pivot": [
+    14.0,
+    12.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "67eca692e1b2a3bb84c40a801ef09a770e998449e970eaab63f45cb5adc61b15",
+   "path": "Shadows/SM_Grass_Clump/2x/up.png"
+  },
+  {
+   "width": 12,
+   "height": 14,
+   "pivot": [
+    6.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "233b623f2a6dab1c6098fb87ad894bcc909ac0bcfbb435bf7058ff25ddd4f2b6",
+   "path": "Shadows/SM_Grass_Clump/1x/left.png"
+  },
+  {
+   "width": 24,
+   "height": 28,
+   "pivot": [
+    12.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "cde900f96eef845be42d042033b6e474d04fa3277cd717d23d178dc44fb6b25c",
+   "path": "Shadows/SM_Grass_Clump/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

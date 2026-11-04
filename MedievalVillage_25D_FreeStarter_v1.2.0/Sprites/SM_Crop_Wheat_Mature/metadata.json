@@ -1,0 +1,275 @@
+{
+ "id": "SM_Crop_Wheat_Mature",
+ "title": "Wheat - mature",
+ "kind": "prop",
+ "category": "crop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "8cdf080a1bfb8b3fb84488281bb5c504d1a601400a93c5fe5e151d736e81644d",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a12fa240585e6cfca83baf0bfebde28ab32b847083be6868bf22a315f8b0efd2",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "401d7441fc6b2ceea6f35191796fcf7e943b925b2aca55a24b345c28f27f2734",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3cb851a221c32ddcba35d76eacf9e17fe50a261b669d9c5497233c2c4ed7e3c4",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4a9a078b074c3e1681e6e26de83e29b4e5d7685c26e6b5314a17b88b760af96c",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "14188bfca3eb5f7a8ea26d83f9ecd9023fff6b37dd7e998f83487e93a9cbe1ec",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0fe32a2adb936ca2f8cf06f4252c6d289a1f94e6f8d399d75b8173cb8aadbae0",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "72651a8cf117baed1db1e76c3458e73871844459d25b86d44797fb4f376cd5d0",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "8cdf080a1bfb8b3fb84488281bb5c504d1a601400a93c5fe5e151d736e81644d",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 46,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a12fa240585e6cfca83baf0bfebde28ab32b847083be6868bf22a315f8b0efd2",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 92,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "401d7441fc6b2ceea6f35191796fcf7e943b925b2aca55a24b345c28f27f2734",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 46,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3cb851a221c32ddcba35d76eacf9e17fe50a261b669d9c5497233c2c4ed7e3c4",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 92,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4a9a078b074c3e1681e6e26de83e29b4e5d7685c26e6b5314a17b88b760af96c",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 46,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "14188bfca3eb5f7a8ea26d83f9ecd9023fff6b37dd7e998f83487e93a9cbe1ec",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 92,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 46,
+   "pivot": [
+    14.0,
+    38.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0fe32a2adb936ca2f8cf06f4252c6d289a1f94e6f8d399d75b8173cb8aadbae0",
+   "path": "Sprites/SM_Crop_Wheat_Mature/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 46,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 92,
+   "pivot": [
+    28.0,
+    76.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "72651a8cf117baed1db1e76c3458e73871844459d25b86d44797fb4f376cd5d0",
+   "path": "Sprites/SM_Crop_Wheat_Mature/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 92,
+   "fps": 1
+  }
+ ],
+ "contactShadows": []
+}

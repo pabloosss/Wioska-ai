@@ -1,0 +1,372 @@
+{
+ "id": "SM_Scarecrow",
+ "title": "Scarecrow",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4def9aa4fcf31e2ca87f05e3ee409dd0c651937ceedc07f745eed881a3e6b8ad",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "89be01bcb2cdc1930eece3fdae9d649a0459bf8eadcf7768d04a03af047facb2",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "897256360d1bc9efeb27c5922f912a55e841fc2bafe655034cfd3761efddb2fd",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2043d252d5af2e0cec984b42977fc2978b96f03d33948ea8505d9f23ba7dfdd5",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a79ec4872015796f2b804187118ffad7d9f4bd3940fa19f95e99e7a79e2225fe",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0a3adc6f20b9ffbe9ef6c3bb0a121ce37b92d15a8ced1718c38f6a7637b289fa",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2a108439cf916e434f02731193257d42604213306964480f3731c3742f362039",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b95c65cf398215c4d9a938120044fb10334b9c02f06c7553317b8a14955f2eb3",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4def9aa4fcf31e2ca87f05e3ee409dd0c651937ceedc07f745eed881a3e6b8ad",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 79,
+   "fps": 1
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "89be01bcb2cdc1930eece3fdae9d649a0459bf8eadcf7768d04a03af047facb2",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 158,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "897256360d1bc9efeb27c5922f912a55e841fc2bafe655034cfd3761efddb2fd",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 79,
+   "fps": 1
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2043d252d5af2e0cec984b42977fc2978b96f03d33948ea8505d9f23ba7dfdd5",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 158,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a79ec4872015796f2b804187118ffad7d9f4bd3940fa19f95e99e7a79e2225fe",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 79,
+   "fps": 1
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0a3adc6f20b9ffbe9ef6c3bb0a121ce37b92d15a8ced1718c38f6a7637b289fa",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 158,
+   "fps": 1
+  },
+  {
+   "width": 64,
+   "height": 79,
+   "pivot": [
+    32.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2a108439cf916e434f02731193257d42604213306964480f3731c3742f362039",
+   "path": "Sprites/SM_Scarecrow/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 79,
+   "fps": 1
+  },
+  {
+   "width": 128,
+   "height": 158,
+   "pivot": [
+    64.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b95c65cf398215c4d9a938120044fb10334b9c02f06c7553317b8a14955f2eb3",
+   "path": "Sprites/SM_Scarecrow/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 158,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 18,
+   "height": 16,
+   "pivot": [
+    9.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "8ef36ef577b1112881f5f1bfe3f7d4ffc050737ab0aa3a7d06f1abe1e28723c1",
+   "path": "Shadows/SM_Scarecrow/1x/down.png"
+  },
+  {
+   "width": 36,
+   "height": 32,
+   "pivot": [
+    18.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "001022d0c85df5e47f503d7e5463795f70ae09e964c03da657e49e8778345aff",
+   "path": "Shadows/SM_Scarecrow/2x/down.png"
+  },
+  {
+   "width": 16,
+   "height": 18,
+   "pivot": [
+    8.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "9946dfdb52b573024179161d63c0477327999fd3b70378dea66222788f472f5e",
+   "path": "Shadows/SM_Scarecrow/1x/right.png"
+  },
+  {
+   "width": 32,
+   "height": 36,
+   "pivot": [
+    16.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "e3d4edd96be779aa1b3692faf54a87bfd425a9633ce2bfa2b441c80150631d89",
+   "path": "Shadows/SM_Scarecrow/2x/right.png"
+  },
+  {
+   "width": 18,
+   "height": 16,
+   "pivot": [
+    9.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "8ef36ef577b1112881f5f1bfe3f7d4ffc050737ab0aa3a7d06f1abe1e28723c1",
+   "path": "Shadows/SM_Scarecrow/1x/up.png"
+  },
+  {
+   "width": 36,
+   "height": 32,
+   "pivot": [
+    18.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "001022d0c85df5e47f503d7e5463795f70ae09e964c03da657e49e8778345aff",
+   "path": "Shadows/SM_Scarecrow/2x/up.png"
+  },
+  {
+   "width": 16,
+   "height": 18,
+   "pivot": [
+    8.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "9946dfdb52b573024179161d63c0477327999fd3b70378dea66222788f472f5e",
+   "path": "Shadows/SM_Scarecrow/1x/left.png"
+  },
+  {
+   "width": 32,
+   "height": 36,
+   "pivot": [
+    16.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "e3d4edd96be779aa1b3692faf54a87bfd425a9633ce2bfa2b441c80150631d89",
+   "path": "Shadows/SM_Scarecrow/2x/left.png"
+  }
+ ]
+}

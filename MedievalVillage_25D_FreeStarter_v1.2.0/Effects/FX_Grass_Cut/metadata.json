@@ -1,0 +1,215 @@
+{
+ "id": "FX_Grass_Cut",
+ "title": "Grass cuttings (sickle)",
+ "kind": "effect",
+ "projection": "topdown",
+ "directionIndependent": true,
+ "loop": false,
+ "trigger": "Play once from the impact frame (frame 3 of 8) of the matching farmer clip; pivot = impact point",
+ "frames": [
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "f53587f2ec7b952cc8a16fce67e9c31d3257cbf1a15aa9b58c044c06a24202ee",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_00.png"
+  },
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "c698f3162415e43d323c4d743e4a521059becbf8083079dc51a91689ce0c542f",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_01.png"
+  },
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "4ccdbafd2ab18043d72090944a79efb0cb8c5f4d152c0f0c80c8efc21a5829f6",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_02.png"
+  },
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "db528e0be71ae7f61b1749b53ad3570e0e2508f05150422a1095931e11dbaa3f",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_03.png"
+  },
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "95c711914dafc036d87e4f7305d986f6f76531e4d67f9276d973cbdab0b9bc10",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_04.png"
+  },
+  {
+   "width": 41,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "e748205ee76e2c0d3e9cdcba00d6f6fca0b57b161dce49a755b73a9cf228b637",
+   "path": "Effects/FX_Grass_Cut/1x/frames/play_05.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "8eae1afebcabe718983a4182fa153f2d2430bfb45769eedf0b7b9f541592959e",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_00.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "65f209b35efffd19c5f2f952adc5d2cbd3cb9799444b8e033cab2f56ef941772",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_01.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "235eab2c0167d1cea6e57d474ff9b5d0e0c0d66dbbec81fd06d5c7aeb0f2b367",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_02.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "0a96be404b3bd12a716fafae1950275cceacc53615562012fc822d172e9b9e9f",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_03.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "e09b59a60fad67dc42c7632226663684613140dea94dd8e3a1b25ba01c9bc902",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_04.png"
+  },
+  {
+   "width": 82,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "4dd034db3371ce9c9e48ed63fb91505797f8061166255cf9f8cd19e0f6efe3d9",
+   "path": "Effects/FX_Grass_Cut/2x/frames/play_05.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 246,
+   "height": 44,
+   "pivot": [
+    23.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 41,
+   "frame_height": 44,
+   "fps": 12,
+   "sha256": "d6dfbf1967a725b164fb2e71ed569f807abcb101aaf41b5d286d0974b143900b",
+   "path": "Effects/FX_Grass_Cut/1x/sheets/play.png"
+  },
+  {
+   "width": 492,
+   "height": 88,
+   "pivot": [
+    46.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 82,
+   "frame_height": 88,
+   "fps": 12,
+   "sha256": "7c8ada3a35e66d8dde919f052af3dbc409bd6837b14ab199390015317ebe518b",
+   "path": "Effects/FX_Grass_Cut/2x/sheets/play.png"
+  }
+ ]
+}

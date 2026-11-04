@@ -1,0 +1,372 @@
+{
+ "id": "SM_Barn_Hayloft",
+ "title": "Barn with hayloft",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a53ada386e18542e1a049db7cda8c3296b8f437b4e4c2b77f339d660515dce7e",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0901fbed0ba0a336a5d3abe6f8adebb5820105665bf33894298159bec00481b1",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "74e29e64cfaa52bcec2fc461785f1c81c46922086b1402f3fc501e5979d0a9c2",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "320b8a3c06ea8f351b0330d281cdd8ad3d05322bc6247d0b6c476a1cffd1cb11",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3b773d2e4fb560559c476da31d1e69973b4ad41413d0b020e0d679d8d00dc658",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9adfe41832df10964f3d2f46ef52efc1ce8fb4635a1d130f40d1309fd014e010",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "61058253f9e300bce152e9384b8055dd52c23d188fec68ded0cf65a87c3d326c",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "57c595be3974c7fcf28734a850a942fc8412264b23fb0c37fa6b067337fc3952",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a53ada386e18542e1a049db7cda8c3296b8f437b4e4c2b77f339d660515dce7e",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 182,
+   "frame_height": 294,
+   "fps": 1
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0901fbed0ba0a336a5d3abe6f8adebb5820105665bf33894298159bec00481b1",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 364,
+   "frame_height": 588,
+   "fps": 1
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "74e29e64cfaa52bcec2fc461785f1c81c46922086b1402f3fc501e5979d0a9c2",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 182,
+   "frame_height": 294,
+   "fps": 1
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "320b8a3c06ea8f351b0330d281cdd8ad3d05322bc6247d0b6c476a1cffd1cb11",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 364,
+   "frame_height": 588,
+   "fps": 1
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3b773d2e4fb560559c476da31d1e69973b4ad41413d0b020e0d679d8d00dc658",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 182,
+   "frame_height": 294,
+   "fps": 1
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9adfe41832df10964f3d2f46ef52efc1ce8fb4635a1d130f40d1309fd014e010",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 364,
+   "frame_height": 588,
+   "fps": 1
+  },
+  {
+   "width": 182,
+   "height": 294,
+   "pivot": [
+    91.0,
+    216.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "61058253f9e300bce152e9384b8055dd52c23d188fec68ded0cf65a87c3d326c",
+   "path": "Sprites/SM_Barn_Hayloft/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 182,
+   "frame_height": 294,
+   "fps": 1
+  },
+  {
+   "width": 364,
+   "height": 588,
+   "pivot": [
+    182.0,
+    432.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "57c595be3974c7fcf28734a850a942fc8412264b23fb0c37fa6b067337fc3952",
+   "path": "Sprites/SM_Barn_Hayloft/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 364,
+   "frame_height": 588,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 154,
+   "height": 110,
+   "pivot": [
+    77.0,
+    55.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "444e24631256012e29822238ef072c9bdc745b0ca6fb1c796430e82179d92eca",
+   "path": "Shadows/SM_Barn_Hayloft/1x/down.png"
+  },
+  {
+   "width": 308,
+   "height": 220,
+   "pivot": [
+    154.0,
+    110.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "590f446621a8900c1d0f9ae73fde16167c485c539aaf40f72b8cbdd506cc0c46",
+   "path": "Shadows/SM_Barn_Hayloft/2x/down.png"
+  },
+  {
+   "width": 110,
+   "height": 154,
+   "pivot": [
+    55.0,
+    77.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "7979c1f344a5f1dc4887ac69e8274d5fa471851c133e970b1f5c9f5baed6e475",
+   "path": "Shadows/SM_Barn_Hayloft/1x/right.png"
+  },
+  {
+   "width": 220,
+   "height": 308,
+   "pivot": [
+    110.0,
+    154.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "7bf0a4ca2bd145a99c3dbdc889b8105f60effb20d83935317e06504e7d7068f2",
+   "path": "Shadows/SM_Barn_Hayloft/2x/right.png"
+  },
+  {
+   "width": 154,
+   "height": 110,
+   "pivot": [
+    77.0,
+    55.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "444e24631256012e29822238ef072c9bdc745b0ca6fb1c796430e82179d92eca",
+   "path": "Shadows/SM_Barn_Hayloft/1x/up.png"
+  },
+  {
+   "width": 308,
+   "height": 220,
+   "pivot": [
+    154.0,
+    110.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "590f446621a8900c1d0f9ae73fde16167c485c539aaf40f72b8cbdd506cc0c46",
+   "path": "Shadows/SM_Barn_Hayloft/2x/up.png"
+  },
+  {
+   "width": 110,
+   "height": 154,
+   "pivot": [
+    55.0,
+    77.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "7979c1f344a5f1dc4887ac69e8274d5fa471851c133e970b1f5c9f5baed6e475",
+   "path": "Shadows/SM_Barn_Hayloft/1x/left.png"
+  },
+  {
+   "width": 220,
+   "height": 308,
+   "pivot": [
+    110.0,
+    154.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "7bf0a4ca2bd145a99c3dbdc889b8105f60effb20d83935317e06504e7d7068f2",
+   "path": "Shadows/SM_Barn_Hayloft/2x/left.png"
+  }
+ ]
+}

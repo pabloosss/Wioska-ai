@@ -1,0 +1,215 @@
+{
+ "id": "FX_Seed_Scatter",
+ "title": "Seed scatter (sow, from frame 5)",
+ "kind": "effect",
+ "projection": "topdown",
+ "directionIndependent": true,
+ "loop": false,
+ "trigger": "Play once from the impact frame (frame 3 of 8) of the matching farmer clip; pivot = impact point",
+ "frames": [
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "bb4bb2fd7e84a78f428780986f442f919e184d511d6f7b64f738f636f3b8331e",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_00.png"
+  },
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "ce3509984f61c7790386480e9064053b19f5465f02e819747a4f745fccde87d2",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_01.png"
+  },
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "cd3b7a96a135e6b2136515555f044f9bb8575e8c114a637396a6ae1a612edbf3",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_02.png"
+  },
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "12e83b6f81addadc340295af4fd6e5da814031c4b4a4b7d5fdef3075888ddad0",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_03.png"
+  },
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "0870e96669dfb180c370bd064444f1d37f6df92b684865d0c8665645bbdeeb45",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_04.png"
+  },
+  {
+   "width": 24,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "f4574ec5f9afdd91d5a81b1750b7ea88ab4a966068512eafaf9f5d191c721d0f",
+   "path": "Effects/FX_Seed_Scatter/1x/frames/play_05.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "e40f2805d95543c921b2095294c9962a476a3b45bb09baaf3fe4d9e7c79c887c",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_00.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "f77ef5dcc600ce0444d4b8c841f4b8e69ffae8cfb990399dda4ae15849c59844",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_01.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "8d2e5427b59b621812e593d2665279d791c7c93f69be1ce97a8bcd6aee5c5efa",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_02.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "8f2585f56d190feb2eec9ca3fdc5b207772c9ee3422d92eb91566be66274ace0",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_03.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "09968b0a75174f14d98490eae4eacbfb949fa78d0ee7e33cbfe914bca5a9596b",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_04.png"
+  },
+  {
+   "width": 48,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "9fa5936fd6d4e55c7877583cf9bb829460e8c43b25fe8a8c32e9b069c7423582",
+   "path": "Effects/FX_Seed_Scatter/2x/frames/play_05.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 144,
+   "height": 46,
+   "pivot": [
+    11.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 24,
+   "frame_height": 46,
+   "fps": 12,
+   "sha256": "f80485a0b30b31975bd4942f6a01aaadd8f665e6bd44e3e926f9fb08b64826ed",
+   "path": "Effects/FX_Seed_Scatter/1x/sheets/play.png"
+  },
+  {
+   "width": 288,
+   "height": 92,
+   "pivot": [
+    22.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 48,
+   "frame_height": 92,
+   "fps": 12,
+   "sha256": "4875aaa75740786ee58601fc7809054e04a9258bb8dd72786a78cd9d49dd59b5",
+   "path": "Effects/FX_Seed_Scatter/2x/sheets/play.png"
+  }
+ ]
+}

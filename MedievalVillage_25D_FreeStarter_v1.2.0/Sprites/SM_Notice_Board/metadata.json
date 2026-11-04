@@ -1,0 +1,372 @@
+{
+ "id": "SM_Notice_Board",
+ "title": "Notice board",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9ace74c6c93f379b737eba221a6147ac1284dfcd54ccfb43833897ed94b41911",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a0ed0fa7d9f469835c1f23dd297e4565537609189e07fe18888635ed6d0c808a",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4fdcbc10dcea545c59c9f443487df451dcaf451a552d50982f209df9db4e40ec",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3f42f98941b14317f80d536b7577590b303c462f5b50397d75f9cbc5cfa42227",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "90934bd624f9e509c6f1e36ec6ef9218576b8d308087a6aee41c66ef755e7150",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "710c03d9b4bb59fae523f230694c9d43cc1d46d7b677dd0856135254ce84ee38",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c3b6ce7290bafe51d59062813be9e386a0917f033b51fb8fed3fe11185aa251c",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7166ad0609e6adc82c3b2aafec432df7dca6ad55ab963bf9721f97519678c82d",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9ace74c6c93f379b737eba221a6147ac1284dfcd54ccfb43833897ed94b41911",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 72,
+   "frame_height": 126,
+   "fps": 1
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a0ed0fa7d9f469835c1f23dd297e4565537609189e07fe18888635ed6d0c808a",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 144,
+   "frame_height": 252,
+   "fps": 1
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4fdcbc10dcea545c59c9f443487df451dcaf451a552d50982f209df9db4e40ec",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 72,
+   "frame_height": 126,
+   "fps": 1
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3f42f98941b14317f80d536b7577590b303c462f5b50397d75f9cbc5cfa42227",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 144,
+   "frame_height": 252,
+   "fps": 1
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "90934bd624f9e509c6f1e36ec6ef9218576b8d308087a6aee41c66ef755e7150",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 72,
+   "frame_height": 126,
+   "fps": 1
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "710c03d9b4bb59fae523f230694c9d43cc1d46d7b677dd0856135254ce84ee38",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 144,
+   "frame_height": 252,
+   "fps": 1
+  },
+  {
+   "width": 72,
+   "height": 126,
+   "pivot": [
+    36.0,
+    99.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c3b6ce7290bafe51d59062813be9e386a0917f033b51fb8fed3fe11185aa251c",
+   "path": "Sprites/SM_Notice_Board/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 72,
+   "frame_height": 126,
+   "fps": 1
+  },
+  {
+   "width": 144,
+   "height": 252,
+   "pivot": [
+    72.0,
+    198.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7166ad0609e6adc82c3b2aafec432df7dca6ad55ab963bf9721f97519678c82d",
+   "path": "Sprites/SM_Notice_Board/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 144,
+   "frame_height": 252,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 68,
+   "height": 22,
+   "pivot": [
+    34.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "f0e0fe2fa04e33c595332d0cd6d7e9ef3a052e87e3dce6bcc9af3235e8799a67",
+   "path": "Shadows/SM_Notice_Board/1x/down.png"
+  },
+  {
+   "width": 136,
+   "height": 44,
+   "pivot": [
+    68.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "4982a8e286dc9fa72d2c059ba2696047424fcfe6d16a53d9b91d9d252dc1e7b4",
+   "path": "Shadows/SM_Notice_Board/2x/down.png"
+  },
+  {
+   "width": 24,
+   "height": 68,
+   "pivot": [
+    12.0,
+    34.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "8d7ba37a11fd69c5376685725b589762ac152c272a128a0c158c57016f3240c8",
+   "path": "Shadows/SM_Notice_Board/1x/right.png"
+  },
+  {
+   "width": 48,
+   "height": 136,
+   "pivot": [
+    24.0,
+    68.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "89de0f84cea2922b12b495108d923162a15288be97b514140e929a88111c28e6",
+   "path": "Shadows/SM_Notice_Board/2x/right.png"
+  },
+  {
+   "width": 68,
+   "height": 24,
+   "pivot": [
+    34.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "28932b0aaeb985b62e6ea7cfea12d8dd5c087c62fe23ea4e543767935ab90f59",
+   "path": "Shadows/SM_Notice_Board/1x/up.png"
+  },
+  {
+   "width": 136,
+   "height": 48,
+   "pivot": [
+    68.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "41eaa3413c49c658570d955add29f386374ebea42d5c7ef0d84254c8d7a42aad",
+   "path": "Shadows/SM_Notice_Board/2x/up.png"
+  },
+  {
+   "width": 24,
+   "height": 68,
+   "pivot": [
+    12.0,
+    34.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "8d7ba37a11fd69c5376685725b589762ac152c272a128a0c158c57016f3240c8",
+   "path": "Shadows/SM_Notice_Board/1x/left.png"
+  },
+  {
+   "width": 48,
+   "height": 136,
+   "pivot": [
+    24.0,
+    68.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "89de0f84cea2922b12b495108d923162a15288be97b514140e929a88111c28e6",
+   "path": "Shadows/SM_Notice_Board/2x/left.png"
+  }
+ ]
+}

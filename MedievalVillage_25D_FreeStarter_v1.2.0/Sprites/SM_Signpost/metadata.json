@@ -1,0 +1,468 @@
+{
+ "id": "SM_Signpost",
+ "title": "Signpost",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 64,
+   "height": 78,
+   "pivot": [
+    28.0,
+    72.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    4,
+    61,
+    75
+   ],
+   "sha256": "2b08b1851d2d8b159f2b44420013ba1f2474053960d559790f8601698ebf3a2f",
+   "path": "Sprites/SM_Signpost/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 128,
+   "height": 156,
+   "pivot": [
+    56.0,
+    144.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    7,
+    121,
+    150
+   ],
+   "sha256": "efa4cba1115aa4b9b05c569bd5b5eb7337aec0fdec360eb8edf71871b5c0247d",
+   "path": "Sprites/SM_Signpost/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    20,
+    4,
+    51,
+    94
+   ],
+   "sha256": "80930c9f66bd944cd7e1505509604c7e4ad7f56910d88213b6b635330d7cf6e6",
+   "path": "Sprites/SM_Signpost/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    41,
+    7,
+    103,
+    189
+   ],
+   "sha256": "483ea52f29402741c420fa53f008d2c1d6c554ee940c68217a2c3fdb0d8892fb",
+   "path": "Sprites/SM_Signpost/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    25,
+    61,
+    94
+   ],
+   "sha256": "44b18d3fadecee2f6a1e9e910f962e1a2486e9fbce1b4d0d0b030539b7328c83",
+   "path": "Sprites/SM_Signpost/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    49,
+    121,
+    188
+   ],
+   "sha256": "78f907cf7e08e0f1561340d9a02d82e340f6f135cb20cf43aa17446080484d6b",
+   "path": "Sprites/SM_Signpost/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    21,
+    24,
+    52,
+    95
+   ],
+   "sha256": "9a04ba59b0e6985f049bf401619374b07257300c72bf4de909484af6547cc4b3",
+   "path": "Sprites/SM_Signpost/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    41,
+    48,
+    103,
+    189
+   ],
+   "sha256": "29df4cf706388ec0e023b22ce267759615ba9a75f9343b321c9aa0aac47dfcc2",
+   "path": "Sprites/SM_Signpost/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 64,
+   "height": 78,
+   "pivot": [
+    28.0,
+    72.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 78,
+   "fps": 1,
+   "bbox": [
+    3,
+    4,
+    61,
+    75
+   ],
+   "sha256": "2b08b1851d2d8b159f2b44420013ba1f2474053960d559790f8601698ebf3a2f",
+   "path": "Sprites/SM_Signpost/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 128,
+   "height": 156,
+   "pivot": [
+    56.0,
+    144.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 156,
+   "fps": 1,
+   "bbox": [
+    7,
+    7,
+    121,
+    150
+   ],
+   "sha256": "efa4cba1115aa4b9b05c569bd5b5eb7337aec0fdec360eb8edf71871b5c0247d",
+   "path": "Sprites/SM_Signpost/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 98,
+   "fps": 1,
+   "bbox": [
+    20,
+    4,
+    51,
+    94
+   ],
+   "sha256": "80930c9f66bd944cd7e1505509604c7e4ad7f56910d88213b6b635330d7cf6e6",
+   "path": "Sprites/SM_Signpost/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 196,
+   "fps": 1,
+   "bbox": [
+    41,
+    7,
+    103,
+    189
+   ],
+   "sha256": "483ea52f29402741c420fa53f008d2c1d6c554ee940c68217a2c3fdb0d8892fb",
+   "path": "Sprites/SM_Signpost/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 98,
+   "fps": 1,
+   "bbox": [
+    3,
+    25,
+    61,
+    94
+   ],
+   "sha256": "44b18d3fadecee2f6a1e9e910f962e1a2486e9fbce1b4d0d0b030539b7328c83",
+   "path": "Sprites/SM_Signpost/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 196,
+   "fps": 1,
+   "bbox": [
+    7,
+    49,
+    121,
+    188
+   ],
+   "sha256": "78f907cf7e08e0f1561340d9a02d82e340f6f135cb20cf43aa17446080484d6b",
+   "path": "Sprites/SM_Signpost/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 64,
+   "height": 98,
+   "pivot": [
+    36.0,
+    92.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 64,
+   "frame_height": 98,
+   "fps": 1,
+   "bbox": [
+    21,
+    24,
+    52,
+    95
+   ],
+   "sha256": "9a04ba59b0e6985f049bf401619374b07257300c72bf4de909484af6547cc4b3",
+   "path": "Sprites/SM_Signpost/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 128,
+   "height": 196,
+   "pivot": [
+    72.0,
+    184.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 196,
+   "fps": 1,
+   "bbox": [
+    41,
+    48,
+    103,
+    189
+   ],
+   "sha256": "29df4cf706388ec0e023b22ce267759615ba9a75f9343b321c9aa0aac47dfcc2",
+   "path": "Sprites/SM_Signpost/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "11b663dfb54f034fa9af40ee0aa22efb48a1c68b0736590831354a113369472b",
+   "path": "Shadows/SM_Signpost/1x/down.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "2c5e40da62f5efefa2d373a6719d5c18037f7d86835938390cf42304451e84df",
+   "path": "Shadows/SM_Signpost/2x/down.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "11b663dfb54f034fa9af40ee0aa22efb48a1c68b0736590831354a113369472b",
+   "path": "Shadows/SM_Signpost/1x/right.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "2c5e40da62f5efefa2d373a6719d5c18037f7d86835938390cf42304451e84df",
+   "path": "Shadows/SM_Signpost/2x/right.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "11b663dfb54f034fa9af40ee0aa22efb48a1c68b0736590831354a113369472b",
+   "path": "Shadows/SM_Signpost/1x/up.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "2c5e40da62f5efefa2d373a6719d5c18037f7d86835938390cf42304451e84df",
+   "path": "Shadows/SM_Signpost/2x/up.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "11b663dfb54f034fa9af40ee0aa22efb48a1c68b0736590831354a113369472b",
+   "path": "Shadows/SM_Signpost/1x/left.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "2c5e40da62f5efefa2d373a6719d5c18037f7d86835938390cf42304451e84df",
+   "path": "Shadows/SM_Signpost/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

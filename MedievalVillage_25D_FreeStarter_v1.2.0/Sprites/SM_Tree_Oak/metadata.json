@@ -1,0 +1,484 @@
+{
+ "id": "SM_Tree_Oak",
+ "title": "Oak tree",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 195,
+   "height": 230,
+   "pivot": [
+    95.0,
+    197.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    13,
+    20,
+    177,
+    213
+   ],
+   "rotationDegrees": 0,
+   "sha256": "8df2eb7ac1708ae55e15b908786e5022dc81611f7559b7ea2b6066043aef26c5",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 390,
+   "height": 460,
+   "pivot": [
+    190.0,
+    394.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    25,
+    41,
+    355,
+    427
+   ],
+   "rotationDegrees": 0,
+   "sha256": "94097292550e9579111ed3e4b5e3fcb829467c0d20790d8a2bb128dd1b3b6d3d",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    38,
+    9,
+    171,
+    219
+   ],
+   "rotationDegrees": 90,
+   "sha256": "18069bd1504ec3cffc4f5820b6ebe7777f4a42baca846db39e29727018a85644",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    76,
+    17,
+    343,
+    439
+   ],
+   "rotationDegrees": 90,
+   "sha256": "ad02358958d9111837da7a673c2b9eccdcd1bfd784c38e7e23e786d4030ff3c7",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    21,
+    17,
+    185,
+    219
+   ],
+   "rotationDegrees": 180,
+   "sha256": "a4676c214fb927ab750f30fbd4aaf3fd715e20fa4f0f88c474453a462fa993c8",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    41,
+    35,
+    371,
+    439
+   ],
+   "rotationDegrees": 180,
+   "sha256": "d8acd3cb4f904ade1abcb922306612b0f42a7c34559208e03d20bfb3e51ce7da",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    35,
+    16,
+    168,
+    219
+   ],
+   "rotationDegrees": 270,
+   "sha256": "b55db523f143304ef068805bf56bdbeb532bcaca54a5a085252cfbc7c726259d",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    69,
+    32,
+    336,
+    439
+   ],
+   "rotationDegrees": 270,
+   "sha256": "eb5aea92ec0f07e36adea0bc87af1d10b1e8db24b8bd7d30c32b22eb712fdd03",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 195,
+   "height": 230,
+   "pivot": [
+    95.0,
+    197.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 195,
+   "frame_height": 230,
+   "fps": 1,
+   "bbox": [
+    13,
+    20,
+    177,
+    213
+   ],
+   "rotationDegrees": 0,
+   "sha256": "8df2eb7ac1708ae55e15b908786e5022dc81611f7559b7ea2b6066043aef26c5",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 390,
+   "height": 460,
+   "pivot": [
+    190.0,
+    394.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 390,
+   "frame_height": 460,
+   "fps": 1,
+   "bbox": [
+    25,
+    41,
+    355,
+    427
+   ],
+   "rotationDegrees": 0,
+   "sha256": "94097292550e9579111ed3e4b5e3fcb829467c0d20790d8a2bb128dd1b3b6d3d",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 206,
+   "frame_height": 251,
+   "fps": 1,
+   "bbox": [
+    38,
+    9,
+    171,
+    219
+   ],
+   "rotationDegrees": 90,
+   "sha256": "18069bd1504ec3cffc4f5820b6ebe7777f4a42baca846db39e29727018a85644",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 412,
+   "frame_height": 502,
+   "fps": 1,
+   "bbox": [
+    76,
+    17,
+    343,
+    439
+   ],
+   "rotationDegrees": 90,
+   "sha256": "ad02358958d9111837da7a673c2b9eccdcd1bfd784c38e7e23e786d4030ff3c7",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 206,
+   "frame_height": 251,
+   "fps": 1,
+   "bbox": [
+    21,
+    17,
+    185,
+    219
+   ],
+   "rotationDegrees": 180,
+   "sha256": "a4676c214fb927ab750f30fbd4aaf3fd715e20fa4f0f88c474453a462fa993c8",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 412,
+   "frame_height": 502,
+   "fps": 1,
+   "bbox": [
+    41,
+    35,
+    371,
+    439
+   ],
+   "rotationDegrees": 180,
+   "sha256": "d8acd3cb4f904ade1abcb922306612b0f42a7c34559208e03d20bfb3e51ce7da",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 206,
+   "height": 251,
+   "pivot": [
+    103.0,
+    203.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 206,
+   "frame_height": 251,
+   "fps": 1,
+   "bbox": [
+    35,
+    16,
+    168,
+    219
+   ],
+   "rotationDegrees": 270,
+   "sha256": "b55db523f143304ef068805bf56bdbeb532bcaca54a5a085252cfbc7c726259d",
+   "path": "Sprites/SM_Tree_Oak/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 412,
+   "height": 502,
+   "pivot": [
+    206.0,
+    406.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 412,
+   "frame_height": 502,
+   "fps": 1,
+   "bbox": [
+    69,
+    32,
+    336,
+    439
+   ],
+   "rotationDegrees": 270,
+   "sha256": "eb5aea92ec0f07e36adea0bc87af1d10b1e8db24b8bd7d30c32b22eb712fdd03",
+   "path": "Sprites/SM_Tree_Oak/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 175,
+   "height": 90,
+   "pivot": [
+    82.0,
+    39.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "a159b7405d780c457e4e7b16b6ffb731638a61757a48d6e45970d6e49ef8f797",
+   "path": "Shadows/SM_Tree_Oak/1x/down.png"
+  },
+  {
+   "width": 350,
+   "height": 179,
+   "pivot": [
+    164.0,
+    77.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "16ba2bed73e97e54d27695976db4deea858dba956f7f1988cccb05ceeae0b2c5",
+   "path": "Shadows/SM_Tree_Oak/2x/down.png"
+  },
+  {
+   "width": 144,
+   "height": 109,
+   "pivot": [
+    64.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "a2482bbd9941b5d406abb09b8698924f6304bce5efc6b226dff0b507c3581b8f",
+   "path": "Shadows/SM_Tree_Oak/1x/right.png"
+  },
+  {
+   "width": 287,
+   "height": 217,
+   "pivot": [
+    128.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "acb1c6148d41395f8649f4d4d490e57902ecd69e784f357227cfca90363e7136",
+   "path": "Shadows/SM_Tree_Oak/2x/right.png"
+  },
+  {
+   "width": 176,
+   "height": 90,
+   "pivot": [
+    82.0,
+    41.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "28ada66ce2b772d16a8bd36ba124e3bbaab1a0457bee544667c982c13b4f401e",
+   "path": "Shadows/SM_Tree_Oak/1x/up.png"
+  },
+  {
+   "width": 351,
+   "height": 179,
+   "pivot": [
+    163.0,
+    82.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "a2b339ed7ca0d774791e99b7bf3f04c1b2606300e1229c402b64a172b4fedf94",
+   "path": "Shadows/SM_Tree_Oak/2x/up.png"
+  },
+  {
+   "width": 144,
+   "height": 109,
+   "pivot": [
+    68.0,
+    50.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "37b15a74173c52fc0554884cfc5ccc0e32306bfc06d853f02cea8d0eebeb9708",
+   "path": "Shadows/SM_Tree_Oak/1x/left.png"
+  },
+  {
+   "width": 287,
+   "height": 217,
+   "pivot": [
+    136.0,
+    99.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "362609c0faa8680e04a9b26f0e345b26068d28554d04523e07de2f892658f00d",
+   "path": "Shadows/SM_Tree_Oak/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

@@ -1,0 +1,275 @@
+{
+ "id": "SM_Crop_Carrot_Sprout",
+ "title": "Carrot - sprout",
+ "kind": "prop",
+ "category": "crop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4a89eaf071fdcc680c180833c0036f39e2fdc99164c2eeaec85f28f8d9f58482",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b7ed76fb55de00372c9d22867905eb55c86b0a8cf8f1d5f4dec34b20a0dd150a",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "e57995dbd4d4d8ae287aa9bdb01b20b4ad6b51a1f89a590ff74b6517483e72d6",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a14df8fdb1e75823839f041276be4d590284767957dc187a713882dafc46e8a8",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5f1f1818abba8fdcff28bedfafe76b90806f2ab28effbf1e0148256b2a5fb312",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1000e4593534ba781b5a4ad4826a1807136f301ddfea33edb2dddb827b142b25",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1bb7159fd3682fbedec5ab208e9ef579abe160afd1236e63ed77f6d4ea96ec42",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "11c87d94cd9caa2cfca39c46334a096b7507f228f3928701dfe20d55d2fb7aac",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "4a89eaf071fdcc680c180833c0036f39e2fdc99164c2eeaec85f28f8d9f58482",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 16,
+   "frame_height": 16,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b7ed76fb55de00372c9d22867905eb55c86b0a8cf8f1d5f4dec34b20a0dd150a",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 32,
+   "fps": 1
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "e57995dbd4d4d8ae287aa9bdb01b20b4ad6b51a1f89a590ff74b6517483e72d6",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 16,
+   "frame_height": 16,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a14df8fdb1e75823839f041276be4d590284767957dc187a713882dafc46e8a8",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 32,
+   "fps": 1
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5f1f1818abba8fdcff28bedfafe76b90806f2ab28effbf1e0148256b2a5fb312",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 16,
+   "frame_height": 16,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1000e4593534ba781b5a4ad4826a1807136f301ddfea33edb2dddb827b142b25",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 32,
+   "fps": 1
+  },
+  {
+   "width": 16,
+   "height": 16,
+   "pivot": [
+    8.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1bb7159fd3682fbedec5ab208e9ef579abe160afd1236e63ed77f6d4ea96ec42",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 16,
+   "frame_height": 16,
+   "fps": 1
+  },
+  {
+   "width": 32,
+   "height": 32,
+   "pivot": [
+    16.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "11c87d94cd9caa2cfca39c46334a096b7507f228f3928701dfe20d55d2fb7aac",
+   "path": "Sprites/SM_Crop_Carrot_Sprout/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 32,
+   "frame_height": 32,
+   "fps": 1
+  }
+ ],
+ "contactShadows": []
+}

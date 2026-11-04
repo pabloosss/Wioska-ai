@@ -1,0 +1,36 @@
+MEDIEVAL VILLAGE 2.5D - FREE STARTER - ASSET LICENSE - v1.1.0
+Copyright (c)2026 Sidiq Pratomo. All rights not granted below are reserved.
+Adapted for the included 2D sprites from the original Medieval Village license.
+
+By downloading or using these files (the Assets), you agree to these terms.
+The Assets are the sprites, sheets, terrain, metadata and preview images/GIFs.
+
+1. PERMITTED USE
+Use, modify, recolor and combine the Assets in any number of your own free or
+commercial projects: games, game jams, prototypes, apps, videos, streams,
+trailers and related promotional material. No royalties are owed.
+
+2. RESTRICTIONS
+Do not resell, sublicense, share or redistribute the Assets, modified or not,
+as stand-alone files or as another asset pack, template, library, tileset or
+marketplace collection. Do not make raw files available for separate reuse
+(for example in a public source repository). Shipping assets as part of your
+compiled or packaged game is permitted. Do not use the Assets to train or
+fine-tune machine-learning/AI models or include them in training datasets.
+Do not claim the original art as your own, register it as a trademark/logo,
+or use it in illegal, hateful or defamatory content.
+
+3. TEAMS AND CLIENTS
+One download covers one person or one team working on a project. Client work
+is permitted; the client may not receive raw files for reuse outside it.
+
+4. CREDIT
+Optional, appreciated: "Medieval Village 2.5D by Sidiq Pratomo / RetroForge".
+
+5. NO WARRANTY
+Provided as is, without warranty. The author is not liable for claims or
+damage arising from use.
+
+6. TERMINATION
+This license ends if its terms are broken. Projects already released before
+termination may stay published.

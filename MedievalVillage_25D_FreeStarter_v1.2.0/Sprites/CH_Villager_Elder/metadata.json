@@ -1,0 +1,2628 @@
+{
+ "id": "CH_Villager_Elder",
+ "title": "Village elder",
+ "kind": "character",
+ "category": "character",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "d4d0db36ab778097a281293f97bcdeacf76818af09eeffd51534a5102513b62c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "68fc0f9d556f78bc86c3001e83eedd2208e5634cc739d5b58da349a6bda4628b",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "72f64b87587e7e2fd676865db467d70a581a91eb9385c55421bef742daf90805",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "84f983a4dfc771a8f0bfaa0985fc00337b72235834f807ec99e86d55659c8f79",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "fa607687f8e98df8e2e111a0cf4b4bbac171c6986f2507d1d3a47e91886d41e9",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "553e532e658aa0e75908e2c674a97ae70500c5cb21d6fdc411a99f1505d6ef0f",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "72f64b87587e7e2fd676865db467d70a581a91eb9385c55421bef742daf90805",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "802b9fe4a43d4fe8d71bb15fc0acb222b94e1e234211c0c48b72fbbc6f9b5fbe",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "d4d0db36ab778097a281293f97bcdeacf76818af09eeffd51534a5102513b62c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "68fc0f9d556f78bc86c3001e83eedd2208e5634cc739d5b58da349a6bda4628b",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "b68d6473bd940da64393ff6368702dc0a9f820dc5fdc404e6db3870bb8506e9b",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "428a27509fadd91e423a53960daed72f041db0e607118250ebbb4ab1294bac99",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "5cb7c02d0cc5191f5003d0bc6f60015f7d2568958f0348563606afb9a716cc6c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "da6a090c89ed5cf990af9216cdf7bbb79bdb4a2023fe6263bb2d847bfe48c46d",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "b68d6473bd940da64393ff6368702dc0a9f820dc5fdc404e6db3870bb8506e9b",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_down_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "428a27509fadd91e423a53960daed72f041db0e607118250ebbb4ab1294bac99",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_down_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "4eb1300abf0e8a1aa9a640d90d1203e2bdf204a4a02aa79e86844d1a784f54e2",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "81d5b03ffe72f513561dbe5439ff41681a605cfbb214f0f428240d3005b2cb75",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "0e92748943dccb0999c547929581cf5e7a6f14ff55e92332c65dd05313c305b7",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "589df5951181b347865045f0cb013bace5ecf88da6114e2ac770c4d485acf9b7",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "a867ca343058b4375566f3df72350a1963819ffbec9879231638fb2d212fcceb",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "7e3d81272351453e58dcfda4e7b22467df2865ce3cc1dae3faa04760149ee983",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "14cb60be86230ec573c86bedf286c82fe105ed8f3e5364be1ce226aa94fc77f3",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "4548b74134a4ddd61dd03652953dd62ba99ea6c566bd393230f87c6f0a53217c",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "4eb1300abf0e8a1aa9a640d90d1203e2bdf204a4a02aa79e86844d1a784f54e2",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "81d5b03ffe72f513561dbe5439ff41681a605cfbb214f0f428240d3005b2cb75",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "c4fa1df3d4dfa9e3a836b18fc4853d54b8660ba42a664f02cd1c5c4f83ce294c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "81df8b8ce23f19f6816e09923ce3d56338fd55ef331667a695b0a04ed312e218",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "210a9dbed921d7e29d6e7aabea48ed36d663cef0d3d17ab82c60fc54287051cc",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "10fad8dc2d17898ec12193ed64a67a0027a1628c33b31d47fa02a198ef7e604e",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "c4fa1df3d4dfa9e3a836b18fc4853d54b8660ba42a664f02cd1c5c4f83ce294c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_right_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "81df8b8ce23f19f6816e09923ce3d56338fd55ef331667a695b0a04ed312e218",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_right_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "5a8cd7ecd606680389e29bd7c1ff90d618a2d6c8fd4805f58cf0513ae4e4c9d8",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "6d8f345cdb78a911213c95c35aa03e507d00dd1c35d38c93b74add3db176c123",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "a394ec70c100eaf7e7e633e903ea9b9efede8e2e86e3acf2cc1b18a24ed2db54",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "298d8511bb824fbc6c7f112e686bc727bcd307db4e4209079cfcc5400a5fb493",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "2a3cd312349e8e7b851e4f5bf03284e1dd81e84cc87c74e6b9b8e08ca2eed97e",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "0a0ccbed45d513ab37e1aaa45404feeb04c6576c2589e705db00c3b16a32f29c",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "f8c70c138c122c9b0b92353dc0781381091348f09323f856c63c75432b5093f2",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "a86e79609f2896b8c30e22de4637f6abaf55a6e1ca28061725f60a7b17477415",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "5a8cd7ecd606680389e29bd7c1ff90d618a2d6c8fd4805f58cf0513ae4e4c9d8",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "6d8f345cdb78a911213c95c35aa03e507d00dd1c35d38c93b74add3db176c123",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "704525557f69ebdac2de2e2ced2537bbd67bcb4f3ebcfe5b49e177d5b00b4208",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "628cd28d51b7d9839048829ecc735abcfa77dc4ff109f6f5d02561cd36cf24cc",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "ab1b6c09d2fc727a061956162ed87d9316c6717d292685df1ed6743cc8c97aee",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "c8b4a59e60ac859f1bdcb2734c25b93ef02c506a6839e974445ce3c1f8d318fa",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "704525557f69ebdac2de2e2ced2537bbd67bcb4f3ebcfe5b49e177d5b00b4208",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_up_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "628cd28d51b7d9839048829ecc735abcfa77dc4ff109f6f5d02561cd36cf24cc",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_up_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "a7995f4fde8c643a207c693be11de5bbfe5a60c56dbbc0c8a8028cb76d31662e",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "6f32e519c059d13876e1fed92b7a905665b832ee697591576c1d48de48dc014a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "1b8a1eab189ff7c7672093fa8509018473483e2fd0fb6c5b122de754b7f66ab5",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "0aab1f74a3db09794c28d1cfbff9c4fdc407e4adf39ccf4825f24a7316cc4b5d",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "5242c281fa91529246a5bc932b39073b5b17645a23c7e5c1399e3998203e9227",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "0aa5102bb8557a2acea5eecbfb18a6a4c2f1cbf4bc24bc3f833cf3de09dfb74e",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "1b8a1eab189ff7c7672093fa8509018473483e2fd0fb6c5b122de754b7f66ab5",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "0130af62c5e91ffe091bc7ae44d9e0db7cd0bab3ea55618ea0a41221d1fd10ec",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "a7995f4fde8c643a207c693be11de5bbfe5a60c56dbbc0c8a8028cb76d31662e",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "6f32e519c059d13876e1fed92b7a905665b832ee697591576c1d48de48dc014a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "09e3490ec5db92fe8d5f7926bc949cd6209d3aafb0aaa18fcb77f9c6ac3921cd",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "06bf6319bc6d95186937204eab6ab24204d1401ee23008f10fd8706f78757cbd",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "a65bf3547174bd1445f7968de8491b32d09f2ca1603236d8cf9008bf81c1ce8c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "cad5eb3e1f1b8bd88cd9a5b93499745046fc6d8714539a82580fbb9de64af15c",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "09e3490ec5db92fe8d5f7926bc949cd6209d3aafb0aaa18fcb77f9c6ac3921cd",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/idle_left_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "06bf6319bc6d95186937204eab6ab24204d1401ee23008f10fd8706f78757cbd",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/idle_left_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "66f2b7f4d8e037169a37a931a30b4969134bc356612d376b243953e8ce2e6337",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "3fa14bbfacf7bd11fed371933c52d07e9fb8455eb1ad67aadcf0434a8e950ec9",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "cf28c99227c2101226b98d8b6f15b35413735998d873a3dc9512b1915d73e523",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "a9aef176a89fbb1d352a35bc09ecc9cab0b856cbda69774f248ee2826728aa35",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "33831423a43289f2ff45507d23d7f706d9583701f623d544e25cf9101cec1724",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "12ac15bb4307176fb0d50420c41a19a0acd170c4d5a1b0101f6d7193e77632e6",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "7d184f343e11259af81aee6afba8e18cb68fa66e122f994d5751c5c0b38c4fea",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "f60b2292e388e5130434f279fb1f735ff13c609abb5739d81b47820c12ad911f",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "1bceeba9e4231191e7db2c69287c11814616ffebe4bc20b9e3a0c4d6e8f3201b",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "3a4175a70978c7a4c47a57be58c8969cadebf477c5b64e29000234879245f935",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "a44e15763c2b076e03658716e378fb8a3f1f6d584ee62fb356b38180ec548251",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "aa65e14f5319dab7ba781f8a7059fb90a0a156bfa73c936ca73825686d4cc564",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "aa247649b23f11f504d0a2fdf150e24f0db610228d87f5de4f055e352430c3e6",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "60f6d4e5dfc2186cf503dc4540e5a7c26ac4815fbffebd029d0119de842d657d",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "e6c40f6cf2597654f43e67475e796c7ecdd03a59aed276126a4e49145d92244e",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "fa2708fa61c41362d704782c72b017a949d26f186561b1c43d4f786566be0329",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "d313f2b34193c82d5aeb6e4fac219ec8099170951120529b3cb8f1b0e69dc86e",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_08.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "dba49cfa54f0659ec4346a5cf6906eeb6fbadae702d63fbd12aea8baa97f0deb",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_08.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "657af8266f2e90638e2fd78dc3c914e02b9b8069d80a6acf5d9bababa298f9f9",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_09.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "71cd538efa814de051760a97c2a97c7dcdbe94bd48d71304737403bf4d2c3d0a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_09.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "12797f3391b9af6a7d1b134adf647b14cdd4f8480b4f4cec3fd9acbc93383993",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_10.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "2114f4797312163e27dfc9c6a7b7be581e271369a11f1b64fc36e0ccef410d6b",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_10.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "3cc85d2dcf9f80bffd87961bc5bb347f6cf8b43392a59b1016a6cd8619fb080a",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_down_11.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "e2affed4bbff4a53db3dc44f7044ee990996912f33ce78ad9655f69bc186f1aa",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_down_11.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "dc7fd9ff9f9f946470bc3900a8a735335888839c8ae620f6b6eb8a70eb22d5ae",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "1b7870c695fb340d979cdf8fa8e10e4e534573db4bbb773a00cc0eff435f146e",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "9d42747d65a5523411d60bd354536e54ed96b30e9e56e383bec35d6b7541160c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "c1627b856bd1ea1e9d2cfabb6b13919b1deafd670b8869d3170a72355ba2638a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "383ddf42687fb6766ea0feafc1dfd73d3ee9925fc2ff2a8e2ca149ff3d3ab66b",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "d495e33e032f23f2ea4bcdd5bb5a09682e7d043e366d4f97d9649fc23956a5fa",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "9f06590208b071c4c10a01b490274b132c3bb087129bb535a902a9431ee01e71",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "ddab825a43979b22d41bafefbd211fd08b94f68a7e6f97e7967f308e7985b587",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "53b8adfb815683480903bfbb6d8ecb5d1544f19c7edd4e05a402436ee806157a",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "daa59c4c651037410be26b142b9f0c00f85310de12cf7bf2492e13100c8d228a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "f7012c5f7d5d416610e00c8e28b57d89723d78ec0083344b942db70b292b6b52",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "151cca7aaaa6ed5724131dab5deeecfa40416e219ceacef7621155f247a298f7",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "3255a66fbf8a9929d41f92d403449d248b2cab1e0514aa91d88fc286d66f4399",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "8fe50879cc694885a672471b5350eac54b8871ef31ad9cac9f8cfbf5eec550f5",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "df61d497cd95504f66cda1c5ca5ca9862a6d5cc91d03929f81c5425bf9b527da",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "4ef3b160b3c1cdf477b4c4682fe4834464a9cd56a778e35d30e61f9ba354a29a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "ccd053962855dd4934d66ae7f5969b946db7bcf454dba4b4554fa69cf9d54a9b",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_08.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "9ba34b482dadb0b0586b4e6b635bedcf6a54b81e324927d166cdc046bbfdd6b1",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_08.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "04c654a94184c7c828e6543f50d43c134dd3863fe614d4520904526d986e76de",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_09.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "9ed1ce1579909e5d83b88c1048e14972a0dc2293261fbae9e2974648a20bcb27",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_09.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "a7b372a985c3e4a8cd905cf9da2cc991a0e41491c9bb135f455020c0e166d2c3",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_10.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "09c5550f5c34b7cacc3c939c12cf94d368df1f25663ee347868a486cb107dda7",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_10.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "54d10a76279d554cbd9ef9be0a188eecb7acba82b046ae414a0211c803f90d3c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_right_11.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "fbfdfed406d76138e906dced7d6767dbd609875779d81c6df4b61512c3df4c3e",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_right_11.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "e9a186d85e432d27d90b8f723b124577a574b7eca5f05de70cbe3529429a06d9",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "23e489f0a818bcfd51662ef67fa5a5d431abec6e4e6ccc60083f6fce424f50f8",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "84397f66c2d6ba47061ba1566c96aca49fafe5492c9edfb9ec41b8c5c4cf5c38",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "53d87c0fa1707abf3ebcef076fa87ce9ee8b19faa9dc26ae8c7cb54ad9a18890",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "2210d9bf97baebcac6e03218595e0b82db61950dd2f9156342f7e027094515f1",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "2fbaa7f46ba36f3716dd50b2995e03ef75b4c92a5cf4b405416d1ccf38cf1345",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "f88822b1a73a618523bd6df375875309def346a3e0abe0244c1225dcd1e7e346",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "448904de6a8cffc35c6e028a93597bf7b423a6a78d5f5b6eb68a79c7b12f798b",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "ece72e5ece4f3c1d464b433030d85698991a8d7cdfb7939b930cc66ee9ffb4c5",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "576c314a42250cd033d1cf3dba56d60eb1747181640570de685e6dec0babec34",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "442607b42d3a234eef04d7059ae2eeec37e54dca14646bf82d35628414e4481c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "e161aa92be54d8e5f73a308920592bac94cf6639ef350e14daa17f5a2ac365a8",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "90d47233f2bc805aba05e78f813d021e3e96c3ee89ba247581c0b5f1c822918c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "083bb328e938dba4c56d19f9ee68a52845d14f23878e89b2c72d6a29fa0b0f0d",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "6d957daa0d43206ca76c812ab35c25dbd6a42dadd5058afd8b5153e318dbdb59",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "e49c60ae7087c5b883c91e2963003f4171705d4cefaba3317ca2775fe5a22cd6",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "03ae347e80ceaae7530955aad6bdc0460f07dc5218dc921b8433bee019e4feaa",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_08.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "01753ef875fa345e0a3ded1d4e7a09125671ae0122f1506dabc3cfa559601fad",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_08.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "72947035db11e60abdffeb86d0d9fbdd00ace01c744d05822f19e970c325f37f",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_09.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "9a9cc280002f5e870f5a62d79f40f8d4538c4b6c3f07db6bc37deee7defae45a",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_09.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "31055059c36a2b49bbadab70f43d2704d3afad017c704c261071cfa3a4b43ef6",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_10.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "1b3f44b0a690f7b665ffe5023be2a559a729603807d8fee1babf3bfd5afd3843",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_10.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "9d9e9ab47037471b97ee87f911de4e121499a81db102562818c73c2da0917414",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_up_11.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "22035a3c6a629c9782ab59c18bb79e2b0b2828b1b3419bdd51383d8ce444cc02",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_up_11.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "310fe6292c2a076472ba4c26653f061d411b4683ffaf08b73365eb7fa5b2098c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_00.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "b3902c16ecc734d19bd5506da4d47cd4e5c43c2883232908ba2ce0ce164bd81f",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "083f805b0112e53063b81027c05e5c9f9c7a531f4f74334164fddffac10d5dfd",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_01.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "4ecc7e1d0cd8adb0a44bf63ce785e17511f128a8210a4ade09c521ab72315ce0",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_01.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "c64094eae6467e47843a4561fa62a3ae1f57e062f6efa905b67dd9f42ec2ffc2",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_02.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "52729d0fc5dbc5e64795dc3375879b57222ad4d45935ad842df2770c41884966",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_02.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "93a674b97fff0442acd34b6ec832538908ff9858f78eee5a602659d25498dd20",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_03.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "3d06532846f98e3bc37abaa91d10807531f30e738fb22ee3d13c6ed89c587b05",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_03.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "7aa46f3c08e2ef83ff9d7d0ce856c4e7a9a951f86b7eba152da13a090c52e041",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_04.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "c57b463641393975ff8c38b4a93a8d4745bdbd40484b527c8934c3de8252634c",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_04.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "9c2684c409f248149ab8a2fb56a72a5f95502cbfb490cf4f6cb016579862effb",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_05.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "7d6cb44bc667fbf770b3198c415999fd36ba1e78d777cca3f05241fd8d32cdb4",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_05.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "6e7536ec6dc5b538b011fdf35f0a75e22da0c8bfad19614f9af5a5392581e31c",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_06.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "b0446d1290e2278b7d24df8c1deef89806dfa56ee52a713e765f9d01bf02ee5e",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_06.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "ae9f522b623e10867cb443a3501e41fd3f142dc1c8343ef537972475785cf3e4",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_07.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "7b160efa2908e529987767a6ad0d9b6256b53a51c8079e619775d4411c52fb72",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_07.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "97e93e6df46823b1f4e11d6247986e43ab2b1e60ebec5378c54a0cfb049ac0bd",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_08.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "fe010d08b53cd5bf7a97b7f15a0babb4a45fa4fc629603ab67cb1aa73e8b09c1",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_08.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "2d083b7b925bdae4c1153df36e2bb6e44cd780a202fd854e7e879f6508fad6c7",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_09.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "8b040352aee67f834dbb56b2b7c19329a70892b6d827442d890f14a59a093c1f",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_09.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "00645a3b222bf4e335208e20a11ca8573fde2b41c2298a2adf10b1edfa2210d2",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_10.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "d6f634cad1e2c93827dc99ee067cc859f551fb4f490e18a12766e34ea08c6388",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_10.png"
+  },
+  {
+   "width": 56,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "5524c1ca6506db77eb0f92df48a02f5fa2a8a8c646e5ba9edded581f70cb0b6a",
+   "path": "Sprites/CH_Villager_Elder/1x/frames/walk_left_11.png"
+  },
+  {
+   "width": 112,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "ee4bce800679e1c5737420caea181cc515a9eec79f28003538840cfff73ca9f8",
+   "path": "Sprites/CH_Villager_Elder/2x/frames/walk_left_11.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 448,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 4,
+   "sha256": "e2d915d10c88362b08f3746834b1d0ffc79ab43c4da660a0d43c904e0338ee65",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/idle_down.png"
+  },
+  {
+   "width": 448,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 4,
+   "sha256": "8b26542c9cdeff6d61567509ece349ab9407fd3e380490eb1832bb7c79c89801",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/idle_right.png"
+  },
+  {
+   "width": 448,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 4,
+   "sha256": "c2e24217e950f7bd1a198e4f5d94767449eace791554fcf00f0779f74dc89bfd",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/idle_up.png"
+  },
+  {
+   "width": 448,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 4,
+   "sha256": "f3f1d451cf00c37d512ae67c9399d3b11041a4e0202791a105ae8cc8c904cfa0",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/idle_left.png"
+  },
+  {
+   "width": 672,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 15,
+   "sha256": "0dec7c2d6244432b916a4c5fee5dd57cc7348732587e8e7ff079b480b45f60cb",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/walk_down.png"
+  },
+  {
+   "width": 672,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 15,
+   "sha256": "1b1ae2853f85736467966c30ffb8d0882ba8ceb3f311eefbbb9e5b01e7cf12d6",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/walk_right.png"
+  },
+  {
+   "width": 672,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 15,
+   "sha256": "6a1a13a1a3e2f9ff5195b18f3a064a0ae185edf06fef97c028511d3724b5291e",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/walk_up.png"
+  },
+  {
+   "width": 672,
+   "height": 88,
+   "pivot": [
+    28.0,
+    64.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 56,
+   "frame_height": 88,
+   "fps": 15,
+   "sha256": "5acf54035171398bfd2f39f03e1816cd6144c1c1aa8d5b86d62225af8cfca7cf",
+   "path": "Sprites/CH_Villager_Elder/1x/sheets/walk_left.png"
+  },
+  {
+   "width": 896,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 4,
+   "sha256": "2c173972b7fe05066e29297988f1a86d11d5e669de61d344b56e8a78623f7cf3",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/idle_down.png"
+  },
+  {
+   "width": 896,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 4,
+   "sha256": "1546361776a65ed45d96ec35214a1effb97ffaf6310237ec4859120f6ec1dbe9",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/idle_right.png"
+  },
+  {
+   "width": 896,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 4,
+   "sha256": "a55d45fc085ee5a57b4c1e57e8f6f96cf5914b28e8ab966b9a8e7c4cc18566ec",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/idle_up.png"
+  },
+  {
+   "width": 896,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 4,
+   "sha256": "4dd2f710363ec878f2f074c2807ec6d4c14891680481aead7911cd0434a5bd1e",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/idle_left.png"
+  },
+  {
+   "width": 1344,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 15,
+   "sha256": "55bd230c644de203a1135ffde90eecb1b4684969f604dd64f32409a999b4d337",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/walk_down.png"
+  },
+  {
+   "width": 1344,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 15,
+   "sha256": "e0ed7e7a2a356e7c9b9babec345411e0dedeb7d1139ab226f01c239d6056caed",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/walk_right.png"
+  },
+  {
+   "width": 1344,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 15,
+   "sha256": "52e6683d13a5d59b4387828da8a77adf796c317fc8ecffacc69af293af044191",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/walk_up.png"
+  },
+  {
+   "width": 1344,
+   "height": 176,
+   "pivot": [
+    56.0,
+    128.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 112,
+   "frame_height": 176,
+   "fps": 15,
+   "sha256": "fc288e8bac7e9a5cf83d7cbbcbeb151efd2744ecc360111e430519af66a5fc34",
+   "path": "Sprites/CH_Villager_Elder/2x/sheets/walk_left.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 18,
+   "height": 16,
+   "pivot": [
+    9.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "f564dc33f71fa045418aaf3538b84b583e1cc5e373beabc5c3d14f23a23ff18f",
+   "path": "Shadows/CH_Villager_Elder/1x/down.png"
+  },
+  {
+   "width": 36,
+   "height": 32,
+   "pivot": [
+    18.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "fbf0acf66b6306ab790f8c6d12542675b012e5d54082768a6e24b1a10dfe9f99",
+   "path": "Shadows/CH_Villager_Elder/2x/down.png"
+  },
+  {
+   "width": 16,
+   "height": 18,
+   "pivot": [
+    8.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "24378d1e7464014a65e65325491c517699e3fb92ab18e6eca6e685b75ccb4cf9",
+   "path": "Shadows/CH_Villager_Elder/1x/right.png"
+  },
+  {
+   "width": 32,
+   "height": 36,
+   "pivot": [
+    16.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "618e6c47c58e2ad85080b0d6be1feda45a8b6f759d7f308e6a6f0d366b63d7e6",
+   "path": "Shadows/CH_Villager_Elder/2x/right.png"
+  },
+  {
+   "width": 18,
+   "height": 16,
+   "pivot": [
+    9.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "e97d286f0a8f0615fe3d73181a53953a82780ab41a03da6c38f61875c4625dda",
+   "path": "Shadows/CH_Villager_Elder/1x/up.png"
+  },
+  {
+   "width": 36,
+   "height": 32,
+   "pivot": [
+    18.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "b2d7d8ef342ed5bfce006dd2d1658251bd31e756df3cb8391a8af59affc33b9a",
+   "path": "Shadows/CH_Villager_Elder/2x/up.png"
+  },
+  {
+   "width": 16,
+   "height": 18,
+   "pivot": [
+    8.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "76eac837d4857e43184d2e92ded91f97dd2760c83e6ce2e6e2318180c30ecd7d",
+   "path": "Shadows/CH_Villager_Elder/1x/left.png"
+  },
+  {
+   "width": 32,
+   "height": 36,
+   "pivot": [
+    16.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "d64e709d1a5f85f87ad6294ec8dea0b15bfba5c1dd9e29eebdf72e6b0641bb31",
+   "path": "Shadows/CH_Villager_Elder/2x/left.png"
+  }
+ ]
+}

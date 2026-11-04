@@ -1,12 +1,14 @@
-FANTASY VILLAGE & ADVENTURERS — ASSET LICENSE
-Copyright 2026 HappyHustle
+Pixel Mushrooms Low Poly Furniture Pack Forest Foraging Icons
+Copyright (c) 2026 reodesuxz
 
-You may use and modify these assets in commercial and non-commercial games,
-applications, videos and promotional materials. Credit is optional.
-You may distribute the assets inside a finished project and share working files
-privately with collaborators on that project.
-Standalone redistribution, repackaging, resale or sublicensing of the assets,
-including modified versions, as an asset collection is prohibited.
-Do not claim authorship of the original artwork. Sample code has the same
-project-use permission. Provided as-is, without warranty.
-https://happyhustle.itch.io/
+Permitted:
+- Use in unlimited personal and commercial projects (games, apps, films, renders, prototypes).
+- Modify the assets for use in your projects.
+- No attribution required (credit appreciated: "Pixel Mushrooms Low Poly Furniture Pack Forest Foraging Icons by reodesuxz").
+
+Not permitted:
+- Reselling, sublicensing or redistributing the asset files, modified or unmodified,
+  as standalone assets or as part of another asset pack or library.
+- Using the assets to train or fine-tune AI models.
+
+Provided "as is" without warranty of any kind.

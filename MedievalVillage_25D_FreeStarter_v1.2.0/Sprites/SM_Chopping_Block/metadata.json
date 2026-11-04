@@ -1,0 +1,372 @@
+{
+ "id": "SM_Chopping_Block",
+ "title": "Chopping block",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0df4ea77fab5e3e748c87101f2398b7d5b82ff6dc56a99f7fee8bb6f9f536d10",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1b2310448e2588f36d35171b0ca1e18a42029e940ddddd887106ac56239890bc",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9d1d1bb8f74641fc7c58b733a3b8ca26c5b176ced3334eed80437610c1f0069c",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "90da14d717c78a6f173ab2a8d873cd8a8687cefe008a48754ff516ed80df89eb",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c0140d91d9d85b734160924db04b5cff8a398e02ce9bf13efa7f90ff264423f1",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "efc13a96bed3eb35db00e39b7200da226bb6b3f7c291e83bc7ba003b94c1bd26",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ba195fdbb26a6073f25e6ee0b065922fcfe2b728f9d840994719fb3d7797931f",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "48c966dccaa056573d31fc8c7ddb94357d4869d844a1343c8278bc63614c6fa8",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0df4ea77fab5e3e748c87101f2398b7d5b82ff6dc56a99f7fee8bb6f9f536d10",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 54,
+   "frame_height": 67,
+   "fps": 1
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1b2310448e2588f36d35171b0ca1e18a42029e940ddddd887106ac56239890bc",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 108,
+   "frame_height": 134,
+   "fps": 1
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9d1d1bb8f74641fc7c58b733a3b8ca26c5b176ced3334eed80437610c1f0069c",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 54,
+   "frame_height": 67,
+   "fps": 1
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "90da14d717c78a6f173ab2a8d873cd8a8687cefe008a48754ff516ed80df89eb",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 108,
+   "frame_height": 134,
+   "fps": 1
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "c0140d91d9d85b734160924db04b5cff8a398e02ce9bf13efa7f90ff264423f1",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 54,
+   "frame_height": 67,
+   "fps": 1
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "efc13a96bed3eb35db00e39b7200da226bb6b3f7c291e83bc7ba003b94c1bd26",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 108,
+   "frame_height": 134,
+   "fps": 1
+  },
+  {
+   "width": 54,
+   "height": 67,
+   "pivot": [
+    27.0,
+    40.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ba195fdbb26a6073f25e6ee0b065922fcfe2b728f9d840994719fb3d7797931f",
+   "path": "Sprites/SM_Chopping_Block/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 54,
+   "frame_height": 67,
+   "fps": 1
+  },
+  {
+   "width": 108,
+   "height": 134,
+   "pivot": [
+    54.0,
+    80.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "48c966dccaa056573d31fc8c7ddb94357d4869d844a1343c8278bc63614c6fa8",
+   "path": "Sprites/SM_Chopping_Block/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 108,
+   "frame_height": 134,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 46,
+   "height": 42,
+   "pivot": [
+    23.0,
+    21.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "6a6a469114f0bb2dfc71402d212e21851887c4dfcee102f82c175c0f764b1692",
+   "path": "Shadows/SM_Chopping_Block/1x/down.png"
+  },
+  {
+   "width": 92,
+   "height": 84,
+   "pivot": [
+    46.0,
+    42.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "38025c7d7f820e814a9eff63e1ea295a0cba5a4957ab0fd9a43babdcaf378fd9",
+   "path": "Shadows/SM_Chopping_Block/2x/down.png"
+  },
+  {
+   "width": 42,
+   "height": 46,
+   "pivot": [
+    21.0,
+    23.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "ee7365c692833aebe81053a37dce2334b4ec684afe9ea353945ebcbe35bbb0cc",
+   "path": "Shadows/SM_Chopping_Block/1x/right.png"
+  },
+  {
+   "width": 84,
+   "height": 92,
+   "pivot": [
+    42.0,
+    46.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "1b2b14d008004233e9ba23d68d278beba2a7b6e15eb4692b3e24b0949d1c4f50",
+   "path": "Shadows/SM_Chopping_Block/2x/right.png"
+  },
+  {
+   "width": 46,
+   "height": 42,
+   "pivot": [
+    23.0,
+    21.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "6a6a469114f0bb2dfc71402d212e21851887c4dfcee102f82c175c0f764b1692",
+   "path": "Shadows/SM_Chopping_Block/1x/up.png"
+  },
+  {
+   "width": 92,
+   "height": 84,
+   "pivot": [
+    46.0,
+    42.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "38025c7d7f820e814a9eff63e1ea295a0cba5a4957ab0fd9a43babdcaf378fd9",
+   "path": "Shadows/SM_Chopping_Block/2x/up.png"
+  },
+  {
+   "width": 42,
+   "height": 46,
+   "pivot": [
+    21.0,
+    23.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "ee7365c692833aebe81053a37dce2334b4ec684afe9ea353945ebcbe35bbb0cc",
+   "path": "Shadows/SM_Chopping_Block/1x/left.png"
+  },
+  {
+   "width": 84,
+   "height": 92,
+   "pivot": [
+    42.0,
+    46.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "1b2b14d008004233e9ba23d68d278beba2a7b6e15eb4692b3e24b0949d1c4f50",
+   "path": "Shadows/SM_Chopping_Block/2x/left.png"
+  }
+ ]
+}

@@ -1,0 +1,372 @@
+{
+ "id": "SM_Firewood_Stack",
+ "title": "Firewood stack",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d90b64ef0bf07d3a4bfd1da69a609eb43111260902c67766702ece312f71b93f",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "083f00b4a9811cb2607ce65b25cbfc758b902323408c920cfecef4e0f44e9bf5",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6abe27a98ae04b575ef8d483803ab3c0661e0e023b0440de6f892cc9daae3caa",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "975884ff2324f4ffb915463571379b8ebdf5a087ca9a73a8c8fd51b3c930fe6e",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1e12019a5ba906b2a933d05e8f2bed09479a361dbf83bf209cbc0edf81e6759b",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "456cd51ab57292f33386356e3bd16f967f4a2276aa442c80837f8047e376f254",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a0f7360f79e1610a328cd6ece7b0b63bd10ef65f38ac836c2c2c32aba53b6129",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0dfb69d9a2e1d9c5f9e23638fb5ec6ec1a5573cb9d25ddd48feb264669aa67a5",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d90b64ef0bf07d3a4bfd1da69a609eb43111260902c67766702ece312f71b93f",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 30,
+   "frame_height": 40,
+   "fps": 1
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "083f00b4a9811cb2607ce65b25cbfc758b902323408c920cfecef4e0f44e9bf5",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 60,
+   "frame_height": 80,
+   "fps": 1
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6abe27a98ae04b575ef8d483803ab3c0661e0e023b0440de6f892cc9daae3caa",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 30,
+   "frame_height": 40,
+   "fps": 1
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "975884ff2324f4ffb915463571379b8ebdf5a087ca9a73a8c8fd51b3c930fe6e",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 60,
+   "frame_height": 80,
+   "fps": 1
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1e12019a5ba906b2a933d05e8f2bed09479a361dbf83bf209cbc0edf81e6759b",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 30,
+   "frame_height": 40,
+   "fps": 1
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "456cd51ab57292f33386356e3bd16f967f4a2276aa442c80837f8047e376f254",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 60,
+   "frame_height": 80,
+   "fps": 1
+  },
+  {
+   "width": 30,
+   "height": 40,
+   "pivot": [
+    15.0,
+    26.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a0f7360f79e1610a328cd6ece7b0b63bd10ef65f38ac836c2c2c32aba53b6129",
+   "path": "Sprites/SM_Firewood_Stack/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 30,
+   "frame_height": 40,
+   "fps": 1
+  },
+  {
+   "width": 60,
+   "height": 80,
+   "pivot": [
+    30.0,
+    52.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0dfb69d9a2e1d9c5f9e23638fb5ec6ec1a5573cb9d25ddd48feb264669aa67a5",
+   "path": "Sprites/SM_Firewood_Stack/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 60,
+   "frame_height": 80,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 28,
+   "height": 24,
+   "pivot": [
+    14.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "55f5fa54aa1250c7e22baa3e1be167c62fa3fbea66cdbbfc042f6a2effab1bec",
+   "path": "Shadows/SM_Firewood_Stack/1x/down.png"
+  },
+  {
+   "width": 56,
+   "height": 48,
+   "pivot": [
+    28.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "da99a606465415b7f51604101aa97a9a01ecc237f2f4e88af7fc87d31aee9545",
+   "path": "Shadows/SM_Firewood_Stack/2x/down.png"
+  },
+  {
+   "width": 24,
+   "height": 28,
+   "pivot": [
+    12.0,
+    14.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "a2ae94fb9e3caff20661fe86dd30eb2525d098293f783a99d6639c672d33ca19",
+   "path": "Shadows/SM_Firewood_Stack/1x/right.png"
+  },
+  {
+   "width": 48,
+   "height": 56,
+   "pivot": [
+    24.0,
+    28.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "1d57bcc9fa2d11f4c718d94620e82ec803195673b849806af54c56967421d543",
+   "path": "Shadows/SM_Firewood_Stack/2x/right.png"
+  },
+  {
+   "width": 28,
+   "height": 24,
+   "pivot": [
+    14.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "55f5fa54aa1250c7e22baa3e1be167c62fa3fbea66cdbbfc042f6a2effab1bec",
+   "path": "Shadows/SM_Firewood_Stack/1x/up.png"
+  },
+  {
+   "width": 56,
+   "height": 48,
+   "pivot": [
+    28.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "da99a606465415b7f51604101aa97a9a01ecc237f2f4e88af7fc87d31aee9545",
+   "path": "Shadows/SM_Firewood_Stack/2x/up.png"
+  },
+  {
+   "width": 24,
+   "height": 28,
+   "pivot": [
+    12.0,
+    14.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "a2ae94fb9e3caff20661fe86dd30eb2525d098293f783a99d6639c672d33ca19",
+   "path": "Shadows/SM_Firewood_Stack/1x/left.png"
+  },
+  {
+   "width": 48,
+   "height": 56,
+   "pivot": [
+    24.0,
+    28.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "1d57bcc9fa2d11f4c718d94620e82ec803195673b849806af54c56967421d543",
+   "path": "Shadows/SM_Firewood_Stack/2x/left.png"
+  }
+ ]
+}

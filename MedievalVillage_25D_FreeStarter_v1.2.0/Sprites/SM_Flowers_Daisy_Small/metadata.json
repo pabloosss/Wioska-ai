@@ -1,0 +1,468 @@
+{
+ "id": "SM_Flowers_Daisy_Small",
+ "title": "Daisies - small",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    3,
+    24,
+    29
+   ],
+   "sha256": "8ce80b03732785631df502acc63ad30827ad6734d1f85a9881b7fc5c42b0d8fd",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    8,
+    7,
+    48,
+    59
+   ],
+   "sha256": "93ac404bf7e9fac4da09647d59ed1d691cf88296a0df1a0713dde19e5ada65a1",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    5,
+    5,
+    21,
+    31
+   ],
+   "sha256": "1dad5f34cfde1f471904ebc22181a8db0f687c6a96e78fa814c6dd5d4a66929d",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    9,
+    10,
+    44,
+    63
+   ],
+   "sha256": "1d78090cfd603f0534e8bea2a98437220ccd847c9247ca154239f4649102d411",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    9,
+    24,
+    32
+   ],
+   "sha256": "a545a146b8fd1b037bb37c82bc8981cc477af2c414755b33254382e97c2db3fc",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    8,
+    18,
+    48,
+    64
+   ],
+   "sha256": "76abec6e030a345a69854998e1885f975642b7f9a2f6b49a86ce51bd4cee7b1b",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    6,
+    24,
+    31
+   ],
+   "sha256": "33609a74bd90174836cd4bcdfae9d2333410b01f489a5590ff62e17e25262162",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    12,
+    12,
+    47,
+    63
+   ],
+   "sha256": "295f4aa5c1a508454259736e6342bc3e8445ba4f2dbd589f6c7d8129a47701f4",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 35,
+   "fps": 1,
+   "bbox": [
+    4,
+    3,
+    24,
+    29
+   ],
+   "sha256": "8ce80b03732785631df502acc63ad30827ad6734d1f85a9881b7fc5c42b0d8fd",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 70,
+   "fps": 1,
+   "bbox": [
+    8,
+    7,
+    48,
+    59
+   ],
+   "sha256": "93ac404bf7e9fac4da09647d59ed1d691cf88296a0df1a0713dde19e5ada65a1",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 35,
+   "fps": 1,
+   "bbox": [
+    5,
+    5,
+    21,
+    31
+   ],
+   "sha256": "1dad5f34cfde1f471904ebc22181a8db0f687c6a96e78fa814c6dd5d4a66929d",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 70,
+   "fps": 1,
+   "bbox": [
+    9,
+    10,
+    44,
+    63
+   ],
+   "sha256": "1d78090cfd603f0534e8bea2a98437220ccd847c9247ca154239f4649102d411",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 35,
+   "fps": 1,
+   "bbox": [
+    4,
+    9,
+    24,
+    32
+   ],
+   "sha256": "a545a146b8fd1b037bb37c82bc8981cc477af2c414755b33254382e97c2db3fc",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 70,
+   "fps": 1,
+   "bbox": [
+    8,
+    18,
+    48,
+    64
+   ],
+   "sha256": "76abec6e030a345a69854998e1885f975642b7f9a2f6b49a86ce51bd4cee7b1b",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 28,
+   "height": 35,
+   "pivot": [
+    14.0,
+    25.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 35,
+   "fps": 1,
+   "bbox": [
+    7,
+    6,
+    24,
+    31
+   ],
+   "sha256": "33609a74bd90174836cd4bcdfae9d2333410b01f489a5590ff62e17e25262162",
+   "path": "Sprites/SM_Flowers_Daisy_Small/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 70,
+   "pivot": [
+    28.0,
+    50.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 70,
+   "fps": 1,
+   "bbox": [
+    12,
+    12,
+    47,
+    63
+   ],
+   "sha256": "295f4aa5c1a508454259736e6342bc3e8445ba4f2dbd589f6c7d8129a47701f4",
+   "path": "Sprites/SM_Flowers_Daisy_Small/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 20,
+   "height": 16,
+   "pivot": [
+    10.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "ce3aee9cf67a873af2090a4b323f0596ffe4c75a61e879bdc677c19f1d49c346",
+   "path": "Shadows/SM_Flowers_Daisy_Small/1x/down.png"
+  },
+  {
+   "width": 40,
+   "height": 32,
+   "pivot": [
+    20.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "48121f397e38dfd925e6b87b2600dc5b1aabfcd8a41459824eef84ba39041681",
+   "path": "Shadows/SM_Flowers_Daisy_Small/2x/down.png"
+  },
+  {
+   "width": 16,
+   "height": 20,
+   "pivot": [
+    8.0,
+    10.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "a30cc0b44368904f62254c10471f425b08b60c8220e16f3bfee80bb9cb62ae2a",
+   "path": "Shadows/SM_Flowers_Daisy_Small/1x/right.png"
+  },
+  {
+   "width": 32,
+   "height": 40,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "865d5f811412c4345ee772e98c13bd5bcd271c850c612fd090c4c049bb9b9bc4",
+   "path": "Shadows/SM_Flowers_Daisy_Small/2x/right.png"
+  },
+  {
+   "width": 20,
+   "height": 16,
+   "pivot": [
+    10.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "ce3aee9cf67a873af2090a4b323f0596ffe4c75a61e879bdc677c19f1d49c346",
+   "path": "Shadows/SM_Flowers_Daisy_Small/1x/up.png"
+  },
+  {
+   "width": 40,
+   "height": 32,
+   "pivot": [
+    20.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "48121f397e38dfd925e6b87b2600dc5b1aabfcd8a41459824eef84ba39041681",
+   "path": "Shadows/SM_Flowers_Daisy_Small/2x/up.png"
+  },
+  {
+   "width": 16,
+   "height": 20,
+   "pivot": [
+    8.0,
+    10.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "a30cc0b44368904f62254c10471f425b08b60c8220e16f3bfee80bb9cb62ae2a",
+   "path": "Shadows/SM_Flowers_Daisy_Small/1x/left.png"
+  },
+  {
+   "width": 32,
+   "height": 40,
+   "pivot": [
+    16.0,
+    20.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "865d5f811412c4345ee772e98c13bd5bcd271c850c612fd090c4c049bb9b9bc4",
+   "path": "Shadows/SM_Flowers_Daisy_Small/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

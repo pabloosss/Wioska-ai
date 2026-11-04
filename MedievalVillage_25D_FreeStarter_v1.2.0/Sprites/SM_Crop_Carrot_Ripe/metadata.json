@@ -1,0 +1,275 @@
+{
+ "id": "SM_Crop_Carrot_Ripe",
+ "title": "Carrot - ripe",
+ "kind": "prop",
+ "category": "crop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a4b9f961254694ff6a698002128b82b79912224d2866d548ac90536bf7694d36",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0b5c5fe4b80341172b4f671b5cd61970ec8421ee1cfb95b9d1999690bd7aa18e",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "05e46ff063b1d2bf51884116dd0d7e18186d55f5d479d7ec884ff6adc9b5af00",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5afa6088abc01932226e096d13db4054e58f21b170ef99d9a73ec42e75da9785",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "087b7b7056b2fab6c0f65f4f3ee3b4deeb9c3a5683f45e0b3d70965b80e1812d",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "8a739bcb493c310e5bdb7887e6ed71ff57466f176f28cea83e72b80ee32014de",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a9858f1d64f94af4cf6205c724ec1ed34f813c4bd6d8d164e30b5d03bd7809af",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f496569993cf5342133d2b2ffec51eefb8a712647bd5450ec02643577d5e8500",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a4b9f961254694ff6a698002128b82b79912224d2866d548ac90536bf7694d36",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 33,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "0b5c5fe4b80341172b4f671b5cd61970ec8421ee1cfb95b9d1999690bd7aa18e",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "05e46ff063b1d2bf51884116dd0d7e18186d55f5d479d7ec884ff6adc9b5af00",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 33,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5afa6088abc01932226e096d13db4054e58f21b170ef99d9a73ec42e75da9785",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "087b7b7056b2fab6c0f65f4f3ee3b4deeb9c3a5683f45e0b3d70965b80e1812d",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 33,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "8a739bcb493c310e5bdb7887e6ed71ff57466f176f28cea83e72b80ee32014de",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 28,
+   "height": 33,
+   "pivot": [
+    14.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a9858f1d64f94af4cf6205c724ec1ed34f813c4bd6d8d164e30b5d03bd7809af",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 28,
+   "frame_height": 33,
+   "fps": 1
+  },
+  {
+   "width": 56,
+   "height": 66,
+   "pivot": [
+    28.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f496569993cf5342133d2b2ffec51eefb8a712647bd5450ec02643577d5e8500",
+   "path": "Sprites/SM_Crop_Carrot_Ripe/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 66,
+   "fps": 1
+  }
+ ],
+ "contactShadows": []
+}

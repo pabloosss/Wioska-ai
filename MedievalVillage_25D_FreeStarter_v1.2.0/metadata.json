@@ -1,0 +1,813 @@
+{
+ "schema": 2,
+ "version": "1.2.0",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "pixelsPerMetre": {
+  "1x": 32,
+  "2x": 64
+ },
+ "terrainTileMetres": 2,
+ "heightShear": 0.85,
+ "pathsRelativeTo": "package root",
+ "spriteFamilyCount": 58,
+ "terrainFamilyCount": 5,
+ "decalFamilyCount": 7,
+ "assets": [
+  {
+   "id": "SM_Rock_Boulder",
+   "title": "Boulder",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Rock_Boulder/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Flowers_Daisy_Small",
+   "title": "Daisies - small",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Flowers_Daisy_Small/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Flowers_Daisy_Large",
+   "title": "Daisies - large",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Flowers_Daisy_Large/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Hay_Bale",
+   "title": "Hay bale",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Hay_Bale/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Bench",
+   "title": "Bench",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Bench/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Hand_Cart_Empty",
+   "title": "Hand cart - empty",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Hand_Cart_Empty/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SK_Hen_White",
+   "title": "White hen",
+   "kind": "animal",
+   "category": "animal",
+   "metadata": "Sprites/SK_Hen_White/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "CH_Villager_Farmer",
+   "title": "Farmer",
+   "kind": "character",
+   "category": "character",
+   "metadata": "Sprites/CH_Villager_Farmer/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SK_Sheep_Cream",
+   "title": "Cream sheep",
+   "kind": "animal",
+   "metadata": "Sprites/SK_Sheep_Cream/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "animal"
+  },
+  {
+   "id": "SM_Crate",
+   "title": "Crate",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Crate/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Cottage_FrontGable_Clay",
+   "title": "Cottage - clay",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Cottage_FrontGable_Clay/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Tree_Oak",
+   "title": "Oak tree",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Tree_Oak/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Bush",
+   "title": "Bush",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Bush/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Barrel",
+   "title": "Barrel",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Barrel/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Well",
+   "title": "Village well",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Well/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Fence_Rail",
+   "title": "Fence rail",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Fence_Rail/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Fence_Gate",
+   "title": "Fence gate",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Fence_Gate/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Grass_Clump",
+   "title": "Grass clump",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Grass_Clump/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Hand_Cart_Loaded",
+   "title": "Hand cart - loaded",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Hand_Cart_Loaded/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Cottage_FrontGable_Slate",
+   "title": "Cottage - slate",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Cottage_FrontGable_Slate/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Cottage_Thatch_Stylized",
+   "title": "Cottage - thatch",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Cottage_Thatch_Stylized/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Market_Stall_Red",
+   "title": "Market stall",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Market_Stall_Red/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "SM_Signpost",
+   "title": "Signpost",
+   "kind": "prop",
+   "metadata": "Sprites/SM_Signpost/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ],
+   "category": "prop"
+  },
+  {
+   "id": "CH_Villager_Woman",
+   "title": "Village woman",
+   "kind": "character",
+   "category": "character",
+   "metadata": "Sprites/CH_Villager_Woman/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "CH_Villager_Merchant",
+   "title": "Merchant",
+   "kind": "character",
+   "category": "character",
+   "metadata": "Sprites/CH_Villager_Merchant/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "CH_Villager_Child",
+   "title": "Village child",
+   "kind": "character",
+   "category": "character",
+   "metadata": "Sprites/CH_Villager_Child/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "CH_Villager_Elder",
+   "title": "Village elder",
+   "kind": "character",
+   "category": "character",
+   "metadata": "Sprites/CH_Villager_Elder/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SK_Cow_Piebald",
+   "title": "Piebald cow",
+   "kind": "animal",
+   "category": "animal",
+   "metadata": "Sprites/SK_Cow_Piebald/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SK_Dog",
+   "title": "Brown dog",
+   "kind": "animal",
+   "category": "animal",
+   "metadata": "Sprites/SK_Dog/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SK_Cat_Ginger",
+   "title": "Ginger cat",
+   "kind": "animal",
+   "category": "animal",
+   "metadata": "Sprites/SK_Cat_Ginger/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Barn_Hayloft",
+   "title": "Barn with hayloft",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Barn_Hayloft/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Chicken_Coop",
+   "title": "Chicken coop",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Chicken_Coop/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Water_Trough",
+   "title": "Water trough",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Water_Trough/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Hay_Bales_Stack",
+   "title": "Hay bale stack",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Hay_Bales_Stack/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Bucket",
+   "title": "Bucket",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Bucket/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Basket_Apples",
+   "title": "Basket of apples",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Basket_Apples/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Basket_Cabbages",
+   "title": "Basket of cabbages",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Basket_Cabbages/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Sack_Pile",
+   "title": "Sack pile",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Sack_Pile/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Firewood_Stack",
+   "title": "Firewood stack",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Firewood_Stack/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Notice_Board",
+   "title": "Notice board",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Notice_Board/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Chopping_Block",
+   "title": "Chopping block",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Chopping_Block/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Scarecrow",
+   "title": "Scarecrow",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Scarecrow/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Leaning_Tools",
+   "title": "Leaning tools",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Leaning_Tools/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Lamp_Post",
+   "title": "Lamp post",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Lamp_Post/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Tree_Apple",
+   "title": "Apple tree",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Tree_Apple/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Tree_Stump_Chop",
+   "title": "Tree trunk to chop",
+   "kind": "prop",
+   "category": "prop",
+   "metadata": "Sprites/SM_Tree_Stump_Chop/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Wheat_Sprout",
+   "title": "Wheat - sprout",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Wheat_Sprout/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Wheat_Young",
+   "title": "Wheat - young",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Wheat_Young/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Wheat_Mature",
+   "title": "Wheat - mature",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Wheat_Mature/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Wheat_Ripe",
+   "title": "Wheat - ripe",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Wheat_Ripe/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Carrot_Sprout",
+   "title": "Carrot - sprout",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Carrot_Sprout/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Carrot_Young",
+   "title": "Carrot - young",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Carrot_Young/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Carrot_Mature",
+   "title": "Carrot - mature",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Carrot_Mature/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Carrot_Ripe",
+   "title": "Carrot - ripe",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Carrot_Ripe/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Strawberry_Sprout",
+   "title": "Strawberry - sprout",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Strawberry_Sprout/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Strawberry_Young",
+   "title": "Strawberry - young",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Strawberry_Young/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Strawberry_Mature",
+   "title": "Strawberry - mature",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Strawberry_Mature/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  },
+  {
+   "id": "SM_Crop_Strawberry_Ripe",
+   "title": "Strawberry - ripe",
+   "kind": "prop",
+   "category": "crop",
+   "metadata": "Sprites/SM_Crop_Strawberry_Ripe/metadata.json",
+   "directions": [
+    "down",
+    "right",
+    "up",
+    "left"
+   ]
+  }
+ ],
+ "terrain": "Terrain/metadata.json",
+ "decals": "Decals/metadata.json",
+ "exampleLayout": "Examples/example-layout.json",
+ "exampleSceneCount": 6,
+ "exampleResolutions": [
+  "1x",
+  "2x"
+ ],
+ "effects": [
+  {
+   "id": "FX_Soil_Burst",
+   "title": "Soil burst (hoe impact)",
+   "kind": "effect",
+   "metadata": "Effects/FX_Soil_Burst/metadata.json"
+  },
+  {
+   "id": "FX_Wood_Chips",
+   "title": "Wood chips (axe impact)",
+   "kind": "effect",
+   "metadata": "Effects/FX_Wood_Chips/metadata.json"
+  },
+  {
+   "id": "FX_Grass_Cut",
+   "title": "Grass cuttings (sickle)",
+   "kind": "effect",
+   "metadata": "Effects/FX_Grass_Cut/metadata.json"
+  },
+  {
+   "id": "FX_Seed_Scatter",
+   "title": "Seed scatter (sow, from frame 5)",
+   "kind": "effect",
+   "metadata": "Effects/FX_Seed_Scatter/metadata.json"
+  }
+ ],
+ "icons": "Icons/metadata.json",
+ "iconCount": 12
+}

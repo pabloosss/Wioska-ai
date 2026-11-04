@@ -1,0 +1,215 @@
+{
+ "id": "FX_Wood_Chips",
+ "title": "Wood chips (axe impact)",
+ "kind": "effect",
+ "projection": "topdown",
+ "directionIndependent": true,
+ "loop": false,
+ "trigger": "Play once from the impact frame (frame 3 of 8) of the matching farmer clip; pivot = impact point",
+ "frames": [
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "6bae9bf8972eb92393d32ec5d41dbb5308f837b1254739005dc0c17913055fff",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_00.png"
+  },
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "075370d503a694b1619006dab853283cbbde9daad42c3a95935096d11566f9bd",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_01.png"
+  },
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "af995306f90dfc289b8119c2c2ce5f05a71e20de20f8488c3b93571b3aaf6a38",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_02.png"
+  },
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "3ed7a73396ec7a9111958f199ed45ae8e2ebed34ce7305291fb1ef640f02353e",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_03.png"
+  },
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "cfdf301bdbafe789eac448e902960970523b6f403f4bf500732b186146093489",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_04.png"
+  },
+  {
+   "width": 48,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "c5edb6e5028bde20febe43edf36d5dc3773bbe3b79d1b9100dd5752fa708312e",
+   "path": "Effects/FX_Wood_Chips/1x/frames/play_05.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 0,
+   "sha256": "00c04197b4efa9017665991f0086531e2d48da2edb68e36c681ce516319dc782",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_00.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 1,
+   "sha256": "c397fca23b190b7605dac83420db325777a262c01de9902e1f452c0e4c564591",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_01.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 2,
+   "sha256": "37e156d09a3e5c61f93cfcaed1cdce5b6eb5e80aff0a9e74ebca7cb017751a01",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_02.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 3,
+   "sha256": "4365f29491fbc31e4ea904e09c0a9ca6598d385cd4b6ec6ce1a48d8bd23e4695",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_03.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 4,
+   "sha256": "da43dede81c81731b1023048d4fb7481c57a369d9165c3ef0552748a3a6575d2",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_04.png"
+  },
+  {
+   "width": 96,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame": 5,
+   "sha256": "1c20c312f8a1a9c40bcaf2d2a28ac2dabd43667024577aea7512fd62dedd4514",
+   "path": "Effects/FX_Wood_Chips/2x/frames/play_05.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 288,
+   "height": 58,
+   "pivot": [
+    26.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 48,
+   "frame_height": 58,
+   "fps": 12,
+   "sha256": "b3c721df1a72ebdf9da47562e1a8b35b5c14b0c899397601790cc3806aa66a2f",
+   "path": "Effects/FX_Wood_Chips/1x/sheets/play.png"
+  },
+  {
+   "width": 576,
+   "height": 116,
+   "pivot": [
+    52.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "play",
+   "frame_count": 6,
+   "frame_width": 96,
+   "frame_height": 116,
+   "fps": 12,
+   "sha256": "cd45162c961cee0783298888a647b55d6377f2cca994adff092053343c0f2e68",
+   "path": "Effects/FX_Wood_Chips/2x/sheets/play.png"
+  }
+ ]
+}

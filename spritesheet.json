@@ -1,0 +1,532 @@
+{
+ "meta": {
+  "name": "Pixel Mushrooms & Forest Foraging Icons",
+  "tile_size": 32,
+  "columns": 10,
+  "rows": 7,
+  "image": "spritesheet.png",
+  "count": 65
+ },
+ "frames": {
+  "red_amanita": {
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 0
+  },
+  "brown_cep": {
+   "x": 32,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 1
+  },
+  "orange_chanterelle": {
+   "x": 64,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 2
+  },
+  "purple_amethyst": {
+   "x": 96,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 3
+  },
+  "blue_glow": {
+   "x": 128,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 4
+  },
+  "green_moss": {
+   "x": 160,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 5
+  },
+  "yellow_sulphur": {
+   "x": 192,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 6
+  },
+  "pink_blush": {
+   "x": 224,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 7
+  },
+  "grey_oyster": {
+   "x": 256,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 8
+  },
+  "black_trumpet": {
+   "x": 288,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 9
+  },
+  "shaggy_mane": {
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 10
+  },
+  "parasol": {
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 11
+  },
+  "morel": {
+   "x": 64,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 12
+  },
+  "puffball": {
+   "x": 96,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 13
+  },
+  "cluster_red": {
+   "x": 128,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 14
+  },
+  "cluster_brown": {
+   "x": 160,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 15
+  },
+  "bracket_orange": {
+   "x": 192,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 16
+  },
+  "bracket_tan": {
+   "x": 224,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 17
+  },
+  "truffle": {
+   "x": 256,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 18
+  },
+  "spore_glow": {
+   "x": 288,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "category": "mushrooms",
+   "index": 19
+  },
+  "blueberry": {
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 20
+  },
+  "raspberry": {
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 21
+  },
+  "blackberry": {
+   "x": 64,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 22
+  },
+  "elderberry": {
+   "x": 96,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 23
+  },
+  "cranberry": {
+   "x": 128,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 24
+  },
+  "gooseberry": {
+   "x": 160,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "berries",
+   "index": 25
+  },
+  "oak_leaf": {
+   "x": 192,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 26
+  },
+  "maple_leaf": {
+   "x": 224,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 27
+  },
+  "birch_leaf": {
+   "x": 256,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 28
+  },
+  "fern": {
+   "x": 288,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 29
+  },
+  "mint_leaf": {
+   "x": 0,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 30
+  },
+  "sage": {
+   "x": 32,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 31
+  },
+  "lavender": {
+   "x": 64,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 32
+  },
+  "chamomile": {
+   "x": 96,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 33
+  },
+  "dandelion": {
+   "x": 128,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 34
+  },
+  "clover": {
+   "x": 160,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "plants",
+   "index": 35
+  },
+  "carrot_wild": {
+   "x": 192,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "roots",
+   "index": 36
+  },
+  "beet": {
+   "x": 224,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "roots",
+   "index": 37
+  },
+  "parsnip": {
+   "x": 256,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "roots",
+   "index": 38
+  },
+  "ginger": {
+   "x": 288,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "category": "roots",
+   "index": 39
+  },
+  "acorn": {
+   "x": 0,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "nuts",
+   "index": 40
+  },
+  "chestnut": {
+   "x": 32,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "nuts",
+   "index": 41
+  },
+  "walnut": {
+   "x": 64,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "nuts",
+   "index": 42
+  },
+  "hazelnut": {
+   "x": 96,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "nuts",
+   "index": 43
+  },
+  "pinecone": {
+   "x": 128,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "nuts",
+   "index": 44
+  },
+  "branch": {
+   "x": 160,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 45
+  },
+  "birch_branch": {
+   "x": 192,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 46
+  },
+  "log": {
+   "x": 224,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 47
+  },
+  "feather_brown": {
+   "x": 256,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 48
+  },
+  "feather_blue": {
+   "x": 288,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 49
+  },
+  "forage_basket": {
+   "x": 0,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "gear",
+   "index": 50
+  },
+  "mushroom_knife": {
+   "x": 32,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "gear",
+   "index": 51
+  },
+  "forage_pouch": {
+   "x": 64,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "gear",
+   "index": 52
+  },
+  "cleaning_brush": {
+   "x": 96,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "gear",
+   "index": 53
+  },
+  "jam_jar": {
+   "x": 128,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "preserves",
+   "index": 54
+  },
+  "pickled_mushrooms": {
+   "x": 160,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "preserves",
+   "index": 55
+  },
+  "honey_jar": {
+   "x": 192,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "preserves",
+   "index": 56
+  },
+  "dried_herbs": {
+   "x": 224,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "preserves",
+   "index": 57
+  },
+  "mushroom_stew": {
+   "x": 256,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "preserves",
+   "index": 58
+  },
+  "campfire": {
+   "x": 288,
+   "y": 160,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 59
+  },
+  "mossy_stump": {
+   "x": 0,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 60
+  },
+  "fairy_house": {
+   "x": 32,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 61
+  },
+  "dewy_web": {
+   "x": 64,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 62
+  },
+  "forest_snail": {
+   "x": 96,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 63
+  },
+  "mossy_rock": {
+   "x": 128,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "category": "forage",
+   "index": 64
+  }
+ }
+}

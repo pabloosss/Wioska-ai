@@ -1,0 +1,468 @@
+{
+ "id": "SM_Rock_Boulder",
+ "title": "Boulder",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    7,
+    52,
+    63
+   ],
+   "sha256": "55d061bc19339b6ec9e4afa2b47aced91d34625689005321a38c18bae2afec3b",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    8,
+    14,
+    105,
+    125
+   ],
+   "sha256": "b98c19dd475058785fe577b6539e1c07cf77739eab4177ca31f5fa8923518283",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    9,
+    12,
+    50,
+    64
+   ],
+   "sha256": "fa8fa8f2faff3c0583a3215a8ec39b2c093aa2b3f0e24524cd3c4a3cfd5b841c",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    18,
+    24,
+    99,
+    129
+   ],
+   "sha256": "d84c64e2e38d4178c28f431a4cd71f9cf46b543c6c045081f8c9e67c39b71c49",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    9,
+    52,
+    60
+   ],
+   "sha256": "47abb23fb4408a4290b79e32890c2416625cebbac95b018a22a67ea5f67192c7",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    19,
+    104,
+    121
+   ],
+   "sha256": "be4f0e1bceca8466e80dbd6e102b0983a33883b94cac1a12a491efda53163973",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    4,
+    47,
+    65
+   ],
+   "sha256": "1b382abe238e813786ca2598fb95574dd3f731c031288cf0f74bfc3951849add",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    13,
+    8,
+    94,
+    130
+   ],
+   "sha256": "487e19b4e9067c32c3e02de3e3da0acba115bb2c8e508cee8b8b6e41d0c91a9d",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 68,
+   "fps": 1,
+   "bbox": [
+    4,
+    7,
+    52,
+    63
+   ],
+   "sha256": "55d061bc19339b6ec9e4afa2b47aced91d34625689005321a38c18bae2afec3b",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 112,
+   "frame_height": 136,
+   "fps": 1,
+   "bbox": [
+    8,
+    14,
+    105,
+    125
+   ],
+   "sha256": "b98c19dd475058785fe577b6539e1c07cf77739eab4177ca31f5fa8923518283",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 68,
+   "fps": 1,
+   "bbox": [
+    9,
+    12,
+    50,
+    64
+   ],
+   "sha256": "fa8fa8f2faff3c0583a3215a8ec39b2c093aa2b3f0e24524cd3c4a3cfd5b841c",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 112,
+   "frame_height": 136,
+   "fps": 1,
+   "bbox": [
+    18,
+    24,
+    99,
+    129
+   ],
+   "sha256": "d84c64e2e38d4178c28f431a4cd71f9cf46b543c6c045081f8c9e67c39b71c49",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 68,
+   "fps": 1,
+   "bbox": [
+    4,
+    9,
+    52,
+    60
+   ],
+   "sha256": "47abb23fb4408a4290b79e32890c2416625cebbac95b018a22a67ea5f67192c7",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 112,
+   "frame_height": 136,
+   "fps": 1,
+   "bbox": [
+    7,
+    19,
+    104,
+    121
+   ],
+   "sha256": "be4f0e1bceca8466e80dbd6e102b0983a33883b94cac1a12a491efda53163973",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 56,
+   "height": 68,
+   "pivot": [
+    28.0,
+    42.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 56,
+   "frame_height": 68,
+   "fps": 1,
+   "bbox": [
+    6,
+    4,
+    47,
+    65
+   ],
+   "sha256": "1b382abe238e813786ca2598fb95574dd3f731c031288cf0f74bfc3951849add",
+   "path": "Sprites/SM_Rock_Boulder/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 112,
+   "height": 136,
+   "pivot": [
+    56.0,
+    84.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 112,
+   "frame_height": 136,
+   "fps": 1,
+   "bbox": [
+    13,
+    8,
+    94,
+    130
+   ],
+   "sha256": "487e19b4e9067c32c3e02de3e3da0acba115bb2c8e508cee8b8b6e41d0c91a9d",
+   "path": "Sprites/SM_Rock_Boulder/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 48,
+   "height": 38,
+   "pivot": [
+    24.0,
+    19.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "0706e4d5c9113ba7b72dbfbdd1f98d5b56d89caecc83f96a77e58313c92a0cbd",
+   "path": "Shadows/SM_Rock_Boulder/1x/down.png"
+  },
+  {
+   "width": 96,
+   "height": 76,
+   "pivot": [
+    48.0,
+    38.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "7ea5e05858cca3fe461633247b09591c758fe7f64bc4dafea9abe4577d647835",
+   "path": "Shadows/SM_Rock_Boulder/2x/down.png"
+  },
+  {
+   "width": 38,
+   "height": 48,
+   "pivot": [
+    19.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "7b7400e70c769f36acfb080c1d6dd2646351a1556c2b7c18ab1a2930082aa003",
+   "path": "Shadows/SM_Rock_Boulder/1x/right.png"
+  },
+  {
+   "width": 76,
+   "height": 96,
+   "pivot": [
+    38.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "133a4692c2b71ae58ddc308d428cc1a71ca6301856da5d99a2e3fa53a8675c6a",
+   "path": "Shadows/SM_Rock_Boulder/2x/right.png"
+  },
+  {
+   "width": 48,
+   "height": 38,
+   "pivot": [
+    24.0,
+    19.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "0706e4d5c9113ba7b72dbfbdd1f98d5b56d89caecc83f96a77e58313c92a0cbd",
+   "path": "Shadows/SM_Rock_Boulder/1x/up.png"
+  },
+  {
+   "width": 96,
+   "height": 76,
+   "pivot": [
+    48.0,
+    38.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "7ea5e05858cca3fe461633247b09591c758fe7f64bc4dafea9abe4577d647835",
+   "path": "Shadows/SM_Rock_Boulder/2x/up.png"
+  },
+  {
+   "width": 38,
+   "height": 48,
+   "pivot": [
+    19.0,
+    24.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "7b7400e70c769f36acfb080c1d6dd2646351a1556c2b7c18ab1a2930082aa003",
+   "path": "Shadows/SM_Rock_Boulder/1x/left.png"
+  },
+  {
+   "width": 76,
+   "height": 96,
+   "pivot": [
+    38.0,
+    48.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "133a4692c2b71ae58ddc308d428cc1a71ca6301856da5d99a2e3fa53a8675c6a",
+   "path": "Shadows/SM_Rock_Boulder/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

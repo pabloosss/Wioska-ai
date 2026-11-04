@@ -1,0 +1,485 @@
+{
+ "id": "SM_Hand_Cart_Loaded",
+ "title": "Hand cart - loaded",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    36,
+    21,
+    92,
+    127
+   ],
+   "sha256": "934b326d67e6c0dae7826962c806eaa23a38f9ba45ed0f8f1867d6cc251772cb",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    72,
+    42,
+    184,
+    254
+   ],
+   "sha256": "16cf357472a63481bc83a0862f7a8a4dceb71005adcb0690e193db9e28d5a127",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    40,
+    23,
+    124,
+    99
+   ],
+   "sha256": "7169b35bd1b6b16ad8f9b5343491e7dc2597a32f5d76c6bba75c8611aa30810e",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    81,
+    47,
+    248,
+    197
+   ],
+   "sha256": "fc140ebc3e661ab8fe7fed9038a7c7151ebb8cb758bff8a88368ca17fff44693",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    36,
+    4,
+    92,
+    85
+   ],
+   "sha256": "afd5cb9e63ce2c1036c5569214cf875ff586c0b4863314dfa683fea74f5a3ba8",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    72,
+    8,
+    184,
+    170
+   ],
+   "sha256": "c1f0b7fb82178facc09bc66a98e75219cabde5d7d315a21c19f82b11600755c1",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    23,
+    88,
+    99
+   ],
+   "sha256": "253c6ee8c11b8d753cfc5aa3adabe8490fc8bf68f8584da18946917386d95465",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    8,
+    47,
+    175,
+    198
+   ],
+   "sha256": "b7cd67c6c2f86e8fcb99a11ee1fd85cd31da577e957a86a6e26afe7e5cc8048f",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 130,
+   "fps": 1,
+   "bbox": [
+    36,
+    21,
+    92,
+    127
+   ],
+   "sha256": "934b326d67e6c0dae7826962c806eaa23a38f9ba45ed0f8f1867d6cc251772cb",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 256,
+   "frame_height": 260,
+   "fps": 1,
+   "bbox": [
+    72,
+    42,
+    184,
+    254
+   ],
+   "sha256": "16cf357472a63481bc83a0862f7a8a4dceb71005adcb0690e193db9e28d5a127",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 130,
+   "fps": 1,
+   "bbox": [
+    40,
+    23,
+    124,
+    99
+   ],
+   "sha256": "7169b35bd1b6b16ad8f9b5343491e7dc2597a32f5d76c6bba75c8611aa30810e",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 256,
+   "frame_height": 260,
+   "fps": 1,
+   "bbox": [
+    81,
+    47,
+    248,
+    197
+   ],
+   "sha256": "fc140ebc3e661ab8fe7fed9038a7c7151ebb8cb758bff8a88368ca17fff44693",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 130,
+   "fps": 1,
+   "bbox": [
+    36,
+    4,
+    92,
+    85
+   ],
+   "sha256": "afd5cb9e63ce2c1036c5569214cf875ff586c0b4863314dfa683fea74f5a3ba8",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 256,
+   "frame_height": 260,
+   "fps": 1,
+   "bbox": [
+    72,
+    8,
+    184,
+    170
+   ],
+   "sha256": "c1f0b7fb82178facc09bc66a98e75219cabde5d7d315a21c19f82b11600755c1",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 128,
+   "height": 130,
+   "pivot": [
+    64.0,
+    73.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 128,
+   "frame_height": 130,
+   "fps": 1,
+   "bbox": [
+    4,
+    23,
+    88,
+    99
+   ],
+   "sha256": "253c6ee8c11b8d753cfc5aa3adabe8490fc8bf68f8584da18946917386d95465",
+   "path": "Sprites/SM_Hand_Cart_Loaded/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 256,
+   "height": 260,
+   "pivot": [
+    128.0,
+    146.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 256,
+   "frame_height": 260,
+   "fps": 1,
+   "bbox": [
+    8,
+    47,
+    175,
+    198
+   ],
+   "sha256": "b7cd67c6c2f86e8fcb99a11ee1fd85cd31da577e957a86a6e26afe7e5cc8048f",
+   "path": "Sprites/SM_Hand_Cart_Loaded/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 54,
+   "height": 30,
+   "pivot": [
+    27.0,
+    15.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "13b6b7f8a26b0a47b5442a857e35b27f683c9bc3b2e7300afadf2c7cd2b29663",
+   "path": "Shadows/SM_Hand_Cart_Loaded/1x/down.png"
+  },
+  {
+   "width": 108,
+   "height": 60,
+   "pivot": [
+    54.0,
+    30.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "0ef2520db459244774641b9ea5fe4792c411321b43b703f6b5ca90e182ab947a",
+   "path": "Shadows/SM_Hand_Cart_Loaded/2x/down.png"
+  },
+  {
+   "width": 30,
+   "height": 54,
+   "pivot": [
+    15.0,
+    27.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "4128493008cb025282e5aec9c2861e9e762e69a9cf94b970cd289d5f23878add",
+   "path": "Shadows/SM_Hand_Cart_Loaded/1x/right.png"
+  },
+  {
+   "width": 60,
+   "height": 108,
+   "pivot": [
+    30.0,
+    54.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "16adf076eba18bef6d480756f56657ba8de5f4794a9292aca74b6253b9de4860",
+   "path": "Shadows/SM_Hand_Cart_Loaded/2x/right.png"
+  },
+  {
+   "width": 54,
+   "height": 30,
+   "pivot": [
+    27.0,
+    15.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "13b6b7f8a26b0a47b5442a857e35b27f683c9bc3b2e7300afadf2c7cd2b29663",
+   "path": "Shadows/SM_Hand_Cart_Loaded/1x/up.png"
+  },
+  {
+   "width": 108,
+   "height": 60,
+   "pivot": [
+    54.0,
+    30.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "0ef2520db459244774641b9ea5fe4792c411321b43b703f6b5ca90e182ab947a",
+   "path": "Shadows/SM_Hand_Cart_Loaded/2x/up.png"
+  },
+  {
+   "width": 30,
+   "height": 54,
+   "pivot": [
+    15.0,
+    27.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "4128493008cb025282e5aec9c2861e9e762e69a9cf94b970cd289d5f23878add",
+   "path": "Shadows/SM_Hand_Cart_Loaded/1x/left.png"
+  },
+  {
+   "width": 60,
+   "height": 108,
+   "pivot": [
+    30.0,
+    54.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "16adf076eba18bef6d480756f56657ba8de5f4794a9292aca74b6253b9de4860",
+   "path": "Shadows/SM_Hand_Cart_Loaded/2x/left.png"
+  }
+ ],
+ "anchorsMetres": {
+  "handleLeft": [
+   -0.35,
+   -1.76,
+   0.28
+  ],
+  "handleRight": [
+   0.35,
+   -1.76,
+   0.28
+  ],
+  "bed": [
+   0,
+   0,
+   0.67
+  ]
+ },
+ "category": "prop"
+}

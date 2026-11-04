@@ -1,0 +1,2628 @@
+{
+ "id": "CH_Villager_Woman",
+ "title": "Village woman",
+ "kind": "character",
+ "category": "character",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "9fed01e0f512e3dd70ee5da5c4c30074b31b38a16cdbff6a56c2d176194f6243",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "c70be22d31e354e6fde6c208cb42233e0d3c281a30f7774fe8b493bcdc8056dc",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "e7026ea11ba272586493ab4988c191042d4b2a97bc9993a2f6f7077559761f2c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "d2934aba5cfd13a1c7615d2ca4b211fc617b001364202ba059c51c5e855b081b",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "685dafab4c0fb0d2a1b8185e7cdb4bfe7aa0b6d7777a98f72da2c5ce507fe230",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "9a2bd4661559903954e3d4b2d32b6d3c30e4d133af4aeabfc686112f2e7c4d96",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "94832fcf3c50bb70100697d673a5a5ff8858a4b26202e76d93137405e5dada8e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "99051b3097c83b70ca53cbf89b3d32798c6c192da2d2ce85c36b93b85061e1e8",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "b009452b69567ad1b824f3299c8a4c11f69b404c6d0b38437baf024ac97c6004",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "a5532fa37bad0d18468d8422ba2303313a00c73cbd546733dc733fe0d6d009c8",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "c7880d76d4cd90a3e7c91c7591c65ce4b73130fe6de93124e7f8011fa75cb19e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "40824e8cf9f6e9ba2e1ce2c6e0fcb16720e0682114b738f1161cabbb713ddd71",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "f5cb39679a68e6cd7eebe34f01ce0eb4720ad32df603db09522651e77b39460d",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "0a92f4512c7d81672f0fb93e1ea24ba96157145d33481582792d8712bb8cc7e3",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "941673e67cfdbda67239eb2749b1a4b097a7226a59ad42e650e60672d6a3ed71",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_down_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "d9e379dc366ac045abbf9149b65211e2733bd46219cadc0505f1e143c16432eb",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_down_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "d2e8f2c419ef79d27abf15669a0b08d74326ffc800dd10f349bee7920213bb13",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "9847adb11481d6d4e272eae0180e2f9562206a47f9f40e1f0bf60fbdb092e124",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "b37c66d6973ea5d79c2b157ec8a9e7f51cda82818865fa768967c6b74b53dd50",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "95873d0baae372470640fd0bf5e39ff025a90e27a7ff087cd8ed7057630fefbd",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "060107f951b1734e19ad421b5ccbd4bc40599836c15e464d6e253d4b4f0732ba",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "9c13cef12e0c491888ec1143a3f3a6e84daf237e4e24c43714be3ac420ff3635",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "b37c66d6973ea5d79c2b157ec8a9e7f51cda82818865fa768967c6b74b53dd50",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "9f9d90b9e8d08eccb49d31a6560b5030f333598ea1a170ab7ab9870cf332ecad",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "d2e8f2c419ef79d27abf15669a0b08d74326ffc800dd10f349bee7920213bb13",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "9847adb11481d6d4e272eae0180e2f9562206a47f9f40e1f0bf60fbdb092e124",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "d5f0ce5a1b17d4ccb6b57ae34caa62a7f3d7cbea17af23e0a79c915b65148b31",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "f7abcf86a28d11685e0883cf5ba3ab01eeeff0c624231fb7b287fff599b79920",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "723e73fb2f4b1639335d1ab9e90ab77092a608ecaa4dc6b6cfabdf33cf178431",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "9a4b417ac4c3251da57e7041a18248207fb5bd3df7507f7877df374679f095be",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "d5f0ce5a1b17d4ccb6b57ae34caa62a7f3d7cbea17af23e0a79c915b65148b31",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_right_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "f7abcf86a28d11685e0883cf5ba3ab01eeeff0c624231fb7b287fff599b79920",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_right_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "6786a21f8d72b6595fcc073b3aa59291416d4949377c9099cf6b292d29a3482c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "fa3ba0fc5677f96e51e65178b8336833ef5bc5102cf2cb103c71cf4ae00f0cac",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "456919a577423ff6c57bcdb1e4ca7726e242420ee27d534db037e9b90f23fc9b",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "f29c3e6bc1644cb166133966dc71c387668b162c1e70985ace2b21f6f06dea44",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "a8ac0dc07e2cb180103d937a6490905891aaf39b09f8823f973cadc3be56bc4b",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "d1c8342c998947a97daba13ee3dd4e2dbbb792acb211396e3b553aba34f8fb08",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "d690425c3f3caaf294fa2899b2651834f8e69a1b47aee005b37adb61598f47e7",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "fac0741f8ae4d18e43a1b8de2cb19add35c1843a9f1497d36500225405259283",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "eca7c0ba5a411301700576952d58ec5274827f6de9ac45cdbd79c3ced50c43a3",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "5354c27a9b5799b7dda3f81a560e8431464633d93fb83a986f1ae3ef4133a1a6",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "f29fffee16eb10017d30758cc385924f0a735f01c788d3cd7792bb5636577bfa",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "90a4efa37aab50d0d48b1ef378516e70fcf158f4522e4e7feceb7ef929d7bf68",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "f22e9d09e33251490541f150a5c3250f0d66237c7e016b4736da3055fe81a441",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "57e2216877b811a3bc4342b815e549f722e12b3ec28652f7b58d3bd642e33707",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "cf51da620ced012470d55404e0e38a78101b6b8faf7365fd15b2fc4a18aeb94c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_up_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "7c8fd8a4afdb2f0c794f9633314e1f489e34237e9b2ddcda531ade3473648f92",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_up_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "56026dad0c5036fff1b3ec820ad5f0075f28d38b657323eee85b52365eec10ce",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 0,
+   "sha256": "5194ad9948f3e870d71d657ab1c54055080b65b702925b7fe5e2c3f5d8f734b0",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "2763c8d1b3da9fc2e842e0bb3e4904e874db650ac2c8ba3c3a8aab0aaccd54e3",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 1,
+   "sha256": "06d6fb5b3dab15fed0684e9c02227a9470686283d3505595f64ad0336a7a5dfb",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "55122c5e611ad87e365e6eb691e5783bd9723ffc25a34ca8ae5032104d802416",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 2,
+   "sha256": "af19975e216a0892ad908c264b074c3540f0758249d45c655779d14f5875f27b",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "4fc64f74e3fb4b1997f4747faf518b513cd599946702edf006d46e5e1a7cfab1",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 3,
+   "sha256": "b1941ef61c36ac4bf74cdfa3a848799da9afac36b6d7022f949b02642e91e09f",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "3d0b002b15af0d127bb6923bf9edf88b6549dec4d5c7d0f0ee9858a67a855d01",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 4,
+   "sha256": "b4d28ccf6395be708d1b394543e68f72291514c6f73fb5e73462d3ca9b31c143",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "600afca71c56fe533c0f521df436e5b70f020404b750d585d3d2a164e43d1f2e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 5,
+   "sha256": "b21912251b8514b0f2a0aacdfa4759c7efbb3e99150d6944a811a26acf7b13ec",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "2236b538f182f21a99b7ad83bff6851083e811081da7eb6b2104ca6df916bdf6",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 6,
+   "sha256": "bfba67db9bec2c57a36fe944a7206b6d18ef6e8b576c5da529e15d72544ef4c1",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "514323725e5d60df17f5adfe781e0f23ce46fe0d25cc3d5458e620f4bd5fe68c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/idle_left_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame": 7,
+   "sha256": "58c5e57a571c45339fc5644b632b8ed189bd6d123f17efca875b594935029f45",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/idle_left_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "188c2d0182b5c21aa5085f561c9a89b9947b050730fd7ac7229802fa0ef28a1a",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "34008a83bd0391d258ef1b5151ec57bc68caea323a6650d94d6a06d6d1ee48ee",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "af35db5a0051385e8f51f79bc5fcecba8da21f0e8a11fc10dd06946f7fdbb924",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "26d546eb7e8b249175ae0ff025a3f52952a5ad806c710268f53e2a31778cd7a8",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "9702ed9eb5679dbe6b0ae39aa10a42ad38657aaaa66b606471a48395315860d8",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "1b0458271dc14829ad9aca44ca349d274d78acd2aaecf5394972d8f9c2847762",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "74684d34e1620bee3676ff082c1daa1fcb9514a3b42fc3d5ab7f08c487611f1c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "219436fd0965ccd50a9529d252435e7063b95f5f96a7783467951b2579d586da",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "edce4860e17830e5bf91ddbf77c0e036dc393221952e3d1e2efc0905c9c59a94",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "893f447180cad491b2982affdf1313415c022965f9ebe5659f14edc0bf0fbcfd",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "0380b058dbe4f32ec75c3497871aa3d5abecd07988b63eeafd25f69bb84f1dd0",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "97662e1dd178ea84c5baed1f58b6ca27d83e11261c7101d28a1fa634112063be",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "80e219f860f81909d3c905ecec88a3514e36c0a8a65aefad0abc9941af7ac311",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "007c114818e0b033a3c586e0f5cf1eb4b16825b7e70cf7c500e80cab6ecfe99e",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "695df712c46bd95d9e5cefe83d5da69b9623756e9dd4e9fd579029a304489acc",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "b27e28ac98a9cbd702321e4b037e3d3c51f3f973dbe0b4dcfd0312151fcfccca",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "5a8f203195eee31d28bf947836af0462f4f21ed067459a117f79e4fb0d667ae6",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_08.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "06d6fdcea64bbd389edad4ae854aa0175a265dbf06df939355475bb8632430d6",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_08.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "0abb1276805f0c641c73f3ea665aeb1db19a6034b2e73a4cd7bc504e4cb27802",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_09.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "d885138eef8bf22547ef7a6b1ad4f3e8e47c7311c9206d61c6be0bea468a9cf8",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_09.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "816e5548554a752b7bebab0d1c5b5710984f926c4e10bfc4f0d61a441cf19415",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_10.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "c41ab4aea50e2a1f275d4ecaa903d1769ac97adf6b065950cace45172388c969",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_10.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "31746089b56f7157d2c68115e1ef5a4b24a215a9a7b6c7ad9a5dca89a64b9da3",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_down_11.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "8983c297f12d78d3aa91cdc88bc4420e241a7c7e08ffcc57202db2f68cfe8c19",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_down_11.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "68cf028406cc129ded86674061bf1f6eea386eb282e8feecace1a16b0b0ab28e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "179c9a5bc938e9d71a34d45294538d671b9db0e37d78eaa2436735340d35f1c1",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "d3cdf64cff9635f406fb24239f68decd2e24ab9176a9bc83ea8abe4acf88c867",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "ba736065afe63d5856c996358906a81240df3c0b59c1e5b6a56fba5cdfb0f398",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "2652b7f0eb879f0cd60fc94ecb9ac1f70af50accce3d782aad378755730900ab",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "736960c01b2b8dc638fb42c76ab34896847327f016575d71cb75b161f73f8133",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "0760da9a860919ee5253df8f1b455b19a34de796f99701952cb7bbc8391f2834",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "9d6f69b2d638940c383cf1e2c885d096eff7786799e1d4f8e885ad66812e447a",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "67f29463b6dfbbb7d18090c4da06f09f83c689f1dfe7276318f2ad3f1d3c9466",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "fb85b99c5b845ea6652df1876fe6a168d773274e1ae1c2a6f30951c1449adef1",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "b0e102d3a7c9e91f0c6c3df836ff9f417102be7b984a8f2bfa8cc4208c767671",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "77d3054d688b7b80b6d74c946593bd08d73fa0d52966438ffd9d3fd5dc702cf6",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "ac27283a3ffc1c922bc51f3d306f90578ca31f8a6f50ddd0937110701ce663df",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "7ea6ac47e2a70aa4dacaeef61f6382e8bebc634b2a29a77b42539b090c71e9c4",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "254cdc7b501cf327359fdd79a34d6ffc849706c43b4497ba29a65535aa9460db",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "2153bc3c0d7a8a3e0ab17bb48fd33d56af5567d713ec4db3abd069a36e6557eb",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "e56bbf42d844f89e5dd4b881fa31823f2a961641c04b2912759978e843a7753b",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_08.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "fba522024800795ae70b3372af175d091aafc3c2fd13142dd58b9810c1721f21",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_08.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "f5ca2239bdf815a63ae73aa518f1e93da35bb8e789be7f42817eca14282cf8c5",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_09.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "bff839cee4c73f97eadae3e2f3052e8e8b050c895d8f5ef727f0bd6387c45290",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_09.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "07f50f2fa2fa4d3f7ddd570da34403beb7ba331c8bfa604741a3aa77207413c1",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_10.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "568a95836b1fa945cae307d05ca7cf8de1f3897d1fd8abd7cd16c3ac25ad6523",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_10.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "6b22f87fe7885f09fac49fd91b64cc3fa3cf137c622e1a61688ab7c5ac94a2ff",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_right_11.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "1831d0f00147aa250a1faeeb8f3eec8ece1678f3a0a2aa0b03d1cf330c732bf2",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_right_11.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "418b3733ce532546dbe36071f4edb38c26996b416faa5a8fe035eb366cc05c26",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "b61834d0ee8e20bb6192edcfe488d77bdf31e74dcf34a14acb9b5b9cd0377aea",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "d2094fbff65744da14d1273d7c9435c2cf201c0a3a6ca18a42b40d6ff07798e9",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "9bd37a71d7c80dd538e220a9a68d5cce12335f4f8d2642e25bace7e2bf19c9ba",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "4fdb21ab082aba5ba1472760e92c80a3bdc6c7f7be0a192fd0d1e29d9e5db688",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "923fcbce3a6e4d17c972e867619bc467d2cdbcf1a401c4b8cba7b9cda2371238",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "5fbf06af200b3efb4d3525c9a5557f1b024dd83d461fc9a64421c6996fe37b7d",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "e692cc32454ab4431f08f5090c9818fcb93380477082eb8004d2ce946589d000",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "1a99a3d25ce2239b9f0b1a1cb3e0cb93685ef583197f5a969ca8f7c4e28a6115",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "f4686e4cc54293383a6701f4d06745ec1ba1c014077d25de6516fbe477f6e4ee",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "47e2ed659ff0b3bd9208ce4db8ce657afb655d719a5202f753d73e8e901ab3ba",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "2d696c2d5e61a42bf0161adddfc456c023dceeb81cb98c3e41d6c4f8a2be89e2",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "532b0206d656bcebd74880e38f2e9de159b777eaeeac80bd0f3f269e8f1ab524",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "fecc0baf9f840540e83c7d5bb4327268f913bd43bc8a7c436df0040c6babd7c6",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "d9727f39792ed974e51cb6b9bcb82682397ae12c4f3a5c0e31dcf4df1c603ef2",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "e21e6bcc11bf029949c9c7482e5ff4e8c54442caf7f27ac69ce07be68d589b8d",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "fe7f085535058f8e8c917dc7aa1733088b545c0a9ba3c7397e605808b08e9288",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_08.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "5d337fc482b2565fe3c6cd8489aed38861395e7345e9f7b8fe09f08f68d5528e",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_08.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "61e0b33d0d8ba7a0d6a73de9bf5fad603bdbd85f928212c8d88b1b62964679e0",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_09.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "c6fa0fe0ef7c77f88dc48fe2cf2dd29e788b1bc55e83b70e382673d368610c86",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_09.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "8c2646b6bf7361d0afc064ee5749986d4223b18cecfc920004a01dfe97ebf609",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_10.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "5b7289033c96b3cc6ec4f69d7cecca3dad4d411567ca01282101faa58df51fd1",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_10.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "9346f81cb18773b6f1b445321a85f15ef295f43f864f5469eb87dcf9d5e0d6cc",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_up_11.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "f0c6fbc855c4a41d2c46c1dd77b2ad8f692a741722479f3d80a7fcc1eb9b219d",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_up_11.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "f2aed0af13ee9edfd12a55e53e416761d4be2794aaded8423ea9956f84ce8123",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_00.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 0,
+   "sha256": "8f241942595442e1e5b584f8f1f38441f770b80ad4c6af56fbf0f5a1c0cf7f10",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_00.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "edcd0bb0c85dc9ecb6d26e7035faebddf96343c4f7dea620503125961e866f6e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_01.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 1,
+   "sha256": "6d55a8952a0385a1b4f5d89656641d51f5cb26a422ac81d8480b1796bad9bb31",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_01.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "50918239cd67e6b541c6883d0efed540cec80d636e7b59e8cf4213a72e54b2e6",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_02.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 2,
+   "sha256": "c3195cce089f10d60c79ac0a965e435f48e8ae2b4aa5d6215aa9ea63429e80c3",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_02.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "f5b10ba3c61c355d0dbff85e4ec5d5e782da361b58dd63f548b9203eed8817bb",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_03.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 3,
+   "sha256": "49b79fb2b320a484e4d0bcbc0c9abd301c961b94d4fcb47d425b8af3e941dfc0",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_03.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "2cb64348fea69f790c2931b62841b73735c75208bf140384eb5f4ff0ba64a47e",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_04.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 4,
+   "sha256": "284251dd7b0da42a516dfcd44f7f99f7b390ac766950442d79d3564cc3c72db4",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_04.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "f37323fdc1cbabc3843daac627b9b0bd5436f2d9675b395e47dfcf951f18654c",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_05.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 5,
+   "sha256": "a233c9fed0fa068b4eaf26f9fa0d4f4a4f3799322bb56ea85c3e830b513f8614",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_05.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "d1ad14f8a045147cc4a9fdbe2dfaf45bfceec81fecd17ee6db8c7f23bab8b355",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_06.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 6,
+   "sha256": "55bd8705e98824065670720fa09a6b2a4222d1209b57a115a1f787082b4af0e6",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_06.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "42e87542671dad4ea9d2d78f0deb6ed9762b3e71b00df6a3f239199df74f3671",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_07.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 7,
+   "sha256": "ef30e27ec9467afb4adcfe491fce32e129fd7dd6f0844b680ccfb9ba737cbf0e",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_07.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "16670cfb5f848cd724c71a048ff7bbe11e1a48aaedcc9014e6eb373c71a7da43",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_08.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 8,
+   "sha256": "cce8af3515824fce4aab647c369070f8944650f24ea8805ff998f0f761152e9f",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_08.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "90de4d0c0b4ee7893b2eca9e0654570a6ad2bb99c28dae84d60392030bcf9e60",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_09.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 9,
+   "sha256": "b8e6031b0d3f8f42c970c4d02a58be0646cd2c413b89f80b868a191c78ec57cc",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_09.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "19cbffdba6cdc121964569d376cb46f686cca0265898fddf98827a4b8dc2e326",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_10.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 10,
+   "sha256": "57d4c3bc648c54844938148b42938b9b7e6baa2bad8c0f20e133f1cb06003ad4",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_10.png"
+  },
+  {
+   "width": 42,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "4e59ec5dca3f0e5f3f41d04dba0247ac3700ca72b5432737aaa466e232a72995",
+   "path": "Sprites/CH_Villager_Woman/1x/frames/walk_left_11.png"
+  },
+  {
+   "width": 84,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame": 11,
+   "sha256": "84f1118259ddb6a6a3f9de3bd91952c39a0cfb95dfbcf22a95c726739ff16cfe",
+   "path": "Sprites/CH_Villager_Woman/2x/frames/walk_left_11.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 336,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 4,
+   "sha256": "d5f514a43f66438bac66da0712f684bd12ec2547639d245970e7bc9c4d5917d8",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/idle_down.png"
+  },
+  {
+   "width": 336,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 4,
+   "sha256": "c0f13aec8444b7371fea0e4e3ebc8b196c16b24e72369e0d3b15b983fb0721e5",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/idle_right.png"
+  },
+  {
+   "width": 336,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 4,
+   "sha256": "92e5e457fd05e5f247efede7e88cf288b1cfa3666b65e7ca7ebeb85fddc4a7ce",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/idle_up.png"
+  },
+  {
+   "width": 336,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 4,
+   "sha256": "36db66f5bf6113d41404b3d200d0cb096f75b2734a6fa694065a6bd2ac93aaf8",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/idle_left.png"
+  },
+  {
+   "width": 504,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 15,
+   "sha256": "1ad01874d032dab7c1cd60e9be5e1ffb09afdd64a960acff5fd875ef69043584",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/walk_down.png"
+  },
+  {
+   "width": 504,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 15,
+   "sha256": "ea8d0f2fe0f002c8878427c41197655892e3e58d37f720a6edcdf28899801df8",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/walk_right.png"
+  },
+  {
+   "width": 504,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 15,
+   "sha256": "4fa924b9c3fcb3c14e71a36db0e6298f6fd99ee93354b9a14d45409bd357712e",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/walk_up.png"
+  },
+  {
+   "width": 504,
+   "height": 77,
+   "pivot": [
+    21.0,
+    61.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 42,
+   "frame_height": 77,
+   "fps": 15,
+   "sha256": "8e8f88bfa93ae9d7c317a193319d4f4a50e8dbe15c384e051ead912cec1249eb",
+   "path": "Sprites/CH_Villager_Woman/1x/sheets/walk_left.png"
+  },
+  {
+   "width": 672,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 4,
+   "sha256": "62f408783dd90a4ebf91865b9446ae696b95e9399a302435588898a1211a305d",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/idle_down.png"
+  },
+  {
+   "width": 672,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 4,
+   "sha256": "f5fce10863dcf0a4ff09c1f9539e4be1251755f60638191b0f9943806a4203c4",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/idle_right.png"
+  },
+  {
+   "width": 672,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 4,
+   "sha256": "68a8ca83ce9a03609252b82b62c392ff29a22a006776bfcdfdf77173007bfe00",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/idle_up.png"
+  },
+  {
+   "width": 672,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "idle",
+   "frame_count": 8,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 4,
+   "sha256": "f28f6ca9230cf98080fdad2915b160922ca1797705ef89a29e67822a6c58f154",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/idle_left.png"
+  },
+  {
+   "width": 1008,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 15,
+   "sha256": "ca2b95164646dd1c098f96f211e7c71656360db5ddfe498d185aff6f81aa0cd1",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/walk_down.png"
+  },
+  {
+   "width": 1008,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 15,
+   "sha256": "f1010f09cce69d11dff7da7d625b28f02f6f0071e4b6461a1902ffa25e3f7b70",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/walk_right.png"
+  },
+  {
+   "width": 1008,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 15,
+   "sha256": "8c1edff8e0bcbe4f0eaa4fb97dbf7519f68a2d2cd6ff0bd59b7c77a9f58798d7",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/walk_up.png"
+  },
+  {
+   "width": 1008,
+   "height": 154,
+   "pivot": [
+    42.0,
+    122.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "walk",
+   "frame_count": 12,
+   "frame_width": 84,
+   "frame_height": 154,
+   "fps": 15,
+   "sha256": "3863b73d808b7437d558c1e69b214a07cfdd5233ad85bb5dd6157332c9bd8179",
+   "path": "Sprites/CH_Villager_Woman/2x/sheets/walk_left.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 16,
+   "height": 14,
+   "pivot": [
+    8.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "17f7761cf9f0ec1ad94f9d0420f412c7349f75b7782cc77208c58e1cd753b15a",
+   "path": "Shadows/CH_Villager_Woman/1x/down.png"
+  },
+  {
+   "width": 32,
+   "height": 28,
+   "pivot": [
+    16.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "c9d15e463359dfd3c40fd7d75bd0c574aa891f2db7fb899e77dd01eec3327892",
+   "path": "Shadows/CH_Villager_Woman/2x/down.png"
+  },
+  {
+   "width": 14,
+   "height": 16,
+   "pivot": [
+    7.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "287084c4daba8f01fe6d1a09158252dce1743e2bc429f85695fce4490cb2f290",
+   "path": "Shadows/CH_Villager_Woman/1x/right.png"
+  },
+  {
+   "width": 28,
+   "height": 32,
+   "pivot": [
+    14.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "8f7a2ce85642123c57e169bd1f85b0303731323f8e97175f0fa1a2d0231d08a5",
+   "path": "Shadows/CH_Villager_Woman/2x/right.png"
+  },
+  {
+   "width": 16,
+   "height": 14,
+   "pivot": [
+    8.0,
+    7.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "17f7761cf9f0ec1ad94f9d0420f412c7349f75b7782cc77208c58e1cd753b15a",
+   "path": "Shadows/CH_Villager_Woman/1x/up.png"
+  },
+  {
+   "width": 32,
+   "height": 28,
+   "pivot": [
+    16.0,
+    14.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "c9d15e463359dfd3c40fd7d75bd0c574aa891f2db7fb899e77dd01eec3327892",
+   "path": "Shadows/CH_Villager_Woman/2x/up.png"
+  },
+  {
+   "width": 14,
+   "height": 16,
+   "pivot": [
+    7.0,
+    8.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "287084c4daba8f01fe6d1a09158252dce1743e2bc429f85695fce4490cb2f290",
+   "path": "Shadows/CH_Villager_Woman/1x/left.png"
+  },
+  {
+   "width": 28,
+   "height": 32,
+   "pivot": [
+    14.0,
+    16.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "8f7a2ce85642123c57e169bd1f85b0303731323f8e97175f0fa1a2d0231d08a5",
+   "path": "Shadows/CH_Villager_Woman/2x/left.png"
+  }
+ ]
+}

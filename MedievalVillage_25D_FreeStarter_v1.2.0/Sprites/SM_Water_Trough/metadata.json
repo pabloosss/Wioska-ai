@@ -1,0 +1,372 @@
+{
+ "id": "SM_Water_Trough",
+ "title": "Water trough",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dcf3fcd7d0e008fe6115322806a66f4ad33e9036ba13b8ca267df56cbaa7c988",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1f0bf8cbf80304b88b084125108f18dbc8bad3384de588805171ad71bda733da",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ef147f3694a47878050c46cb7be67d013a4821cfce89593cd013dc366b01e483",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9909902a0e5e3449e377e16359e1f3e6149de5b37cab00d8abe935583f67b004",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a99316e55133bca1a8afd7ba8fecbd0769df3888eca8d1f581aec5c26e4afe24",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a4d1b4f806d29831c1b2080cb300260e237a929977f74dda65bea0e13b07d62c",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2a91f98ccf27665348e8ccb0b546bc24e4a80428ea26c73ffacfdfd8061a76e8",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3b7a653b0ba99c4cd04d72235ccadd1dd6c66cb36e3b1862b5b09afa47f0facf",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dcf3fcd7d0e008fe6115322806a66f4ad33e9036ba13b8ca267df56cbaa7c988",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 84,
+   "fps": 1
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1f0bf8cbf80304b88b084125108f18dbc8bad3384de588805171ad71bda733da",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 168,
+   "fps": 1
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ef147f3694a47878050c46cb7be67d013a4821cfce89593cd013dc366b01e483",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 84,
+   "fps": 1
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "9909902a0e5e3449e377e16359e1f3e6149de5b37cab00d8abe935583f67b004",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 168,
+   "fps": 1
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a99316e55133bca1a8afd7ba8fecbd0769df3888eca8d1f581aec5c26e4afe24",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 84,
+   "fps": 1
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a4d1b4f806d29831c1b2080cb300260e237a929977f74dda65bea0e13b07d62c",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 168,
+   "fps": 1
+  },
+  {
+   "width": 68,
+   "height": 84,
+   "pivot": [
+    34.0,
+    51.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "2a91f98ccf27665348e8ccb0b546bc24e4a80428ea26c73ffacfdfd8061a76e8",
+   "path": "Sprites/SM_Water_Trough/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 84,
+   "fps": 1
+  },
+  {
+   "width": 136,
+   "height": 168,
+   "pivot": [
+    68.0,
+    102.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3b7a653b0ba99c4cd04d72235ccadd1dd6c66cb36e3b1862b5b09afa47f0facf",
+   "path": "Sprites/SM_Water_Trough/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 168,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 64,
+   "height": 26,
+   "pivot": [
+    32.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "1aa6577e8c359c87230bdaa64c295422e5da2153a8a97359f9a4d665bbfbbb15",
+   "path": "Shadows/SM_Water_Trough/1x/down.png"
+  },
+  {
+   "width": 128,
+   "height": 52,
+   "pivot": [
+    64.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "b3d50be417107a365e5d1ec85368d343a02824a747975cfe2b217c09a3fea2b5",
+   "path": "Shadows/SM_Water_Trough/2x/down.png"
+  },
+  {
+   "width": 26,
+   "height": 64,
+   "pivot": [
+    13.0,
+    32.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "755d34b381ab25773f0504734898a6a64ab32fb1fa20aeb4783608c5654440d0",
+   "path": "Shadows/SM_Water_Trough/1x/right.png"
+  },
+  {
+   "width": 52,
+   "height": 128,
+   "pivot": [
+    26.0,
+    64.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "c58e1a6c39c927209298fa2dcb4bcf78b796932943e9904540bf15be7d24c789",
+   "path": "Shadows/SM_Water_Trough/2x/right.png"
+  },
+  {
+   "width": 64,
+   "height": 26,
+   "pivot": [
+    32.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "1aa6577e8c359c87230bdaa64c295422e5da2153a8a97359f9a4d665bbfbbb15",
+   "path": "Shadows/SM_Water_Trough/1x/up.png"
+  },
+  {
+   "width": 128,
+   "height": 52,
+   "pivot": [
+    64.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "b3d50be417107a365e5d1ec85368d343a02824a747975cfe2b217c09a3fea2b5",
+   "path": "Shadows/SM_Water_Trough/2x/up.png"
+  },
+  {
+   "width": 26,
+   "height": 64,
+   "pivot": [
+    13.0,
+    32.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "755d34b381ab25773f0504734898a6a64ab32fb1fa20aeb4783608c5654440d0",
+   "path": "Shadows/SM_Water_Trough/1x/left.png"
+  },
+  {
+   "width": 52,
+   "height": 128,
+   "pivot": [
+    26.0,
+    64.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "c58e1a6c39c927209298fa2dcb4bcf78b796932943e9904540bf15be7d24c789",
+   "path": "Shadows/SM_Water_Trough/2x/left.png"
+  }
+ ]
+}

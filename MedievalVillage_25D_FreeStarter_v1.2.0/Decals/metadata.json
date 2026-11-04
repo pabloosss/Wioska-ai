@@ -1,0 +1,188 @@
+{
+ "schema": 2,
+ "files": [
+  {
+   "width": 40,
+   "height": 32,
+   "pivot": [
+    20.0,
+    16.0
+   ],
+   "resolution": "1x",
+   "sha256": "d884dafc3b81c54201447e4af7ab72a9c82271a51ef00711d01bbbc0c702e150",
+   "path": "Decals/tuft/1x.png",
+   "id": "tuft",
+   "directionIndependent": true
+  },
+  {
+   "width": 40,
+   "height": 32,
+   "pivot": [
+    20.0,
+    16.0
+   ],
+   "resolution": "1x",
+   "sha256": "72c3d506274f6e29b27b4793206a134879770a9d4709f47fe97b494be6fba911",
+   "path": "Decals/clover/1x.png",
+   "id": "clover",
+   "directionIndependent": true
+  },
+  {
+   "width": 40,
+   "height": 32,
+   "pivot": [
+    20.0,
+    16.0
+   ],
+   "resolution": "1x",
+   "sha256": "3e1c4d849e266864fcf4cd47883a2a2b3440dbf282d686792394bb8361b4fbc8",
+   "path": "Decals/tiny_flowers/1x.png",
+   "id": "tiny_flowers",
+   "directionIndependent": true
+  },
+  {
+   "width": 64,
+   "height": 40,
+   "pivot": [
+    32.0,
+    20.0
+   ],
+   "resolution": "1x",
+   "sha256": "c7ac94dde1acb651224c8b86e6509b7761dff02c49d1b957f10f920162d48398",
+   "path": "Decals/bare_ground/1x.png",
+   "id": "bare_ground",
+   "directionIndependent": true
+  },
+  {
+   "width": 80,
+   "height": 64,
+   "pivot": [
+    40.0,
+    32.0
+   ],
+   "resolution": "2x",
+   "sha256": "abaafb335c0b6231736df46b4ec86593bee1df9eee00390e2efda581ad6073f0",
+   "path": "Decals/tuft/2x.png",
+   "id": "tuft",
+   "directionIndependent": true
+  },
+  {
+   "width": 80,
+   "height": 64,
+   "pivot": [
+    40.0,
+    32.0
+   ],
+   "resolution": "2x",
+   "sha256": "cdf98e24d946ec58cfbcedb7a5cc535630bc6bece9f18b41af1f9186f2b20986",
+   "path": "Decals/clover/2x.png",
+   "id": "clover",
+   "directionIndependent": true
+  },
+  {
+   "width": 80,
+   "height": 64,
+   "pivot": [
+    40.0,
+    32.0
+   ],
+   "resolution": "2x",
+   "sha256": "038f77e847a54c5535382efb80c27a0ec4f42376e40f7b4fb3ba64da01ba88d3",
+   "path": "Decals/tiny_flowers/2x.png",
+   "id": "tiny_flowers",
+   "directionIndependent": true
+  },
+  {
+   "width": 128,
+   "height": 80,
+   "pivot": [
+    64.0,
+    40.0
+   ],
+   "resolution": "2x",
+   "sha256": "c44543c2c44235a121a46336a55bdb718c025e4d89b090f3019082af33622b32",
+   "path": "Decals/bare_ground/2x.png",
+   "id": "bare_ground",
+   "directionIndependent": true
+  },
+  {
+   "id": "tall_grass_patch",
+   "resolution": "1x",
+   "path": "Decals/tall_grass_patch/1x.png",
+   "width": 160,
+   "height": 80,
+   "pivot": [
+    80.0,
+    40.0
+   ],
+   "sha256": "ddc397f72a6b7e000778dd6f97a0642395c2e8207ce56a18dad391a59688fa5a",
+   "directionIndependent": true
+  },
+  {
+   "id": "grass_tone_patch",
+   "resolution": "1x",
+   "path": "Decals/grass_tone_patch/1x.png",
+   "width": 256,
+   "height": 192,
+   "pivot": [
+    128.0,
+    96.0
+   ],
+   "sha256": "a1faab1a6703fb02e803fe1e6447309ae04da18235067a87f7476a36c427b86f",
+   "directionIndependent": true
+  },
+  {
+   "id": "tall_grass_patch",
+   "resolution": "2x",
+   "path": "Decals/tall_grass_patch/2x.png",
+   "width": 320,
+   "height": 160,
+   "pivot": [
+    160.0,
+    80.0
+   ],
+   "sha256": "900d4f690342673d8fa80f507291c505b711d31ed2168e8d96b091d7d316a0dc",
+   "directionIndependent": true
+  },
+  {
+   "id": "grass_tone_patch",
+   "resolution": "2x",
+   "path": "Decals/grass_tone_patch/2x.png",
+   "width": 512,
+   "height": 384,
+   "pivot": [
+    256.0,
+    192.0
+   ],
+   "sha256": "2d8e44070c2b26d0167da6f01ddf7796c46b1c326ccbef9eac28d01a04f31778",
+   "directionIndependent": true
+  },
+  {
+   "width": 30,
+   "height": 18,
+   "pivot": [
+    15.0,
+    9.0
+   ],
+   "resolution": "1x",
+   "sha256": "887a720ced16e9dd0ecb77a3aeebaee6ac587d616e97d60f85a7aba02f88ea24",
+   "path": "Decals/seeded/1x.png",
+   "id": "seeded",
+   "directionIndependent": true
+  },
+  {
+   "width": 60,
+   "height": 36,
+   "pivot": [
+    30.0,
+    18.0
+   ],
+   "resolution": "2x",
+   "sha256": "1b6c8008b1a0fe9bf8b4f722ae3e071d75c5e685e2855a64fc7b95ca8a7e2685",
+   "path": "Decals/seeded/2x.png",
+   "id": "seeded",
+   "directionIndependent": true
+  }
+ ],
+ "familyCount": 6
+}

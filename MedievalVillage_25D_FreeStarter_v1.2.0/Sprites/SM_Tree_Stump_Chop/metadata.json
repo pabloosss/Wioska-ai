@@ -1,0 +1,372 @@
+{
+ "id": "SM_Tree_Stump_Chop",
+ "title": "Tree trunk to chop",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a3057810c955c1aed0b8010831832851a49d599641bf54d66dd7cbca802c9c1d",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ca1303c845ef554bb110b6dcb7bc806adb324664e2bcefe2c3734f9af4a693e5",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "db9d0f713682130287fd488a2f219228e0bcbd898237e268f9c125e800d1dd35",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7e46d6a9b2a8929028f7573f4583649fae791147af25d940fd425a844458ba71",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "19251546955d24c21156ae5e0e915d8d50291b00ae859db36d7877a0e6e98dc2",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f8722eebfd0b599bd5bde40e55f0e7927910ef12a9a24c34577404165a3d70d1",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "978c6d51a28c4f83ab5c78fa5f274e7b923a7ec64c8dfaf921b9e4066a188810",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ac626de1214e880d191a098994b62a7ff96abb4cc634e20ca47beb74e3aba109",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a3057810c955c1aed0b8010831832851a49d599641bf54d66dd7cbca802c9c1d",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 44,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ca1303c845ef554bb110b6dcb7bc806adb324664e2bcefe2c3734f9af4a693e5",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 88,
+   "frame_height": 132,
+   "fps": 1
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "db9d0f713682130287fd488a2f219228e0bcbd898237e268f9c125e800d1dd35",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 44,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "7e46d6a9b2a8929028f7573f4583649fae791147af25d940fd425a844458ba71",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 88,
+   "frame_height": 132,
+   "fps": 1
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "19251546955d24c21156ae5e0e915d8d50291b00ae859db36d7877a0e6e98dc2",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 44,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f8722eebfd0b599bd5bde40e55f0e7927910ef12a9a24c34577404165a3d70d1",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 88,
+   "frame_height": 132,
+   "fps": 1
+  },
+  {
+   "width": 44,
+   "height": 66,
+   "pivot": [
+    22.0,
+    46.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "978c6d51a28c4f83ab5c78fa5f274e7b923a7ec64c8dfaf921b9e4066a188810",
+   "path": "Sprites/SM_Tree_Stump_Chop/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 44,
+   "frame_height": 66,
+   "fps": 1
+  },
+  {
+   "width": 88,
+   "height": 132,
+   "pivot": [
+    44.0,
+    92.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ac626de1214e880d191a098994b62a7ff96abb4cc634e20ca47beb74e3aba109",
+   "path": "Sprites/SM_Tree_Stump_Chop/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 88,
+   "frame_height": 132,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 26,
+   "height": 26,
+   "pivot": [
+    13.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "23b9a784e757500e8fa8e5fbf8748e65331d85f003f421f219a1b5e3e9bd418f",
+   "path": "Shadows/SM_Tree_Stump_Chop/1x/down.png"
+  },
+  {
+   "width": 52,
+   "height": 52,
+   "pivot": [
+    26.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "2c5963ab212f62ce4d1e3bca0c5e53bd5f1746f2ac8d33b0a922b556979a29d3",
+   "path": "Shadows/SM_Tree_Stump_Chop/2x/down.png"
+  },
+  {
+   "width": 26,
+   "height": 26,
+   "pivot": [
+    13.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "74845f3ccd9953c1081720d671ccaba8d02b82e67290c0e71133e49d3629adac",
+   "path": "Shadows/SM_Tree_Stump_Chop/1x/right.png"
+  },
+  {
+   "width": 52,
+   "height": 52,
+   "pivot": [
+    26.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "317ee2abdc36427e6beb66039414551c9f6b9de3944b9d9de2c271c8732d5030",
+   "path": "Shadows/SM_Tree_Stump_Chop/2x/right.png"
+  },
+  {
+   "width": 26,
+   "height": 26,
+   "pivot": [
+    13.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "23b9a784e757500e8fa8e5fbf8748e65331d85f003f421f219a1b5e3e9bd418f",
+   "path": "Shadows/SM_Tree_Stump_Chop/1x/up.png"
+  },
+  {
+   "width": 52,
+   "height": 52,
+   "pivot": [
+    26.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "2c5963ab212f62ce4d1e3bca0c5e53bd5f1746f2ac8d33b0a922b556979a29d3",
+   "path": "Shadows/SM_Tree_Stump_Chop/2x/up.png"
+  },
+  {
+   "width": 26,
+   "height": 26,
+   "pivot": [
+    13.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "74845f3ccd9953c1081720d671ccaba8d02b82e67290c0e71133e49d3629adac",
+   "path": "Shadows/SM_Tree_Stump_Chop/1x/left.png"
+  },
+  {
+   "width": 52,
+   "height": 52,
+   "pivot": [
+    26.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "317ee2abdc36427e6beb66039414551c9f6b9de3944b9d9de2c271c8732d5030",
+   "path": "Shadows/SM_Tree_Stump_Chop/2x/left.png"
+  }
+ ]
+}

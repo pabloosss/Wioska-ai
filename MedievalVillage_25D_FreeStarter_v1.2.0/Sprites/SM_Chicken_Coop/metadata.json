@@ -1,0 +1,372 @@
+{
+ "id": "SM_Chicken_Coop",
+ "title": "Chicken coop",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "172ef3112eb57896928fd5a4a7f7bd3034b405d45fe47f7ce080a410b21ea2f8",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f35d859d1755c7cc75df1d26e2fc1f59103db6f13981ede6d63947c515466662",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5e181216107565ef066ad7d1299e2ab5296e3463971ff67515ebe8b1aa1be637",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a6f840aa6eab917b3833c6be5cc3a0dc447d5c4d2ebb8ab6b7b726cb90ac7d0c",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "32a77c1bbfdfb100b841fa50ea4c030ef84b0f20b1aadae5aaac01b17dbc9b9f",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d6d0645e93f7ef9508bbb3890fb0049df5992cabafac770d7739c2183183cbf3",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ade5e4d9fc86c5ef69ab181641fb01b4c22094a35dfd20264c4a1c90efba10f4",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1a115a7827b9548ca080bdd49da34a59413cc8f1de3e4bdad57e9e7774d46209",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "172ef3112eb57896928fd5a4a7f7bd3034b405d45fe47f7ce080a410b21ea2f8",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 114,
+   "frame_height": 153,
+   "fps": 1
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "f35d859d1755c7cc75df1d26e2fc1f59103db6f13981ede6d63947c515466662",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 228,
+   "frame_height": 306,
+   "fps": 1
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "5e181216107565ef066ad7d1299e2ab5296e3463971ff67515ebe8b1aa1be637",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 114,
+   "frame_height": 153,
+   "fps": 1
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "a6f840aa6eab917b3833c6be5cc3a0dc447d5c4d2ebb8ab6b7b726cb90ac7d0c",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 228,
+   "frame_height": 306,
+   "fps": 1
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "32a77c1bbfdfb100b841fa50ea4c030ef84b0f20b1aadae5aaac01b17dbc9b9f",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 114,
+   "frame_height": 153,
+   "fps": 1
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "d6d0645e93f7ef9508bbb3890fb0049df5992cabafac770d7739c2183183cbf3",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 228,
+   "frame_height": 306,
+   "fps": 1
+  },
+  {
+   "width": 114,
+   "height": 153,
+   "pivot": [
+    57.0,
+    97.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ade5e4d9fc86c5ef69ab181641fb01b4c22094a35dfd20264c4a1c90efba10f4",
+   "path": "Sprites/SM_Chicken_Coop/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 114,
+   "frame_height": 153,
+   "fps": 1
+  },
+  {
+   "width": 228,
+   "height": 306,
+   "pivot": [
+    114.0,
+    194.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "1a115a7827b9548ca080bdd49da34a59413cc8f1de3e4bdad57e9e7774d46209",
+   "path": "Sprites/SM_Chicken_Coop/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 228,
+   "frame_height": 306,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 64,
+   "height": 58,
+   "pivot": [
+    32.0,
+    29.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "26e4fd59ecfda809e456a46b1838d007664898c117e1869ffc4b896814161ee4",
+   "path": "Shadows/SM_Chicken_Coop/1x/down.png"
+  },
+  {
+   "width": 128,
+   "height": 116,
+   "pivot": [
+    64.0,
+    58.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "43f766a8091156556f6e8e3ee11312063f44b7424ceabd81a695f8bfa7004e99",
+   "path": "Shadows/SM_Chicken_Coop/2x/down.png"
+  },
+  {
+   "width": 58,
+   "height": 64,
+   "pivot": [
+    29.0,
+    32.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "a7ab25242ca54977a43283ce7941e6f66669b67546d0a1ad7d96b582b3ff4a47",
+   "path": "Shadows/SM_Chicken_Coop/1x/right.png"
+  },
+  {
+   "width": 116,
+   "height": 128,
+   "pivot": [
+    58.0,
+    64.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "32358a6c91e5ff2bec365111a45e5a65967aaa7dea974e027352a95261187120",
+   "path": "Shadows/SM_Chicken_Coop/2x/right.png"
+  },
+  {
+   "width": 64,
+   "height": 58,
+   "pivot": [
+    32.0,
+    29.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "26e4fd59ecfda809e456a46b1838d007664898c117e1869ffc4b896814161ee4",
+   "path": "Shadows/SM_Chicken_Coop/1x/up.png"
+  },
+  {
+   "width": 128,
+   "height": 116,
+   "pivot": [
+    64.0,
+    58.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "43f766a8091156556f6e8e3ee11312063f44b7424ceabd81a695f8bfa7004e99",
+   "path": "Shadows/SM_Chicken_Coop/2x/up.png"
+  },
+  {
+   "width": 58,
+   "height": 64,
+   "pivot": [
+    29.0,
+    32.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "a7ab25242ca54977a43283ce7941e6f66669b67546d0a1ad7d96b582b3ff4a47",
+   "path": "Shadows/SM_Chicken_Coop/1x/left.png"
+  },
+  {
+   "width": 116,
+   "height": 128,
+   "pivot": [
+    58.0,
+    64.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "32358a6c91e5ff2bec365111a45e5a65967aaa7dea974e027352a95261187120",
+   "path": "Shadows/SM_Chicken_Coop/2x/left.png"
+  }
+ ]
+}

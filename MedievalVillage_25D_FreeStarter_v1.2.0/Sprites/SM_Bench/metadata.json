@@ -1,0 +1,481 @@
+{
+ "id": "SM_Bench",
+ "title": "Bench",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    26,
+    65,
+    60
+   ],
+   "sha256": "81f4d35dd07dbf060bb303ed4244de5f19dec82baf8e790f82a10ef76b55b5c3",
+   "path": "Sprites/SM_Bench/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    51,
+    130,
+    119
+   ],
+   "sha256": "bdbbbac7a03d092292af21ce73bfa45b582b5588aeade57091af9d6e75c8bcb7",
+   "path": "Sprites/SM_Bench/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    22,
+    4,
+    46,
+    72
+   ],
+   "sha256": "fde514c5ded91ea5f5e98602f2ddddfbd95edd9798fd604c60ee787b3d238265",
+   "path": "Sprites/SM_Bench/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    43,
+    8,
+    93,
+    144
+   ],
+   "sha256": "d60e8e4dd6e62e43f637d0658700cf4f1b9275fec97218059364464c652a3afa",
+   "path": "Sprites/SM_Bench/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    3,
+    26,
+    65,
+    60
+   ],
+   "sha256": "cf1120435f62ddc1ff8f9465da1c7e5378e6a3553375ab0c7891342671cf4be0",
+   "path": "Sprites/SM_Bench/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    6,
+    51,
+    130,
+    119
+   ],
+   "sha256": "2ce6ad3e5cb604e1cefb3c03e02dbfff722f74f7a55db68d437543aec72baa5b",
+   "path": "Sprites/SM_Bench/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    22,
+    4,
+    46,
+    72
+   ],
+   "sha256": "4d8441ecad65eccf0c812998987d472f90a344beddaf1339f15f7a2f905ee82d",
+   "path": "Sprites/SM_Bench/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    43,
+    7,
+    93,
+    144
+   ],
+   "sha256": "12a25d07788e02e5fb645604c309da1dc24d0ba8723d994f8fcf223493a43d57",
+   "path": "Sprites/SM_Bench/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 75,
+   "fps": 1,
+   "bbox": [
+    3,
+    26,
+    65,
+    60
+   ],
+   "sha256": "81f4d35dd07dbf060bb303ed4244de5f19dec82baf8e790f82a10ef76b55b5c3",
+   "path": "Sprites/SM_Bench/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 150,
+   "fps": 1,
+   "bbox": [
+    6,
+    51,
+    130,
+    119
+   ],
+   "sha256": "bdbbbac7a03d092292af21ce73bfa45b582b5588aeade57091af9d6e75c8bcb7",
+   "path": "Sprites/SM_Bench/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 75,
+   "fps": 1,
+   "bbox": [
+    22,
+    4,
+    46,
+    72
+   ],
+   "sha256": "fde514c5ded91ea5f5e98602f2ddddfbd95edd9798fd604c60ee787b3d238265",
+   "path": "Sprites/SM_Bench/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 150,
+   "fps": 1,
+   "bbox": [
+    43,
+    8,
+    93,
+    144
+   ],
+   "sha256": "d60e8e4dd6e62e43f637d0658700cf4f1b9275fec97218059364464c652a3afa",
+   "path": "Sprites/SM_Bench/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 75,
+   "fps": 1,
+   "bbox": [
+    3,
+    26,
+    65,
+    60
+   ],
+   "sha256": "cf1120435f62ddc1ff8f9465da1c7e5378e6a3553375ab0c7891342671cf4be0",
+   "path": "Sprites/SM_Bench/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 150,
+   "fps": 1,
+   "bbox": [
+    6,
+    51,
+    130,
+    119
+   ],
+   "sha256": "2ce6ad3e5cb604e1cefb3c03e02dbfff722f74f7a55db68d437543aec72baa5b",
+   "path": "Sprites/SM_Bench/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 68,
+   "height": 75,
+   "pivot": [
+    34.0,
+    49.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 68,
+   "frame_height": 75,
+   "fps": 1,
+   "bbox": [
+    22,
+    4,
+    46,
+    72
+   ],
+   "sha256": "4d8441ecad65eccf0c812998987d472f90a344beddaf1339f15f7a2f905ee82d",
+   "path": "Sprites/SM_Bench/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 136,
+   "height": 150,
+   "pivot": [
+    68.0,
+    98.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 136,
+   "frame_height": 150,
+   "fps": 1,
+   "bbox": [
+    43,
+    7,
+    93,
+    144
+   ],
+   "sha256": "12a25d07788e02e5fb645604c309da1dc24d0ba8723d994f8fcf223493a43d57",
+   "path": "Sprites/SM_Bench/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 58,
+   "height": 22,
+   "pivot": [
+    29.0,
+    11.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "ccd2afdd8f27b9e0a77ef7356f702a169f5f64afe43837c8496078d164786fa0",
+   "path": "Shadows/SM_Bench/1x/down.png"
+  },
+  {
+   "width": 116,
+   "height": 44,
+   "pivot": [
+    58.0,
+    22.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "311999f401c0f2dbe49f023a6b8f077bd83a1bac8a0868d8193c3e4111b020f8",
+   "path": "Shadows/SM_Bench/2x/down.png"
+  },
+  {
+   "width": 24,
+   "height": 58,
+   "pivot": [
+    12.0,
+    29.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "afdc2ab413f893cc20f032b35795786e3045f925b18d9cf7b90ce15caa6010e2",
+   "path": "Shadows/SM_Bench/1x/right.png"
+  },
+  {
+   "width": 48,
+   "height": 116,
+   "pivot": [
+    24.0,
+    58.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "3390f29bc50d2c6edf6ed6c9b3f68c06140d87466bece408cabecc6d27742b5b",
+   "path": "Shadows/SM_Bench/2x/right.png"
+  },
+  {
+   "width": 58,
+   "height": 24,
+   "pivot": [
+    29.0,
+    12.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "f992691e456a733723199edf25caaa849bfbcef4dedea6d33e935c3b0cebb6ca",
+   "path": "Shadows/SM_Bench/1x/up.png"
+  },
+  {
+   "width": 116,
+   "height": 48,
+   "pivot": [
+    58.0,
+    24.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "a38a130eb22e4b337ad0e8bc2c2d470366c60737ccaeeb4b4233f0fe5aa7a822",
+   "path": "Shadows/SM_Bench/2x/up.png"
+  },
+  {
+   "width": 24,
+   "height": 58,
+   "pivot": [
+    12.0,
+    29.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "afdc2ab413f893cc20f032b35795786e3045f925b18d9cf7b90ce15caa6010e2",
+   "path": "Shadows/SM_Bench/1x/left.png"
+  },
+  {
+   "width": 48,
+   "height": 116,
+   "pivot": [
+    24.0,
+    58.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "3390f29bc50d2c6edf6ed6c9b3f68c06140d87466bece408cabecc6d27742b5b",
+   "path": "Shadows/SM_Bench/2x/left.png"
+  }
+ ],
+ "anchorsMetres": {
+  "seatHeightMetres": 0.54,
+  "seatLeft": [
+   -0.45,
+   0,
+   0.54
+  ],
+  "seatRight": [
+   0.45,
+   0,
+   0.54
+  ]
+ },
+ "category": "prop"
+}

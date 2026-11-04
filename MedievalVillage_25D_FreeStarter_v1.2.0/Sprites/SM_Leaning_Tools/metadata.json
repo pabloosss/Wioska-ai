@@ -1,0 +1,372 @@
+{
+ "id": "SM_Leaning_Tools",
+ "title": "Leaning tools",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "391d5b9e4b7ef5d0969222a942106a3e714fd2ca217e22679deb4d4781de55dc",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ded1ef38d391aabc2bf4bf3e1065c34fb77fa9d12e9fa40933c5685589b0cf61",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b70c44c78007d80b3906776f22356b1e485f68287d72e83b8e22f5cebfcf6ea9",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dde86dd5dd078bc07f7569752af25c550e322159a00a55e7e161149dcf97c5ae",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dfe35a24eb2c4f0339feb82eec238fa381175082528a98e0097e8ce78ca27129",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dae7da62502b6d8f56b4147e023def5d9769bbd4725968d5e7fac140fbd148a5",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6e2462b94841b185bb2036cba2961823cb8a1f257fd718590b15a55b6155b7a5",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "596912d7428e12a523aa5738be87d09a304572446cc095449574a41d329e0c16",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "391d5b9e4b7ef5d0969222a942106a3e714fd2ca217e22679deb4d4781de55dc",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 50,
+   "frame_height": 90,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ded1ef38d391aabc2bf4bf3e1065c34fb77fa9d12e9fa40933c5685589b0cf61",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 180,
+   "fps": 1
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "b70c44c78007d80b3906776f22356b1e485f68287d72e83b8e22f5cebfcf6ea9",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 50,
+   "frame_height": 90,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dde86dd5dd078bc07f7569752af25c550e322159a00a55e7e161149dcf97c5ae",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 180,
+   "fps": 1
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dfe35a24eb2c4f0339feb82eec238fa381175082528a98e0097e8ce78ca27129",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 50,
+   "frame_height": 90,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "dae7da62502b6d8f56b4147e023def5d9769bbd4725968d5e7fac140fbd148a5",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 180,
+   "fps": 1
+  },
+  {
+   "width": 50,
+   "height": 90,
+   "pivot": [
+    25.0,
+    69.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "6e2462b94841b185bb2036cba2961823cb8a1f257fd718590b15a55b6155b7a5",
+   "path": "Sprites/SM_Leaning_Tools/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 50,
+   "frame_height": 90,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 180,
+   "pivot": [
+    50.0,
+    138.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "596912d7428e12a523aa5738be87d09a304572446cc095449574a41d329e0c16",
+   "path": "Sprites/SM_Leaning_Tools/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 180,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 44,
+   "height": 20,
+   "pivot": [
+    22.0,
+    10.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "3a7dfebdd966728d4aa7767c1699d1e8a55d38fea69f14b79efd94d7ba9cf4b9",
+   "path": "Shadows/SM_Leaning_Tools/1x/down.png"
+  },
+  {
+   "width": 88,
+   "height": 40,
+   "pivot": [
+    44.0,
+    20.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "f17dc442c50fa748dc3ac2d25a057b98f253a0a5a518f1d61290b2ff177d27af",
+   "path": "Shadows/SM_Leaning_Tools/2x/down.png"
+  },
+  {
+   "width": 20,
+   "height": 44,
+   "pivot": [
+    10.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "82c804122da9d6a097fe879e0b471054be43797a29b9a5ecdc4a0437ae177d01",
+   "path": "Shadows/SM_Leaning_Tools/1x/right.png"
+  },
+  {
+   "width": 40,
+   "height": 88,
+   "pivot": [
+    20.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "03b21472a48bdfb3c9ac6bc5bc7179b6bdbe409684cdf8c3b73599d70da15138",
+   "path": "Shadows/SM_Leaning_Tools/2x/right.png"
+  },
+  {
+   "width": 44,
+   "height": 20,
+   "pivot": [
+    22.0,
+    10.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "2433f6625631936e03678d4b9857ea9b538cb7061f4ceb3a7814f1d4cec19a2c",
+   "path": "Shadows/SM_Leaning_Tools/1x/up.png"
+  },
+  {
+   "width": 88,
+   "height": 40,
+   "pivot": [
+    44.0,
+    20.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "e0be9fa58d5f474f1b18ab92d43c31cb4620cd19979d9bbcc6ea9cd3e789287a",
+   "path": "Shadows/SM_Leaning_Tools/2x/up.png"
+  },
+  {
+   "width": 20,
+   "height": 44,
+   "pivot": [
+    10.0,
+    22.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "422a24803f028c1d86a7cd796fa86bcbfd856533c51877c352739158b8fb2b29",
+   "path": "Shadows/SM_Leaning_Tools/1x/left.png"
+  },
+  {
+   "width": 40,
+   "height": 88,
+   "pivot": [
+    20.0,
+    44.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "0d11af8e7123be2339e026e75bdb5c056e1bbdd3495d5100b0c15da272a43a44",
+   "path": "Shadows/SM_Leaning_Tools/2x/left.png"
+  }
+ ]
+}

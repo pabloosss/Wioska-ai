@@ -1,0 +1,68 @@
+58 SPRITE FAMILIES
+
+Apple tree
+Barn with hayloft
+Barrel
+Basket of apples
+Basket of cabbages
+Bench
+Boulder
+Brown dog
+Bucket
+Bush
+Carrot - mature
+Carrot - ripe
+Carrot - sprout
+Carrot - young
+Chicken coop
+Chopping block
+Cottage - clay
+Cottage - slate
+Cottage - thatch
+Crate
+Cream sheep
+Daisies - large
+Daisies - small
+Farmer
+Fence gate
+Fence rail
+Firewood stack
+Ginger cat
+Grass clump
+Hand cart - empty
+Hand cart - loaded
+Hay bale
+Hay bale stack
+Lamp post
+Leaning tools
+Market stall
+Merchant
+Notice board
+Oak tree
+Piebald cow
+Sack pile
+Scarecrow
+Signpost
+Strawberry - mature
+Strawberry - ripe
+Strawberry - sprout
+Strawberry - young
+Tree trunk to chop
+Village child
+Village elder
+Village well
+Village woman
+Water trough
+Wheat - mature
+Wheat - ripe
+Wheat - sprout
+Wheat - young
+White hen
+
+5 terrain families: grass, dirt, cobble, tilled, tilled (watered).
+7 decals: tuft, clover, tiny flowers, bare ground, tall grass patch, soft green tone patch, seeded.
+12 item icons. 4 effects: soil burst, wood chips, grass cuttings, seed scatter.
+
+EXAMPLES
+7 scenes (6 at 1x and 2x, farm at 2x), ground images, 2 animated scene GIFs,
+farm actions GIF, characters/animals sheet, catalog, terrain kit, icons and effects.

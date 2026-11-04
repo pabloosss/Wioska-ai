@@ -1,0 +1,468 @@
+{
+ "id": "SM_Market_Stall_Red",
+ "title": "Market stall",
+ "kind": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 90,
+   "height": 128,
+   "pivot": [
+    45.0,
+    106.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    3,
+    86,
+    125
+   ],
+   "sha256": "9b3cc0e49d3263347cd7559b3e0039c714324d7daa8ee88022325217460436cb",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 180,
+   "height": 256,
+   "pivot": [
+    90.0,
+    212.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    7,
+    173,
+    250
+   ],
+   "sha256": "ee995b42527524f969c18910c98afc9a11dca5dd692b63d0019750ae92ac5123",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    4,
+    71,
+    158
+   ],
+   "sha256": "02d6fe68049023b02689b06bb15a12c5fdcf88d8a189769f3ed29882dfe6a22c",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    9,
+    7,
+    142,
+    316
+   ],
+   "sha256": "3c73558355c4a50d084dd195e4c130cece6f4cda01e0302e0dd2b9271df84452",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    4,
+    29,
+    86,
+    157
+   ],
+   "sha256": "0fb4fdada7c67f4cb10293655877425ec9893fa5aeef46818ed533769c24a26f",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    7,
+    59,
+    173,
+    315
+   ],
+   "sha256": "fa1e00214c33ae36cdb9d6427fc627c5a0feb1db86f17a03f9389ba42aa62383",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    19,
+    4,
+    86,
+    159
+   ],
+   "sha256": "08546e4d11d56316a729d09c02895f1a749f46d7202f846ebce93cf25a5eb385",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "bbox": [
+    38,
+    7,
+    171,
+    317
+   ],
+   "sha256": "16ce50a4b4eddf5e701f203fb068a67665096ca9e50b9fc487875a4a34ea14d0",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 90,
+   "height": 128,
+   "pivot": [
+    45.0,
+    106.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 90,
+   "frame_height": 128,
+   "fps": 1,
+   "bbox": [
+    4,
+    3,
+    86,
+    125
+   ],
+   "sha256": "9b3cc0e49d3263347cd7559b3e0039c714324d7daa8ee88022325217460436cb",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 180,
+   "height": 256,
+   "pivot": [
+    90.0,
+    212.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 180,
+   "frame_height": 256,
+   "fps": 1,
+   "bbox": [
+    7,
+    7,
+    173,
+    250
+   ],
+   "sha256": "ee995b42527524f969c18910c98afc9a11dca5dd692b63d0019750ae92ac5123",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 90,
+   "frame_height": 162,
+   "fps": 1,
+   "bbox": [
+    4,
+    4,
+    71,
+    158
+   ],
+   "sha256": "02d6fe68049023b02689b06bb15a12c5fdcf88d8a189769f3ed29882dfe6a22c",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 180,
+   "frame_height": 324,
+   "fps": 1,
+   "bbox": [
+    9,
+    7,
+    142,
+    316
+   ],
+   "sha256": "3c73558355c4a50d084dd195e4c130cece6f4cda01e0302e0dd2b9271df84452",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 90,
+   "frame_height": 162,
+   "fps": 1,
+   "bbox": [
+    4,
+    29,
+    86,
+    157
+   ],
+   "sha256": "0fb4fdada7c67f4cb10293655877425ec9893fa5aeef46818ed533769c24a26f",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 180,
+   "frame_height": 324,
+   "fps": 1,
+   "bbox": [
+    7,
+    59,
+    173,
+    315
+   ],
+   "sha256": "fa1e00214c33ae36cdb9d6427fc627c5a0feb1db86f17a03f9389ba42aa62383",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 90,
+   "height": 162,
+   "pivot": [
+    45.0,
+    120.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 90,
+   "frame_height": 162,
+   "fps": 1,
+   "bbox": [
+    19,
+    4,
+    86,
+    159
+   ],
+   "sha256": "08546e4d11d56316a729d09c02895f1a749f46d7202f846ebce93cf25a5eb385",
+   "path": "Sprites/SM_Market_Stall_Red/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 180,
+   "height": 324,
+   "pivot": [
+    90.0,
+    240.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "frame_count": 1,
+   "frame_width": 180,
+   "frame_height": 324,
+   "fps": 1,
+   "bbox": [
+    38,
+    7,
+    171,
+    317
+   ],
+   "sha256": "16ce50a4b4eddf5e701f203fb068a67665096ca9e50b9fc487875a4a34ea14d0",
+   "path": "Sprites/SM_Market_Stall_Red/2x/frames/static_left_00.png"
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 96,
+   "height": 54,
+   "pivot": [
+    48.0,
+    27.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "c5f2d3976390279a91e2dcca26d4706f914213fa2a2c356812b3571a06ceb7a8",
+   "path": "Shadows/SM_Market_Stall_Red/1x/down.png"
+  },
+  {
+   "width": 192,
+   "height": 108,
+   "pivot": [
+    96.0,
+    54.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "32034c84fe2b7549a22ddeed524ecfcc432fc997f3bbcfe5e9c88d61bb7b7a53",
+   "path": "Shadows/SM_Market_Stall_Red/2x/down.png"
+  },
+  {
+   "width": 56,
+   "height": 96,
+   "pivot": [
+    28.0,
+    48.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "f024ef7412a67dc21fca14f27ab5694f5c98ce6b8e055a4c6bfa7e727eff80b2",
+   "path": "Shadows/SM_Market_Stall_Red/1x/right.png"
+  },
+  {
+   "width": 112,
+   "height": 192,
+   "pivot": [
+    56.0,
+    96.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "967a4d326b2c67fe3b666d385a5c7b67074afea0af9583679a1cc6a724c09b60",
+   "path": "Shadows/SM_Market_Stall_Red/2x/right.png"
+  },
+  {
+   "width": 96,
+   "height": 56,
+   "pivot": [
+    48.0,
+    28.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "c201942c05d5a0651b2ba02f00fb00dc978883e53570761783b397521d3c21d1",
+   "path": "Shadows/SM_Market_Stall_Red/1x/up.png"
+  },
+  {
+   "width": 192,
+   "height": 112,
+   "pivot": [
+    96.0,
+    56.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "cbd5ea4651fb6f73bcad69e86e35b5957e398c974f942bed619af8bb77a712d0",
+   "path": "Shadows/SM_Market_Stall_Red/2x/up.png"
+  },
+  {
+   "width": 56,
+   "height": 96,
+   "pivot": [
+    28.0,
+    48.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "f024ef7412a67dc21fca14f27ab5694f5c98ce6b8e055a4c6bfa7e727eff80b2",
+   "path": "Shadows/SM_Market_Stall_Red/1x/left.png"
+  },
+  {
+   "width": 112,
+   "height": 192,
+   "pivot": [
+    56.0,
+    96.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "967a4d326b2c67fe3b666d385a5c7b67074afea0af9583679a1cc6a724c09b60",
+   "path": "Shadows/SM_Market_Stall_Red/2x/left.png"
+  }
+ ],
+ "category": "prop"
+}

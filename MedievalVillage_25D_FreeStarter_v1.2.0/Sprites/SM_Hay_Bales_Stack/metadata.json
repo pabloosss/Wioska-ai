@@ -1,0 +1,372 @@
+{
+ "id": "SM_Hay_Bales_Stack",
+ "title": "Hay bale stack",
+ "kind": "prop",
+ "category": "prop",
+ "projection": "topdown",
+ "directions": [
+  "down",
+  "right",
+  "up",
+  "left"
+ ],
+ "scaleAlreadyBaked": true,
+ "frames": [
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "71d96c3823a2e21a5494fa1f70af63de1172b42277958c2ae8eca9264be2c0d3",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_down_00.png"
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "85e5825fb82ff8af7054266c359b361992e483a34c385a6c2762f72bfcd9e14f",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_down_00.png"
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ec5702107c0cd3deef91b877e41ca10fe85af45952f372c54c00747e02a63a7c",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_right_00.png"
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "40ee11d81771cecfc54463e181a35c0f2fc8d895f59cdb9b8ba52c06af67d88f",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_right_00.png"
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3baaa863da295751e56dd1dcef4ffd3ad856a1f721c675bdd0df062e235a52ae",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_up_00.png"
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "e0bd3a081552f52d7210892c9afa2ab749947942c9763851dde44f935bb781e6",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_up_00.png"
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "88b0b3f82208b5db32606a3854ac4639e54deb18042562fe18f3fae6674a40fb",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_left_00.png"
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "72347552f492c8cf08dcf497bf068b600c99872d947cf3d4da3ab90e45b8b288",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_left_00.png"
+  }
+ ],
+ "sheets": [
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "71d96c3823a2e21a5494fa1f70af63de1172b42277958c2ae8eca9264be2c0d3",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 110,
+   "fps": 1
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "85e5825fb82ff8af7054266c359b361992e483a34c385a6c2762f72bfcd9e14f",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_down_00.png",
+   "frame_count": 1,
+   "frame_width": 200,
+   "frame_height": 220,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "ec5702107c0cd3deef91b877e41ca10fe85af45952f372c54c00747e02a63a7c",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 110,
+   "fps": 1
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "40ee11d81771cecfc54463e181a35c0f2fc8d895f59cdb9b8ba52c06af67d88f",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_right_00.png",
+   "frame_count": 1,
+   "frame_width": 200,
+   "frame_height": 220,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "3baaa863da295751e56dd1dcef4ffd3ad856a1f721c675bdd0df062e235a52ae",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 110,
+   "fps": 1
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "e0bd3a081552f52d7210892c9afa2ab749947942c9763851dde44f935bb781e6",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_up_00.png",
+   "frame_count": 1,
+   "frame_width": 200,
+   "frame_height": 220,
+   "fps": 1
+  },
+  {
+   "width": 100,
+   "height": 110,
+   "pivot": [
+    50.0,
+    62.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "88b0b3f82208b5db32606a3854ac4639e54deb18042562fe18f3fae6674a40fb",
+   "path": "Sprites/SM_Hay_Bales_Stack/1x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 100,
+   "frame_height": 110,
+   "fps": 1
+  },
+  {
+   "width": 200,
+   "height": 220,
+   "pivot": [
+    100.0,
+    124.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "motion": "static",
+   "frame": 0,
+   "sha256": "72347552f492c8cf08dcf497bf068b600c99872d947cf3d4da3ab90e45b8b288",
+   "path": "Sprites/SM_Hay_Bales_Stack/2x/frames/static_left_00.png",
+   "frame_count": 1,
+   "frame_width": 200,
+   "frame_height": 220,
+   "fps": 1
+  }
+ ],
+ "contactShadows": [
+  {
+   "width": 94,
+   "height": 26,
+   "pivot": [
+    47.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "down",
+   "sha256": "b8f175d19411f03b313165cf945b14c56237774a53a47319b0b8dd2fbe9c009d",
+   "path": "Shadows/SM_Hay_Bales_Stack/1x/down.png"
+  },
+  {
+   "width": 188,
+   "height": 52,
+   "pivot": [
+    94.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "down",
+   "sha256": "7c27cfc148e959f3af641238230282752e2f1bffe7be398e948c5a39f49eb5eb",
+   "path": "Shadows/SM_Hay_Bales_Stack/2x/down.png"
+  },
+  {
+   "width": 26,
+   "height": 94,
+   "pivot": [
+    13.0,
+    47.0
+   ],
+   "resolution": "1x",
+   "direction": "right",
+   "sha256": "0008315f9f553b3b577aa2d5d4f34f8a156b6226c5a2f53408afe3b1f9a043f0",
+   "path": "Shadows/SM_Hay_Bales_Stack/1x/right.png"
+  },
+  {
+   "width": 52,
+   "height": 188,
+   "pivot": [
+    26.0,
+    94.0
+   ],
+   "resolution": "2x",
+   "direction": "right",
+   "sha256": "50b39e49ffc92ab18891e54f418c7d0abe1fe0ac9a70bafd550f6265a412998c",
+   "path": "Shadows/SM_Hay_Bales_Stack/2x/right.png"
+  },
+  {
+   "width": 94,
+   "height": 26,
+   "pivot": [
+    47.0,
+    13.0
+   ],
+   "resolution": "1x",
+   "direction": "up",
+   "sha256": "9bb34986139e7c4ec4bbdc3152bdda8a5e4eecc4aa972f40ac489670ec7f8317",
+   "path": "Shadows/SM_Hay_Bales_Stack/1x/up.png"
+  },
+  {
+   "width": 188,
+   "height": 52,
+   "pivot": [
+    94.0,
+    26.0
+   ],
+   "resolution": "2x",
+   "direction": "up",
+   "sha256": "08db5ce7dd54a28cecaa83c6962ddf5765f51e3ba73e6425819d62a755fc0a8e",
+   "path": "Shadows/SM_Hay_Bales_Stack/2x/up.png"
+  },
+  {
+   "width": 26,
+   "height": 94,
+   "pivot": [
+    13.0,
+    47.0
+   ],
+   "resolution": "1x",
+   "direction": "left",
+   "sha256": "b9cf3d507d3dbbb396885309dbca0bfa246df0f5e78a4202bccb3e18cd45f0ba",
+   "path": "Shadows/SM_Hay_Bales_Stack/1x/left.png"
+  },
+  {
+   "width": 52,
+   "height": 188,
+   "pivot": [
+    26.0,
+    94.0
+   ],
+   "resolution": "2x",
+   "direction": "left",
+   "sha256": "3a0a374e4ce56820e34f14cba45f6f804f7112ab8ac9fda3974474789be6ad7f",
+   "path": "Shadows/SM_Hay_Bales_Stack/2x/left.png"
+  }
+ ]
+}
