@@ -2,6 +2,7 @@ extends Node
 
 signal status_changed(message: String)
 signal decisions_received(decisions: Array)
+signal models_received(models: Array)
 
 @export var model_name := "qwen3.5:35b"
 const OLLAMA_URL := "http://127.0.0.1:11434"
@@ -23,6 +24,7 @@ var startup_attempts := 0
 var process_attempted := false
 var ollama_pid := -1
 var last_download_progress := -1
+var pending_model_check := false
 
 
 func _ready() -> void:
@@ -61,6 +63,30 @@ func _process(_delta: float) -> void:
 
 func connect_to_ollama() -> void:
 	if is_busy:
+		return
+	_request_tags()
+
+
+func request_models() -> void:
+	if is_busy:
+		return
+	is_busy = true
+	request_kind = "models"
+	var error := http.request(OLLAMA_URL + "/api/tags")
+	if error != OK:
+		is_busy = false
+		request_kind = ""
+		emit_signal("status_changed", "Nie udało się pobrać listy modeli")
+
+
+func select_model(new_model: String) -> void:
+	if new_model.is_empty() or new_model == model_name:
+		return
+	model_name = new_model
+	is_ready = false
+	emit_signal("status_changed", "Sprawdzam wybrany model: " + model_name)
+	if is_busy:
+		pending_model_check = true
 		return
 	_request_tags()
 
@@ -303,6 +329,9 @@ func _on_api_request_completed(result: int, response_code: int, _headers: Packed
 	var completed_kind := request_kind
 	request_kind = ""
 	is_busy = false
+	if pending_model_check:
+		pending_model_check = false
+		call_deferred("_request_tags")
 	var request_ok := result == HTTPRequest.RESULT_SUCCESS and response_code >= 200 and response_code < 300
 	if completed_kind == "release":
 		if not request_ok:
@@ -314,6 +343,19 @@ func _on_api_request_completed(result: int, response_code: int, _headers: Packed
 			return
 		runtime_download_index = 0
 		_download_next_runtime_archive()
+		return
+	if completed_kind == "models":
+		if not request_ok:
+			emit_signal("status_changed", "Nie udało się pobrać listy modeli z Ollamy")
+			return
+		var model_data: Variant = JSON.parse_string(body.get_string_from_utf8())
+		if typeof(model_data) != TYPE_DICTIONARY:
+			emit_signal("status_changed", "Nie udało się odczytać listy modeli")
+			return
+		var installed_models: Array = []
+		for installed_model in model_data.get("models", []):
+			installed_models.append(str(installed_model.get("name", "")))
+		emit_signal("models_received", installed_models)
 		return
 	if completed_kind == "tags":
 		if not request_ok:
@@ -366,7 +408,7 @@ func _on_api_request_completed(result: int, response_code: int, _headers: Packed
 		emit_signal("decisions_received", answer.get("decisions", []))
 
 
-func request_decisions(world_state: Dictionary, people: Array) -> void:
+func request_decisions(world_state: Dictionary, people: Array, ai_temperature: float = 0.2, behavior_guidance: String = "") -> void:
 	if not is_ready or is_busy:
 		return
 	is_busy = true
@@ -390,6 +432,8 @@ func request_decisions(world_state: Dictionary, people: Array) -> void:
 		"required": ["decisions"]
 	}
 	var system_prompt := "Jesteś wspólnym lokalnym AI zarządzającym małą wioską. Podejmujesz decyzję osobno dla każdego mieszkańca na podstawie jego charakteru, potrzeb, pracy, ekwipunku i wspomnień. Wybieraj tylko: work, eat, rest, warm. Nie zmieniaj bezpośrednio zasobów ani świata. Jeżeli mieszkaniec jest głodny i ma dostęp do jedzenia, wybierz eat; jeżeli jest zmęczony, rest; jeżeli marznie, warm. W pozostałych sytuacjach wybierz work. Zwróć wyłącznie JSON zgodny ze schematem."
+	if not behavior_guidance.strip_edges().is_empty():
+		system_prompt += " Dodatkowe wskazówki użytkownika: " + behavior_guidance.strip_edges()
 	var user_data := {
 		"world": world_state,
 		"residents": people,
@@ -403,7 +447,7 @@ func request_decisions(world_state: Dictionary, people: Array) -> void:
 		],
 		"stream": false,
 		"format": schema,
-		"options": {"temperature": 0.2, "num_predict": 512},
+		"options": {"temperature": ai_temperature, "num_predict": 512},
 		"keep_alive": "10m"
 	}
 	var headers := PackedStringArray(["Content-Type: application/json"])
