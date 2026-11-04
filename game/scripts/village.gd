@@ -14,7 +14,7 @@ var speed := 1.0
 var tick_accumulator := 0.0
 var ui_elapsed := 0.0
 var save_elapsed := 0.0
-var config := {"version": 2, "model": "qwen3:4b-instruct", "enabled": true, "cooldown": 20, "fps": 60, "timeout": 45, "guidance": "Dbaj o stały zapas jedzenia i drewna. Dziel pracę między mieszkańców."}
+var config := {"version": 3, "batch_size": 3, "model": "qwen3:4b-instruct", "enabled": true, "cooldown": 20, "fps": 60, "timeout": 45, "guidance": "Dbaj o stały zapas jedzenia i drewna. Dziel pracę między mieszkańców."}
 var request_revisions: Dictionary = {}
 var status_detail := "Uruchamianie lokalnego AI"
 var last_plan_ms := -1
@@ -35,7 +35,7 @@ func _ready() -> void:
 	add_child(world)
 	ui = Interface.new()
 	add_child(ui)
-	ui.build(config, sim.people)
+	ui.build(config, sim.people, sim.life.options)
 	ui.pause_requested.connect(func(): paused = not paused)
 	ui.speed_requested.connect(func(value: float): speed = value)
 	ui.selection_changed.connect(_select)
@@ -47,6 +47,8 @@ func _ready() -> void:
 	ui.settings_requested.connect(_apply_settings)
 	ui.model_requested.connect(_change_model)
 	ui.export_requested.connect(_export_logs)
+	ui.world_settings_requested.connect(_apply_world_settings)
+	ui.scenario_requested.connect(_scenario)
 	bridge = Bridge.new()
 	bridge.model_name = str(config["model"])
 	bridge.cooldown_seconds = float(config["cooldown"])
@@ -54,7 +56,7 @@ func _ready() -> void:
 	bridge.status_changed.connect(_status)
 	bridge.decisions_received.connect(_decisions)
 	add_child(bridge)
-	sim.log_event("Wersja 0.3: AI wybiera plany, wykonawca kończy zbiór i dostawę.")
+	sim.log_event("Wersja 0.4: relacje, rodziny, zagrożenia i rozwój osady.")
 	_update_ui()
 
 func _process(delta: float) -> void:
@@ -85,12 +87,13 @@ func _maybe_plan() -> void:
 		return
 	if Time.get_ticks_msec() < bridge.next_request_ms:
 		return
-	var idle: Array = sim.idle_snapshot()
+	var idle: Array = _planning_batch()
 	if idle.is_empty():
 		return
 	request_revisions.clear()
 	for person in idle:
 		request_revisions[person["name"]] = person["revision"]
+	bridge.context_tokens = 8192 if int(config["batch_size"]) > 3 else 4096
 	bridge.request_decisions(sim.world_snapshot(), idle, 0.1, str(config["guidance"]))
 
 func _decisions(decisions: Array) -> void:
@@ -181,7 +184,7 @@ func _change_model(value: String) -> void:
 	_write_config()
 
 func _apply_settings(values: Dictionary) -> void:
-	for key in ["cooldown", "fps", "timeout", "guidance"]:
+	for key in ["cooldown", "fps", "timeout", "guidance", "batch_size"]:
 		if values.has(key):
 			config[key] = values[key]
 	Engine.max_fps = int(config["fps"])
@@ -200,6 +203,7 @@ func _load_config() -> void:
 	config["model"] = str(data.get("model", config["model"]))
 	config["enabled"] = bool(data.get("enabled", true))
 	config["cooldown"] = clampi(int(data.get("cooldown", data.get("decision_pause", 20))), 10, 120)
+	config["batch_size"] = clampi(int(data.get("batch_size", 3)), 2, 5)
 	config["fps"] = 30 if int(data.get("fps", 60)) == 30 else 60
 	config["timeout"] = 120 if int(data.get("timeout", 45)) == 120 else 45
 	config["guidance"] = str(data.get("guidance", config["guidance"])).left(1000)
@@ -221,7 +225,7 @@ func _export_logs() -> void:
 	if file == null:
 		sim.log_event("Błąd eksportu dziennika.")
 		return
-	file.store_string("Wioska AI 0.3\nModel: %s\nStatus: %s\nFPS: %d\nOstatnia odpowiedź: %.1f s\n\n%s" % [bridge.model_name, status_detail, Engine.get_frames_per_second(), bridge.last_latency, "\n".join(sim.logs)])
+	file.store_string("Wioska AI 0.4\nModel: %s\nStatus: %s\nFPS: %d\nOstatnia odpowiedź: %.1f s\n\n%s" % [bridge.model_name, status_detail, Engine.get_frames_per_second(), bridge.last_latency, "\n".join(sim.logs)])
 	file.close()
 	sim.log_event("Zapisano diagnostykę: " + ProjectSettings.globalize_path(path))
 	OS.shell_open(ProjectSettings.globalize_path("user://"))
@@ -239,3 +243,24 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:
 		_save()
 		get_tree().quit()
+
+func _planning_batch() -> Array:
+	var idle: Array = sim.idle_snapshot()
+	# Fair rotation: never let the first residents monopolize every request.
+	idle.sort_custom(func(a: Dictionary, b: Dictionary):
+		var left: Dictionary = sim.life.find_person(sim, a["name"])
+		var right: Dictionary = sim.life.find_person(sim, b["name"])
+		return float(left["last_planned"]) < float(right["last_planned"]))
+	return idle.slice(0, int(config["batch_size"]))
+
+func _apply_world_settings(values: Dictionary) -> void:
+	sim.life.configure(sim, values)
+	sim.log_event("Zapisano zasady świata. Trwające ciąże zostaną ukończone; nowe respektują aktualny limit.")
+	_save()
+	_update_ui()
+
+func _scenario(kind: String) -> void:
+	if not sim.life.trigger_threat(sim, kind):
+		sim.log_event("Nie wywołano zdarzenia: zagrożenia są wyłączone albo jedno już trwa.")
+	world.queue_redraw()
+	_update_ui()

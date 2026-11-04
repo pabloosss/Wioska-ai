@@ -25,6 +25,9 @@ class Handler(http.server.BaseHTTPRequestHandler):
         call=Handler.calls
         data=json.loads(body['messages'][1]['content'])
         assert body['options']['num_ctx']==4096
+        assert len(data['residents'])<=3
+        assert 'threat' in data['world'] and 'population_limit' in data['world']
+        assert all('life' in p for p in data['residents'])
         assert all('skills' in p and 'lessons' in p['memory'] for p in data['residents'])
         if call==1:
             time.sleep(.6)

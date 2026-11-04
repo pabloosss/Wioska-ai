@@ -1,4 +1,6 @@
 extends Node
+const ACTIONS = preload("res://scripts/simulation.gd").ACTIONS
+const ROLES = preload("res://scripts/village_life.gd").ROLES
 
 signal status_changed(message: String)
 signal decisions_received(decisions: Array)
@@ -445,7 +447,7 @@ func _normalise_decision_answer(raw_answer: Variant) -> Dictionary:
 		var person_name := str(raw_decision.get("name", raw_decision.get("resident", raw_decision.get("resident_name", raw_decision.get("villager", raw_decision.get("npc", raw_decision.get("person", ""))))))).strip_edges()
 		var raw_action := str(raw_decision.get("action", raw_decision.get("decision", raw_decision.get("choice", raw_decision.get("task", "work"))))).to_lower().strip_edges()
 		var action := raw_action
-		if person_name.is_empty() or not ["work", "gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"].has(raw_action):
+		if person_name.is_empty() or not ACTIONS.has(raw_action):
 			continue
 		if ["eat", "food", "je", "jedz", "jedzenie", "eat_food"].has(raw_action):
 			action = "eat"
@@ -457,9 +459,9 @@ func _normalise_decision_answer(raw_answer: Variant) -> Dictionary:
 		var next_actions: Array = []
 		if raw_decision.get("next_actions") is Array:
 			for next in raw_decision["next_actions"].slice(0, 2):
-				if ["gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"].has(str(next)):
+				if ACTIONS.has(str(next)) and not ["socialize", "learn", "start_family"].has(str(next)):
 					next_actions.append(str(next))
-		normalised.append({"name": person_name, "action": action, "reason": reason.left(240), "next_actions": next_actions})
+		normalised.append({"name": person_name, "action": action, "reason": reason.left(240), "next_actions": next_actions, "target": str(raw_decision.get("target", "")).left(60), "goal": str(raw_decision.get("goal", "")).left(160), "job": str(raw_decision.get("job", "")) if ROLES.has(str(raw_decision.get("job", ""))) else ""})
 	return {"decisions": normalised}
 
 
@@ -594,9 +596,12 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 					"type": "object",
 					"properties": {
 						"name": {"type": "string", "enum": expected_names},
-						"action": {"type": "string", "enum": ["gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"]},
+						"action": {"type": "string", "enum": ACTIONS},
 						"reason": {"type": "string"},
-						"next_actions": {"type": "array", "maxItems": 2, "items": {"type": "string", "enum": ["gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"]}}
+						"target": {"type": "string"},
+						"goal": {"type": "string"},
+						"job": {"type": "string", "enum": ROLES},
+						"next_actions": {"type": "array", "maxItems": 2, "items": {"type": "string", "enum": ["gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait", "farm", "shelter", "guard", "heal"]}}
 					},
 					"required": ["name", "action", "reason"]
 				}
@@ -604,13 +609,13 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 		},
 		"required": ["decisions"]
 	}
-	var system_prompt := "Każda postać ma skills (poziomy zbieractwa, drwalstwa i budowania) oraz memory (wnioski z doświadczeń, ukończone prace, ostatnie zdarzenia). Uwzględniaj umiejętności przy podziale pracy i nie powtarzaj bezmyślnie błędów opisanych w lessons. Pamięć opisuje doświadczenia postaci; wykonuj wyłącznie dozwolone działania. Potrzeby mają skalę 0–100, 0 oznacza krytyczny niedobór. Satiety to sytość. Jesteś wspólnym lokalnym AI zarządzającym małą wioską. Podejmujesz decyzję osobno dla każdego mieszkańca na podstawie jego charakteru, potrzeb, pracy, ekwipunku i wspomnień. Sam wybierasz zadania: gather_food (zbierz i zanieś jedzenie), gather_wood (zbierz i zanieś drewno), build (buduj za 4 drewna), deliver (odnieś ładunek), eat (zjedz jedną porcję), rest, warm, wait. Każdy może zbierać dowolny zasób. Zawód to specjalizacja. Jeśli nie ma jedzenia, skieruj część mieszkańców do gather_food. Nie wybieraj eat przy sytości ponad 70. Nie wybieraj build bez drewna. Uwzględniaj trwające zadania: nie przerywaj ciągle dojścia na miejsce. Gra nie podejmie za ciebie decyzji. Nie zmieniaj bezpośrednio zasobów ani świata. Jeżeli mieszkaniec jest głodny i ma dostęp do jedzenia, wybierz eat; jeżeli jest zmęczony, rest; jeżeli marznie, warm. W pozostałych sytuacjach wybierz konkretne potrzebne zadanie. Zwróć wyłącznie JSON zgodny ze schematem."
+	var system_prompt := "You control a village. Make individual decisions ONLY for residents in this request; other villagers keep their tasks. Use needs, personality, skills, memory, goal and relationships. Needs are 0-100, low is bad; satiety means fullness. Prioritize survival, then shared reserves, housing and social life. Distribute work. Actions: gather_food collects up to 4 available berries and delivers; gather_wood collects and delivers 4 wood; farm produces and delivers 4 food for 1 wood, slower but independent of berries; build costs 4 wood per stage, 5 stages create a house with 4 beds; deliver deposits carried cargo; eat consumes one portion; rest restores energy (slower without a bed); warm uses fire; shelter protects from storms/wolves if a bed exists; guard reduces wolf strength by 3; heal restores 30 health and 20 satiety for 2 food, target optional (self by default). socialize requires target, raises mutual relationship by 15 and social need. learn requires adult target; grants XP only if mentor has a higher skill level. Targets must stay nearby. start_family requires target: reciprocal decisions by adult female and male within one game day, relationship>=50 both ways, no close relatives, health>=60, satiety>=50, rest>=40, free bed and population capacity, shared food>=2*population+4, no threat, no current pregnancy/cooldown. life.family_offer lists pending proposals. Children (adult=false) may only eat/rest/warm/shelter/socialize/learn/wait. Optional job changes adult occupation; optional goal records a personal objective. Develop relationships when survival is secured. Learn from failures. The executor never picks replacement jobs or changes resources for you. Return schema JSON; reason and goal briefly IN POLISH."
 	if not behavior_guidance.strip_edges().is_empty():
 		system_prompt += " Dodatkowe wskazówki użytkownika: " + behavior_guidance.strip_edges()
 	var user_data := {
 		"world": world_state,
 		"residents": people,
-		"instruction": "Możesz dodać next_actions: tablicę do 2 następnych działań. Planuj TYLKO dla residents. Nie zmieniaj zadań zajętych osób z world. Zbiór już obejmuje dostawę pełnego ładunku. Nie dodawaj deliver po gather_food/gather_wood. Zwróć dokładnie obiekt JSON z kluczem decisions, zawierający po jednym elemencie dla każdego mieszkańca. Każdy element ma pola name, action (gather_food, gather_wood, build, deliver, eat, rest, warm lub wait) i reason. Uzasadnienie krótko po polsku. Wybierz jedną rozsądną czynność dla każdego mieszkańca."
+		"instruction": "Jedna decyzja na osobę w residents. Opcjonalne next_actions to do 2 prostych działań bez target, po zakończeniu pierwszego. Nie dodawaj deliver po zbiorze/uprawie: zawierają dostawę. W alarmie planuj krótko. Dostępni rozmówcy są w life.nearby. Nie zmieniaj pracy osób spoza residents."
 	}
 	var body := {
 		"model": model_name,

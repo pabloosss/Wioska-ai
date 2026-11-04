@@ -30,6 +30,9 @@ func run() -> void:
 	bridge.request_kind = "chat"
 	bridge._on_api_request_completed(HTTPRequest.RESULT_SUCCESS, 200, PackedStringArray(), JSON.stringify({"message": {"content": valid}}).to_utf8_buffer())
 	check(received.size() == 1 and bridge.last_valid_ms >= 0 and bridge.last_error.is_empty(), "valid response clears error")
+	answer = bridge._extract_decision_answer('{"decisions":[{"name":"Mira","action":"start_family","target":"Olek","job":"Rolnik","goal":"Założyć rodzinę","next_actions":["socialize","farm"]}]}')
+	check(answer["decisions"][0]["target"] == "Olek" and answer["decisions"][0]["job"] == "Rolnik", "family target and role preserved")
+	check(answer["decisions"][0]["next_actions"] == ["farm"], "target-dependent action excluded from unqualified queue")
 	# Exercise verified extraction on a worker, without downloading or executing a runtime.
 	var zip_path := ProjectSettings.globalize_path("user://test_runtime.zip")
 	var pack := ZIPPacker.new()

@@ -10,6 +10,12 @@ signal save_requested
 signal selection_changed(index: int)
 signal paths_requested(value: bool)
 signal export_requested
+signal world_settings_requested(values: Dictionary)
+signal scenario_requested(kind: String)
+var world_controls: Dictionary = {}
+var colony_text: RichTextLabel
+var batch_picker: OptionButton
+var navigation: OptionButton
 var status_label: Label
 var timing_label: Label
 var summary_label: Label
@@ -87,7 +93,7 @@ func _panel(parent: Node, rect: Rect2) -> VBoxContainer:
 	panel.add_child(box)
 	return box
 
-func build(config: Dictionary, people: Array) -> void:
+func build(config: Dictionary, people: Array, world_options: Dictionary = {}) -> void:
 	var root := Control.new()
 	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
@@ -129,7 +135,15 @@ func build(config: Dictionary, people: Array) -> void:
 		picker.add_item("%s  •  %s" % [person["name"], person["job"]])
 	picker.item_selected.connect(func(index: int): selection_changed.emit(index))
 	sidebar.add_child(picker)
+	navigation = OptionButton.new()
+	navigation.custom_minimum_size.y = 34
+	for title_text in ["Postać • potrzeby i plan", "Pamięć • doświadczenia", "Rozwój • umiejętności", "AI • stan połączenia", "Opcje • AI i zasady świata", "Dziennik wydarzeń", "Osada • rodziny i zagrożenia"]:
+		navigation.add_item(title_text)
+	sidebar.add_child(navigation)
+	navigation.item_selected.connect(func(index: int): tabs.current_tab = index)
 	tabs = TabContainer.new()
+	tabs.tabs_visible = false
+	tabs.tab_changed.connect(func(index: int): navigation.select(index))
 	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	sidebar.add_child(tabs)
 	var residents_tab := VBoxContainer.new()
@@ -137,10 +151,11 @@ func build(config: Dictionary, people: Array) -> void:
 	tabs.add_child(residents_tab)
 	task_label = _label(residents_tab, "Czeka na plan", 17)
 	task_label.add_theme_color_override("font_color", Color("e9d5a4"))
-	var needs := HBoxContainer.new()
+	var needs := GridContainer.new()
+	needs.columns = 3
 	needs.add_theme_constant_override("separation", 10)
 	residents_tab.add_child(needs)
-	for entry in [["hunger", "Sytość", "e7bd77"], ["rest", "Wypoczęcie", "9ec4dd"], ["warmth", "Ciepło", "e69c7b"]]:
+	for entry in [["hunger", "Sytość", "e7bd77"], ["rest", "Wypoczęcie", "9ec4dd"], ["warmth", "Ciepło", "e69c7b"], ["health", "Zdrowie", "a3d492"], ["social", "Kontakt", "c9a2dd"]]:
 		var box := VBoxContainer.new()
 		box.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		needs.add_child(box)
@@ -187,6 +202,12 @@ func build(config: Dictionary, people: Array) -> void:
 		model_input.text = "qwen3:4b-instruct"
 		model_requested.emit(model_input.text))
 	_label(options, "Model 4B wymaga pobrania przy pierwszym użyciu. Model 35B może obciążać komputer nawet przy rzadkich zapytaniach.", 14)
+	_label(options, "Osoby w jednym zapytaniu")
+	batch_picker = OptionButton.new()
+	for count in [2, 3, 5]:
+		batch_picker.add_item("%d osób%s" % [count, " • większe zużycie RAM/VRAM" if count == 5 else ""], count)
+	select_id(batch_picker, int(config.get("batch_size", 3)))
+	options.add_child(batch_picker)
 	_label(options, "Minimalna przerwa po odpowiedzi")
 	cadence = OptionButton.new()
 	for seconds in [10, 20, 30, 60, 120]:
@@ -215,12 +236,18 @@ func build(config: Dictionary, people: Array) -> void:
 	guidance.custom_minimum_size = Vector2(0, 90)
 	guidance.text = str(config["guidance"])
 	options.add_child(guidance)
-	_button(options, "Zapisz ustawienia", func(): settings_requested.emit({"cooldown": cadence.get_selected_id(), "fps": fps.get_selected_id(), "timeout": timeout_picker.get_selected_id(), "guidance": guidance.text.left(1000)}))
+	_button(options, "Zapisz ustawienia", func(): settings_requested.emit({"batch_size": batch_picker.get_selected_id(), "cooldown": cadence.get_selected_id(), "fps": fps.get_selected_id(), "timeout": timeout_picker.get_selected_id(), "guidance": guidance.text.left(1000)}))
 	_button(options, "Eksportuj dziennik diagnostyczny", func(): export_requested.emit())
+	_build_world_options(options, world_options)
 	var journal := VBoxContainer.new()
 	journal.name = "Log"
 	tabs.add_child(journal)
 	log_text = _text(journal)
+	var colony := VBoxContainer.new()
+	colony.name = "Osada"
+	tabs.add_child(colony)
+	colony_text = _text(colony)
+	tabs.current_tab = 6
 
 func select_id(option: OptionButton, id_value: int) -> void:
 	for i in range(option.item_count):
@@ -237,18 +264,34 @@ func refresh(sim: RefCounted, index: int, paused: bool, data: Dictionary) -> voi
 	resource_values["wood"].text = str(sim.stock["wood"])
 	resource_values["houses"].text = str(sim.houses)
 	summary_label.text = "Dostarczono: jedzenie %d / drewno %d • Budowa %d/5" % [sim.delivered["food"], sim.delivered["wood"], sim.build_progress]
+	while picker.item_count < sim.people.size():
+		picker.add_item("")
+	for person_index in range(sim.people.size()):
+		var person: Dictionary = sim.people[person_index]
+		var caption := "%s  •  %s" % [person["name"], person["job"] if person["alive"] else "Nie żyje"]
+		if picker.get_item_text(person_index) != caption:
+			picker.set_item_text(person_index, caption)
 	picker.select(index)
 	var p: Dictionary = sim.people[index]
 	picker.add_theme_color_override("font_color", p["color"])
 	task_label.text = str(p["task"])
-	var need_names := {"hunger": "Sytość", "rest": "Wypoczęcie", "warmth": "Ciepło"}
+	var need_names := {"hunger": "Sytość", "rest": "Wypoczęcie", "warmth": "Ciepło", "health": "Zdrowie", "social": "Kontakt"}
 	for key in need_bars:
 		need_bars[key].value = float(p[key])
 		need_values[key].text = "%s  %d" % [need_names[key], p[key]]
 		need_values[key].add_theme_color_override("font_color", Color("ef9c87") if p[key] < 20 else Color("c8d5c9"))
 	var lines: Array[String] = []
 	lines.append("%s • %s\nUkończone zadania: %d" % [p["job"], p["trait"], p["jobs_done"]])
+	lines.append("Wiek: %.1f • %s • %s\nCel: %s" % [p["age"], "dziecko" if p["age"] < 18 else "kobieta" if p["sex"] == "F" else "mężczyzna", "miejsce w domu" if p["home"] >= 0 else "brak łóżka", p["goal"]])
+	lines.append("\nRODZINA\nPartner: %s\nRodzice: %s\nDzieci: %s" % [p["partner"] if p["partner"] != "" else "brak", ", ".join(p["parents"]) if not p["parents"].is_empty() else "—", ", ".join(p["children"]) if not p["children"].is_empty() else "—"])
+	if p["pregnancy"] > 0:
+		lines.append("Narodziny za %.1f dni gry" % p["pregnancy"])
+	if p["family_intent"] != "" and p["intent_until"] >= sim.elapsed:
+		lines.append("Propozycja rodziny dla: " + str(p["family_intent"]))
+	if not p["relationships"].is_empty():
+		lines.append("Więzi: " + str(p["relationships"]))
 	lines.append("\nŁADUNEK I RZECZY\n%d jedzenia • %d drewna\nPrywatne jedzenie: %d\nPamiątka: %s\nSprzęt: %s" % [p["cargo_food"], p["cargo_wood"], p["inventory"]["food"], p["inventory"]["keepsake"], str(p["inventory"]["equipment"])])
+	lines.append("Porcje zabrane do leczenia: %d" % p["medical_food"])
 	lines.append("\nDECYZJA AI\n" + str(p["reason"]))
 	var pending: Array[String] = []
 	for step in p["queue"]:
@@ -263,6 +306,7 @@ func refresh(sim: RefCounted, index: int, paused: bool, data: Dictionary) -> voi
 		people_text.text = text
 		last_people = text
 	_refresh_memory_and_skills(sim, p)
+	_refresh_colony(sim)
 	ai_text.text = "STATUS POŁĄCZENIA\n%s\n\nOstatnia odpowiedź: %.1f s\nZapytania: %d • błędy: %d\nPrzyjęte plany mieszkańców: %d\nOczekujących mieszkańców: %d\n\n%s\n\nAI wybiera do 3 kolejnych zadań. Trwający zbiór i dostawa nie są przerywane nową odpowiedzią.\n\nZielony status oznacza przyjęty plan; samo znalezienie modelu nie potwierdza poprawnych decyzji." % [data["detail"], data["latency"], data["requests"], data["errors"], data["accepted"], sim.idle_snapshot().size(), sim.last_save]
 	var journal := "\n\n".join(sim.logs)
 	if journal != last_logs:
@@ -384,3 +428,66 @@ func _refresh_memory_and_skills(sim: RefCounted, p: Dictionary) -> void:
 	if growth_value != last_growth:
 		growth_text.text = growth_value
 		last_growth = growth_value
+
+func _build_world_options(parent: Node, values: Dictionary) -> void:
+	_label(parent, "ZASADY ŚWIATA", 18).add_theme_color_override("font_color", Color("e9d5a4"))
+	_label(parent, "Ustawienia należą do tej osady i są zachowywane w zapisie gry. Czas życia jest umownie przyspieszony.", 13)
+	for entry in [["threats", "Burze i wilki", true], ["births", "Zakładanie rodzin i nowe ciąże", true], ["mortality", "Śmiertelność przy zerowym zdrowiu", false], ["spoilage", "Psucie 5% żywności na dobę", false]]:
+		var toggle := CheckButton.new()
+		toggle.text = entry[1]
+		toggle.button_pressed = bool(values.get(entry[0], entry[2]))
+		parent.add_child(toggle)
+		world_controls[entry[0]] = toggle
+	var choices := [
+		["difficulty", "Siła zagrożeń", [[1, "Łagodna"], [2, "Zwykła"], [3, "Trudna"]]],
+		["population_limit", "Limit mieszkańców", [[5, "5"], [10, "10"], [16, "16"], [20, "20"]]],
+		["day_seconds", "Długość doby przy tempie 1×", [[120, "2 minuty"], [240, "4 minuty"], [600, "10 minut"], [1200, "20 minut"]]],
+		["pregnancy_days", "Oczekiwanie na dziecko", [[1, "1 dzień gry"], [3, "3 dni gry"], [6, "6 dni gry"]]],
+		["child_days", "Dorastanie dziecka", [[6, "6 dni gry"], [12, "12 dni gry"], [24, "24 dni gry"]]],
+		["needs_percent", "Tempo zużywania potrzeb", [[25, "25% • spokojnie"], [50, "50%"], [100, "100%"], [150, "150%"], [200, "200% • wymagająco"]]]]
+	for entry in choices:
+		_label(parent, entry[1], 14)
+		var choice := OptionButton.new()
+		for pair in entry[2]:
+			choice.add_item(pair[1], pair[0])
+		select_id(choice, int(values.get(entry[0], entry[2][0][0])))
+		parent.add_child(choice)
+		world_controls[entry[0]] = choice
+	_button(parent, "Zapisz zasady świata", func():
+		var selected_values: Dictionary = {}
+		for key in world_controls:
+			var control: Control = world_controls[key]
+			selected_values[key] = control.button_pressed if control is CheckButton else control.get_selected_id()
+		world_settings_requested.emit(selected_values))
+	_label(parent, "Scenariusze testowe", 17)
+	_label(parent, "Przycisk rozpoczyna prawdziwe zdarzenie w tej osadzie. Wymaga włączonych zagrożeń; nie uruchamia drugiego alarmu naraz.", 13)
+	_button(parent, "Wywołaj zimną burzę", func(): scenario_requested.emit("storm"))
+	_button(parent, "Wywołaj atak wilków", func(): scenario_requested.emit("wolves"))
+
+func _refresh_colony(sim: RefCounted) -> void:
+	var residents: Array = sim.life.living(sim)
+	var children := residents.filter(func(p: Dictionary): return p["age"] < 18).size()
+	var lines: Array[String] = ["OSADA • %d mieszkańców / limit %d" % [residents.size(), sim.life.options["population_limit"]],
+		"Dorośli %d  •  Dzieci %d\nNarodziny %d  •  Zgony %d" % [residents.size() - children, children, sim.life.births, sim.life.deaths],
+		"\nBEZPIECZEŃSTWO\n" + sim.life.threat_label()]
+	var alerts: Array = sim.life.alerts(sim)
+	if alerts.is_empty():
+		lines.append("Zapasy i miejsca do spania wystarczają na bieżące potrzeby.")
+	for alert in alerts:
+		lines.append("• " + str(alert))
+	lines.append("\nDOMY I ŻYWNOŚĆ\n%d domów × 4 miejsca\nWolne miejsca po rezerwacji dla dzieci: %d\nBudowa następnego domu: %d/5\nJagody: %d/60 • odrastają powoli\nPole: 4 porcje za 1 drewno + transport" % [sim.houses, sim.life.free_beds(sim), sim.build_progress, int(sim.life.berries)])
+	var roles: Dictionary = {}
+	for p in residents:
+		roles[p["job"]] = int(roles.get(p["job"], 0)) + 1
+	lines.append("\nPODZIAŁ PRACY")
+	for key in roles:
+		lines.append("%s: %d" % [key, roles[key]])
+	lines.append("\nRODZINY I PLANY")
+	for p in residents:
+		if p["pregnancy"] > 0:
+			lines.append("%s i %s: dziecko za %.1f dni" % [p["name"], p["pregnancy_partner"], p["pregnancy"]])
+		lines.append("%s • %s" % [p["name"], p["goal"]])
+	lines.append("\nRodzina: dorośli, wzajemna decyzja AI, więź ≥50, zdrowie ≥60, sytość ≥50, odpoczynek ≥40, wolne miejsce i rezerwa jedzenia. Dzieci mogą uczyć się od dorosłych.")
+	var value := "\n".join(lines)
+	if colony_text.text != value:
+		colony_text.text = value

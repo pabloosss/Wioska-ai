@@ -1,11 +1,13 @@
 extends RefCounted
 # Only plans supplied by AI select work. This executor completes finite jobs.
 signal event_logged(message: String)
-const ACTIONS := ["gather_food", "gather_wood", "deliver", "eat", "rest", "warm", "build", "wait"]
-const SPOTS := {"food": Vector2(185, 235), "wood": Vector2(650, 210), "storage": Vector2(445, 370), "home": Vector2(315, 440), "fire": Vector2(575, 435)}
+const Life = preload("res://scripts/village_life.gd")
+var life := Life.new()
+const ACTIONS := ["gather_food", "gather_wood", "deliver", "eat", "rest", "warm", "build", "wait", "farm", "shelter", "guard", "heal", "socialize", "learn", "start_family"]
+const SPOTS := {"food": Vector2(185, 235), "wood": Vector2(650, 210), "storage": Vector2(445, 370), "home": Vector2(315, 440), "fire": Vector2(575, 435), "farm": Vector2(160, 370), "gate": Vector2(690, 350)}
 const SKILL_NAMES := {"foraging": "Zbieractwo", "woodcutting": "Drwalstwo", "building": "Budowanie"}
-const SKILL_ACTIONS := {"gather_food": "foraging", "gather_wood": "woodcutting", "build": "building"}
-const ACTION_NAMES := {"gather_food": "Zbieranie jedzenia", "gather_wood": "Zbieranie drewna", "deliver": "Dostawa", "eat": "Posiłek", "rest": "Odpoczynek", "warm": "Ogrzanie", "build": "Budowa", "wait": "Oczekiwanie"}
+const SKILL_ACTIONS := {"gather_food": "foraging", "gather_wood": "woodcutting", "build": "building", "farm": "foraging"}
+const ACTION_NAMES := {"gather_food": "Zbieranie jedzenia", "gather_wood": "Zbieranie drewna", "deliver": "Dostawa", "eat": "Posiłek", "rest": "Odpoczynek", "warm": "Ogrzanie", "build": "Budowa", "wait": "Oczekiwanie", "farm": "Uprawa pola", "shelter": "Schronienie", "guard": "Warta", "heal": "Pomoc", "socialize": "Rozmowa", "learn": "Nauka", "start_family": "Założenie rodziny"}
 const MAX_SKILL_LEVEL := 10
 const SAVE_PATH := "user://wioska_ai_save.json"
 var people: Array[Dictionary] = []
@@ -25,15 +27,23 @@ func _init() -> void:
 	var traits := ["Ciekawska", "Spokojny", "Pracowita", "Ostrożny", "Pomysłowa"]
 	var colors := ["e8a45b", "d47a6a", "84b878", "7799c9", "c38bd1"]
 	for i in range(names.size()):
-		people.append({"name": names[i], "job": jobs[i], "trait": traits[i], "color": Color(colors[i]),
-			"position": Vector2(345 + i * 40, 315), "target": Vector2(345 + i * 40, 315),
-			"hunger": 82.0, "rest": 88.0, "warmth": 76.0, "cargo_food": 0, "cargo_wood": 0,
-			"inventory": {"food": 1, "keepsake": "osobista pamiątka", "equipment": ["kosz" if i < 2 else "topór" if i < 4 else "młotek"]},
-			"skill_level": 1, "skill_xp": 0, "memory": [],
-			"skills": _new_skills(), "episodes": [], "knowledge": {}, "milestones": [],
-			"experience": {"actions": {}, "delivered_food": 0, "delivered_wood": 0}, "revision": 0, "queue": [],
-			"action": "", "phase": "idle", "task": "Czeka na plan AI", "progress": 0.0,
-			"reason": "Jeszcze nie otrzymał planu.", "last_result": "", "jobs_done": 0})
+		var person := make_person(names[i], jobs[i], traits[i], Color(colors[i]), Vector2(345 + i * 40, 315))
+		person["inventory"]["equipment"] = ["kosz" if i < 2 else "topór" if i < 4 else "młotek"]
+		people.append(person)
+	life.assign_homes(self)
+
+func make_person(person_name: String, job: String, personality: String, tint: Color, position: Vector2) -> Dictionary:
+	var p := {"name": person_name, "job": job, "trait": personality, "color": tint,
+		"position": position, "target": position,
+		"hunger": 82.0, "rest": 88.0, "warmth": 76.0, "cargo_food": 0, "cargo_wood": 0,
+		"inventory": {"food": 1, "keepsake": "osobista pamiątka", "equipment": []},
+		"skill_level": 1, "skill_xp": 0, "memory": [],
+		"skills": _new_skills(), "episodes": [], "knowledge": {}, "milestones": [],
+		"experience": {"actions": {}, "delivered_food": 0, "delivered_wood": 0}, "revision": 0, "queue": [],
+		"action": "", "phase": "idle", "task": "Czeka na plan AI", "progress": 0.0,
+		"reason": "Jeszcze nie otrzymał planu.", "last_result": "", "jobs_done": 0}
+	life.prepare_person(p, people.size())
+	return p
 
 func log_event(message: String) -> void:
 	logs.push_front("%s  %s" % [clock_text(), message])
@@ -42,26 +52,29 @@ func log_event(message: String) -> void:
 	event_logged.emit(message)
 
 func clock_text() -> String:
-	var minutes := 480 + int(elapsed / 2.0)
+	var minutes := 480 + int(life.days * 1440.0)
 	return "Dzień %d • %02d:%02d" % [1 + minutes / 1440, minutes / 60 % 24, minutes % 60]
 
 func idle_snapshot() -> Array:
 	var result: Array = []
 	for p in people:
-		if p["phase"] == "idle" and p["queue"].is_empty():
+		if p["alive"] and p["phase"] == "idle" and p["queue"].is_empty():
 			result.append({"name": p["name"], "revision": p["revision"], "job": p["job"], "personality": p["trait"],
 				"needs": {"satiety": roundi(p["hunger"]), "rest": roundi(p["rest"]), "warmth": roundi(p["warmth"])},
 				"inventory": {"food": p["inventory"]["food"], "cargo_food": p["cargo_food"], "cargo_wood": p["cargo_wood"]},
-				"last_result": p["last_result"], "skills": skill_snapshot(p), "memory": memory_for_ai(p)})
+				"last_result": str(p["last_result"]).left(120), "skills": skill_snapshot(p), "memory": memory_for_ai(p),
+				"life": life.snapshot_person(self, p)})
 	return result
 
 func world_snapshot() -> Dictionary:
 	var busy: Array = []
 	for p in people:
-		if p["phase"] != "idle":
-			busy.append({"name": p["name"], "action": p["action"], "phase": p["phase"]})
+		if p["alive"] and p["phase"] != "idle":
+			busy.append({"name": p["name"], "action": p["action"]})
 	return {"shared_food": stock["food"], "shared_wood": stock["wood"], "houses": houses,
-		"build_progress": build_progress, "busy_residents_do_not_reassign": busy, "time": clock_text()}
+		"build_progress": build_progress, "busy_residents_do_not_reassign": busy, "time": clock_text(),
+		"population": life.living(self).size(), "free_beds": life.free_beds(self), "population_limit": life.options["population_limit"],
+		"berries": int(life.berries), "threat": life.threat, "alerts": life.alerts(self), "births_enabled": life.options["births"]}
 
 func apply_decisions(decisions: Array, revisions: Dictionary) -> int:
 	var accepted := 0
@@ -74,17 +87,24 @@ func apply_decisions(decisions: Array, revisions: Dictionary) -> int:
 			continue
 		seen.append(name_text)
 		for p in people:
-			if p["name"] != name_text or p["phase"] != "idle" or not p["queue"].is_empty() or int(revisions.get(name_text, -1)) != p["revision"]:
+			if not p["alive"] or p["name"] != name_text or p["phase"] != "idle" or not p["queue"].is_empty() or int(revisions.get(name_text, -1)) != p["revision"]:
 				continue
 			var action := str(decision.get("action", ""))
 			if not ACTIONS.has(action):
 				continue
 			var reason := str(decision.get("reason", "Plan AI")).left(240)
-			p["queue"].append({"action": action, "reason": reason})
+			p["queue"].append({"action": action, "reason": reason, "target": str(decision.get("target", "")).left(60)})
+			var role := str(decision.get("job", ""))
+			if p["age"] >= 18 and life.ROLES.has(role) and role != p["job"]:
+				p["job"] = role
+				life.remember(self, p, "Wybiera zawód: " + role)
+			if not str(decision.get("goal", "")).strip_edges().is_empty():
+				p["goal"] = str(decision["goal"]).left(160)
+			p["last_planned"] = elapsed
 			var following: Variant = decision.get("next_actions", [])
 			if following is Array:
 				for next in following.slice(0, 2):
-					if ACTIONS.has(str(next)):
+					if ACTIONS.has(str(next)) and not ["socialize", "learn", "start_family"].has(str(next)):
 						p["queue"].append({"action": str(next), "reason": "Kolejny krok planu AI: " + reason})
 			p["revision"] += 1
 			accepted += 1
@@ -94,7 +114,7 @@ func apply_decisions(decisions: Array, revisions: Dictionary) -> int:
 
 func _spot(p: Dictionary, key: String) -> Vector2:
 	var index := people.find(p)
-	return SPOTS[key] + Vector2((index % 3 - 1) * 16, int(index / 3) * 16)
+	return SPOTS[key] + Vector2((index % 5 - 2) * 12, (int(index / 5) % 4) * 12)
 
 func _go(p: Dictionary, phase: String, location: String, label: String) -> void:
 	p["phase"] = phase
@@ -109,6 +129,10 @@ func _start_next(p: Dictionary) -> void:
 		return
 	var item: Dictionary = p["queue"].pop_front()
 	p["action"] = item["action"]
+	p["activity_target"] = str(item.get("target", ""))
+	if not life.allowed(p, p["action"]):
+		_finish(p, "Dziecko nie może wykonywać tej pracy ani zakładać rodziny.", false)
+		return
 	p["reason"] = item["reason"]
 	p["progress"] = 0.0
 	match str(p["action"]):
@@ -140,14 +164,24 @@ func _start_next(p: Dictionary) -> void:
 			p["phase"] = "waiting"
 			p["task"] = "Czeka zgodnie z planem AI"
 
+		_:
+			life.start(self, p)
+
 func step(delta: float) -> void:
 	elapsed += delta
+	life.tick_world(self, delta)
 	dirty = true
 	for p in people:
+		if not p["alive"]:
+			continue
+		life.tick_person(self, p, delta)
+		if not p["alive"]:
+			continue
+		var needs_scale := float(life.options["needs_percent"]) / 100.0
 		# Needs use simulated seconds, not frame count or network round trips.
-		p["hunger"] = maxf(0.0, p["hunger"] - delta * 0.09)
-		p["rest"] = maxf(0.0, p["rest"] - delta * 0.035)
-		p["warmth"] = maxf(0.0, p["warmth"] - delta * 0.02)
+		p["hunger"] = maxf(0.0, p["hunger"] - delta * 0.09 * needs_scale)
+		p["rest"] = maxf(0.0, p["rest"] - delta * 0.035 * needs_scale)
+		p["warmth"] = maxf(0.0, p["warmth"] - delta * 0.02 * needs_scale)
 		var phase: String = p["phase"]
 		if phase == "idle":
 			_start_next(p)
@@ -155,7 +189,7 @@ func step(delta: float) -> void:
 		if phase.begins_with("to_"):
 			var position: Vector2 = p["position"]
 			var target: Vector2 = p["target"]
-			p["position"] = position.move_toward(target, 65.0 * delta)
+			p["position"] = position.move_toward(target, 65.0 * delta * (0.6 if p["health"] < 30 else 1.0))
 			if p["position"].distance_to(target) > 1.0:
 				continue
 			p["progress"] = 0.0
@@ -187,6 +221,11 @@ func step(delta: float) -> void:
 				"to_build":
 					p["phase"] = "building"
 					p["task"] = "Buduje"
+				"to_patient":
+					p["phase"] = "treating"
+					p["task"] = "Udziela pomocy"
+				_:
+					life.arrive(p, phase)
 			continue
 		p["progress"] += delta
 		match phase:
@@ -194,7 +233,17 @@ func step(delta: float) -> void:
 				if p["progress"] >= work_duration(p, str(p["action"])):
 					p["progress"] = 0.0
 					var cargo_key := "cargo_food" if p["action"] == "gather_food" else "cargo_wood"
-					p[cargo_key] += mini(2, 4 - int(p["cargo_food"]) - int(p["cargo_wood"]))
+					var amount := mini(2, 4 - int(p["cargo_food"]) - int(p["cargo_wood"]))
+					if cargo_key == "cargo_food":
+						amount = mini(amount, int(life.berries))
+						life.berries -= amount
+						if amount == 0:
+							if p["cargo_food"] + p["cargo_wood"] > 0:
+								_go(p, "to_storage", "storage", "Odnosi zebrane resztki jagód")
+							else:
+								_finish(p, "Jagody wyczerpane. Pole daje żywność za drewno; jagody odrastają.", false)
+							continue
+					p[cargo_key] += amount
 					if p["cargo_food"] + p["cargo_wood"] >= 4:
 						_go(p, "to_storage", "storage", "Niesie pełny ładunek do magazynu")
 			"eating":
@@ -211,7 +260,7 @@ func step(delta: float) -> void:
 					p["hunger"] = minf(100.0, p["hunger"] + 42.0)
 					_finish(p, "Zjada jedną porcję jedzenia.")
 			"resting":
-				p["rest"] = minf(100.0, p["rest"] + delta * 3.0)
+				p["rest"] = minf(100.0, p["rest"] + delta * (3.0 if p["home"] >= 0 else 1.0))
 				if p["rest"] >= 90.0:
 					_finish(p, "Kończy odpoczynek.")
 			"warming":
@@ -233,6 +282,9 @@ func step(delta: float) -> void:
 				if p["progress"] >= 5.0:
 					_finish(p, "Kończy zaplanowane oczekiwanie.")
 
+			_:
+				life.activity(self, p, delta)
+
 func _finish(p: Dictionary, result: String, success: bool = true) -> void:
 	p["last_result"] = result
 	_record_experience(p, result, success)
@@ -253,12 +305,12 @@ func save_game(path: String = SAVE_PATH) -> bool:
 	var data_people: Array = []
 	for p in people:
 		var copy: Dictionary = p.duplicate(true)
-		copy.erase("color")
+		copy["color"] = p["color"].to_html()
 		copy["position"] = [p["position"].x, p["position"].y]
 		copy["target"] = [p["target"].x, p["target"].y]
 		data_people.append(copy)
-	var data := {"version": 3, "residents": data_people, "stock": stock, "houses": houses,
-		"build_progress": build_progress, "elapsed": elapsed, "completed": completed, "delivered": delivered}
+	var data := {"version": 4, "residents": data_people, "stock": stock, "houses": houses,
+		"build_progress": build_progress, "elapsed": elapsed, "completed": completed, "delivered": delivered, "life": life.save_state()}
 	var file := FileAccess.open(path + ".tmp", FileAccess.WRITE)
 	if file == null:
 		last_save = "Błąd zapisu: " + error_string(FileAccess.get_open_error())
@@ -291,13 +343,44 @@ func load_game(path: String = SAVE_PATH) -> void:
 	var saved_deliveries: Dictionary = data.get("delivered", {})
 	for key in delivered:
 		delivered[key] = maxi(0, int(saved_deliveries.get(key, 0)))
+	if int(data.get("version", 1)) >= 4 and data.get("residents") is Array and not data["residents"].is_empty():
+		var restored_people: Array[Dictionary] = []
+		var loaded_names: Dictionary = {}
+		for entry in data["residents"]:
+			if not entry is Dictionary:
+				continue
+			var saved_name := str(entry.get("name", "")).left(60)
+			if saved_name.is_empty() or loaded_names.has(saved_name):
+				continue
+			loaded_names[saved_name] = true
+			restored_people.append(make_person(saved_name, str(entry.get("job", "Uczeń")).left(40), str(entry.get("trait", "Ciekawski")).left(80), Color.from_string(str(entry.get("color", "84b878")), Color("84b878")), Vector2(350, 400)))
+		if not restored_people.is_empty():
+			people = restored_people
+	life.load_state(self, data.get("life", {}))
+	if int(data.get("version", 1)) < 4:
+		life.days = elapsed / 2880.0
+		life.last_day = int(life.days)
 	for saved in data.get("residents", []):
 		if not saved is Dictionary:
 			continue
 		for p in people:
 			if p["name"] != saved.get("name", ""):
 				continue
-			for key in ["hunger", "rest", "warmth"]:
+			for key in ["age", "pregnancy", "family_cooldown", "intent_until"]:
+				p[key] = maxf(0, float(saved.get(key, p[key])))
+			for key in ["partner", "pregnancy_partner", "family_intent", "activity_target", "goal"]:
+				p[key] = str(saved.get(key, p[key])).left(160)
+			p["home"] = int(saved.get("home", -1))
+			p["sex"] = "M" if saved.get("sex", p["sex"]) == "M" else "F"
+			p["alive"] = bool(saved.get("alive", true))
+			p["medical_food"] = clampi(int(saved.get("medical_food", 0)), 0, 2)
+			for key in ["parents", "children"]:
+				if saved.get(key) is Array:
+					p[key] = saved[key].filter(func(value: Variant): return value is String)
+			if saved.get("relationships") is Dictionary:
+				for name_key in saved["relationships"]:
+					p["relationships"][str(name_key)] = clampi(int(saved["relationships"][name_key]), 0, 100)
+			for key in ["hunger", "rest", "warmth", "health", "social"]:
 				p[key] = clampf(float(saved.get(key, p[key])), 0, 100)
 			for key in ["skill_level", "skill_xp", "cargo_food", "cargo_wood", "jobs_done", "revision"]:
 				p[key] = maxi(0, int(saved.get(key, p[key])))
@@ -320,10 +403,15 @@ func load_game(path: String = SAVE_PATH) -> void:
 			if int(data.get("version", 1)) >= 2:
 				var action := str(saved.get("action", ""))
 				if ACTIONS.has(action):
-					p["queue"].append({"action": action, "reason": str(saved.get("reason", "Wznowienie planu AI"))})
+					p["queue"].append({"action": action, "reason": str(saved.get("reason", "Wznowienie planu AI")), "target": p["activity_target"]})
 				for item in saved.get("queue", []):
 					if item is Dictionary and ACTIONS.has(str(item.get("action", ""))) and p["queue"].size() < 3:
 						p["queue"].append(item)
+			if not p["alive"]:
+				p["queue"].clear()
+				p["phase"] = "dead"
+				p["task"] = "Nie żyje"
+	life.assign_homes(self)
 	log_event("Wczytano świat. Ładunki i rzeczy mieszkańców zostały zachowane.")
 
 
@@ -341,7 +429,7 @@ func work_multiplier(p: Dictionary, action: String) -> float:
 	return 1.0 + 0.08 * float(level - 1)
 
 func work_duration(p: Dictionary, action: String) -> float:
-	return (6.0 if action == "build" else 2.0) / work_multiplier(p, action)
+	return (6.0 if action == "build" else 12.0 if action == "farm" else 2.0) / work_multiplier(p, action)
 
 func skill_snapshot(p: Dictionary) -> Dictionary:
 	var result: Dictionary = {}
@@ -383,7 +471,15 @@ func _record_experience(p: Dictionary, result: String, success: bool) -> void:
 	while p["episodes"].size() > 40:
 		p["episodes"].pop_front()
 	var knowledge: Dictionary = p["knowledge"]
+	if not success and ["farm", "shelter", "heal", "socialize", "learn", "start_family"].has(action):
+		knowledge["life_lesson"] = result.left(200)
 	if success:
+		if action == "socialize":
+			knowledge["social"] = "Rozmowy z osobami w pobliżu budują wzajemną więź."
+		elif action == "farm":
+			knowledge["farm"] = "Pole daje 4 porcje za 1 drewno; plon trzeba odnieść."
+		elif action == "guard":
+			knowledge["safety"] = "Warta odstrasza wilki; dom chroni przed zagrożeniami."
 		match action:
 			"gather_food":
 				knowledge["food_source"] = "Znam jagody: zbieram 4 porcje i odnoszę je do magazynu."
@@ -413,7 +509,7 @@ func _record_experience(p: Dictionary, result: String, success: bool) -> void:
 func memory_for_ai(p: Dictionary) -> Dictionary:
 	# Keep the model context bounded regardless of game age.
 	var lessons: Array = []
-	for key in ["empty_food", "empty_wood", "empty_cargo"]:
+	for key in ["life_lesson", "empty_food", "empty_wood", "empty_cargo"]:
 		if p["knowledge"].has(key):
 			lessons.append(p["knowledge"][key])
 	var successes: Dictionary = {}
@@ -425,6 +521,10 @@ func memory_for_ai(p: Dictionary) -> Dictionary:
 	for event in p["episodes"].slice(-2):
 		recent.append(str(event["text"]).left(120))
 	var relevant_keys: Array = []
+	if not str(life.threat["kind"]).is_empty():
+		relevant_keys.append("safety")
+	if p["social"] < 40:
+		relevant_keys.append("social")
 	if p["hunger"] < 50.0:
 		relevant_keys.append_array(["food_source", "meal"])
 	if p["rest"] < 40.0:
@@ -454,7 +554,7 @@ func _load_progress(p: Dictionary, saved: Dictionary) -> void:
 		p["skills"][primary] = {"level": old_level, "xp": 0 if old_level == MAX_SKILL_LEVEL else int(float(old_xp) / 5.0 * xp_needed(old_level))}
 	var known: Variant = saved.get("knowledge", {})
 	if known is Dictionary:
-		for key in ["food_source", "wood_source", "delivery", "meal", "rest", "warmth", "building", "empty_food", "empty_wood", "empty_cargo"]:
+		for key in ["food_source", "wood_source", "delivery", "meal", "rest", "warmth", "building", "empty_food", "empty_wood", "empty_cargo", "life_lesson", "safety", "social", "farm"]:
 			if known.has(key):
 				p["knowledge"][key] = str(known[key]).left(200)
 	var history: Variant = saved.get("episodes", [])
