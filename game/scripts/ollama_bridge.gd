@@ -25,11 +25,22 @@ var process_attempted := false
 var ollama_pid := -1
 var last_download_progress := -1
 var pending_model_check := false
+var request_started_ms := 0
+var last_latency := 0.0
+var requests_finished := 0
+var request_errors := 0
+var next_request_ms := 0
+var cooldown_seconds := 30.0
+var response_tokens := 1024
+var cpu_threads := 4
+var context_tokens := 4096
+var expected_names: Array = []
 
 
 func _ready() -> void:
 	http = HTTPRequest.new()
-	http.timeout = 0.0
+	http.timeout = 15.0
+	http.use_threads = true
 	http.request_completed.connect(_on_api_request_completed)
 	add_child(http)
 	download_http = HTTPRequest.new()
@@ -96,6 +107,7 @@ func _request_tags() -> void:
 		return
 	is_busy = true
 	request_kind = "tags"
+	http.timeout = 10.0
 	var error := http.request(OLLAMA_URL + "/api/tags")
 	if error != OK:
 		is_busy = false
@@ -136,6 +148,7 @@ func _fetch_release_metadata() -> void:
 		return
 	is_busy = true
 	request_kind = "release"
+	http.timeout = 30.0
 	emit_signal("status_changed", "Przygotowuję lokalny silnik AI…")
 	var headers := PackedStringArray(["Accept: application/vnd.github+json"])
 	var error := http.request(LATEST_RELEASE_URL, headers)
@@ -315,6 +328,7 @@ func _pull_model() -> void:
 		return
 	is_busy = true
 	request_kind = "pull"
+	http.timeout = 0.0
 	emit_signal("status_changed", "Pobieram model %s — pierwsze uruchomienie może potrwać długo" % model_name)
 	var headers := PackedStringArray(["Content-Type: application/json"])
 	var body := JSON.stringify({"model": model_name, "stream": false})
@@ -408,6 +422,12 @@ func _normalise_decision_answer(raw_answer: Variant) -> Dictionary:
 
 func _on_api_request_completed(result: int, response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
 	var completed_kind := request_kind
+	if completed_kind == "chat":
+		last_latency = float(Time.get_ticks_msec() - request_started_ms) / 1000.0
+		requests_finished += 1
+		next_request_ms = Time.get_ticks_msec() + int(maxf(cooldown_seconds, last_latency * 0.5) * 1000.0)
+		if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
+			request_errors += 1
 	request_kind = ""
 	is_busy = false
 	if pending_model_check:
@@ -481,13 +501,22 @@ func _on_api_request_completed(result: int, response_code: int, _headers: Packed
 		var message: Dictionary = parsed.get("message", {})
 		var content_value: Variant = message.get("content", "")
 		var content_text := str(content_value)
-		if content_text.strip_edges().is_empty() and message.has("thinking"):
-			content_text = str(message.get("thinking", ""))
+		if content_text.strip_edges().is_empty():
+			content_text = ""
 		var answer := _extract_decision_answer(content_value)
 		if answer.is_empty():
 			answer = _extract_decision_answer(content_text)
 		var decisions: Array = answer.get("decisions", [])
+		var validated: Array = []
+		var seen: Array = []
+		for decision in decisions:
+			var decision_name := str(decision.get("name", ""))
+			if expected_names.has(decision_name) and not seen.has(decision_name):
+				validated.append(decision)
+				seen.append(decision_name)
+		decisions = validated
 		if decisions.is_empty():
+			request_errors += 1
 			var preview := content_text.strip_edges().replace("\n", " ")
 			if preview.is_empty():
 				preview = "pusta odpowiedź"
@@ -505,6 +534,12 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 		return
 	is_busy = true
 	request_kind = "chat"
+	http.timeout = 120.0
+	request_started_ms = Time.get_ticks_msec()
+	expected_names.clear()
+	for person in people:
+		expected_names.append(str(person.get("name", "")))
+	emit_signal("status_changed", "AI planuje zadania mieszkańców…")
 	var schema := {
 		"type": "object",
 		"properties": {
@@ -540,7 +575,7 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 		"stream": false,
 		"think": false,
 		"format": schema,
-		"options": {"temperature": ai_temperature, "num_predict": 2048},
+		"options": {"temperature": ai_temperature, "num_predict": response_tokens, "num_ctx": context_tokens, "num_thread": cpu_threads},
 		"keep_alive": "10m"
 	}
 	var headers := PackedStringArray(["Content-Type: application/json"])
@@ -548,8 +583,21 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 	if error != OK:
 		is_busy = false
 		request_kind = ""
+		request_errors += 1
+		next_request_ms = Time.get_ticks_msec() + 30000
 		emit_signal("status_changed", "AI: nie udało się wysłać zapytania")
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST and ollama_pid > 0 and OS.is_process_running(ollama_pid):
 		OS.kill(ollama_pid)
+
+
+
+func cancel_decision() -> void:
+	if request_kind != "chat":
+		return
+	http.cancel_request()
+	request_kind = ""
+	is_busy = false
+	next_request_ms = Time.get_ticks_msec() + int(cooldown_seconds * 1000.0)
+	emit_signal("status_changed", "Przerwano oczekiwanie. Ollama może jeszcze kończyć obliczenia.")
