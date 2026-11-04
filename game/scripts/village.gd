@@ -30,6 +30,23 @@ var ai_enabled := true
 var ai_guidance := ""
 var ai_priority := 0
 var settings_open := false
+var dashboard: PanelContainer
+var overview_text: RichTextLabel
+var journal_text: RichTextLabel
+var ai_info_text: RichTextLabel
+var resident_picker: OptionButton
+var dashboard_elapsed := 0.0
+var autosave_elapsed := 0.0
+var simulation_speed := 1.0
+var decision_pause := 30.0
+var configured_threads := 4
+var configured_tokens := 1024
+var pause_picker: OptionButton
+var fps_picker: OptionButton
+var thread_picker: SpinBox
+var token_picker: OptionButton
+var last_save_status := "Jeszcze nie zapisano"
+var accepted_decisions := 0
 var ui_layer: CanvasLayer
 var settings_panel: PanelContainer
 var settings_status_label: Label
@@ -43,6 +60,7 @@ var guidance_edit: TextEdit
 
 
 func _ready() -> void:
+	Engine.max_fps = 60
 	_create_residents()
 	_load_game()
 	_load_ai_settings()
@@ -54,8 +72,14 @@ func _ready() -> void:
 	ollama_bridge.connect("models_received", Callable(self, "_on_models_received"))
 	add_child(ollama_bridge)
 	_build_settings_ui()
+	_build_dashboard()
+	ollama_bridge.set("cooldown_seconds", decision_pause)
+	ollama_bridge.set("cpu_threads", configured_threads)
+	ollama_bridge.set("response_tokens", configured_tokens)
+	thread_picker.value = configured_threads
+	_select_option_by_id(token_picker, configured_tokens)
 	clock = Timer.new()
-	clock.wait_time = 1.0
+	clock.wait_time = 2.0
 	clock.timeout.connect(_on_tick)
 	add_child(clock)
 	clock.start()
@@ -115,7 +139,7 @@ func _build_settings_ui() -> void:
 	heading.add_child(close_button)
 
 	var intro := Label.new()
-	intro.text = "Wybierz tempo i priorytet. AI planuje regularnie, a mieszkańcy pracują podczas oczekiwania na odpowiedź."
+	intro.text = "Zaawansowane ustawienia zachowania. Tempo zapytań i wydajność ustawisz w zakładce AI / wydajność."
 	intro.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	intro.add_theme_color_override("font_color", Color("#d5dfd5"))
 	layout.add_child(intro)
@@ -158,6 +182,7 @@ func _build_settings_ui() -> void:
 	interval_picker.add_item("Oszczędnie — co 12 sekund", 120)
 	interval_picker.add_item("Rzadko — co 24 sekundy", 240)
 	interval_row.add_child(interval_picker)
+	interval_row.visible = false
 
 	var temperature_row := HBoxContainer.new()
 	layout.add_child(temperature_row)
@@ -234,6 +259,9 @@ func _hide_ai_settings() -> void:
 
 func _refresh_models() -> void:
 	if ollama_bridge != null:
+		if bool(ollama_bridge.get("is_busy")):
+			settings_status_label.text = "AI jest zajęte. Odśwież listę po zakończeniu odpowiedzi."
+			return
 		ollama_bridge.call("request_models")
 		settings_status_label.text = "Pobieram listę modeli z lokalnej Ollamy…"
 
@@ -288,23 +316,33 @@ func _save_ai_settings() -> void:
 	ai_guidance = guidance_edit.text.strip_edges()
 	ai_minute_counter = ai_interval_minutes
 
-	var config := {
-		"model": ai_model_name,
-		"enabled": ai_enabled,
-		"interval_minutes": ai_interval_minutes,
-		"temperature": ai_temperature,
-		"priority": ai_priority,
-		"guidance": ai_guidance
-	}
-	var file := FileAccess.open(AI_SETTINGS_PATH, FileAccess.WRITE)
-	if file != null:
-		file.store_string(JSON.stringify(config))
+	_write_ai_config()
 
 	if old_model != ai_model_name and ollama_bridge != null:
 		ollama_bridge.call("select_model", ai_model_name)
 	_on_ai_status_changed("Ustawienia zapisane — model: " + ai_model_name)
 	_add_log("Zmieniono ustawienia lokalnego AI.")
 	_hide_ai_settings()
+
+
+func _write_ai_config() -> void:
+	var config := {
+		"model": ai_model_name,
+		"enabled": ai_enabled,
+		"interval_minutes": ai_interval_minutes,
+		"temperature": ai_temperature,
+		"priority": ai_priority,
+		"decision_pause": decision_pause,
+		"fps": Engine.max_fps,
+		"threads": int(ollama_bridge.get("cpu_threads")),
+		"tokens": int(ollama_bridge.get("response_tokens")),
+		"guidance": ai_guidance
+	}
+	var file := FileAccess.open(AI_SETTINGS_PATH, FileAccess.WRITE)
+	if file != null:
+		file.store_string(JSON.stringify(config))
+	else:
+		_add_log("Nie udało się zapisać ustawień na dysku.")
 
 
 func _restore_default_ai_settings() -> void:
@@ -337,17 +375,33 @@ func _load_ai_settings() -> void:
 	ai_temperature = clampf(float(parsed.get("temperature", ai_temperature)), 0.0, 1.0)
 	ai_priority = clampi(int(parsed.get("priority", ai_priority)), 0, 2)
 	ai_guidance = str(parsed.get("guidance", ai_guidance))
+	decision_pause = clampf(float(parsed.get("decision_pause", 30.0)), 10.0, 120.0)
+	Engine.max_fps = clampi(int(parsed.get("fps", 60)), 30, 60)
+	configured_threads = clampi(int(parsed.get("threads", 4)), 1, 16)
+	configured_tokens = clampi(int(parsed.get("tokens", 1024)), 1024, 2048)
 
 
 
 
 func _process(delta: float) -> void:
 	if not paused:
-		for person in residents:
+		for index in range(residents.size()):
+			var person: Dictionary = residents[index]
 			var position: Vector2 = person["position"]
 			var target: Vector2 = person["target"]
-			person["position"] = position.move_toward(target + Vector2((residents.find(person) % 3 - 1) * 10, (residents.find(person) / 3) * 10), 70.0 * delta)
-	queue_redraw()
+			if str(person.get("ai_action", "wait")) != "wait":
+				var offset := Vector2((index % 3 - 1) * 8, (index / 3) * 8)
+				person["position"] = position.move_toward(target + offset, 70.0 * simulation_speed * delta)
+		if ai_enabled and bool(ollama_bridge.get("is_ready")) and not bool(ollama_bridge.get("is_busy")) and Time.get_ticks_msec() >= int(ollama_bridge.get("next_request_ms")):
+			_request_ai_decisions()
+	dashboard_elapsed += delta
+	autosave_elapsed += delta
+	if dashboard_elapsed >= 0.5:
+		dashboard_elapsed = 0.0
+		_update_dashboard()
+	if autosave_elapsed >= 30.0:
+		autosave_elapsed = 0.0
+		queue_redraw()
 
 
 func _create_residents() -> void:
@@ -394,17 +448,12 @@ func _on_tick() -> void:
 		person["warmth"] = maxf(0.0, person["warmth"] - (0.8 if _is_night() else 0.12))
 		_choose_task(person)
 		_do_task(person)
-	ai_minute_counter += 10
-	if ai_enabled and ai_minute_counter >= ai_interval_minutes and ollama_bridge != null and bool(ollama_bridge.get("is_ready")) and not bool(ollama_bridge.get("is_busy")):
-		ai_minute_counter = 0
-		_request_ai_decisions()
-	_save_game()
 	queue_redraw()
 
 
 func _choose_task(person: Dictionary) -> void:
 	var position: Vector2 = person["position"]
-	var action: String = str(person.get("ai_action", "wait")) if ai_enabled else "wait"
+	var action: String = str(person.get("ai_action", "wait"))
 	person["target"] = position
 	person["task"] = "Czeka na decyzję AI"
 	if action == "work":
@@ -585,7 +634,11 @@ func _on_ai_decisions(decisions: Array) -> void:
 		for person in residents:
 			if str(person["name"]).to_lower() != person_name.strip_edges().to_lower():
 				continue
+			accepted_decisions += 1
+			if person.get("ai_action", "wait") != action:
+				person["work_ticks"] = 0
 			person["ai_action"] = action
+			_choose_task(person)
 			var reason: String = str(decision.get("reason", ""))
 			if reason.length() > 100:
 				reason = reason.substr(0, 100)
@@ -593,7 +646,6 @@ func _on_ai_decisions(decisions: Array) -> void:
 			_remember(person, "AI wybrało %s: %s" % [action, reason])
 			_add_log("%s: AI wybiera %s — %s" % [person_name, action, reason])
 			break
-	_save_game()
 	queue_redraw()
 
 func _remember(person: Dictionary, note: String) -> void:
@@ -638,6 +690,9 @@ func _save_game() -> void:
 	var file := FileAccess.open(SAVE_PATH, FileAccess.WRITE)
 	if file != null:
 		file.store_string(JSON.stringify(save_data))
+		last_save_status = "Zapisano " + Time.get_time_string_from_system()
+	else:
+		last_save_status = "Błąd zapisu gry"
 
 func _load_game() -> void:
 	if not FileAccess.file_exists(SAVE_PATH):
@@ -676,11 +731,11 @@ func _is_night() -> bool:
 
 func _add_log(message: String) -> void:
 	logs.push_front("%02d:%02d  %s" % [int(day_minute / 60), day_minute % 60, message])
-	while logs.size() > 6:
+	while logs.size() > 100:
 		logs.pop_back()
 
 
-func _input(event: InputEvent) -> void:
+func _unhandled_input(event: InputEvent) -> void:
 	if event is InputEventKey and event.pressed and not event.echo:
 		if event.keycode == KEY_ESCAPE and settings_open:
 			_hide_ai_settings()
@@ -714,7 +769,7 @@ func _draw() -> void:
 	draw_rect(Rect2(0, 0, SIDEBAR_X, 720), Color("#78945f"))
 	_draw_world()
 	draw_rect(Rect2(SIDEBAR_X, 0, 430, 720), Color("#1d2928"))
-	_draw_sidebar()
+	# Sidebar is rendered by the dashboard controls.
 
 
 func _draw_world() -> void:
@@ -804,3 +859,149 @@ func _draw_bar(x: float, y: float, width: float, value: float, color: Color) -> 
 
 func _draw_text(text: String, x: float, y: float, size: int, color: Color) -> void:
 	draw_string(ThemeDB.fallback_font, Vector2(x, y), text, HORIZONTAL_ALIGNMENT_LEFT, -1.0, size, color)
+
+
+
+func _dashboard_button(parent: Node, caption: String, callback: Callable) -> void:
+	var button := Button.new()
+	button.text = caption
+	button.pressed.connect(callback)
+	parent.add_child(button)
+
+
+func _dashboard_text(parent: Node) -> RichTextLabel:
+	var label := RichTextLabel.new()
+	label.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	label.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	label.bbcode_enabled = false
+	label.selection_enabled = true
+	label.add_theme_font_size_override("normal_font_size", 15)
+	parent.add_child(label)
+	return label
+
+
+func _build_dashboard() -> void:
+	var layer := CanvasLayer.new()
+	layer.layer = 5
+	add_child(layer)
+	dashboard = PanelContainer.new()
+	dashboard.position = Vector2(860, 65)
+	dashboard.size = Vector2(410, 645)
+	layer.add_child(dashboard)
+	var layout := VBoxContainer.new()
+	layout.add_theme_constant_override("separation", 10)
+	dashboard.add_child(layout)
+	var controls := HBoxContainer.new()
+	layout.add_child(controls)
+	_dashboard_button(controls, "Pauza / start", func(): paused = not paused)
+	var speed := OptionButton.new()
+	for caption in ["Tempo 0.5×", "Tempo 1×", "Tempo 2×"]:
+		speed.add_item(caption)
+	speed.select(1)
+	speed.item_selected.connect(func(index: int):
+		simulation_speed = [0.5, 1.0, 2.0][index]
+		clock.wait_time = 2.0 / simulation_speed)
+	controls.add_child(speed)
+	_dashboard_button(controls, "Zapisz", _save_game)
+	var tabs := TabContainer.new()
+	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	layout.add_child(tabs)
+	var people_tab := VBoxContainer.new()
+	people_tab.name = "Wioska"
+	tabs.add_child(people_tab)
+	resident_picker = OptionButton.new()
+	for person in residents:
+		resident_picker.add_item(str(person["name"]))
+	resident_picker.item_selected.connect(func(index: int): selected = index)
+	people_tab.add_child(resident_picker)
+	overview_text = _dashboard_text(people_tab)
+	var ai_tab := VBoxContainer.new()
+	ai_tab.name = "AI / wydajność"
+	tabs.add_child(ai_tab)
+	pause_picker = OptionButton.new()
+	for seconds in [10, 30, 60, 120]:
+		pause_picker.add_item("Przerwa po odpowiedzi: %d s" % seconds, seconds)
+	_select_option_by_id(pause_picker, int(decision_pause))
+	ai_tab.add_child(pause_picker)
+	fps_picker = OptionButton.new()
+	fps_picker.add_item("Limit 30 FPS", 30)
+	fps_picker.add_item("Limit 60 FPS", 60)
+	_select_option_by_id(fps_picker, Engine.max_fps)
+	ai_tab.add_child(fps_picker)
+	var threads_label := Label.new()
+	threads_label.text = "Wątki CPU modelu (nie jest to limit GPU)"
+	ai_tab.add_child(threads_label)
+	thread_picker = SpinBox.new()
+	thread_picker.min_value = 1
+	thread_picker.max_value = 16
+	thread_picker.value = 4
+	ai_tab.add_child(thread_picker)
+	token_picker = OptionButton.new()
+	token_picker.add_item("Krótkie odpowiedzi — 1024 tokeny", 1024)
+	token_picker.add_item("Dłuższe odpowiedzi — 2048 tokenów", 2048)
+	ai_tab.add_child(token_picker)
+	_dashboard_button(ai_tab, "Zastosuj wydajność", _apply_performance)
+	var ai_buttons := HBoxContainer.new()
+	ai_tab.add_child(ai_buttons)
+	_dashboard_button(ai_buttons, "Zaplanuj teraz", _plan_now)
+	_dashboard_button(ai_buttons, "Przerwij", func(): ollama_bridge.call("cancel_decision"))
+	_dashboard_button(ai_tab, "Włącz / wyłącz nowe decyzje AI", func():
+		ai_enabled = not ai_enabled
+		if not ai_enabled:
+			ollama_bridge.call("cancel_decision")
+		ai_enabled_toggle.button_pressed = ai_enabled)
+	ai_info_text = _dashboard_text(ai_tab)
+	var journal := VBoxContainer.new()
+	journal.name = "Dziennik"
+	tabs.add_child(journal)
+	_dashboard_button(journal, "Wyczyść widok dziennika", func(): logs.clear())
+	journal_text = _dashboard_text(journal)
+	_update_dashboard()
+
+
+func _apply_performance() -> void:
+	decision_pause = float(pause_picker.get_selected_id())
+	Engine.max_fps = fps_picker.get_selected_id()
+	ollama_bridge.set("cooldown_seconds", decision_pause)
+	ollama_bridge.set("cpu_threads", int(thread_picker.value))
+	ollama_bridge.set("response_tokens", token_picker.get_selected_id())
+	ollama_bridge.set("next_request_ms", Time.get_ticks_msec() + int(decision_pause * 1000.0))
+	_write_ai_config()
+	_add_log("Zastosowano ustawienia wydajności. Dotyczą kolejnych zapytań.")
+
+
+func _plan_now() -> void:
+	if paused or not ai_enabled or not bool(ollama_bridge.get("is_ready")) or bool(ollama_bridge.get("is_busy")):
+		_add_log("Nowy plan wymaga uruchomionej symulacji i wolnego, gotowego AI.")
+		return
+	ollama_bridge.set("next_request_ms", 0)
+
+
+func _update_dashboard() -> void:
+	if overview_text == null or residents.is_empty():
+		return
+	resident_picker.select(selected)
+	var person: Dictionary = residents[selected]
+	var inventory: Dictionary = person["inventory"]
+	var lines: Array[String] = []
+	lines.append("%s • %02d:%02d • %d FPS" % ["PAUZA" if paused else "Symulacja działa", int(day_minute / 60), day_minute % 60, Engine.get_frames_per_second()])
+	lines.append("Magazyn: jedzenie %d | drewno %d\nDomy: %d | budowa %d/5" % [stock["food"], stock["wood"], houses, build_progress])
+	lines.append("\nMIESZKAŃCY")
+	for resident in residents:
+		lines.append("%s: %s" % [resident["name"], resident.get("task", "Czeka na AI")])
+	lines.append("\n%s • %s • %s" % [person["name"], person["job"], person["trait"]])
+	lines.append("Sytość %d/100 | wypoczęcie %d/100\nCiepło %d/100" % [person["hunger"], person["rest"], person["warmth"]])
+	lines.append("Ładunek: jedzenie %d | drewno %d\nPrywatne jedzenie: %d\nPamiątka: %s" % [person["cargo_food"], person["cargo_wood"], inventory["food"], inventory["keepsake"]])
+	lines.append("Umiejętność: %s, poziom %d\nSprzęt: %s" % [person["skill"], person["skill_level"], str(inventory["equipment"])])
+	lines.append("\nUZASADNIENIE AI\n" + str(person.get("ai_reason", "Oczekiwanie na pierwszą decyzję")))
+	lines.append("\nWSPOMNIENIA\n" + "\n".join(person.get("memory", [])))
+	overview_text.text = "\n".join(lines)
+	var remaining := maxf(0.0, float(int(ollama_bridge.get("next_request_ms")) - Time.get_ticks_msec()) / 1000.0)
+	var elapsed := float(Time.get_ticks_msec() - int(ollama_bridge.get("request_started_ms"))) / 1000.0 if str(ollama_bridge.get("request_kind")) == "chat" else 0.0
+	ai_info_text.text = "%s\n\nModel: %s\nNowe decyzje: %s\nOczekiwanie na odpowiedź: %.1f s\nNastępny cykl najwcześniej za: %.0f s\nOstatnia odpowiedź: %.1f s\nZakończone zapytania: %d\nBłędy: %d | przyjęte decyzje: %d\n\n%s\nAutozapis co 30 s.\n\nPrzerwa automatycznie rośnie przy wolnych odpowiedziach. Model 35B może obciążać GPU mimo limitu FPS gry." % [ai_status, ai_model_name, "włączone" if ai_enabled else "wyłączone", elapsed, remaining, float(ollama_bridge.get("last_latency")), int(ollama_bridge.get("requests_finished")), int(ollama_bridge.get("request_errors")), accepted_decisions, last_save_status]
+	journal_text.text = "\n\n".join(logs)
+
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		_save_game()
