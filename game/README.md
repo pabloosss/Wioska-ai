@@ -14,11 +14,16 @@ Nie musisz osobno instalować Ollamy ani ręcznie pobierać modelu. Pierwsze prz
 
 - **Spacja** — pauza/wznowienie.
 - **1–5** albo kliknięcie mieszkańca — wybór postaci.
+- **F2** lub przycisk **Ustawienia AI** — otwarcie ustawień.
 - **R** — ponowne sprawdzenie i wznowienie przygotowania AI.
+
+## Ustawienia AI
+
+Możesz wybrać jeden z modeli zainstalowanych w Ollamie, włączyć lub wyłączyć decyzje AI, ustawić częstotliwość decyzji, poziom swobody, priorytet mieszkańców albo zasobów oraz wpisać własne wskazówki. Ustawienia zapisują się lokalnie na komputerze.
 
 ## Jak działa AI
 
-- Jeden lokalny model obsługuje wszystkich mieszkańców; gra wysyła ich profile w jednym zapytaniu co 2 godziny czasu w grze.
+- Jeden lokalny model obsługuje wszystkich mieszkańców; domyślnie gra wysyła ich profile w jednym zapytaniu co 2 godziny czasu w grze. Częstotliwość można zmienić w ustawieniach.
 - Każda postać ma osobny charakter, potrzeby, pracę, umiejętności i ostatnie wspomnienia.
 - Model wybiera zamiar: pracować, jeść, odpocząć albo się ogrzać. Gra sprawdza zamiar i wykonuje ruch oraz zmianę zasobów.
 - Pilne potrzeby są zabezpieczane przez symulację, nawet jeśli odpowiedź AI się spóźni lub będzie niedostępna.
