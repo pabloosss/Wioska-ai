@@ -25,6 +25,7 @@ func _ready() -> void:
 	get_tree().auto_accept_quit = false
 	_load_config()
 	Engine.max_fps = int(config["fps"])
+	RenderingServer.set_default_clear_color(Color("0d1c16"))
 	sim = Simulation.new()
 	sim.load_game()
 	world = WorldView.new()
@@ -53,7 +54,7 @@ func _ready() -> void:
 	bridge.status_changed.connect(_status)
 	bridge.decisions_received.connect(_decisions)
 	add_child(bridge)
-	sim.log_event("Wersja 0.2: AI wybiera plany, wykonawca kończy zbiór i dostawę.")
+	sim.log_event("Wersja 0.3: AI wybiera plany, wykonawca kończy zbiór i dostawę.")
 	_update_ui()
 
 func _process(delta: float) -> void:
@@ -220,7 +221,7 @@ func _export_logs() -> void:
 	if file == null:
 		sim.log_event("Błąd eksportu dziennika.")
 		return
-	file.store_string("Wioska AI 0.2\nModel: %s\nStatus: %s\nFPS: %d\nOstatnia odpowiedź: %.1f s\n\n%s" % [bridge.model_name, status_detail, Engine.get_frames_per_second(), bridge.last_latency, "\n".join(sim.logs)])
+	file.store_string("Wioska AI 0.3\nModel: %s\nStatus: %s\nFPS: %d\nOstatnia odpowiedź: %.1f s\n\n%s" % [bridge.model_name, status_detail, Engine.get_frames_per_second(), bridge.last_latency, "\n".join(sim.logs)])
 	file.close()
 	sim.log_event("Zapisano diagnostykę: " + ProjectSettings.globalize_path(path))
 	OS.shell_open(ProjectSettings.globalize_path("user://"))
@@ -232,7 +233,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_5:
 			_select(event.keycode - KEY_1)
 		elif event.keycode == KEY_F2:
-			ui.tabs.current_tab = 2
+			ui.tabs.current_tab = 4
 
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_WM_CLOSE_REQUEST:

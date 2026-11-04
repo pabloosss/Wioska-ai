@@ -3,6 +3,10 @@ extends RefCounted
 signal event_logged(message: String)
 const ACTIONS := ["gather_food", "gather_wood", "deliver", "eat", "rest", "warm", "build", "wait"]
 const SPOTS := {"food": Vector2(185, 235), "wood": Vector2(650, 210), "storage": Vector2(445, 370), "home": Vector2(315, 440), "fire": Vector2(575, 435)}
+const SKILL_NAMES := {"foraging": "Zbieractwo", "woodcutting": "Drwalstwo", "building": "Budowanie"}
+const SKILL_ACTIONS := {"gather_food": "foraging", "gather_wood": "woodcutting", "build": "building"}
+const ACTION_NAMES := {"gather_food": "Zbieranie jedzenia", "gather_wood": "Zbieranie drewna", "deliver": "Dostawa", "eat": "Posiłek", "rest": "Odpoczynek", "warm": "Ogrzanie", "build": "Budowa", "wait": "Oczekiwanie"}
+const MAX_SKILL_LEVEL := 10
 const SAVE_PATH := "user://wioska_ai_save.json"
 var people: Array[Dictionary] = []
 var stock := {"food": 16, "wood": 18}
@@ -25,7 +29,9 @@ func _init() -> void:
 			"position": Vector2(345 + i * 40, 315), "target": Vector2(345 + i * 40, 315),
 			"hunger": 82.0, "rest": 88.0, "warmth": 76.0, "cargo_food": 0, "cargo_wood": 0,
 			"inventory": {"food": 1, "keepsake": "osobista pamiątka", "equipment": ["kosz" if i < 2 else "topór" if i < 4 else "młotek"]},
-			"skill_level": 1, "skill_xp": 0, "memory": [], "revision": 0, "queue": [],
+			"skill_level": 1, "skill_xp": 0, "memory": [],
+			"skills": _new_skills(), "episodes": [], "knowledge": {}, "milestones": [],
+			"experience": {"actions": {}, "delivered_food": 0, "delivered_wood": 0}, "revision": 0, "queue": [],
 			"action": "", "phase": "idle", "task": "Czeka na plan AI", "progress": 0.0,
 			"reason": "Jeszcze nie otrzymał planu.", "last_result": "", "jobs_done": 0})
 
@@ -46,7 +52,7 @@ func idle_snapshot() -> Array:
 			result.append({"name": p["name"], "revision": p["revision"], "job": p["job"], "personality": p["trait"],
 				"needs": {"satiety": roundi(p["hunger"]), "rest": roundi(p["rest"]), "warmth": roundi(p["warmth"])},
 				"inventory": {"food": p["inventory"]["food"], "cargo_food": p["cargo_food"], "cargo_wood": p["cargo_wood"]},
-				"last_result": p["last_result"], "memory": p["memory"].slice(-3)})
+				"last_result": p["last_result"], "skills": skill_snapshot(p), "memory": memory_for_ai(p)})
 	return result
 
 func world_snapshot() -> Dictionary:
@@ -82,7 +88,7 @@ func apply_decisions(decisions: Array, revisions: Dictionary) -> int:
 						p["queue"].append({"action": str(next), "reason": "Kolejny krok planu AI: " + reason})
 			p["revision"] += 1
 			accepted += 1
-			log_event("%s otrzymuje plan AI: %s." % [name_text, action])
+			log_event("%s otrzymuje plan AI: %s." % [name_text, ACTION_NAMES.get(action, action)])
 			_start_next(p)
 	return accepted
 
@@ -164,6 +170,8 @@ func step(delta: float) -> void:
 					stock["wood"] += wood
 					delivered["food"] += food
 					delivered["wood"] += wood
+					p["experience"]["delivered_food"] += food
+					p["experience"]["delivered_wood"] += wood
 					p["cargo_food"] = 0
 					p["cargo_wood"] = 0
 					_finish(p, "Dostarcza jedzenie %d, drewno %d." % [food, wood])
@@ -183,7 +191,7 @@ func step(delta: float) -> void:
 		p["progress"] += delta
 		match phase:
 			"gathering":
-				if p["progress"] >= 2.0:
+				if p["progress"] >= work_duration(p, str(p["action"])):
 					p["progress"] = 0.0
 					var cargo_key := "cargo_food" if p["action"] == "gather_food" else "cargo_wood"
 					p[cargo_key] += mini(2, 4 - int(p["cargo_food"]) - int(p["cargo_wood"]))
@@ -211,7 +219,7 @@ func step(delta: float) -> void:
 				if p["warmth"] >= 90.0:
 					_finish(p, "Ogrzewa się przy ognisku.")
 			"building":
-				if p["progress"] >= 6.0:
+				if p["progress"] >= work_duration(p, "build"):
 					if stock["wood"] < 4:
 						_finish(p, "Brak 4 sztuk drewna na budowę.", false)
 					else:
@@ -227,17 +235,13 @@ func step(delta: float) -> void:
 
 func _finish(p: Dictionary, result: String, success: bool = true) -> void:
 	p["last_result"] = result
-	p["memory"].append(clock_text() + " " + result)
-	while p["memory"].size() > 12:
-		p["memory"].pop_front()
+	_record_experience(p, result, success)
 	log_event("%s: %s" % [p["name"], result])
 	if success:
 		completed += 1
 		p["jobs_done"] += 1
-		p["skill_xp"] += 1
-		if p["skill_xp"] >= 5:
-			p["skill_xp"] = 0
-			p["skill_level"] += 1
+		if SKILL_ACTIONS.has(str(p["action"])):
+			_award_xp(p, SKILL_ACTIONS[p["action"]], 12 if p["action"] == "build" else 10)
 	p["revision"] += 1
 	p["phase"] = "idle"
 	p["action"] = ""
@@ -253,7 +257,7 @@ func save_game(path: String = SAVE_PATH) -> bool:
 		copy["position"] = [p["position"].x, p["position"].y]
 		copy["target"] = [p["target"].x, p["target"].y]
 		data_people.append(copy)
-	var data := {"version": 2, "residents": data_people, "stock": stock, "houses": houses,
+	var data := {"version": 3, "residents": data_people, "stock": stock, "houses": houses,
 		"build_progress": build_progress, "elapsed": elapsed, "completed": completed, "delivered": delivered}
 	var file := FileAccess.open(path + ".tmp", FileAccess.WRITE)
 	if file == null:
@@ -307,6 +311,7 @@ func load_game(path: String = SAVE_PATH) -> void:
 					p["inventory"]["equipment"] = inv["equipment"]
 			if saved.get("memory") is Array:
 				p["memory"] = saved["memory"].slice(-12)
+			_load_progress(p, saved)
 			var pos: Variant = saved.get("position", [])
 			if pos is Array and pos.size() == 2:
 				p["position"] = Vector2(clampf(float(pos[0]), 40, 750), clampf(float(pos[1]), 60, 500))
@@ -320,3 +325,158 @@ func load_game(path: String = SAVE_PATH) -> void:
 					if item is Dictionary and ACTIONS.has(str(item.get("action", ""))) and p["queue"].size() < 3:
 						p["queue"].append(item)
 	log_event("Wczytano świat. Ładunki i rzeczy mieszkańców zostały zachowane.")
+
+
+func _new_skills() -> Dictionary:
+	return {"foraging": {"level": 1, "xp": 0}, "woodcutting": {"level": 1, "xp": 0}, "building": {"level": 1, "xp": 0}}
+
+func xp_needed(level: int) -> int:
+	return 30 + (level - 1) * 20
+
+func work_multiplier(p: Dictionary, action: String) -> float:
+	var skill_key := str(SKILL_ACTIONS.get(action, ""))
+	if skill_key.is_empty():
+		return 1.0
+	var level := int(p["skills"][skill_key]["level"])
+	return 1.0 + 0.08 * float(level - 1)
+
+func work_duration(p: Dictionary, action: String) -> float:
+	return (6.0 if action == "build" else 2.0) / work_multiplier(p, action)
+
+func skill_snapshot(p: Dictionary) -> Dictionary:
+	var result: Dictionary = {}
+	for key in SKILL_NAMES:
+		result[key] = int(p["skills"][key]["level"])
+	return result
+
+func _award_xp(p: Dictionary, key: String, amount: int) -> void:
+	var skill: Dictionary = p["skills"][key]
+	if skill["level"] >= MAX_SKILL_LEVEL:
+		return
+	skill["xp"] += amount
+	while skill["level"] < MAX_SKILL_LEVEL and skill["xp"] >= xp_needed(skill["level"]):
+		skill["xp"] -= xp_needed(skill["level"])
+		skill["level"] += 1
+		var milestone := "%s: poziom %d. Szybkość pracy +%d%%." % [SKILL_NAMES[key], skill["level"], (int(skill["level"]) - 1) * 8]
+		p["milestones"].append({"at": clock_text(), "text": milestone})
+		if p["milestones"].size() > 27:
+			p["milestones"].pop_front()
+		log_event("%s rozwija umiejętność — %s" % [p["name"], milestone])
+	if skill["level"] == MAX_SKILL_LEVEL:
+		skill["xp"] = 0
+	# Preserve compatibility with legacy summary fields; progress is now per skill.
+	var primary := "foraging" if p["job"] == "Zbieracz" else "woodcutting" if p["job"] == "Drwal" else "building"
+	p["skill_level"] = p["skills"][primary]["level"]
+	p["skill_xp"] = p["skills"][primary]["xp"]
+
+func _record_experience(p: Dictionary, result: String, success: bool) -> void:
+	var action := str(p["action"])
+	p["memory"].append(clock_text() + " " + result)
+	while p["memory"].size() > 12:
+		p["memory"].pop_front()
+	var stats: Dictionary = p["experience"]["actions"]
+	if not stats.has(action):
+		stats[action] = {"successes": 0, "failures": 0}
+	stats[action]["successes" if success else "failures"] += 1
+	p["episodes"].append({"at": clock_text(), "seconds": elapsed, "action": action,
+		"text": result.left(240), "outcome": "success" if success else "failure"})
+	while p["episodes"].size() > 40:
+		p["episodes"].pop_front()
+	var knowledge: Dictionary = p["knowledge"]
+	if success:
+		match action:
+			"gather_food":
+				knowledge["food_source"] = "Znam jagody: zbieram 4 porcje i odnoszę je do magazynu."
+				knowledge["delivery"] = "Zapasy wioski rosną dopiero po dostarczeniu ładunku."
+			"gather_wood":
+				knowledge["wood_source"] = "Znam las: zbieram 4 sztuki drewna i odnoszę je do magazynu."
+				knowledge["delivery"] = "Zapasy wioski rosną dopiero po dostarczeniu ładunku."
+			"deliver":
+				knowledge["delivery"] = "Zapasy wioski rosną dopiero po dostarczeniu ładunku."
+			"eat":
+				knowledge["meal"] = "Jedna porcja poprawia sytość. Mogę zjeść własną lub odebrać ją z magazynu."
+			"rest":
+				knowledge["rest"] = "W domu odzyskuję siły do pracy."
+			"warm":
+				knowledge["warmth"] = "Ognisko pozwala mi się ogrzać."
+			"build":
+				knowledge["building"] = "Jeden etap budowy kosztuje 4 sztuki drewna."
+	else:
+		match action:
+			"eat":
+				knowledge["empty_food"] = "Gdy nie mam porcji i magazyn jest pusty, trzeba najpierw zebrać jedzenie."
+			"build":
+				knowledge["empty_wood"] = "Bez 4 sztuk drewna w magazynie nie ukończę etapu budowy."
+			"deliver":
+				knowledge["empty_cargo"] = "Nie mogę dostarczyć pustego ładunku."
+
+func memory_for_ai(p: Dictionary) -> Dictionary:
+	# Keep the model context bounded regardless of game age.
+	var lessons: Array = []
+	for key in ["empty_food", "empty_wood", "empty_cargo"]:
+		if p["knowledge"].has(key):
+			lessons.append(p["knowledge"][key])
+	var successes: Dictionary = {}
+	for key in SKILL_ACTIONS:
+		var stats: Dictionary = p["experience"]["actions"].get(key, {})
+		if int(stats.get("successes", 0)) > 0:
+			successes[key] = int(stats["successes"])
+	var recent: Array = []
+	for event in p["episodes"].slice(-2):
+		recent.append(str(event["text"]).left(120))
+	var relevant_keys: Array = []
+	if p["hunger"] < 50.0:
+		relevant_keys.append_array(["food_source", "meal"])
+	if p["rest"] < 40.0:
+		relevant_keys.append("rest")
+	if p["warmth"] < 40.0:
+		relevant_keys.append("warmth")
+	relevant_keys.append_array(["building" if p["job"] == "Budowniczy" else "wood_source" if p["job"] == "Drwal" else "food_source", "delivery"])
+	var known_fact := ""
+	for key in relevant_keys:
+		if p["knowledge"].has(key):
+			known_fact = str(p["knowledge"][key]).left(140)
+			break
+	return {"lessons": lessons.slice(0, 2), "known_fact": known_fact, "successful_jobs": successes, "recent": recent}
+
+func _load_progress(p: Dictionary, saved: Dictionary) -> void:
+	var saved_skills: Variant = saved.get("skills", null)
+	if saved_skills is Dictionary:
+		for key in SKILL_NAMES:
+			var entry: Variant = saved_skills.get(key, {})
+			if entry is Dictionary:
+				var level := clampi(int(entry.get("level", 1)), 1, MAX_SKILL_LEVEL)
+				p["skills"][key] = {"level": level, "xp": 0 if level == MAX_SKILL_LEVEL else clampi(int(entry.get("xp", 0)), 0, xp_needed(level) - 1)}
+	else:
+		var primary := "foraging" if p["job"] == "Zbieracz" else "woodcutting" if p["job"] == "Drwal" else "building"
+		var old_level := clampi(int(saved.get("skill_level", 1)), 1, MAX_SKILL_LEVEL)
+		var old_xp := clampi(int(saved.get("skill_xp", 0)), 0, 4)
+		p["skills"][primary] = {"level": old_level, "xp": 0 if old_level == MAX_SKILL_LEVEL else int(float(old_xp) / 5.0 * xp_needed(old_level))}
+	var known: Variant = saved.get("knowledge", {})
+	if known is Dictionary:
+		for key in ["food_source", "wood_source", "delivery", "meal", "rest", "warmth", "building", "empty_food", "empty_wood", "empty_cargo"]:
+			if known.has(key):
+				p["knowledge"][key] = str(known[key]).left(200)
+	var history: Variant = saved.get("episodes", [])
+	if history is Array:
+		for event in history.slice(-40):
+			if event is Dictionary:
+				p["episodes"].append({"at": str(event.get("at", "")).left(60), "seconds": maxf(0, float(event.get("seconds", 0))),
+					"action": str(event.get("action", "history")).left(40), "text": str(event.get("text", "")).left(240), "outcome": str(event.get("outcome", "history"))})
+	if p["episodes"].is_empty():
+		for note in p["memory"]:
+			p["episodes"].append({"at": "Ze starszego zapisu", "seconds": 0.0, "action": "history", "text": str(note).left(240), "outcome": "history"})
+	var saved_experience: Variant = saved.get("experience", {})
+	if saved_experience is Dictionary:
+		for key in ["delivered_food", "delivered_wood"]:
+			p["experience"][key] = maxi(0, int(saved_experience.get(key, 0)))
+		var actions: Variant = saved_experience.get("actions", {})
+		if actions is Dictionary:
+			for action in ACTIONS:
+				if actions.get(action) is Dictionary:
+					p["experience"]["actions"][action] = {"successes": maxi(0, int(actions[action].get("successes", 0))), "failures": maxi(0, int(actions[action].get("failures", 0)))}
+	var milestones: Variant = saved.get("milestones", [])
+	if milestones is Array:
+		for milestone in milestones.slice(-27):
+			if milestone is Dictionary:
+				p["milestones"].append({"at": str(milestone.get("at", "")).left(60), "text": str(milestone.get("text", "")).left(200)})

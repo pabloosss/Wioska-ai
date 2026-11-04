@@ -9,6 +9,13 @@
 - Autozapis i kopia poprzedniego zapisu; wczytywanie starszych danych.
 - Testy pełnych cykli pracy oraz integracja z opóźnionymi, błędnymi i przekraczającymi limit odpowiedziami HTTP.
 
+## Wersja 0.3: pamięć i rozwój
+- Trwałe wnioski i liczniki doświadczeń, 40 ostatnich zdarzeń na mieszkańca.
+- Ograniczony skrót pamięci i poziomy umiejętności przekazywane do AI.
+- Zbieractwo, drwalstwo i budowanie: niezależne XP, poziomy 1–10 i szybsza praca.
+- Zapis i migracja starych poziomów oraz wspomnień.
+- Odświeżony motyw UI, karty zasobów, paski potrzeb/XP i osobne zakładki pamięci oraz rozwoju.
+
 ## Następny etap: pomiar z prawdziwym lokalnym modelem
 - Pomiary czasu decyzji, FPS i wykorzystania GPU na Windows.
 - Ocena sensowności planów małego modelu i równowagi zapasów.
@@ -18,7 +25,7 @@
 ## Rozbudowa świata
 - Podłączenie assetów, animacji pracy, kolizji i szukania ścieżek.
 - Ekonomia, specjalizacje, relacje, rozwój populacji i technologie.
-- Trwalsza pamięć, uczenie przez doświadczenie oraz przekazywanie wiedzy.
+- Relacje i przekazywanie wiedzy między mieszkańcami; rozwijanie obecnego systemu pamięci.
 
 ## Wydanie jako jedna aplikacja
 - Automatyczne przygotowanie silnika i modelu jest obsługiwane przez grę na Windows.

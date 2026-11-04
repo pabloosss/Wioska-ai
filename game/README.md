@@ -1,4 +1,4 @@
-# Wioska AI 0.2 — wykonawca planów AI
+# Wioska AI 0.3 — pamięć i rozwój mieszkańców
 
 ## Aktualizacja i uruchomienie
 
@@ -16,14 +16,33 @@ Gra nie wybiera zastępczej pracy. Jeśli nie ma poprawnego planu, mieszkaniec c
 
 Stały pasek u góry pokazuje stan AI, model, czas trwającego zapytania i limit, ostatni przyjęty plan oraz FPS. Znalezienie modelu nie jest przedstawiane jako dowód poprawnych decyzji. Błąd modelu pozostaje widoczny na głównym ekranie.
 
-- **Mieszkańcy**: aktualne zadania, potrzeby, ładunki, rzeczy prywatne, powód decyzji, kolejne kroki i wspomnienia.
+- **Postać**: aktualne zadanie, paski potrzeb, ładunek, rzeczy prywatne, powód decyzji i kolejne kroki. Wybór mieszkańca jest wspólny dla wszystkich zakładek.
+- **Pamięć**: trwałe wnioski, osobiste dostawy, udane/nieudane działania oraz 40 ostatnich wspomnień.
+- **Rozwój**: osobne poziomy, paski XP i osiągnięcia zbieractwa, drwalstwa oraz budowania.
 - **AI**: czas odpowiedzi, liczba zapytań, błędów, przyjętych planów i oczekujących osób.
 - **Opcje**: model, automatyczne pobieranie lekkiego modelu, przerwa 10–120 s, limit 30/60 FPS, timeout 45/120 s, wskazówki dla AI, widoczność trasy i eksport diagnostyki.
-- **Dziennik**: ostatnie 160 zdarzeń.
+- **Log**: ostatnie 160 zdarzeń.
 - **Spacja**: pauza. **1–5** lub kliknięcie: wybór postaci. **F2**: opcje.
 - Na górnym pasku: tempo 0.5× / 1× / 2×, ręczny plan, ponowne połączenie i zapis.
 
 Wyłączenie AI zatrzymuje nowe zapytania; już otrzymane plany są kończone. Pauza zatrzymuje świat. Przycisk „Zaplanuj teraz” nie przerywa aktywnych zadań i nie dodaje równoległych zapytań.
+
+## Pamięć i nauka przez doświadczenie
+
+Każdy mieszkaniec ma własną historię. Ukończone zadania i porażki tworzą wspomnienia. Ostatnich 40 zdarzeń można przeglądać w panelu, a trwałe wnioski oraz sumy udanych i nieudanych działań pozostają po usunięciu starszych zdarzeń z tej listy. Osobno liczone są dostarczone porcje jedzenia i sztuki drewna.
+
+Wnioski powstają z faktycznych wyników: np. nieudany posiłek przy pustym magazynie zostawia informację, że najpierw trzeba zdobyć jedzenie. Model otrzymuje ograniczony skrót: maksymalnie dwa wnioski o porażkach, jeden istotny poznany fakt, dwa ostatnie zdarzenia oraz ukończone prace i poziomy umiejętności. Wielkość kontekstu nie rośnie bez końca. To pamięć i rozwój w symulacji, bez trenowania wag modelu.
+
+## Umiejętności
+
+- Pełny zbiór zakończony dostawą: **10 XP** do zbieractwa lub drwalstwa.
+- Ukończony etap budowy: **12 XP** do budowania.
+- Posiłki, odpoczynek, czekanie i nieudane zadania nie dają XP do pracy.
+- Pierwszy awans wymaga **30 XP**, kolejne progi rosną o 20 XP. Maksymalny poziom to **10**.
+- Każdy poziom powyżej pierwszego zwiększa szybkość odpowiedniej pracy o **8%**, maksymalnie o 72%. Nie zwiększa prędkości chodzenia ani ilości surowca.
+- Poziomy są niezależne: zbieranie jedzenia nie rozwija budowania. Każdy NPC może zdobywać wszystkie trzy umiejętności.
+
+Zapis wersji 3 przechowuje pamięć, poziomy, XP i osiągnięcia. Przy wczytaniu starego zapisu ogólny poziom jest przypisany do umiejętności dotychczasowego zawodu, a stare wspomnienia trafiają do historii. Brak dawnych liczników dostaw nie jest uzupełniany wymyślonymi wartościami.
 
 ## Obciążenie i zapis
 
@@ -48,12 +67,13 @@ Z folderu `game`:
 ```sh
 godot --headless --path . --script res://tests/test_simulation.gd
 godot --headless --path . --script res://tests/test_bridge.gd
+godot --headless --path . --script res://tests/test_progression.gd
 python tests/mock_ollama.py
 ```
 
 Test integracyjny wymaga wolnego portu 11434 i używa tymczasowego folderu danych na Linuksie. Nie uruchamiaj go obok prawdziwej Ollamy. Testy nie pobierają modelu.
 
-W Godot 4.6.3 sprawdzono pełne cykle zbioru i transportu dla pięciu NPC, pojedyncze posiłki, budowę, plan trzyetapowy, odrzucanie starych decyzji, zapis z ładunkiem, odpowiedzi opóźnione/błędne i timeout, zmianę modelu, status na wszystkich zakładkach, wymiary panelu i rozpakowanie w tle. Testowy serwer nie mierzy jakości prawdziwego modelu ani wydajności Windows/GPU użytkownika.
+W Godot 4.6.3 sprawdzono pełne cykle zbioru i transportu dla pięciu NPC, pojedyncze posiłki, budowę, plan trzyetapowy, odrzucanie starych decyzji, zapis z ładunkiem, odpowiedzi opóźnione/błędne i timeout, zmianę modelu, status na wszystkich zakładkach, wymiary panelu i rozpakowanie w tle. Dodatkowo sprawdzono przyznawanie XP, niezależność umiejętności, wzrost szybkości w wykonywanej symulacji, limit poziomów, trwałe wnioski po wyparciu starych zdarzeń, pamięć przekazywaną do AI, migrację zapisów i widoki pamięci/rozwoju dla wybranej postaci. Testowy serwer nie mierzy jakości prawdziwego modelu ani wydajności Windows/GPU użytkownika.
 
 ## Ograniczenia
 

@@ -25,9 +25,18 @@ func run() -> void:
 	check(app.ui.timing_label.text.contains("s temu"), "last accepted plan visible")
 	check(app.ui.summary_label.text.contains("jedzenie 20"), "delivery counter visible")
 	check(app.bridge.last_latency >= 0.5, "latency measured")
-	app.ui.tabs.current_tab = 2
+	app.ui.tabs.current_tab = 4
 	await process_frame
 	check(app.ui.status_label.is_visible_in_tree(), "status survives tab switches")
+	for index in range(app.ui.tabs.get_tab_count()):
+		app.ui.tabs.current_tab = index
+		await process_frame
+		check(app.ui.status_label.is_visible_in_tree(), "status visible on tab " + str(index))
+	app._select(1)
+	check(app.ui.memory_text.text.begins_with("Olek"), "memory follows selected resident")
+	check(app.ui.skill_bars["foraging"].value == 10, "UI shows earned skill XP")
+	check(app.ui.need_bars["hunger"].value > 0, "UI need bar populated")
+	app.ui.tabs.current_tab = 4
 	check(app.ui.status_label.get_global_rect().end.y < 138, "status fits permanent header")
 	check(app.ui.tabs.get_global_rect().end.x <= 1268 and app.ui.tabs.get_global_rect().end.y <= 706, "sidebar fits viewport")
 	app._apply_settings({"cooldown": 10, "fps": 30, "timeout": 45, "guidance": "Zadbaj o jedzenie"})

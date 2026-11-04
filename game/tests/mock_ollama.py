@@ -25,6 +25,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
         call=Handler.calls
         data=json.loads(body['messages'][1]['content'])
         assert body['options']['num_ctx']==4096
+        assert all('skills' in p and 'lessons' in p['memory'] for p in data['residents'])
         if call==1:
             time.sleep(.6)
             decisions=[{'name':p['name'],'action':'gather_food','reason':'Zapas jedzenia','next_actions':['eat']} for p in data['residents']]

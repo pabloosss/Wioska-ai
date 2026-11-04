@@ -4,7 +4,7 @@ Projekt lokalnej symulacji wioski z autonomicznymi mieszkańcami. Każdy NPC ma 
 
 ## Status
 
-Wersja 0.2 oddziela symulację, wykonawcę planów AI, połączenie z Ollamą i interfejs. Pięciu mieszkańców wykonuje skończone zadania: zbiór obejmuje fizyczną dostawę, a spóźniona odpowiedź modelu nie przerywa pracy. Stały pasek pokazuje prawdziwy status AI, ostatni przyjęty plan i FPS. Przy pierwszym uruchomieniu gra sama przygotowuje runtime Ollamy i pobiera model. Osobny instalator gry oraz finalny eksport programu pozostają do zrobienia.
+Wersja 0.3 dodaje trwałe wnioski mieszkańców, historię doświadczeń i rozwój trzech umiejętności z realnym wpływem na szybkość pracy. Nowy panel ma paski potrzeb i XP oraz zakładki pamięci i rozwoju. Program oddziela symulację, wykonawcę planów AI, połączenie z Ollamą i interfejs. Pięciu mieszkańców wykonuje skończone zadania: zbiór obejmuje fizyczną dostawę, a spóźniona odpowiedź modelu nie przerywa pracy. Stały pasek pokazuje prawdziwy status AI, ostatni przyjęty plan i FPS. Przy pierwszym uruchomieniu gra sama przygotowuje runtime Ollamy i pobiera model. Osobny instalator gry oraz finalny eksport programu pozostają do zrobienia.
 
 ## Struktura
 
