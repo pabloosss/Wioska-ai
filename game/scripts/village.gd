@@ -46,14 +46,14 @@ func _create_residents() -> void:
 	]
 
 
-func _make_person(person_name: String, job: String, start: Vector2, tint: Color, trait: String, skill: String, keepsake: String, equipment: Array) -> Dictionary:
+func _make_person(person_name: String, job: String, start: Vector2, tint: Color, personality_trait: String, skill: String, keepsake: String, equipment: Array) -> Dictionary:
 	return {
 		"name": person_name,
 		"job": job,
 		"position": start,
 		"target": start,
 		"color": tint,
-		"trait": trait,
+		"trait": personality_trait,
 		"skill": skill,
 		"skill_level": 1,
 		"hunger": 82.0,
