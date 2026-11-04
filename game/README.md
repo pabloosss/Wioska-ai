@@ -1,21 +1,20 @@
 # Wioska AI — prototyp
 
-Projekt Godot 4 z lokalnym połączeniem z Ollamą.
+Projekt Godot 4 z automatycznym przygotowaniem lokalnego AI.
 
 ## Uruchomienie
 
-1. Uruchom Ollamę i upewnij się, że jest pobrany model `qwen3.5:35b`.
-2. Zainstaluj Godot 4.
-3. W Godot wybierz **Importuj** i wskaż `game/project.godot`.
-4. Otwórz projekt i naciśnij **F5**.
+1. Zainstaluj Godot 4 i otwórz projekt z `game/project.godot`.
+2. Naciśnij **F5**.
+3. Przy pierwszym uruchomieniu gra sprawdzi, czy Ollama już działa. Jeśli nie, sama pobierze przenośny runtime, uruchomi go i pobierze model `qwen3.5:35b`.
 
-Jeśli Ollama jest wyłączona lub modelu nie ma, gra pokaże status w prawym panelu, a mieszkańcy będą korzystać z prostych zachowań awaryjnych. **R** ponawia sprawdzenie Ollamy.
+Nie musisz osobno instalować Ollamy ani ręcznie pobierać modelu. Pierwsze przygotowanie wymaga internetu i wolnego miejsca na dysku. Model 35B zajmuje dużo miejsca, a pobieranie może potrwać.
 
 ## Sterowanie
 
 - **Spacja** — pauza/wznowienie.
 - **1–5** albo kliknięcie mieszkańca — wybór postaci.
-- **R** — ponowne sprawdzenie lokalnego AI.
+- **R** — ponowne sprawdzenie i wznowienie przygotowania AI.
 
 ## Jak działa AI
 
@@ -27,4 +26,4 @@ Jeśli Ollama jest wyłączona lub modelu nie ma, gra pokaże status w prawym pa
 
 ## Ograniczenia prototypu
 
-Grafika jest zastępcza, a Ollama i model muszą być obecnie zainstalowane osobno. Instalator, który przygotuje je automatycznie, powstanie później. Wagi modelu nie są przechowywane w repozytorium.
+Automatyczne pobieranie runtime'u Ollamy i modelu jest przygotowane dla Windows. Gra działa obecnie z poziomu edytora Godot; samodzielny instalator/plik EXE do udostępniania powstanie w kolejnym etapie. Wagi modelu nie są częścią repozytorium.
