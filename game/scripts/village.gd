@@ -169,7 +169,7 @@ func _input(event: InputEvent) -> void:
 		elif event.keycode >= KEY_1 and event.keycode <= KEY_5:
 			selected = event.keycode - KEY_1
 	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		var mouse_position := event.position
+		var mouse_position: Vector2 = event.position
 		for index in range(residents.size()):
 			var person_position: Vector2 = residents[index]["position"]
 			if mouse_position.distance_to(person_position) < 24.0:
