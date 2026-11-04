@@ -24,7 +24,7 @@ var ollama_bridge: Node
 var ai_status := "AI: sprawdzam Ollamę…"
 var ai_minute_counter := 120
 var ai_model_name := "qwen3.5:35b"
-var ai_interval_minutes := 120
+var ai_interval_minutes := 30
 var ai_temperature := 0.2
 var ai_enabled := true
 var ai_guidance := ""
@@ -115,7 +115,7 @@ func _build_settings_ui() -> void:
 	heading.add_child(close_button)
 
 	var intro := Label.new()
-	intro.text = "Zmieniaj model i sposób podejmowania decyzji. Ustawienia zapisują się na tym komputerze."
+	intro.text = "Wybierz tempo i priorytet. AI planuje regularnie, a mieszkańcy pracują podczas oczekiwania na odpowiedź."
 	intro.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	intro.add_theme_color_override("font_color", Color("#d5dfd5"))
 	layout.add_child(intro)
@@ -153,10 +153,10 @@ func _build_settings_ui() -> void:
 	interval_label.custom_minimum_size.x = 175
 	interval_row.add_child(interval_label)
 	interval_picker = OptionButton.new()
-	interval_picker.add_item("co 30 minut", 30)
-	interval_picker.add_item("co godzinę", 60)
-	interval_picker.add_item("co 2 godziny", 120)
-	interval_picker.add_item("co 4 godziny", 240)
+	interval_picker.add_item("Aktywnie — co 3 sekundy", 30)
+	interval_picker.add_item("Spokojnie — co 6 sekund", 60)
+	interval_picker.add_item("Oszczędnie — co 12 sekund", 120)
+	interval_picker.add_item("Rzadko — co 24 sekundy", 240)
 	interval_row.add_child(interval_picker)
 
 	var temperature_row := HBoxContainer.new()
@@ -192,7 +192,7 @@ func _build_settings_ui() -> void:
 	guidance_label.text = "Dodatkowe wskazówki dla AI"
 	layout.add_child(guidance_label)
 	guidance_edit = TextEdit.new()
-	guidance_edit.placeholder_text = "Np. nie wysyłaj wszystkich do tej samej pracy."
+	guidance_edit.placeholder_text = "Np. dbaj o zapas jedzenia i odpoczynek. Dostępne działania: praca, jedzenie, odpoczynek, ogrzanie."
 	guidance_edit.custom_minimum_size = Vector2(0, 92)
 	guidance_edit.text = ai_guidance
 	layout.add_child(guidance_edit)
@@ -286,7 +286,7 @@ func _save_ai_settings() -> void:
 	ai_temperature = temperature_slider.value
 	ai_priority = priority_picker.get_selected_id()
 	ai_guidance = guidance_edit.text.strip_edges()
-	ai_minute_counter = 0
+	ai_minute_counter = ai_interval_minutes
 
 	var config := {
 		"model": ai_model_name,
@@ -310,7 +310,7 @@ func _save_ai_settings() -> void:
 func _restore_default_ai_settings() -> void:
 	ai_model_name = "qwen3.5:35b"
 	ai_enabled = true
-	ai_interval_minutes = 120
+	ai_interval_minutes = 30
 	ai_temperature = 0.2
 	ai_priority = 0
 	ai_guidance = ""
@@ -333,7 +333,7 @@ func _load_ai_settings() -> void:
 		return
 	ai_model_name = str(parsed.get("model", ai_model_name))
 	ai_enabled = bool(parsed.get("enabled", ai_enabled))
-	ai_interval_minutes = int(parsed.get("interval_minutes", ai_interval_minutes))
+	ai_interval_minutes = clampi(int(parsed.get("interval_minutes", 30)), 30, 240)
 	ai_temperature = clampf(float(parsed.get("temperature", ai_temperature)), 0.0, 1.0)
 	ai_priority = clampi(int(parsed.get("priority", ai_priority)), 0, 2)
 	ai_guidance = str(parsed.get("guidance", ai_guidance))
@@ -406,15 +406,15 @@ func _choose_task(person: Dictionary) -> void:
 	var position: Vector2 = person["position"]
 	var cargo_food: int = person["cargo_food"]
 	var cargo_wood: int = person["cargo_wood"]
-	var ai_action: String = person.get("ai_action", "work")
+	var ai_action: String = str(person.get("ai_action", "work")) if ai_enabled else "work"
 	var inventory: Dictionary = person["inventory"]
 	var has_food: bool = inventory["food"] > 0 or stock["food"] > 0
 	if cargo_food >= 4 or cargo_wood >= 4:
 		person["task"] = "Niesie ładunek do magazynu"
 		person["target"] = STORAGE_SPOT
-	elif person["hunger"] < 15.0:
+	elif person["hunger"] < 15.0 and has_food:
 		person["task"] = "Je"
-		person["target"] = position
+		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
 	elif person["rest"] < 8.0:
 		person["task"] = "Odpoczywa"
 		person["target"] = HOME
@@ -423,26 +423,26 @@ func _choose_task(person: Dictionary) -> void:
 		person["target"] = FIRE_SPOT
 	elif ai_action == "eat" and person["hunger"] < 70.0 and has_food:
 		person["task"] = "Je"
-		person["target"] = position
+		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
 	elif ai_action == "rest" and person["rest"] < 65.0:
 		person["task"] = "Odpoczywa"
 		person["target"] = HOME
 	elif ai_action == "warm" and person["warmth"] < 55.0:
 		person["task"] = "Grzeje się"
 		person["target"] = FIRE_SPOT
-	elif person["hunger"] < 28.0:
+	elif person["hunger"] < 28.0 and has_food:
 		person["task"] = "Je"
-		person["target"] = position
+		person["target"] = position if inventory["food"] > 0 else STORAGE_SPOT
 	elif person["rest"] < 18.0:
 		person["task"] = "Odpoczywa"
 		person["target"] = HOME
 	elif person["warmth"] < 24.0:
 		person["task"] = "Grzeje się"
 		person["target"] = FIRE_SPOT
-	elif person["job"] == "Zbieracz":
+	elif person["job"] == "Zbieracz" or (not has_food and person["hunger"] < 40.0):
 		person["task"] = "Zbiera jedzenie"
 		person["target"] = FOOD_SPOT
-	elif person["job"] == "Drwal":
+	elif person["job"] == "Drwal" or (person["job"] == "Budowniczy" and stock["wood"] < 4):
 		person["task"] = "Ścina drewno"
 		person["target"] = WOOD_SPOT
 	else:
@@ -452,6 +452,10 @@ func _choose_task(person: Dictionary) -> void:
 func _do_task(person: Dictionary) -> void:
 	var task: String = person.get("task", "")
 	if task == "Je":
+		var eating_position: Vector2 = person["position"]
+		var eating_target: Vector2 = person["target"]
+		if eating_position.distance_to(eating_target) > 18.0:
+			return
 		var inventory: Dictionary = person["inventory"]
 		if inventory["food"] > 0:
 			inventory["food"] -= 1
@@ -568,7 +572,7 @@ func _on_ai_decisions(decisions: Array) -> void:
 		if not ["work", "eat", "rest", "warm"].has(action):
 			continue
 		for person in residents:
-			if person["name"] != person_name:
+			if str(person["name"]).to_lower() != person_name.strip_edges().to_lower():
 				continue
 			person["ai_action"] = action
 			var reason: String = str(decision.get("reason", ""))
@@ -748,7 +752,7 @@ func _draw_world() -> void:
 func _draw_sidebar() -> void:
 	_draw_text("WIOSKA AI", 885, 42, 24, Color("#f4d99b"))
 	_draw_text("Dzień 1   •   %s" % ("noc" if _is_night() else "dzień"), 885, 70, 15, Color("#d5dfd5"))
-	_draw_text(ai_status, 885, 91, 11, Color("#91d3a4") if ai_status.begins_with("AI: aktywna") else Color("#e6c17d"))
+	_draw_text(ai_status.left(53), 885, 91, 11, Color("#91d3a4") if ai_status.begins_with("AI: aktywna") else Color("#e6c17d"))
 	_draw_text("MAGAZYN WSPÓLNY", 885, 112, 15, Color("#f4d99b"))
 	_draw_text("Jedzenie: %d     Drewno: %d" % [stock["food"], stock["wood"]], 885, 138, 16, Color.WHITE)
 	_draw_text("Domy: %d     Budowa: %d/5" % [houses, build_progress], 885, 162, 14, Color("#d5dfd5"))
@@ -762,7 +766,7 @@ func _draw_sidebar() -> void:
 	var chosen: Dictionary = residents[selected]
 	_draw_text("WYBRANY MIESZKANIEC", 885, 383, 15, Color("#f4d99b"))
 	_draw_text("%s  •  %s  •  %s" % [chosen["name"], chosen["job"], chosen["trait"]], 885, 409, 13, Color.WHITE)
-	_draw_text("Głód", 885, 438, 12, Color("#d5dfd5"))
+	_draw_text("Sytość", 885, 438, 12, Color("#d5dfd5"))
 	_draw_bar(940, 427, 205, chosen["hunger"], Color("#e5a45b"))
 	_draw_text("Odpoczynek", 885, 465, 12, Color("#d5dfd5"))
 	_draw_bar(970, 454, 175, chosen["rest"], Color("#79b8d2"))
@@ -774,9 +778,10 @@ func _draw_sidebar() -> void:
 	_draw_text("Niesie: jedzenie %d, drewno %d" % [chosen["cargo_food"], chosen["cargo_wood"]], 885, 584, 12, Color("#f4d99b"))
 	_draw_text("Prywatna rzecz: %s" % inventory["keepsake"], 885, 566, 12, Color.WHITE)
 
-	_draw_text("OSTATNIE ZDARZENIA", 885, 603, 14, Color("#f4d99b"))
-	for index in range(logs.size()):
-		_draw_text(logs[index], 885, 628 + index * 16, 11, Color("#d5dfd5"))
+	_draw_text("Decyzja: " + str(chosen.get("ai_reason", "Planuje działanie…")).left(48), 885, 605, 12, Color("#91d3a4"))
+	_draw_text("OSTATNIE ZDARZENIA", 885, 630, 14, Color("#f4d99b"))
+	for index in range(mini(logs.size(), 4)):
+		_draw_text(logs[index].left(58), 885, 650 + index * 16, 11, Color("#d5dfd5"))
 
 
 func _draw_bar(x: float, y: float, width: float, value: float, color: Color) -> void:
