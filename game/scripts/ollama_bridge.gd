@@ -325,6 +325,85 @@ func _pull_model() -> void:
 		emit_signal("status_changed", "Nie udało się rozpocząć pobierania modelu")
 
 
+func _extract_decision_answer(value: Variant) -> Dictionary:
+	if typeof(value) == TYPE_DICTIONARY:
+		return _normalise_decision_answer(value)
+	if typeof(value) == TYPE_ARRAY:
+		return _normalise_decision_answer({"decisions": value})
+	if typeof(value) != TYPE_STRING:
+		return {}
+
+	var response := str(value).strip_edges()
+	if response.is_empty():
+		return {}
+	if response.begins_with("```"):
+		var first_newline := response.find("\n")
+		if first_newline >= 0:
+			response = response.substr(first_newline + 1)
+		if response.ends_with("```"):
+			response = response.trim_suffix("```").strip_edges()
+
+	var parsed: Variant = JSON.parse_string(response)
+	if typeof(parsed) == TYPE_DICTIONARY or typeof(parsed) == TYPE_ARRAY:
+		return _normalise_decision_answer(parsed)
+
+	var object_start := response.find("{")
+	var object_end := response.rfind("}")
+	if object_start >= 0 and object_end > object_start:
+		parsed = JSON.parse_string(response.substr(object_start, object_end - object_start + 1))
+		if typeof(parsed) == TYPE_DICTIONARY or typeof(parsed) == TYPE_ARRAY:
+			return _normalise_decision_answer(parsed)
+
+	var array_start := response.find("[")
+	var array_end := response.rfind("]")
+	if array_start >= 0 and array_end > array_start:
+		parsed = JSON.parse_string(response.substr(array_start, array_end - array_start + 1))
+		if typeof(parsed) == TYPE_ARRAY:
+			return _normalise_decision_answer(parsed)
+	return {}
+
+
+func _normalise_decision_answer(raw_answer: Variant) -> Dictionary:
+	var raw_decisions: Array = []
+	if typeof(raw_answer) == TYPE_ARRAY:
+		raw_decisions = raw_answer
+	elif typeof(raw_answer) == TYPE_DICTIONARY:
+		if raw_answer.get("decisions") is Array:
+			raw_decisions = raw_answer.get("decisions", [])
+		elif raw_answer.get("actions") is Array:
+			raw_decisions = raw_answer.get("actions", [])
+		elif raw_answer.get("residents") is Array:
+			raw_decisions = raw_answer.get("residents", [])
+		elif raw_answer.has("name") or raw_answer.has("resident") or raw_answer.has("villager"):
+			raw_decisions = [raw_answer]
+		else:
+			for person_name in raw_answer.keys():
+				var person_action: Variant = raw_answer[person_name]
+				if typeof(person_action) == TYPE_DICTIONARY:
+					var named_action: Dictionary = person_action.duplicate()
+					named_action["name"] = str(person_action.get("name", person_name))
+					raw_decisions.append(named_action)
+	if raw_decisions.is_empty():
+		return {}
+
+	var normalised: Array = []
+	for raw_decision in raw_decisions:
+		if typeof(raw_decision) != TYPE_DICTIONARY:
+			continue
+		var person_name := str(raw_decision.get("name", raw_decision.get("resident", raw_decision.get("resident_name", raw_decision.get("villager", raw_decision.get("npc", raw_decision.get("person", ""))))))).strip_edges()
+		var raw_action := str(raw_decision.get("action", raw_decision.get("decision", raw_decision.get("choice", raw_decision.get("task", "work"))))).to_lower().strip_edges()
+		var action := "work"
+		if ["eat", "food", "je", "jedz", "jedzenie", "eat_food"].has(raw_action):
+			action = "eat"
+		elif ["rest", "sleep", "odpoczywa", "odpoczynek", "śpi", "spij"].has(raw_action):
+			action = "rest"
+		elif ["warm", "heat", "warm_up", "grzeje", "grzeje się", "ogrzewanie"].has(raw_action):
+			action = "warm"
+		var reason := str(raw_decision.get("reason", raw_decision.get("why", raw_decision.get("thought", "Działanie wybrane na podstawie potrzeb i pracy."))))
+		normalised.append({"name": person_name, "action": action, "reason": reason})
+	return {"decisions": normalised}
+
+
 func _on_api_request_completed(result: int, response_code: int, _headers: PackedStringArray, body: PackedByteArray) -> void:
 	var completed_kind := request_kind
 	request_kind = ""
@@ -398,14 +477,25 @@ func _on_api_request_completed(result: int, response_code: int, _headers: Packed
 			emit_signal("status_changed", "AI: Ollama zwróciła nieczytelną odpowiedź")
 			return
 		var message: Dictionary = parsed.get("message", {})
-		var content_text: String = str(message.get("content", ""))
-		var answer: Variant = JSON.parse_string(content_text)
-		if typeof(answer) != TYPE_DICTIONARY or not answer.has("decisions"):
-			emit_signal("status_changed", "AI: odpowiedź nie pasuje do schematu")
+		var content_value: Variant = message.get("content", "")
+		var content_text := str(content_value)
+		if content_text.strip_edges().is_empty() and message.has("thinking"):
+			content_text = str(message.get("thinking", ""))
+		var answer := _extract_decision_answer(content_value)
+		if answer.is_empty():
+			answer = _extract_decision_answer(content_text)
+		var decisions: Array = answer.get("decisions", [])
+		if decisions.is_empty():
+			var preview := content_text.strip_edges().replace("\n", " ")
+			if preview.is_empty():
+				preview = "pusta odpowiedź"
+			if preview.length() > 90:
+				preview = preview.substr(0, 90) + "…"
+			emit_signal("status_changed", "AI: nie odczytałem decyzji — " + preview)
 			return
 		is_ready = true
 		emit_signal("status_changed", "AI: aktywna — " + model_name)
-		emit_signal("decisions_received", answer.get("decisions", []))
+		emit_signal("decisions_received", decisions)
 
 
 func request_decisions(world_state: Dictionary, people: Array, ai_temperature: float = 0.2, behavior_guidance: String = "") -> void:
@@ -437,7 +527,7 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 	var user_data := {
 		"world": world_state,
 		"residents": people,
-		"instruction": "Wybierz jedną rozsądną czynność dla każdego mieszkańca. Krótkie uzasadnienie po polsku."
+		"instruction": "Zwróć dokładnie obiekt JSON z kluczem decisions, zawierający po jednym elemencie dla każdego mieszkańca. Każdy element ma pola name, action (work, eat, rest lub warm) i reason. Uzasadnienie krótko po polsku. Wybierz jedną rozsądną czynność dla każdego mieszkańca."
 	}
 	var body := {
 		"model": model_name,
@@ -446,6 +536,7 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 			{"role": "user", "content": JSON.stringify(user_data)}
 		],
 		"stream": false,
+		"think": false,
 		"format": schema,
 		"options": {"temperature": ai_temperature, "num_predict": 512},
 		"keep_alive": "10m"
