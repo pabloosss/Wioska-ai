@@ -18,9 +18,9 @@
 - Do sprawdzenia w Godot z uruchomioną Ollamą.
 
 ## Etap 4: uruchamianie jako jedna aplikacja
-- Instalator gry.
-- Sprawdzenie lub przygotowanie lokalnego silnika AI.
-- Pobranie modelu przy pierwszym uruchomieniu i jasny ekran postępu.
+- Przygotowanie runtime'u Ollamy i pobieranie modelu przy pierwszym uruchomieniu są obsługiwane przez grę na Windows.
+- Dopracowanie ekranu postępu, ponawiania i błędów instalacji.
+- Eksport gry do samodzielnego instalatora/EXE, aby gracz nie musiał otwierać projektu w edytorze Godot.
 - Zapis gry i model pozostają lokalnie na komputerze gracza.
 
 ## Zasada
