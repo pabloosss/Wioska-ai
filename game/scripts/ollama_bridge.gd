@@ -163,6 +163,7 @@ func _download_next_runtime_archive() -> void:
 		if not _extract_archive(absolute_path):
 			emit_signal("status_changed", "Nie udało się rozpakować silnika AI")
 			return
+		DirAccess.remove_absolute(absolute_path)
 		runtime_download_index += 1
 		_download_next_runtime_archive()
 		return
