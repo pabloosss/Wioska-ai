@@ -1,6 +1,20 @@
-# Pixel Mushrooms & Forest Foraging Icons
-65 free 32x32 pixel-art icons: 20 mushrooms, 6 berries, 10 plants, 4 roots, 5 nuts, 11 forage items, 4 gear, 5 preserves.
-- PNG/32x32 (native) and PNG/128x128_x4 (nearest-neighbor x4), transparent
-- spritesheet.png / spritesheet_x4.png + spritesheet.json (frame x,y,w,h)
-Engines: Unity/Godot/GameMaker: Filter = Point (no filter), Compression = None.
-License: see LICENSE.txt (free, commercial OK, no resale). Credit optional: reodesuxz.
+# Wioska AI
+
+Projekt lokalnej symulacji wioski z autonomicznymi mieszkańcami. Każdy NPC będzie miał własne potrzeby, charakter, umiejętności, ekwipunek i pamięć. Jeden lokalny model AI będzie podejmował decyzje mieszkańców; symulacja gry wykona ruch i pracę zgodnie z zasadami świata.
+
+## Status
+
+Na razie repozytorium zawiera materiały graficzne i ustalenia projektu. Nie ma jeszcze kodu gry ani integracji z modelem AI.
+
+## Struktura
+
+- `assets/medieval-village-2.5d/` — kompletna paczka wioski z uprawami i animacjami pracy.
+- `assets/fantasy-village-adventurers/` — alternatywny zestaw wioski, postaci, terenu i budynków.
+- `assets/forest-foraging-icons/` — ikony jedzenia i przedmiotów do zbierania.
+- `docs/project-design.md` — ustalony zakres pierwszej wersji i założenia AI.
+
+Paczki graficzne są rozdzielone, bo mają różne style. Nie łączymy ich, dopóki nie wybierzemy wyglądu gry.
+
+## Ważne: licencje assetów
+
+Każda paczka ma własną licencję. Większość pozwala używać grafik w grze, ale zabrania udostępniania samych plików jako osobnej paczki lub w publicznym repozytorium. Repozytorium zawiera surowe assety — ustaw je jako prywatne. Nie publikuj ich ponownie jako samodzielnego zbioru.
