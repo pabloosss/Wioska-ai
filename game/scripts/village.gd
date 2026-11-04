@@ -2,6 +2,7 @@ extends Node2D
 
 const OllamaBridge = preload("res://scripts/ollama_bridge.gd")
 const SAVE_PATH := "user://wioska_ai_save.json"
+const AI_SETTINGS_PATH := "user://wioska_ai_settings.json"
 
 const SIDEBAR_X := 850.0
 const HOME := Vector2(500, 390)
@@ -22,21 +23,312 @@ var clock: Timer
 var ollama_bridge: Node
 var ai_status := "AI: sprawdzam Ollamę…"
 var ai_minute_counter := 120
+var ai_model_name := "qwen3.5:35b"
+var ai_interval_minutes := 120
+var ai_temperature := 0.2
+var ai_enabled := true
+var ai_guidance := ""
+var ai_priority := 0
+var settings_open := false
+var ui_layer: CanvasLayer
+var settings_panel: PanelContainer
+var settings_status_label: Label
+var model_picker: OptionButton
+var ai_enabled_toggle: CheckButton
+var interval_picker: OptionButton
+var temperature_slider: HSlider
+var temperature_value_label: Label
+var priority_picker: OptionButton
+var guidance_edit: TextEdit
 
 
 func _ready() -> void:
 	_create_residents()
 	_load_game()
+	_load_ai_settings()
 	_add_log("Wioska zaczyna dzień. Pięciu mieszkańców rusza do pracy.")
 	ollama_bridge = OllamaBridge.new()
+	ollama_bridge.set("model_name", ai_model_name)
 	ollama_bridge.connect("status_changed", Callable(self, "_on_ai_status_changed"))
 	ollama_bridge.connect("decisions_received", Callable(self, "_on_ai_decisions"))
+	ollama_bridge.connect("models_received", Callable(self, "_on_models_received"))
 	add_child(ollama_bridge)
+	_build_settings_ui()
 	clock = Timer.new()
 	clock.wait_time = 1.0
 	clock.timeout.connect(_on_tick)
 	add_child(clock)
 	clock.start()
+
+
+
+func _build_settings_ui() -> void:
+	ui_layer = CanvasLayer.new()
+	ui_layer.layer = 10
+	add_child(ui_layer)
+	var root := Control.new()
+	root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	root.mouse_filter = Control.MOUSE_FILTER_IGNORE
+	ui_layer.add_child(root)
+
+	var open_button := Button.new()
+	open_button.text = "USTAWIENIA AI"
+	open_button.position = Vector2(1095, 14)
+	open_button.size = Vector2(160, 38)
+	open_button.pressed.connect(_show_ai_settings)
+	root.add_child(open_button)
+
+	settings_panel = PanelContainer.new()
+	settings_panel.set_anchors_preset(Control.PRESET_CENTER)
+	settings_panel.offset_left = -330
+	settings_panel.offset_top = -285
+	settings_panel.offset_right = 330
+	settings_panel.offset_bottom = 285
+	settings_panel.visible = false
+	var panel_style := StyleBoxFlat.new()
+	panel_style.bg_color = Color("#1d2928")
+	panel_style.border_color = Color("#d7b878")
+	panel_style.set_border_width_all(2)
+	panel_style.set_corner_radius_all(14)
+	panel_style.content_margin_left = 22
+	panel_style.content_margin_right = 22
+	panel_style.content_margin_top = 18
+	panel_style.content_margin_bottom = 18
+	settings_panel.add_theme_stylebox_override("panel", panel_style)
+	root.add_child(settings_panel)
+
+	var layout := VBoxContainer.new()
+	layout.add_theme_constant_override("separation", 10)
+	settings_panel.add_child(layout)
+
+	var heading := HBoxContainer.new()
+	layout.add_child(heading)
+	var title := Label.new()
+	title.text = "Ustawienia lokalnego AI"
+	title.add_theme_font_size_override("font_size", 24)
+	title.add_theme_color_override("font_color", Color("#f4d99b"))
+	title.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	heading.add_child(title)
+	var close_button := Button.new()
+	close_button.text = "Zamknij"
+	close_button.pressed.connect(_hide_ai_settings)
+	heading.add_child(close_button)
+
+	var intro := Label.new()
+	intro.text = "Zmieniaj model i sposób podejmowania decyzji. Ustawienia zapisują się na tym komputerze."
+	intro.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	intro.add_theme_color_override("font_color", Color("#d5dfd5"))
+	layout.add_child(intro)
+
+	settings_status_label = Label.new()
+	settings_status_label.text = ai_status
+	settings_status_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	settings_status_label.custom_minimum_size.y = 28
+	settings_status_label.add_theme_color_override("font_color", Color("#91d3a4"))
+	layout.add_child(settings_status_label)
+
+	var model_row := HBoxContainer.new()
+	layout.add_child(model_row)
+	var model_label := Label.new()
+	model_label.text = "Model Ollamy"
+	model_label.custom_minimum_size.x = 135
+	model_row.add_child(model_label)
+	model_picker = OptionButton.new()
+	model_picker.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	model_row.add_child(model_picker)
+	var refresh_models := Button.new()
+	refresh_models.text = "Odśwież"
+	refresh_models.pressed.connect(_refresh_models)
+	model_row.add_child(refresh_models)
+
+	ai_enabled_toggle = CheckButton.new()
+	ai_enabled_toggle.text = "AI wybiera działania mieszkańców"
+	ai_enabled_toggle.button_pressed = ai_enabled
+	layout.add_child(ai_enabled_toggle)
+
+	var interval_row := HBoxContainer.new()
+	layout.add_child(interval_row)
+	var interval_label := Label.new()
+	interval_label.text = "Częstotliwość decyzji"
+	interval_label.custom_minimum_size.x = 175
+	interval_row.add_child(interval_label)
+	interval_picker = OptionButton.new()
+	interval_picker.add_item("co 30 minut", 30)
+	interval_picker.add_item("co godzinę", 60)
+	interval_picker.add_item("co 2 godziny", 120)
+	interval_picker.add_item("co 4 godziny", 240)
+	interval_row.add_child(interval_picker)
+
+	var temperature_row := HBoxContainer.new()
+	layout.add_child(temperature_row)
+	var temperature_label := Label.new()
+	temperature_label.text = "Swoboda AI"
+	temperature_label.custom_minimum_size.x = 135
+	temperature_row.add_child(temperature_label)
+	temperature_slider = HSlider.new()
+	temperature_slider.min_value = 0.0
+	temperature_slider.max_value = 1.0
+	temperature_slider.step = 0.1
+	temperature_slider.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	temperature_slider.value_changed.connect(_on_temperature_changed)
+	temperature_row.add_child(temperature_slider)
+	temperature_value_label = Label.new()
+	temperature_value_label.custom_minimum_size.x = 42
+	temperature_row.add_child(temperature_value_label)
+
+	var priority_row := HBoxContainer.new()
+	layout.add_child(priority_row)
+	var priority_label := Label.new()
+	priority_label.text = "Priorytet wioski"
+	priority_label.custom_minimum_size.x = 135
+	priority_row.add_child(priority_label)
+	priority_picker = OptionButton.new()
+	priority_picker.add_item("Równowaga", 0)
+	priority_picker.add_item("Potrzeby mieszkańców", 1)
+	priority_picker.add_item("Zasoby i budowa", 2)
+	priority_row.add_child(priority_picker)
+
+	var guidance_label := Label.new()
+	guidance_label.text = "Dodatkowe wskazówki dla AI"
+	layout.add_child(guidance_label)
+	guidance_edit = TextEdit.new()
+	guidance_edit.placeholder_text = "Np. nie wysyłaj wszystkich do tej samej pracy."
+	guidance_edit.custom_minimum_size = Vector2(0, 92)
+	guidance_edit.text = ai_guidance
+	layout.add_child(guidance_edit)
+
+	var actions := HBoxContainer.new()
+	actions.alignment = BoxContainer.ALIGNMENT_END
+	layout.add_child(actions)
+	var defaults_button := Button.new()
+	defaults_button.text = "Domyślne"
+	defaults_button.pressed.connect(_restore_default_ai_settings)
+	actions.add_child(defaults_button)
+	var save_button := Button.new()
+	save_button.text = "Zapisz ustawienia"
+	save_button.pressed.connect(_save_ai_settings)
+	actions.add_child(save_button)
+
+	temperature_slider.value = ai_temperature
+	_on_temperature_changed(ai_temperature)
+	_select_option_by_id(interval_picker, ai_interval_minutes)
+	_select_option_by_id(priority_picker, ai_priority)
+
+
+func _show_ai_settings() -> void:
+	settings_open = true
+	settings_panel.visible = true
+	ai_enabled_toggle.button_pressed = ai_enabled
+	guidance_edit.text = ai_guidance
+	temperature_slider.value = ai_temperature
+	_on_temperature_changed(ai_temperature)
+	_select_option_by_id(interval_picker, ai_interval_minutes)
+	_select_option_by_id(priority_picker, ai_priority)
+	_refresh_models()
+
+
+func _hide_ai_settings() -> void:
+	settings_open = false
+	settings_panel.visible = false
+
+
+func _refresh_models() -> void:
+	if ollama_bridge != null:
+		ollama_bridge.call("request_models")
+		settings_status_label.text = "Pobieram listę modeli z lokalnej Ollamy…"
+
+
+func _on_models_received(models: Array) -> void:
+	model_picker.clear()
+	var selected_index := -1
+	for model_name in models:
+		var model := str(model_name)
+		if model.is_empty():
+			continue
+		model_picker.add_item(model)
+		if model == ai_model_name:
+			selected_index = model_picker.item_count - 1
+	if selected_index == -1:
+		model_picker.add_item(ai_model_name + " (wybrany)")
+		selected_index = model_picker.item_count - 1
+	model_picker.select(selected_index)
+	if settings_status_label != null:
+		settings_status_label.text = "Znalezione modele: %d" % models.size()
+
+
+func _select_option_by_id(option: OptionButton, option_id: int) -> void:
+	for index in range(option.item_count):
+		if option.get_item_id(index) == option_id:
+			option.select(index)
+			return
+
+
+func _on_temperature_changed(value: float) -> void:
+	if temperature_value_label != null:
+		temperature_value_label.text = "%.1f" % value
+
+
+func _save_ai_settings() -> void:
+	var old_model := ai_model_name
+	ai_enabled = ai_enabled_toggle.button_pressed
+	ai_model_name = model_picker.get_item_text(model_picker.selected).trim_suffix(" (wybrany)") if model_picker.item_count > 0 else ai_model_name
+	ai_interval_minutes = interval_picker.get_selected_id()
+	ai_temperature = temperature_slider.value
+	ai_priority = priority_picker.get_selected_id()
+	ai_guidance = guidance_edit.text.strip_edges()
+	ai_minute_counter = 0
+
+	var config := {
+		"model": ai_model_name,
+		"enabled": ai_enabled,
+		"interval_minutes": ai_interval_minutes,
+		"temperature": ai_temperature,
+		"priority": ai_priority,
+		"guidance": ai_guidance
+	}
+	var file := FileAccess.open(AI_SETTINGS_PATH, FileAccess.WRITE)
+	if file != null:
+		file.store_string(JSON.stringify(config))
+
+	if old_model != ai_model_name and ollama_bridge != null:
+		ollama_bridge.call("select_model", ai_model_name)
+	_on_ai_status_changed("Ustawienia zapisane — model: " + ai_model_name)
+	_add_log("Zmieniono ustawienia lokalnego AI.")
+	_hide_ai_settings()
+
+
+func _restore_default_ai_settings() -> void:
+	ai_model_name = "qwen3.5:35b"
+	ai_enabled = true
+	ai_interval_minutes = 120
+	ai_temperature = 0.2
+	ai_priority = 0
+	ai_guidance = ""
+	model_picker.select(0) if model_picker.item_count > 0 else null
+	ai_enabled_toggle.button_pressed = true
+	temperature_slider.value = ai_temperature
+	_select_option_by_id(interval_picker, ai_interval_minutes)
+	_select_option_by_id(priority_picker, ai_priority)
+	guidance_edit.text = ai_guidance
+
+
+func _load_ai_settings() -> void:
+	if not FileAccess.file_exists(AI_SETTINGS_PATH):
+		return
+	var file := FileAccess.open(AI_SETTINGS_PATH, FileAccess.READ)
+	if file == null:
+		return
+	var parsed: Variant = JSON.parse_string(file.get_as_text())
+	if typeof(parsed) != TYPE_DICTIONARY:
+		return
+	ai_model_name = str(parsed.get("model", ai_model_name))
+	ai_enabled = bool(parsed.get("enabled", ai_enabled))
+	ai_interval_minutes = int(parsed.get("interval_minutes", ai_interval_minutes))
+	ai_temperature = clampf(float(parsed.get("temperature", ai_temperature)), 0.0, 1.0)
+	ai_priority = clampi(int(parsed.get("priority", ai_priority)), 0, 2)
+	ai_guidance = str(parsed.get("guidance", ai_guidance))
+
+
 
 
 func _process(delta: float) -> void:
@@ -93,7 +385,7 @@ func _on_tick() -> void:
 		_choose_task(person)
 		_do_task(person)
 	ai_minute_counter += 10
-	if ai_minute_counter >= 120 and ollama_bridge != null and bool(ollama_bridge.get("is_ready")) and not bool(ollama_bridge.get("is_busy")):
+	if ai_enabled and ai_minute_counter >= ai_interval_minutes and ollama_bridge != null and bool(ollama_bridge.get("is_ready")) and not bool(ollama_bridge.get("is_busy")):
 		ai_minute_counter = 0
 		_request_ai_decisions()
 	_save_game()
@@ -245,7 +537,15 @@ func _request_ai_decisions() -> void:
 		"houses": houses,
 		"build_progress": build_progress
 	}
-	ollama_bridge.call("request_decisions", world_state, people_data)
+	var priority_guidance := "Podejmuj zrównoważone decyzje, dbając o potrzeby i zapasy."
+	if ai_priority == 1:
+		priority_guidance = "Priorytetem jest zdrowie mieszkańców: najpierw głód, odpoczynek i ciepło, potem praca."
+	elif ai_priority == 2:
+		priority_guidance = "Priorytetem jest rozwój wioski: zbieraj zasoby i buduj, ale reaguj na pilny głód, zmęczenie i zimno."
+	var combined_guidance := priority_guidance
+	if not ai_guidance.strip_edges().is_empty():
+		combined_guidance += " " + ai_guidance.strip_edges()
+	ollama_bridge.call("request_decisions", world_state, people_data, ai_temperature, combined_guidance)
 
 func _on_ai_decisions(decisions: Array) -> void:
 	for decision in decisions:
