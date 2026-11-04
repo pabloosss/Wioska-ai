@@ -1,51 +1,60 @@
-# Wioska AI — prototyp
+# Wioska AI 0.2 — wykonawca planów AI
 
-Projekt Godot 4 z automatycznym przygotowaniem lokalnego AI.
+## Aktualizacja i uruchomienie
 
-## Uruchomienie
+Pobierz cały folder `game`, także nowe skrypty. Otwórz `project.godot` w Godot 4 i naciśnij F5. Nie trzeba ręcznie instalować Ollamy: na Windows gra przygotuje runtime i pobierze wybrany model. Pierwszy start wymaga internetu. Na innych systemach połączenie działa z już uruchomioną lokalną Ollamą.
 
-1. Zainstaluj Godot 4 i otwórz projekt z `game/project.godot`.
-2. Naciśnij **F5**.
-3. Przy pierwszym uruchomieniu gra sprawdzi, czy Ollama już działa. Jeśli nie, sama pobierze przenośny runtime, uruchomi go i pobierze model `qwen3.5:35b`.
+Nowe instalacje domyślnie używają `qwen3:4b-instruct`. Istniejący wybór modelu zostaje zachowany. Jeśli poprzednio wybrano 35B i komputer się zacina, w zakładce **Opcje** wybierz **Szybki model: qwen3:4b-instruct**. Gra wyśle żądanie zwolnienia poprzedniego modelu, sprawdzi nowy i pobierze go, jeżeli go brakuje. Poczekaj na zakończenie bieżącego zapytania przed zmianą modelu.
 
-Nie musisz osobno instalować Ollamy ani ręcznie pobierać modelu. Pierwsze przygotowanie wymaga internetu i wolnego miejsca na dysku. Model 35B zajmuje dużo miejsca, a pobieranie może potrwać.
+## Dlaczego mieszkańcy kończą teraz dostawę
 
-## Sterowanie
+AI wybiera do trzech kolejnych zadań dla wolnych mieszkańców. Jedno zadanie zbierania ma etapy: dojście → zbiór 4 jednostek → powrót z widocznym ładunkiem → oddanie do magazynu. Stan magazynu zmienia się dopiero po dotarciu postaci. Nowa odpowiedź modelu nie może przerywać aktywnego zadania. Każdy plan jest przypisany do wersji stanu mieszkańca; spóźnione odpowiedzi są odrzucane.
 
-- **Spacja** — pauza/wznowienie.
-- **1–5** albo kliknięcie mieszkańca — wybór postaci.
-- **F2** lub przycisk **Ustawienia AI** — otwarcie ustawień.
-- **R** — ponowne sprawdzenie i wznowienie przygotowania AI.
+Gra nie wybiera zastępczej pracy. Jeśli nie ma poprawnego planu, mieszkaniec czeka. Błędna decyzja (np. jedzenie przy pustym magazynie i braku własnej porcji) kończy zadanie z wynikiem przekazywanym AI. Model może zaplanować kolejne działanie. Polecenie jedzenia oznacza jedną porcję. Prywatne jedzenie i ładunek nie są automatycznie zawartością wspólnego magazynu.
 
-## Panel gry
+## Widoczność AI i sterowanie
 
-- **Wioska** — zadania wszystkich mieszkańców, wybrana postać, potrzeby, ładunek, sprzęt, umiejętność, uzasadnienie AI i wspomnienia. Długie informacje można przewijać.
-- **AI / wydajność** — status i model, czas bieżącej oraz ostatniej odpowiedzi, licznik zapytań i błędów, przyjęte decyzje, czas do kolejnego zapytania.
-- **Dziennik** — ostatnie 100 zdarzeń, przewijanie i czyszczenie widoku.
-- Przyciski pauzy, ręcznego zapisu oraz tempo symulacji 0.5× / 1× / 2×.
+Stały pasek u góry pokazuje stan AI, model, czas trwającego zapytania i limit, ostatni przyjęty plan oraz FPS. Znalezienie modelu nie jest przedstawiane jako dowód poprawnych decyzji. Błąd modelu pozostaje widoczny na głównym ekranie.
 
-## Ustawienia AI i wydajność
+- **Mieszkańcy**: aktualne zadania, potrzeby, ładunki, rzeczy prywatne, powód decyzji, kolejne kroki i wspomnienia.
+- **AI**: czas odpowiedzi, liczba zapytań, błędów, przyjętych planów i oczekujących osób.
+- **Opcje**: model, automatyczne pobieranie lekkiego modelu, przerwa 10–120 s, limit 30/60 FPS, timeout 45/120 s, wskazówki dla AI, widoczność trasy i eksport diagnostyki.
+- **Dziennik**: ostatnie 160 zdarzeń.
+- **Spacja**: pauza. **1–5** lub kliknięcie: wybór postaci. **F2**: opcje.
+- Na górnym pasku: tempo 0.5× / 1× / 2×, ręczny plan, ponowne połączenie i zapis.
 
-W zakładce AI ustaw przerwę po odpowiedzi (10, 30, 60 lub 120 sekund czasu rzeczywistego), limit 30/60 FPS, liczbę wątków CPU modelu i długość odpowiedzi. Naciśnij **Zastosuj wydajność**, aby zapisać ustawienia. Limit wątków CPU nie ogranicza wykorzystania GPU.
+Wyłączenie AI zatrzymuje nowe zapytania; już otrzymane plany są kończone. Pauza zatrzymuje świat. Przycisk „Zaplanuj teraz” nie przerywa aktywnych zadań i nie dodaje równoległych zapytań.
 
-Domyślnie po odpowiedzi jest 30 sekund przerwy. Przy wolnej odpowiedzi przerwa wynosi co najmniej połowę czasu generowania. W danej chwili jest najwyżej jedno zapytanie. Limit oczekiwania na decyzje to 120 sekund; pobieranie modelu ma osobny tryb bez tego limitu. Kontekst modelu jest ograniczony do 4096 tokenów.
+## Obciążenie i zapis
 
-**Zaplanuj teraz** pomija przerwę, jeśli AI jest gotowe i wolne. **Przerwij** przerywa oczekiwanie klienta; Ollama może jeszcze kończyć obliczenia. Wyłączenie nowych decyzji zachowuje dotychczasowe zadania mieszkańców.
+Symulacja pracuje ze stałym krokiem 20 Hz, interfejs tekstowy 4 Hz. Zapytania sieciowe oraz weryfikacja i rozpakowanie pobranego runtime'u pracują poza wątkiem renderowania. Model ma kontekst 4096 tokenów i limit odpowiedzi 1024 tokenów. Nie ma kolejki równoległych zapytań. Jeśli wszyscy mają plan, AI nie dostaje następnego zapytania. Domyślna przerwa to 20 sekund po odpowiedzi; wolne odpowiedzi mogą ją wydłużyć. Duży model nadal może obciążać CPU/GPU systemu — limit FPS gry nie jest ograniczeniem mocy Ollamy.
 
-F2 otwiera ustawienia modelu, priorytetu wioski, swobody odpowiedzi i własnych wskazówek. Lista modeli pokazuje modele z lokalnej Ollamy.
+Autozapis co 30 sekund oraz przy zamknięciu. Zapis przez plik tymczasowy, z kopią poprzedniego pliku `.bak`. Stare zapisy są wczytywane z zachowaniem zapasów, potrzeb, ładunków i rzeczy prywatnych. Stare pozycje są ograniczane do widocznej mapy. Nowe zapisy przechowują aktywne polecenie i kolejkę AI; po wczytaniu mieszkaniec wznawia polecenie z zachowanym ładunkiem. Praca przy zbiorze/budowie może rozpocząć swój etap od początku; nie powiela to zasobów.
 
-## Jak działa AI
+Eksport diagnostyki zapisuje lokalny plik `wioska_diagnostyka.txt` i otwiera folder danych gry. Nic nie jest wysyłane automatycznie.
 
-- Jeden model wybiera zadania dla mieszkańców: zbieranie jedzenia, drewna, budowę, dostawę, jedzenie, odpoczynek, ogrzanie lub oczekiwanie.
-- Gra wykonuje ruch i kolejne kroki wybranego zadania. Zbieranie obejmuje dostarczenie pełnego ładunku do magazynu.
-- Gra nie wybiera zastępczego zadania w razie braku decyzji. AI widzi potrzeby, zapasy, aktualne zadania i ostatnie wspomnienia.
-- Dane sieciowe są odbierane w wątku HTTPRequest. Interfejs informacyjny odświeża się dwa razy na sekundę, a zapis świata odbywa się co 30 sekund, na żądanie i przy zamknięciu okna.
-- Model 35B nadal może obciążać GPU; ograniczenia gry nie stanowią limitu pamięci ani wykorzystania GPU Ollamy.
+## Architektura
 
-## Weryfikacja tej wersji
+- `scripts/simulation.gd`: stan świata, skończone zadania, transport, potrzeby i zapis; bez sieci i interfejsu.
+- `scripts/ollama_bridge.gd`: przygotowanie lokalnego silnika, HTTP, walidacja odpowiedzi, timeout i metryki.
+- `scripts/village.gd`: harmonogram zapytań i integracja.
+- `scripts/world_view.gd`: rysowanie świata i zaznaczanie mieszkańców.
+- `scripts/village_ui.gd`: stały status, zakładki i ustawienia.
 
-Godot 4.6.3: uruchomiono scenę i panel z testowym serwerem HTTP udającym Ollamę. Sprawdzono opóźnioną odpowiedź, brak kolejnego zapytania w okresie przerwy, jednorazowe jedzenie, wymóg dojścia do magazynu, fizyczną dostawę, zapis i ustawienia. Nie jest to pomiar wydajności prawdziwego modelu na Windows.
+## Testy
 
-## Ograniczenia prototypu
+Z folderu `game`:
 
-Automatyczne pobieranie runtime'u Ollamy i modelu jest przygotowane dla Windows. Gra działa obecnie z poziomu edytora Godot; samodzielny instalator/plik EXE do udostępniania powstanie w kolejnym etapie. Wagi modelu nie są częścią repozytorium.
+```sh
+godot --headless --path . --script res://tests/test_simulation.gd
+godot --headless --path . --script res://tests/test_bridge.gd
+python tests/mock_ollama.py
+```
+
+Test integracyjny wymaga wolnego portu 11434 i używa tymczasowego folderu danych na Linuksie. Nie uruchamiaj go obok prawdziwej Ollamy. Testy nie pobierają modelu.
+
+W Godot 4.6.3 sprawdzono pełne cykle zbioru i transportu dla pięciu NPC, pojedyncze posiłki, budowę, plan trzyetapowy, odrzucanie starych decyzji, zapis z ładunkiem, odpowiedzi opóźnione/błędne i timeout, zmianę modelu, status na wszystkich zakładkach, wymiary panelu i rozpakowanie w tle. Testowy serwer nie mierzy jakości prawdziwego modelu ani wydajności Windows/GPU użytkownika.
+
+## Ograniczenia
+
+To nadal prototyp: mapa używa czytelnych figur, bez podłączonych paczek animacji; brak kolizji i szukania ścieżek między przeszkodami. Nie ma jeszcze gotowego EXE/instalatora, pełnej ekonomii ani rozwoju populacji. Nowa struktura oddziela te obszary od połączenia AI i interfejsu.

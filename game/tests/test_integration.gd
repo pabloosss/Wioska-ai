@@ -1,0 +1,59 @@
+extends SceneTree
+var checks := 0
+func check(condition: bool, label: String) -> void:
+	if not condition:
+		push_error("FAIL: " + label)
+		quit(1)
+		assert(condition, label)
+	checks += 1
+
+func _initialize() -> void:
+	call_deferred("run")
+
+func run() -> void:
+	var app = load("res://scripts/village.gd").new()
+	root.add_child(app)
+	app.speed = 2.0
+	await create_timer(0.4).timeout
+	check(app.ui.status_label.visible, "AI status always visible")
+	check(app.simulation_step_count > 0, "simulation runs during AI request")
+	await create_timer(8.0).timeout
+	check(app.accepted_plans == 5, "five valid plans accepted")
+	check(app.bridge.requests_finished == 1, "no requests during cooldown or busy jobs")
+	check(app.sim.delivered["food"] == 20, "all residents delivered food in running scene")
+	check(app.sim.stock["food"] == 36, "warehouse stock matches deliveries and private meals")
+	check(app.ui.timing_label.text.contains("s temu"), "last accepted plan visible")
+	check(app.ui.summary_label.text.contains("jedzenie 20"), "delivery counter visible")
+	check(app.bridge.last_latency >= 0.5, "latency measured")
+	app.ui.tabs.current_tab = 2
+	await process_frame
+	check(app.ui.status_label.is_visible_in_tree(), "status survives tab switches")
+	check(app.ui.status_label.get_global_rect().end.y < 138, "status fits permanent header")
+	check(app.ui.tabs.get_global_rect().end.x <= 1268 and app.ui.tabs.get_global_rect().end.y <= 706, "sidebar fits viewport")
+	app._apply_settings({"cooldown": 10, "fps": 30, "timeout": 45, "guidance": "Zadbaj o jedzenie"})
+	app._request_now()
+	await create_timer(1.0).timeout
+	check(app.bridge.request_errors == 1, "invalid JSON reported")
+	check(app.accepted_plans == 5, "invalid JSON does not invent tasks")
+	app.bridge.decision_timeout = 0.25
+	app._request_now()
+	await create_timer(0.8).timeout
+	check(not app.bridge.is_busy and app.bridge.request_errors == 2, "timeout releases busy flag")
+	check(app.ui.status_label.text.contains("Błąd AI"), "timeout visible on main screen")
+	var before := int(app.simulation_step_count)
+	await create_timer(0.4).timeout
+	check(app.simulation_step_count > before, "simulation responsive after timeout")
+	app.paused = true
+	var elapsed_before := float(app.sim.elapsed)
+	await create_timer(0.3).timeout
+	check(app.sim.elapsed == elapsed_before, "pause stops world")
+	app.bridge.decision_timeout = 45.0
+	app._change_model("qwen3.5:35b")
+	await create_timer(1.0).timeout
+	check(app.bridge.model_name == "qwen3.5:35b" and app.bridge.is_ready, "model switching unloads old model and checks new")
+	app._save()
+	check(app.sim.last_save.begins_with("Zapisano"), "save scene state")
+	print("PASS integration: ", checks, " assertions; real scene, delayed/invalid/timed-out API, physical hauling, status, pause, model switch")
+	app.queue_free()
+	await process_frame
+	quit()

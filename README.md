@@ -4,7 +4,7 @@ Projekt lokalnej symulacji wioski z autonomicznymi mieszkańcami. Każdy NPC ma 
 
 ## Status
 
-Prototyp Godot 4 ma pięciu mieszkańców, potrzeby, transport surowców, lokalne AI oraz zapis pamięci i stanu gry. Przy pierwszym uruchomieniu gra sama przygotowuje runtime Ollamy i pobiera model. Osobny instalator gry oraz finalny eksport programu pozostają do zrobienia.
+Wersja 0.2 oddziela symulację, wykonawcę planów AI, połączenie z Ollamą i interfejs. Pięciu mieszkańców wykonuje skończone zadania: zbiór obejmuje fizyczną dostawę, a spóźniona odpowiedź modelu nie przerywa pracy. Stały pasek pokazuje prawdziwy status AI, ostatni przyjęty plan i FPS. Przy pierwszym uruchomieniu gra sama przygotowuje runtime Ollamy i pobiera model. Osobny instalator gry oraz finalny eksport programu pozostają do zrobienia.
 
 ## Struktura
 

@@ -1,27 +1,26 @@
 # Plan prac — Wioska AI
 
-## Etap 1: podstawowa symulacja
-- Pięciu mieszkańców, potrzeby, ruch i wybór pracy.
-- Zbieranie jedzenia oraz drewna, fizyczny transport do wspólnego magazynu.
-- Budowanie, prywatny ekwipunek i log zdarzeń.
+## Wersja 0.2: przebudowana podstawa
+- Oddzielny wykonawca skończonych zadań, symulacja 20 Hz i interfejs 4 Hz.
+- AI planuje do trzech kolejnych działań; nowe i spóźnione odpowiedzi nie przerywają trwającej dostawy.
+- Pięć postaci, potrzeby, zbiór, fizyczne dostawy, pojedyncze posiłki i etapy budowy.
+- Stały status AI z czasem żądania, ostatnim przyjętym planem i FPS.
+- Lekki model dla nowych instalacji i przycisk jego pobrania dla istniejących użytkowników.
+- Autozapis i kopia poprzedniego zapisu; wczytywanie starszych danych.
+- Testy pełnych cykli pracy oraz integracja z opóźnionymi, błędnymi i przekraczającymi limit odpowiedziami HTTP.
 
-## Etap 2: porządna pętla gry
-- Ścieżki, animacje pracy i użycie wybranych assetów.
-- Dopracowanie ekonomii oraz temperatury.
-- Rozbudowa zapisów i obsługi świata.
+## Następny etap: pomiar z prawdziwym lokalnym modelem
+- Pomiary czasu decyzji, FPS i wykorzystania GPU na Windows.
+- Ocena sensowności planów małego modelu i równowagi zapasów.
+- Sprawdzenie pełnego pobierania runtime'u/modelu na czystym Windows.
+- Dopiero po potwierdzeniu stabilności: dalsze rozszerzanie autonomii.
 
-## Etap 3: lokalne AI — pierwsza integracja dodana
-- Połączenie z lokalnym Ollama API i modelem `qwen3.5:35b`.
-- Jeden model podejmuje decyzje dla pięciu NPC w osobnym kontekście każdej postaci.
-- Profile, potrzeby i ostatnie wspomnienia są przekazywane do AI.
-- Symulacja waliduje decyzje, obsługuje pilne potrzeby i zapisuje pamięć oraz postęp umiejętności.
-- Do sprawdzenia w Godot z uruchomioną Ollamą.
+## Rozbudowa świata
+- Podłączenie assetów, animacji pracy, kolizji i szukania ścieżek.
+- Ekonomia, specjalizacje, relacje, rozwój populacji i technologie.
+- Trwalsza pamięć, uczenie przez doświadczenie oraz przekazywanie wiedzy.
 
-## Etap 4: uruchamianie jako jedna aplikacja
-- Przygotowanie runtime'u Ollamy i pobieranie modelu przy pierwszym uruchomieniu są obsługiwane przez grę na Windows.
-- Dopracowanie ekranu postępu, ponawiania i błędów instalacji.
-- Eksport gry do samodzielnego instalatora/EXE, aby gracz nie musiał otwierać projektu w edytorze Godot.
-- Zapis gry i model pozostają lokalnie na komputerze gracza.
-
-## Zasada
-Kod gry i konfiguracja są w repozytorium. Wagi modelu AI nie są częścią repozytorium GitHub.
+## Wydanie jako jedna aplikacja
+- Automatyczne przygotowanie silnika i modelu jest obsługiwane przez grę na Windows.
+- Pozostają eksport EXE, instalator i weryfikacja na komputerze bez narzędzi programistycznych.
+- Wagi modeli pozostają poza repozytorium; aplikacja pobiera je lokalnie.
