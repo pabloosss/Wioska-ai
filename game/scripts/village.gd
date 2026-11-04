@@ -2,6 +2,7 @@ extends Node2D
 
 const SIDEBAR_X := 850.0
 const HOME := Vector2(500, 390)
+const STORAGE_SPOT := Vector2(590, 440)
 const FOOD_SPOT := Vector2(230, 270)
 const WOOD_SPOT := Vector2(665, 230)
 const FIRE_SPOT := Vector2(500, 430)
@@ -60,6 +61,8 @@ func _make_person(person_name: String, job: String, start: Vector2, tint: Color,
 		"rest": 88.0,
 		"warmth": 76.0,
 		"work_ticks": 0,
+		"cargo_food": 0,
+		"cargo_wood": 0,
 		"inventory": {"food": 1, "keepsake": keepsake, "equipment": equipment}
 	}
 
@@ -79,7 +82,12 @@ func _on_tick() -> void:
 
 func _choose_task(person: Dictionary) -> void:
 	var position: Vector2 = person["position"]
-	if person["hunger"] < 28.0:
+	var cargo_food: int = person["cargo_food"]
+	var cargo_wood: int = person["cargo_wood"]
+	if cargo_food >= 4 or cargo_wood >= 4:
+		person["task"] = "Niesie ładunek do magazynu"
+		person["target"] = STORAGE_SPOT
+	elif person["hunger"] < 28.0:
 		person["task"] = "Je"
 		person["target"] = position
 	elif person["rest"] < 18.0:
@@ -97,7 +105,6 @@ func _choose_task(person: Dictionary) -> void:
 	else:
 		person["task"] = "Buduje dom"
 		person["target"] = HOME
-
 
 func _do_task(person: Dictionary) -> void:
 	var task: String = person.get("task", "")
@@ -120,6 +127,16 @@ func _do_task(person: Dictionary) -> void:
 	if position.distance_to(target) > 18.0:
 		return
 
+	if task == "Niesie ładunek do magazynu":
+		var delivered_food: int = person["cargo_food"]
+		var delivered_wood: int = person["cargo_wood"]
+		stock["food"] += delivered_food
+		stock["wood"] += delivered_wood
+		person["cargo_food"] = 0
+		person["cargo_wood"] = 0
+		_add_log("%s zanosi do magazynu: jedzenie %d, drewno %d." % [person["name"], delivered_food, delivered_wood])
+		return
+
 	if task == "Odpoczywa":
 		person["rest"] = minf(100.0, person["rest"] + 7.0)
 		return
@@ -133,11 +150,11 @@ func _do_task(person: Dictionary) -> void:
 	person["work_ticks"] = 0
 
 	if task == "Zbiera jedzenie":
-		stock["food"] += 2
-		_add_log("%s dostarcza 2 jedzenia do magazynu." % person["name"])
+		person["cargo_food"] += 2
+		_add_log("%s zbiera jedzenie (%d/4)." % [person["name"], person["cargo_food"]])
 	elif task == "Ścina drewno":
-		stock["wood"] += 2
-		_add_log("%s dostarcza 2 drewna do magazynu." % person["name"])
+		person["cargo_wood"] += 2
+		_add_log("%s zbiera drewno (%d/4)." % [person["name"], person["cargo_wood"]])
 	elif task == "Buduje dom":
 		if stock["wood"] < 4:
 			return
@@ -219,6 +236,8 @@ func _draw_world() -> void:
 			draw_circle(position, 20.0, Color("#fff1a8"))
 		draw_circle(position, 15.0, tint)
 		draw_circle(position + Vector2(0, -17), 7.0, Color("#f1d1ae"))
+		if person["cargo_food"] > 0 or person["cargo_wood"] > 0:
+			draw_rect(Rect2(position + Vector2(10, -4), Vector2(10, 10)), Color("#b88b52"))
 		_draw_text(person["name"], position.x - 22, position.y + 34, 12, Color.WHITE)
 
 	_draw_text("WIOSKA AI  •  %02d:%02d" % [int(day_minute / 60), day_minute % 60], 82, 65, 20, Color.WHITE)
@@ -250,6 +269,7 @@ func _draw_sidebar() -> void:
 	var inventory: Dictionary = chosen["inventory"]
 	_draw_text("Umiejętność: %s  •  poziom %d" % [chosen["skill"], chosen["skill_level"]], 885, 522, 12, Color.WHITE)
 	_draw_text("Ekwipunek: %s, jedzenie %d" % [str(inventory["equipment"]), inventory["food"]], 885, 544, 12, Color.WHITE)
+	_draw_text("Niesie: jedzenie %d, drewno %d" % [chosen["cargo_food"], chosen["cargo_wood"]], 885, 584, 12, Color("#f4d99b"))
 	_draw_text("Prywatna rzecz: %s" % inventory["keepsake"], 885, 566, 12, Color.WHITE)
 
 	_draw_text("OSTATNIE ZDARZENIA", 885, 603, 14, Color("#f4d99b"))
