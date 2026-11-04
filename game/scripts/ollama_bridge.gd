@@ -392,7 +392,9 @@ func _normalise_decision_answer(raw_answer: Variant) -> Dictionary:
 			continue
 		var person_name := str(raw_decision.get("name", raw_decision.get("resident", raw_decision.get("resident_name", raw_decision.get("villager", raw_decision.get("npc", raw_decision.get("person", ""))))))).strip_edges()
 		var raw_action := str(raw_decision.get("action", raw_decision.get("decision", raw_decision.get("choice", raw_decision.get("task", "work"))))).to_lower().strip_edges()
-		var action := "work"
+		var action := raw_action
+		if person_name.is_empty() or not ["work", "gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"].has(raw_action):
+			continue
 		if ["eat", "food", "je", "jedz", "jedzenie", "eat_food"].has(raw_action):
 			action = "eat"
 		elif ["rest", "sleep", "odpoczywa", "odpoczynek", "śpi", "spij"].has(raw_action):
@@ -512,7 +514,7 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 					"type": "object",
 					"properties": {
 						"name": {"type": "string"},
-						"action": {"type": "string", "enum": ["work", "eat", "rest", "warm"]},
+						"action": {"type": "string", "enum": ["gather_food", "gather_wood", "build", "deliver", "eat", "rest", "warm", "wait"]},
 						"reason": {"type": "string"}
 					},
 					"required": ["name", "action", "reason"]
@@ -521,13 +523,13 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 		},
 		"required": ["decisions"]
 	}
-	var system_prompt := "Jesteś wspólnym lokalnym AI zarządzającym małą wioską. Podejmujesz decyzję osobno dla każdego mieszkańca na podstawie jego charakteru, potrzeb, pracy, ekwipunku i wspomnień. Wybieraj tylko: work, eat, rest, warm. Nie zmieniaj bezpośrednio zasobów ani świata. Jeżeli mieszkaniec jest głodny i ma dostęp do jedzenia, wybierz eat; jeżeli jest zmęczony, rest; jeżeli marznie, warm. W pozostałych sytuacjach wybierz work. Zwróć wyłącznie JSON zgodny ze schematem."
+	var system_prompt := "Jesteś wspólnym lokalnym AI zarządzającym małą wioską. Podejmujesz decyzję osobno dla każdego mieszkańca na podstawie jego charakteru, potrzeb, pracy, ekwipunku i wspomnień. Sam wybierasz zadania: gather_food (zbierz i zanieś jedzenie), gather_wood (zbierz i zanieś drewno), build (buduj za 4 drewna), deliver (odnieś ładunek), eat (zjedz jedną porcję), rest, warm, wait. Każdy może zbierać dowolny zasób. Zawód to specjalizacja. Jeśli nie ma jedzenia, skieruj część mieszkańców do gather_food. Nie wybieraj eat przy sytości ponad 70. Nie wybieraj build bez drewna. Uwzględniaj trwające zadania: nie przerywaj ciągle dojścia na miejsce. Gra nie podejmie za ciebie decyzji. Nie zmieniaj bezpośrednio zasobów ani świata. Jeżeli mieszkaniec jest głodny i ma dostęp do jedzenia, wybierz eat; jeżeli jest zmęczony, rest; jeżeli marznie, warm. W pozostałych sytuacjach wybierz konkretne potrzebne zadanie. Zwróć wyłącznie JSON zgodny ze schematem."
 	if not behavior_guidance.strip_edges().is_empty():
 		system_prompt += " Dodatkowe wskazówki użytkownika: " + behavior_guidance.strip_edges()
 	var user_data := {
 		"world": world_state,
 		"residents": people,
-		"instruction": "Zwróć dokładnie obiekt JSON z kluczem decisions, zawierający po jednym elemencie dla każdego mieszkańca. Każdy element ma pola name, action (work, eat, rest lub warm) i reason. Uzasadnienie krótko po polsku. Wybierz jedną rozsądną czynność dla każdego mieszkańca."
+		"instruction": "Zwróć dokładnie obiekt JSON z kluczem decisions, zawierający po jednym elemencie dla każdego mieszkańca. Każdy element ma pola name, action (gather_food, gather_wood, build, deliver, eat, rest, warm lub wait) i reason. Uzasadnienie krótko po polsku. Wybierz jedną rozsądną czynność dla każdego mieszkańca."
 	}
 	var body := {
 		"model": model_name,
@@ -538,7 +540,7 @@ func request_decisions(world_state: Dictionary, people: Array, ai_temperature: f
 		"stream": false,
 		"think": false,
 		"format": schema,
-		"options": {"temperature": ai_temperature, "num_predict": 512},
+		"options": {"temperature": ai_temperature, "num_predict": 2048},
 		"keep_alive": "10m"
 	}
 	var headers := PackedStringArray(["Content-Type: application/json"])
