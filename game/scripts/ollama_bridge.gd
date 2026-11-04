@@ -22,6 +22,7 @@ var runtime_download_active := false
 var startup_attempts := 0
 var process_attempted := false
 var ollama_pid := -1
+var last_download_progress := -1
 
 
 func _ready() -> void:
@@ -49,9 +50,14 @@ func _process(_delta: float) -> void:
 	var downloaded := download_http.get_downloaded_bytes()
 	if total > 0:
 		var percent := int(float(downloaded) * 100.0 / float(total))
-		emit_signal("status_changed", "Pobieram lokalny silnik AI: %d%%" % percent)
+		if percent != last_download_progress:
+			last_download_progress = percent
+			emit_signal("status_changed", "Pobieram lokalny silnik AI: %d%%" % percent)
 	else:
-		emit_signal("status_changed", "Pobieram lokalny silnik AI… %d MB" % int(downloaded / 1048576))
+		var downloaded_mb := int(downloaded / 1048576)
+		if downloaded_mb != last_download_progress:
+			last_download_progress = downloaded_mb
+			emit_signal("status_changed", "Pobieram lokalny silnik AI… %d MB" % downloaded_mb)
 
 
 func connect_to_ollama() -> void:
@@ -74,6 +80,12 @@ func _request_tags() -> void:
 
 func _handle_server_unavailable() -> void:
 	if process_attempted:
+		if ollama_pid > 0 and not OS.is_process_running(ollama_pid):
+			process_attempted = false
+			ollama_pid = -1
+		elif probe_timer.is_stopped():
+			startup_attempts = 0
+			probe_timer.start()
 		return
 	var installed_path := _find_installed_ollama()
 	if not installed_path.is_empty():
@@ -400,3 +412,7 @@ func request_decisions(world_state: Dictionary, people: Array) -> void:
 		is_busy = false
 		request_kind = ""
 		emit_signal("status_changed", "AI: nie udało się wysłać zapytania")
+
+func _notification(what: int) -> void:
+	if what == NOTIFICATION_WM_CLOSE_REQUEST and ollama_pid > 0 and OS.is_process_running(ollama_pid):
+		OS.kill(ollama_pid)
