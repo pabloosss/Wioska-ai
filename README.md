@@ -1,20 +1,22 @@
 # Wioska AI
 
-Projekt lokalnej symulacji wioski z autonomicznymi mieszkańcami. Każdy NPC będzie miał własne potrzeby, charakter, umiejętności, ekwipunek i pamięć. Jeden lokalny model AI będzie podejmował decyzje mieszkańców; symulacja gry wykona ruch i pracę zgodnie z zasadami świata.
+Projekt lokalnej symulacji wioski z autonomicznymi mieszkańcami. Każdy NPC ma własne potrzeby, charakter, umiejętności, ekwipunek i pamięć. Docelowo jeden lokalny model AI będzie podejmował decyzje mieszkańców, a symulacja wykona ruch i pracę zgodnie z zasadami świata.
 
 ## Status
 
-Na razie repozytorium zawiera materiały graficzne i ustalenia projektu. Nie ma jeszcze kodu gry ani integracji z modelem AI.
+Repozytorium zawiera pierwszy prototyp w Godot 4: pięciu mieszkańców, potrzeby, prace, wspólny magazyn, budowanie i log zdarzeń. Integracja AI z Ollamą oraz instalator są kolejnymi etapami.
 
 ## Struktura
 
-- `assets/medieval-village-2.5d/` — kompletna paczka wioski z uprawami i animacjami pracy.
-- `assets/fantasy-village-adventurers/` — alternatywny zestaw wioski, postaci, terenu i budynków.
+- `game/` — projekt Godot 4 i prototyp symulacji.
+- `assets/medieval-village-2.5d/` — paczka wioski z uprawami i animacjami pracy.
+- `assets/fantasy-village-adventurers/` — alternatywny zestaw postaci, terenu i budynków.
 - `assets/forest-foraging-icons/` — ikony jedzenia i przedmiotów do zbierania.
-- `docs/project-design.md` — ustalony zakres pierwszej wersji i założenia AI.
+- `docs/project-design.md` — założenia projektu.
+- `docs/roadmap.md` — etapy dalszej pracy.
 
-Paczki graficzne są rozdzielone, bo mają różne style. Nie łączymy ich, dopóki nie wybierzemy wyglądu gry.
+Uruchomienie prototypu opisuje [game/README.md](game/README.md).
 
 ## Ważne: licencje assetów
 
-Każda paczka ma własną licencję. Większość pozwala używać grafik w grze, ale zabrania udostępniania samych plików jako osobnej paczki lub w publicznym repozytorium. Repozytorium zawiera surowe assety — ustaw je jako prywatne. Nie publikuj ich ponownie jako samodzielnego zbioru.
+Każda paczka ma własną licencję. Repozytorium zawiera surowe pliki assetów, więc przed publicznym udostępnianiem sprawdź ograniczenia licencji. Jeśli repo ma pozostać publiczne, część surowych paczek może wymagać usunięcia lub przeniesienia do prywatnego repozytorium.
